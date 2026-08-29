@@ -32,9 +32,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -59,9 +59,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -88,9 +88,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -114,9 +114,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -141,9 +141,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -153,34 +153,34 @@ Installation:
         <!-- Error List -->
         <LexerType name="errorlist" desc="ErrorList" ext="">
             <WordsStyle name="DEFAULT STYLE" styleID="0" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="PYTHON Error" styleID="1" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="GCC Error" styleID="2" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="MS Error" styleID="3" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="CMD Error" styleID="4" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="BORLAND Error" styleID="5" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="PERL Error" styleID="6" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="NET Error" styleID="7" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="LUA Error" styleID="8" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="CTAG Error" styleID="9" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PYTHON Error" styleID="1" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="GCC Error" styleID="2" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="MS Error" styleID="3" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="CMD Error" styleID="4" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="BORLAND Error" styleID="5" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PERL Error" styleID="6" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="NET Error" styleID="7" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="LUA Error" styleID="8" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="CTAG Error" styleID="9" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DIFF Changed" styleID="10" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DIFF Addition" styleID="11" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="DIFF Deletion" styleID="12" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="DIFF Deletion" styleID="12" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DIFF Message" styleID="13" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="PHP Error" styleID="14" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="ELF Error" styleID="15" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="IFC Error" styleID="16" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="IFORT Error" styleID="17" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="ABSF Error" styleID="18" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="TIDY Error" styleID="19" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="JAVA Stack Error" styleID="20" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="VALUE Error" styleID="21" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="GCC Included-From Error" styleID="22" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PHP Error" styleID="14" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ELF Error" styleID="15" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="IFC Error" styleID="16" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="IFORT Error" styleID="17" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ABSF Error" styleID="18" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="TIDY Error" styleID="19" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="JAVA Stack Error" styleID="20" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="VALUE Error" styleID="21" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="GCC Included-From Error" styleID="22" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="Escape Sequence" styleID="23" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="Unknown Escape Sequence" styleID="24" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="GCC Excerpt Error" styleID="25" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="BASH Error" styleID="26" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="GCC Excerpt Error" styleID="25" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="BASH Error" styleID="26" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ANSI COLOR BLACK" styleID="40" fgColor="42444D" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="ANSI COLOR RED" styleID="41" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ANSI COLOR RED" styleID="41" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ANSI COLOR GREEN" styleID="42" fgColor="25A45C" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ANSI COLOR BROWN" styleID="43" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ANSI COLOR BLUE" styleID="44" fgColor="3375FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -246,9 +246,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -339,7 +339,7 @@ Installation:
             <WordsStyle name="ATTRIBUTEUNKNOWN" styleID="4" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SGMLDEFAULT" styleID="21" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="CDATA" styleID="17" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="VALUE" styleID="19" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="VALUE" styleID="19" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ENTITY" styleID="10" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="USER TAGS 1" styleID="192" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
             <WordsStyle name="USER TAGS 2" styleID="193" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
@@ -366,11 +366,11 @@ Installation:
             <WordsStyle name="PREDEFINED" styleID="213" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
             <WordsStyle name="FUNCS AND METHODS 1" styleID="214" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle7"></WordsStyle>
             <WordsStyle name="FUNCS AND METHODS 2" styleID="215" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle8"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="208" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="209" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="210" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 4" styleID="211" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 5" styleID="212" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="208" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="209" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="210" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 4" styleID="211" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 5" styleID="212" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
         </LexerType>
         <!-- JavaScript -->
         <LexerType name="javascript" desc="JavaScript (embedded)" ext="">
@@ -389,14 +389,27 @@ Installation:
             <WordsStyle name="COMMENT" styleID="42" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENTLINE" styleID="43" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENTDOC" styleID="44" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="200" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="201" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="202" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 4" styleID="203" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 5" styleID="204" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 6" styleID="205" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 7" styleID="206" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle7"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 8" styleID="207" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle8"></WordsStyle>
+            <WordsStyle name="FUNCTION" styleID="55" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="CLASS" styleID="56" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="METHOD" styleID="57" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ARROW FUNCTION" styleID="58" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PROPERTY" styleID="59" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="VARIABLE" styleID="60" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PARAMETER" styleID="61" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="TYPE" styleID="62" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="INTERFACE" styleID="63" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ENUM" styleID="64" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="NAMESPACE" styleID="65" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="MODULE" styleID="66" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="DECORATOR" styleID="67" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="200" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="201" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="202" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 4" styleID="203" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 5" styleID="204" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 6" styleID="205" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 7" styleID="206" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle7"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 8" styleID="207" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle8"></WordsStyle>
         </LexerType>
         <!-- JSON -->
         <LexerType name="json" desc="JSON" ext="">
@@ -411,9 +424,9 @@ Installation:
             <WordsStyle name="OPERATOR" styleID="8" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="URI" styleID="9" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMPACT IRI" styleID="10" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
-            <WordsStyle name="KEYWORD" styleID="11" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
-            <WordsStyle name="LD KEYWORD" styleID="12" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
-            <WordsStyle name="ERROR" styleID="13" fgColor="F9C859" bgColor="FC2E51" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="KEYWORD" styleID="11" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="LD KEYWORD" styleID="12" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
+            <WordsStyle name="ERROR" styleID="13" fgColor="F9C859" bgColor="FF2E3F" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <!-- ASP -->
         <LexerType name="asp" desc="asp" ext="asp">
@@ -426,14 +439,14 @@ Installation:
             <WordsStyle name="IDENTIFIER" styleID="86" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ASPSYMBOL" styleID="15" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SCRIPTTYPE" styleID="16" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="216" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="217" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="218" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 4" styleID="219" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 5" styleID="220" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 6" styleID="221" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 7" styleID="222" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle7"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 8" styleID="223" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle8"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="216" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="217" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="218" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 4" styleID="219" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 5" styleID="220" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 6" styleID="221" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 7" styleID="222" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle7"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 8" styleID="223" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle8"></WordsStyle>
         </LexerType>
         <!-- XML -->
         <LexerType name="xml" desc="XML" ext="">
@@ -483,7 +496,7 @@ Installation:
             <WordsStyle name="COMMAND" styleID="2" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="HEADER" styleID="3" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="POSITION" styleID="4" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="DELETED" styleID="5" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="DELETED" styleID="5" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ADDED" styleID="6" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <!-- NFO -->
@@ -515,13 +528,13 @@ Installation:
         <LexerType name="css" desc="CSS" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="TAG" styleID="1" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="CLASS" styleID="2" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="PSEUDOCLASS" styleID="3" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="UNKNOWN_PSEUDOCLASS" styleID="4" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="CLASS" styleID="2" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PSEUDOCLASS" styleID="3" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="UNKNOWN_PSEUDOCLASS" styleID="4" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="5" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="IDENTIFIER" styleID="6" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
-            <WordsStyle name="UNKNOWN_IDENTIFIER" styleID="7" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="VALUE" styleID="8" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="IDENTIFIER" styleID="6" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="UNKNOWN_IDENTIFIER" styleID="7" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="VALUE" styleID="8" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="9" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ID" styleID="10" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="IMPORTANT" styleID="11" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -594,18 +607,18 @@ Installation:
             <WordsStyle name="CHARACTER" styleID="4" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="KEYWORDS" styleID="5" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="TRIPLE" styleID="6" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="TRIPLEDOUBLE" styleID="7" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="TRIPLEDOUBLE" styleID="7" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="CLASSNAME" styleID="8" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DEFNAME" styleID="9" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENTBLOCK" styleID="12" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="STRINGEOL" styleID="13" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="BUILTINS" styleID="14" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
+            <WordsStyle name="BUILTINS" styleID="14" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="F STRING" styleID="16" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="F CHARACTER" styleID="17" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="F TRIPLE" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="F TRIPLEDOUBLE" styleID="19" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="F TRIPLEDOUBLE" styleID="19" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <!-- Batch -->
         <LexerType name="batch" desc="Batch" ext="">
@@ -639,9 +652,9 @@ Installation:
             <WordsStyle name="USER KEYWORD 2" styleID="17" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="type4"></WordsStyle>
             <WordsStyle name="USER KEYWORD 3" styleID="18" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="type5"></WordsStyle>
             <WordsStyle name="USER KEYWORD 4" styleID="19" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="type6"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 5" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 6" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 7" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 5" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 6" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 7" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 8" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
         </LexerType>
         <!-- TeX -->
@@ -655,20 +668,20 @@ Installation:
         </LexerType>
         <!-- TOML -->
         <LexerType name="toml" desc="TOML" ext="">
-            <WordsStyle name="DEFAULT" styleID="0" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="1" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="2" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="KEYWORD" styleID="3" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="4" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="TABLE" styleID="5" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="KEY" styleID="6" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
-            <WordsStyle name="ERROR" styleID="7" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="4" fontSize=""></WordsStyle>
+            <WordsStyle name="ERROR" styleID="7" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="4" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="8" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="STRING SQ" styleID="9" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="STRING DQ" styleID="10" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="TRIPLE STRING SQ" styleID="11" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="TRIPLE STRING DQ" styleID="12" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
-            <WordsStyle name="ESCAPE CHAR" styleID="13" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ESCAPE CHAR" styleID="13" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DATETIME" styleID="14" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WordsStyle>
         </LexerType>
         <!-- NSIS -->
@@ -712,9 +725,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -737,9 +750,9 @@ Installation:
             <WordsStyle name="BACKTICKS" styleID="11" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="HERE DELIM" styleID="12" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="HERE Q" styleID="13" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER SCALAR 1" styleID="132" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER SCALAR 2" styleID="133" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -1085,9 +1098,9 @@ Installation:
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="7C8495" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="8BCDEF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 5" styleID="132" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle5"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 6" styleID="133" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="substyle6"></WordsStyle>
@@ -1100,7 +1113,7 @@ Installation:
         <WidgetStyle name="Default Style" styleID="32" fgColor="ABB2BF" bgColor="282C34" fontName="monofur for Powerline" fontStyle="0" fontSize="12"></WidgetStyle>
         <WidgetStyle name="Indent guideline style" styleID="37" fgColor="3D434F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Brace highlight style" styleID="34" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="1" fontSize=""></WidgetStyle>
-        <WidgetStyle name="Bad brace colour" styleID="35" fgColor="FC2E51" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
+        <WidgetStyle name="Bad brace colour" styleID="35" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Current line background colour" styleID="0" bgColor="2D333D"></WidgetStyle>
         <WidgetStyle name="Selected text colour" styleID="0" bgColor="0084FF" fgColor="FFFFFF"></WidgetStyle>
         <WidgetStyle name="Multi-selected text color" styleID="0" bgColor="3691FF"></WidgetStyle>
@@ -1119,7 +1132,7 @@ Installation:
         <WidgetStyle name="Fold margin" styleID="0" fgColor="3D434F" bgColor="22252A"></WidgetStyle>
         <WidgetStyle name="White space symbol" styleID="0" fgColor="3D434F"></WidgetStyle>
         <WidgetStyle name="Smart Highlighting" styleID="29" bgColor="177849"></WidgetStyle>
-        <WidgetStyle name="Find Mark Style" styleID="31" bgColor="FC2E51"></WidgetStyle>
+        <WidgetStyle name="Find Mark Style" styleID="31" bgColor="FF2E3F"></WidgetStyle>
         <WidgetStyle name="Mark Style 1" styleID="25" bgColor="10B1FE"></WidgetStyle>
         <WidgetStyle name="Mark Style 2" styleID="24" bgColor="FF936A"></WidgetStyle>
         <WidgetStyle name="Mark Style 3" styleID="23" bgColor="F9C859"></WidgetStyle>
