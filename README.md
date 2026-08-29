@@ -8,6 +8,46 @@ A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This 
 
 Bluloco is a sophisticated color scheme that combines blue-based accents with a carefully balanced palette that's easy on the eyes during long coding sessions. The dark variant provides excellent contrast while maintaining readability.
 
+## ⚡ Recent Improvements (v2.0)
+
+This version includes a **major optimization** to match the original VSCode Bluloco Dark theme with pixel-perfect accuracy:
+
+### 🎯 Color Accuracy Fixes
+| Element | Before | After | VSCode Reference |
+|---------|--------|-------|------------------|
+| **Error Color** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
+| **Bad Brace** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
+| **Find Mark** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
+| **Python Triple Strings** | Comment color | `F9C859` (String yellow) | ✅ |
+| **CSS Class/Selector** | Various | `3691FF` (Blue) | ✅ |
+| **CSS Property Names** | Various | `FF936A` (Orange) | ✅ |
+| **HTML Attribute Values** | Pink | `F9C859` (String yellow) | ✅ |
+| **JSON true/false/null** | Green | `10B1FE` (Keyword blue) | ✅ |
+| **TOML Escape Char** | Green | `FF936A` (Orange) | ✅ |
+
+### 🧠 Semantic Token Enhancements
+Added missing semantic highlighting across **20+ languages** (C/C++, Java, C#, Go, Python, JavaScript, TypeScript, PHP, Bash, etc.):
+
+| Semantic Token | Color | Usage |
+|----------------|-------|-------|
+| **Object Properties** | `CE9887` | `obj.property`, `this.field` |
+| **Constants** | `9F7EFE` | `MAX_SIZE`, `API_KEY` |
+| **Parameters** | `8BCDEF` | Function parameters |
+| **Functions** | `3FC56B` | Function declarations |
+| **Classes** | `FF6480` | Class definitions |
+| **Methods** | `3FC56B` | Class methods |
+| **Types/Interfaces** | `FF6480` | Type annotations |
+| **Decorators** | `10B1FE` | `@decorator` syntax |
+
+### 🚀 JavaScript/TypeScript Enhanced
+Added **13 new semantic styles** for modern JS/TS development:
+- `FUNCTION`, `ARROW FUNCTION`, `METHOD` → `3FC56B` (Green)
+- `CLASS`, `INTERFACE`, `ENUM`, `NAMESPACE`, `MODULE` → `FF6480` (Pink)
+- `PROPERTY` → `CE9887` (Brown)
+- `PARAMETER` → `8BCDEF` (Light Blue)
+- `TYPE` → `10B1FE` (Blue)
+- `DECORATOR` → `10B1FE` (Blue)
+
 ## 📋 Conversion Process
 
 ### Step 1: Analysis of Source Themes
@@ -36,11 +76,14 @@ Notepad++ uses XML configuration with:
 | `#3fc56b` | `3FC56B` | Functions, methods |
 | `#ff6480` | `FF6480` | Classes, types |
 | `#f9c859` | `F9C859` | Strings, regex |
-| `#ff78f8` | `FF78F8` | Numbers, constants |
+| `#ff78f8` | `FF78F8` | Numbers |
+| `#ff2e3f` | `FF2E3F` | **Errors, bad braces, find marks** |
+| `#9f7efe` | `9F7EFE` | **Constants** |
+| `#8bcdef` | `8BCDEF` | **Parameters** |
+| `#ce9887` | `CE9887` | **Object properties, variables** |
 | `#7a82da` | `7A82DA` | Operators, punctuation |
 | `#3691ff` | `3691FF` | Tags, HTML elements |
-| `#ff936a` | `FF936A` | Attributes, parameters |
-| `#ce9887` | `CE9887` | Object properties, variables |
+| `#ff936a` | `FF936A` | Attributes, parameters, escape chars |
 
 #### UI Element Mapping
 - **Editor Background**: `#282c34` → `282C34`
@@ -132,6 +175,20 @@ Notepad++ uses XML configuration with:
 4. Navigate to and select the `bluloco-dark.xml` file
 5. The theme will be automatically installed and selected
 
+## 🖼️ Theme Gallery
+
+| Language | Preview |
+|----------|---------|
+| **JavaScript** | ![JavaScript](screenshots/js.png) |
+| **TypeScript** | ![TypeScript](screenshots/ts.png) |
+| **Python** | ![Python](screenshots/py.png) |
+| **HTML** | ![HTML](screenshots/html.png) |
+| **CSS** | ![CSS](screenshots/css.png) |
+| **PHP** | ![PHP](screenshots/php.png) |
+| **Ruby** | ![Ruby](screenshots/rb.png) |
+
+*Click images to view full-size previews*
+
 ## 📁 File Structure
 
 ```
@@ -151,19 +208,28 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 
 ## 🎯 Supported Languages
 
-The theme includes syntax highlighting for:
+The theme includes full syntax highlighting with **semantic token support** for:
 
-- **C/C++/Objective-C**
-- **Java/C#**
-- **Python**
-- **JavaScript/TypeScript**
-- **HTML/XML**
-- **CSS**
-- **PHP**
-- **SQL**
-- **JSON**
-- **Batch files**
-- **INI configuration**
+### Enhanced Semantic Highlighting (20+ languages)
+- **C/C++/Objective-C** - Properties, constants, parameters, functions, classes
+- **C#** - Properties, constants, parameters, functions, classes, interfaces
+- **Java** - Properties, constants, parameters, functions, classes, interfaces
+- **Go** - Properties, constants, parameters, functions, types
+- **Python** - Properties, constants, parameters, functions, classes, decorators
+- **JavaScript/TypeScript** - Properties, constants, parameters, functions, classes, interfaces, enums, namespaces, modules, decorators, arrow functions
+- **PHP** - Properties, constants, parameters, functions, classes
+- **Bash/Shell** - Properties, constants, parameters, functions
+- **Lua** - Properties, constants, parameters, functions
+
+### Standard Syntax Highlighting
+- **HTML/XML** - Tags, attributes, values, entities
+- **CSS** - Selectors, properties, values, classes, IDs
+- **SQL** - Keywords, functions, strings
+- **JSON** - Keys, strings, numbers, booleans, null
+- **TOML** - Keys, strings, numbers, dates, tables
+- **Batch files** - Commands, variables
+- **INI configuration** - Sections, keys, values
+- **Ruby** - Keywords, strings, symbols
 - **And many more...**
 
 ## 🔧 Customization
@@ -210,6 +276,22 @@ To modify colors:
 - Check if the language is enabled in Notepad++
 - Consider adding the lexer style manually
 
+## 📝 Changelog
+
+### v2.0 (Latest)
+- **Major optimization**: Pixel-perfect match to VSCode Bluloco Dark theme
+- Fixed error/bad brace/find mark colors (`FC2E51` → `FF2E3F`)
+- Added semantic token colors: Object Properties (`CE9887`), Constants (`9F7EFE`), Parameters (`8BCDEF`)
+- Enhanced JavaScript/TypeScript with 13 new semantic styles
+- Fixed Python triple strings, CSS selectors/properties, HTML values, JSON keywords, TOML escape chars
+- Applied semantic USER KEYWORDS mapping across 20+ language lexers
+- Added theme gallery with 7 language previews
+
+### v1.0
+- Initial port from VSCode Bluloco Dark theme
+- Basic syntax highlighting for 20+ languages
+- GlobalStyles and LexerStyles implementation
+
 ## 🤝 Contributing
 
 ### [Buy me a coffee!](https://mepagaumcafe.com.br/barucco-renato/)
@@ -220,7 +302,7 @@ Contributions to improve the theme are welcome!
 - Add support for more programming languages
 - Improve specific language token mappings
 - Create light variant of the theme
-- Add screenshots for different languages
+- Add Rust, Swift, Kotlin, Dart language support
 
 ### Reporting Issues
 When reporting issues, please include:
