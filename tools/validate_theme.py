@@ -28,8 +28,41 @@ PALETTE = {
 }
 
 # UI Exceptions (Colors allowed but not in the main palette)
+#
+# These are NOT palette drifts: every entry is either a color carried over
+# verbatim from the upstream VSCode Bluloco Dark source (uloco/theme-bluloco-dark,
+# commit d604c347564d16eea5a98c5fb1fb1703816929b5) or a color dictated by the
+# Notepad++ widget model that has no VSCode equivalent. They are grouped below
+# by provenance so that a future palette change can audit them independently.
 UI_EXCEPTIONS = {
-    "BBBBFF", "FFFFFF", "FFFFBF", "7C8495", "000000"
+    # --- Terminal ANSI palette (VSCode source: terminal.ansi* tokens) ---
+    # Used by the errorlist lexer's "ANSI COLOR *" styles (styleIDs 40-55),
+    # which intentionally reproduce a real terminal's 16-color ramp.
+    "42444D",  # terminal.ansiBlack
+    "25A45C",  # terminal.ansiGreen
+    "3375FE",  # terminal.ansiBlue
+    "4483AA",  # terminal.ansiCyan
+    "CDD3E0",  # terminal.ansiWhite
+    "8F9AAE",  # terminal.ansiBrightBlack
+    "5FB9BC",  # terminal.ansiBrightCyan
+    "FFFFFF",  # terminal.ansiBrightWhite
+
+    # --- Notepad++ UI chrome (GlobalStyles widget model) ---
+    # Widget colors that exist only because Notepad++ draws its own chrome;
+    # they have no semantic counterpart in the VSCode theme.
+    "FFCC00",  # Caret / multi-edit carets
+    "177849",  # Smart Highlighting background
+    "2D333D",  # Current line background (also searchResult highlight)
+    "22252A",  # Margin backgrounds (line number, bookmark, change history)
+    "3D434F",  # Indent guideline, edge, fold margin, non-printing characters
+    "DADADA",  # EOL custom color
+    "0084FF",  # Selected text background
+    "25272D",  # Inactive tabs background
+
+    # --- Documentation comment color ---
+    # "COMMENT DOC KEYWORD" styles (e.g. Python/TypeScript docstring tags)
+    # use a muted gray distinct from regular comments (636D83).
+    "7C8495",
 }
 
 def hex_to_rgb(hex_color):
