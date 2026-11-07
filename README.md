@@ -1,6 +1,6 @@
 # Bluloco Dark Theme for Notepad++
 
-A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This theme brings the beautiful, carefully crafted Bluloco color scheme to Notepad++ with full syntax highlighting support.
+A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This theme brings the beautiful, carefully crafted Bluloco color scheme to Notepad++ with broad syntax highlighting support across 55 lexers (see **Known Limitations** for the exact coverage caveats).
 
 ![Bluloco Dark Theme Preview](https://github.com/barucco-renato/Bluloco-Dark-Theme-for-Notepad-Plus-Plus/blob/main/screenshots/js.png)
 
@@ -18,15 +18,15 @@ This version includes a **comprehensive audit and refinement** to achieve high-f
 | **Error Color** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
 | **Bad Brace** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
 | **Find Mark** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
-| **Python Triple Strings** | Comment color | `F9C859` (String yellow) | ✅ |
+| **Python Triple-Double Strings** | `3FC56B` (green) | `F9C859` (String yellow) | ✅ |
 | **CSS Class/Selector** | Various | `3691FF` (Blue) | ✅ |
 | **CSS Property Names** | Various | `FF936A` (Orange) | ✅ |
 | **HTML Attribute Values** | Pink | `F9C859` (String yellow) | ✅ |
-| **JSON true/false/null** | Green | `10B1FE` (Keyword blue) | ✅ |
+| **JSON true/false/null** | `3FC56B` (green) | `14B5FF` (Keyword blue) | ✅ |
 | **TOML Escape Char** | Green | `FF936A` (Orange) | ✅ |
 
 ### 🎨 Palette Refinements
-Applied consistent Bluloco color palette across all 55 supported lexers:
+Applied the canonical Bluloco color palette across all 55 supported lexers (a small set of deliberate off-palette variants is documented under **Known Limitations**):
 
 | Role | Hex | Role | Hex |
 |------|-----|------|-----|
@@ -50,7 +50,7 @@ Applied consistent Bluloco color palette across all 55 supported lexers:
 - Added `tools/validate_theme.py`: static analysis for XML syntax, color palette adherence, hex format, and WCAG contrast
 - Added `tools/npp_lexer_model.json`: Lexer style inventory from Notepad++ stylers.model.xml
 - Added `tools/baseline.json`: Baseline for lexer count and theme structure to prevent regressions
-- All 55 lexers validated against palette and structure baselines
+- All 55 lexers validated against palette and structure baselines — the validator exits with 0 errors; palette deviations and sub-AA contrast pairs are reported as warnings
 
 ## 📋 Conversion Process
 
@@ -89,6 +89,8 @@ Notepad++ uses XML configuration with:
 | `#3691ff` | `3691FF` | Tags, HTML elements |
 | `#ff936a` | `FF936A` | Attributes, parameters, escape chars |
 
+> The table above is the canonical **role** palette used throughout the theme. A few token classes deliberately deviate from it (instruction/keyword blues, class/ID pinks and CSS/Tcl variables) — see **Known Limitations** for the exact list.
+
 #### UI Element Mapping
 - **Editor Background**: `#282c34` → `282C34`
 - **Current Line**: `#2d333d` → `2D333D`
@@ -102,32 +104,32 @@ Notepad++ uses XML configuration with:
 
 **C/C++/Java Family:**
 - Preprocessor: `#10b1fe` (blue)
-- Instructions: `#10b1fe` (blue)
+- Instructions: `#14b5ff` (blue)
 - Types: `#ff6480` (red-pink)
 - Strings: `#f9c859` (yellow)
 - Numbers: `#ff78f8` (pink)
 
 **Python:**
-- Keywords: `#10b1fe` (blue)
+- Keywords: `#14b5ff` (blue)
 - Function definitions: `#3fc56b` (green)
-- Class names: `#ff6480` (red-pink)
-- Triple quotes: `#636d83` (comments color)
+- Class names: `#ff7a96` (pink)
+- Triple-double quotes: `#f9c859` (string yellow); single-quote triples: `#636d83` (comments color)
 
 **JavaScript:**
-- Keywords: `#10b1fe` (blue)
+- Keywords: `#14b5ff` (blue)
 - Strings: `#f9c859` (yellow)
 - Regex: `#f9c859` (yellow)
 
 **HTML/XML:**
 - Tags: `#3691ff` (bright blue)
 - Attributes: `#ff936a` (orange)
-- Values: `#ff78f8` (pink)
+- Values: `#f9c859` (string yellow)
 
 **CSS:**
 - Selectors: `#3691ff` (blue)
-- Properties: `#ce9887` (brown)
-- Values: `#ff78f8` (pink)
-- Classes/IDs: `#3fc56b` (green)
+- Properties: `#ff936a` (orange)
+- Values: `#f9c859` (string yellow)
+- Classes: `#3691ff` (blue) · IDs: `#ff7a96` (pink)
 
 ### Step 4: XML Structure Implementation
 
@@ -199,7 +201,14 @@ Notepad++ uses XML configuration with:
 Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 ├── BlulocoDark.xml          # Main theme file
 ├── README.md                 # This file
-└── screenshots/              # Theme preview images
+├── CHANGELOG.md              # Release history
+├── LICENSE                   # License file
+├── tools/                    # Static validation tooling
+│   ├── validate_theme.py
+│   ├── npp_lexer_model.json
+│   └── baseline.json
+├── samples/                  # 27 manual visual-validation samples
+└── screenshots/              # Theme preview images (7 PNGs)
     ├── css.png
     ├── html.png
     ├── js.png
@@ -215,7 +224,7 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 The theme includes syntax highlighting for **55 lexers** covering many popular languages:
 
 ### Languages with USER KEYWORDS 1–8 Support
-- **C/C++/Objective-C/C#/Java/Go/RC/ActionScript** — USER KEYWORDS 1–8 (styleIDs 128–135) with differentiated slots 5–8
+- **C/C++/C#/Java/Go/RC/ActionScript** — USER KEYWORDS 1–8 (styleIDs 128–135) with differentiated slots 5–8
 - **Python** — USER KEYWORDS 1–8 (styleIDs 128–135) + DECORATOR (15) + ATTRIBUTE (20)
 - **JavaScript** — USER KEYWORDS 1–8 (styleIDs 200–207)
 - **TypeScript** — USER KEYWORDS 1–8 (styleIDs 128–135) + WINDOW INSTRUCTION (19) + STRING RAW (20)
@@ -227,17 +236,18 @@ The theme includes syntax highlighting for **55 lexers** covering many popular l
 ### Standard Syntax Highlighting
 - **HTML/XML** — Tags, attributes, values, entities, USER TAGS/ATTRIBUTES
 - **CSS** — Selectors, properties, values, classes, IDs, variables
-- **SQL** — Keywords, functions, strings
+- **SQL** — Keywords, strings, numbers, operators
 - **JSON** — Keys, strings, numbers, booleans, null
 - **TOML** — Keys, strings, numbers, dates, tables, escape chars
 - **Batch files** — Commands, variables
-- **INI/Properties** — Sections, keys, values
+- **INI** — Sections, assignments, defaults
+- **Properties** — Assignments, defaults (its `SECTION`/`KEY` style IDs are among the uncovered IDs listed under **Known Limitations**)
 - **Ruby** — Keywords, strings, symbols
 - **Perl, Lua, Raku, Tcl, Pascal, SQL, VB/VBS, Makefile, Diff, PowerShell, CMake, Haskell, and more...**
 
 ### 🧪 Manual Validation Samples
 
-The `samples/` directory ships **27 code samples**, one per covered lexer subset, to support **manual visual validation** of the theme in Notepad++. Each sample deliberately exercises the token types that matter for that lexer (strings, numbers, comments, keywords, operators, preprocessor directives, user-keyword slots, and so on), so you can open it and confirm the colors at a glance.
+The `samples/` directory ships **27 code samples** to support **manual visual validation** of the theme in Notepad++. 24 of them map to a lexer shipped in this theme, and each of those deliberately exercises the token types that matter for that lexer (strings, numbers, comments, keywords, operators, preprocessor directives, user-keyword slots, and so on), so you can open it and confirm the colors at a glance. The remaining three — `sample.rust`, `sample.swift` and `sample.yaml` — have **no dedicated lexer in this theme** (Notepad++ ships none for those languages), so they are reference material only and render with a fallback lexer.
 
 Open a file from `samples/` in Notepad++ with the Bluloco Dark theme applied to inspect the result. This check is **not automatable** — it requires a real Notepad++ installation on Windows.
 
@@ -264,9 +274,10 @@ Available samples:
 
 - **Not pixel-perfect**: Notepad++'s lexer model differs from VSCode's TextMate grammars; some semantic tokens (e.g., function vs method, parameter vs variable) cannot be distinguished without language server integration.
 - **No true semantic token support**: USER KEYWORDS are manual keyword lists configured in Style Configurator, not automatic semantic highlighting.
-- **Lexer coverage varies**: Some lexers (HTML, XML, PHP, PowerShell) miss style IDs present in Notepad++'s stylers.model.xml.
+- **Lexer coverage varies**: 11 lexers miss style IDs present in Notepad++'s stylers.model.xml (C++, HTML, XML, PHP, INI, Properties, Pascal, Lua, Lisp, VHDL and PowerShell); the validator reports each gap as a coverage warning.
 - **Contrast trade-offs**: Comment color (`636D83` on `282C34`) falls below WCAG AA (2.7:1); this matches the original VSCode theme.
-- **searchResult/errorlist**: Use hardcoded ANSI/legacy colors not aligned with the Bluloco palette.
+- **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette in v2.1 and is no longer an exception.
+- **Off-palette variants**: A few token classes deliberately deviate from the canonical role palette — `14B5FF` for instruction/keyword-like tokens (C-family `INSTRUCTION WORD`, Python `KEYWORDS`, JavaScript/JSON `KEYWORD`), `FF7A96` for class/ID-like tokens (Python `CLASSNAME`, CSS `ID`) and `9FD6F0` for CSS/Tcl variables. The validator reports these as warnings, not errors.
 - **20+ languages claim**: The theme ships 55 lexers, but "enhanced semantic highlighting" only applies to USER KEYWORDS slots where the lexer model permits.
 
 ## 🔧 Customization
@@ -315,10 +326,10 @@ To modify colors:
 
 ## 📝 Changelog
 
-### v2.0 (Latest)
+### v2.1 (Latest)
 - **Major optimization**: High-fidelity match to VSCode Bluloco Dark theme
 - Fixed error/bad brace/find mark colors (`FC2E51` → `FF2E3F`)
-- Applied consistent Bluloco palette across all 55 lexers
+- Applied the canonical Bluloco palette across all 55 lexers
 - Fixed Python triple strings, CSS selectors/properties, HTML values, JSON keywords, TOML escape chars
 - **Wave 3**: Rationalized USER KEYWORDS across lexers
   - Python: Added USER KEYWORDS 1–8 (styleIDs 128–135) + DECORATOR + ATTRIBUTE

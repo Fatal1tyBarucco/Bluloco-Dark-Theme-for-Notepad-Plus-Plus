@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
   - HTML attribute values: now `F9C859` (string yellow) instead of pink
   - JSON `true`/`false`/`null`: now `10B1FE` (keyword blue) instead of green
   - TOML escape characters: now `FF936A` (orange) instead of green
+- **Documentation reconciliation**: `AGENTS.md` and `README.md` now describe the shipped v2.1 theme accurately (searchResult palette migration, JSON/CSS/Python/HTML token colours, Objective-C USER KEYWORDS, lexer coverage gaps, sample set, validator tooling)
 
 ### Changed
 - **Palette consistency**: Applied canonical Bluloco palette across all 55 lexers
