@@ -1,0 +1,14 @@
+{
+  "project": "Bluloco Dark",
+  "version": "1.0.0",
+  "settings": {
+    "enabled": true,
+    "palette": {
+      "background": "#282C34",
+      "foreground": "#ABB2BF",
+      "colors": ["#10B1FE", "#F9C859", "#3FC56B"]
+    },
+    "tags": ["theme", "notepad++", "dark-mode"]
+  },
+  "dependencies": null
+}

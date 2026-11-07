@@ -1,0 +1,18 @@
+# Sample YAML code to test Bluloco Dark
+project:
+  name: Bluloco Dark
+  version: 1.0.0
+  description: >
+    A high contrast dark theme port 
+    from VSCode to Notepad++.
+
+settings:
+  - name: "font_size"
+    value: 10
+  - name: "theme_color"
+    value: "282C34"
+
+github:
+  actions:
+    enabled: true
+    workflow: summary.yml

@@ -1,0 +1,13 @@
+# Sample TOML code to test Bluloco Dark
+[package]
+name = "bluloco-dark"
+version = "1.0.0"
+authors = ["Barucco"]
+
+[dependencies]
+serde = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+
+[profile.release]
+opt-level = 3
+lto = true
