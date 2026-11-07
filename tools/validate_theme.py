@@ -4,6 +4,10 @@ import re
 import sys
 import os
 
+# Repository root: parent directory of this script's directory (tools/).
+# Resolving against __file__ keeps the script runnable from any working directory.
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Palette Definition
 PALETTE = {
     "bg": "282C34",
@@ -133,4 +137,8 @@ def validate_theme(theme_path, model_path, baseline_path):
         print("Validation successful!")
 
 if __name__ == "__main__":
-    validate_theme("BlulocoDark.xml", "tools/npp_lexer_model.json", "tools/baseline.json")
+    validate_theme(
+        os.path.join(REPO_ROOT, "BlulocoDark.xml"),
+        os.path.join(REPO_ROOT, "tools", "npp_lexer_model.json"),
+        os.path.join(REPO_ROOT, "tools", "baseline.json"),
+    )

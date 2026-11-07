@@ -235,6 +235,31 @@ The theme includes syntax highlighting for **55 lexers** covering many popular l
 - **Ruby** — Keywords, strings, symbols
 - **Perl, Lua, Raku, Tcl, Pascal, SQL, VB/VBS, Makefile, Diff, PowerShell, CMake, Haskell, and more...**
 
+### 🧪 Manual Validation Samples
+
+The `samples/` directory ships **27 code samples**, one per covered lexer subset, to support **manual visual validation** of the theme in Notepad++. Each sample deliberately exercises the token types that matter for that lexer (strings, numbers, comments, keywords, operators, preprocessor directives, user-keyword slots, and so on), so you can open it and confirm the colors at a glance.
+
+Open a file from `samples/` in Notepad++ with the Bluloco Dark theme applied to inspect the result. This check is **not automatable** — it requires a real Notepad++ installation on Windows.
+
+Available samples:
+
+| Language | File | Language | File |
+|---|---|---|---|
+| Batch | `sample.bat` | PHP | `sample.php` |
+| C | `sample.c` | Perl | `sample.pl` |
+| CMake | `sample.cmake` | PowerShell | `sample.ps1` |
+| C++ | `sample.cpp` | Python | `sample.py` |
+| C# | `sample.cs` | Ruby | `sample.rb` |
+| CSS | `sample.css` | Rust | `sample.rust` |
+| Diff | `sample.diff` | Bash | `sample.sh` |
+| Go | `sample.go` | SQL | `sample.sql` |
+| HTML | `sample.html` | Swift | `sample.swift` |
+| INI | `sample.ini` | TOML | `sample.toml` |
+| Java | `sample.java` | TypeScript | `sample.ts` |
+| JavaScript | `sample.js` | YAML | `sample.yaml` |
+| JSON | `sample.json` | Lua | `sample.lua` |
+| Makefile | `sample.makefile` | | |
+
 ## ⚠️ Known Limitations
 
 - **Not pixel-perfect**: Notepad++'s lexer model differs from VSCode's TextMate grammars; some semantic tokens (e.g., function vs method, parameter vs variable) cannot be distinguished without language server integration.

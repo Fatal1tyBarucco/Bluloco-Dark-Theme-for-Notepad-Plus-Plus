@@ -1,23 +1,21 @@
 {
-  "generated_at": "2026-11-07T05:53:18.552981+00:00",
+  "generated_at": "2026-11-07T19:16:20.168891+00:00",
   "theme": {
-    "path": "/home/barucco/projetos/Bluloco-Dark-Theme-for-Notepad-Plus-Plus/BlulocoDark.xml",
-    "sha256": "3c621a29b85e32b88b7d3839315bd7417b9e8e43d366379e1422204506f59ced",
-    "line_count": 1153,
-    "size_bytes": 147402,
+    "path": "BlulocoDark.xml",
+    "sha256": "8d3d27ebeb3b371bd65027f7ed68a5e0b5351aa73a900b58bb3e88ba18376c11",
+    "line_count": 1175,
+    "size_bytes": 151062,
     "lexer_type_count": 55,
     "words_style_count": 928,
     "widget_style_count": 39
   },
   "reference": {
     "stylers_model": {
-      "path": "/tmp/opencode/stylers.model.xml",
       "url": "https://raw.githubusercontent.com/notepad-plus-plus/notepad-plus-plus/v8.9.9/PowerEditor/src/stylers.model.xml",
       "sha256": "58fae88e672f389a6cad72a4a2edaffe34cb1b09b1941adcf2d4f9228ea0a536",
       "lexer_count": 93
     },
     "darkmode_default": {
-      "path": "/tmp/opencode/DarkModeDefault.xml",
       "url": "https://raw.githubusercontent.com/notepad-plus-plus/notepad-plus-plus/v8.9.9/PowerEditor/installer/themes/DarkModeDefault.xml",
       "sha256": "85c22263c3237b0319d5b5dee4a45f234e489a6d1c6a71ad77a7a44199ef3632",
       "widget_count": 53

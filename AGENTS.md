@@ -8,6 +8,8 @@ This repo is a Notepad++ theme port of VSCode Bluloco Dark. The deliverable is a
 - `README.md` — user docs, not authoritative. Installation text still says `bluloco-dark.xml` (lines ~158, ~175, ~248); the real file is `BlulocoDark.xml`. The "pixel-perfect" and "semantic token support" claims overstate what the XML does — treat the XML as the source of truth.
 - `PROMPT_APERFEICOAMENTO_BLULOCO_DARK.md` — audit/overhaul brief with project quality rules. Reference material, not a standing TODO.
 - `screenshots/` — 7 PNG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`).
+- `samples/` — 27 per-language code samples (one per covered lexer subset) used for manual visual validation of the theme. Not referenced by the validator; load them in Notepad++ to eyeball the result.
+- `tools/` — static validation tooling: `validate_theme.py` (XML syntax, hex format, palette adherence, WCAG contrast), `npp_lexer_model.json` (Notepad++ v8.9.9 `stylers.model.xml` inventory), `baseline.json` (regression baseline). The script resolves paths against the repo root, so it runs from any working directory.
 - `.github/workflows/summary.yml` — summarizes newly opened issues via `actions/ai-inference`. It does not build or validate the theme.
 
 ## XML editing rules
@@ -40,7 +42,9 @@ Run from the repo root:
 - `xmllint --noout BlulocoDark.xml` (fallback: `python3 -c 'import xml.etree.ElementTree as ET; ET.parse("BlulocoDark.xml")'`)
 - `grep -oE '(fg|bg)Color="[^"]*"' BlulocoDark.xml | grep -vE '"[0-9A-F]{6}"'` — expect no output.
 - `grep -c '<LexerType' BlulocoDark.xml` — baseline 55; only changes when adding/removing a lexer.
+- `python3 tools/validate_theme.py` — static checks; resolves paths from the repo root, so it runs from any directory.
 - Visual check requires Windows + Notepad++: copy to `%APPDATA%\Notepad++\themes\`, then Settings → Style Configurator. It cannot be done natively in this Linux environment; never claim visual verification or add screenshots without a real run.
+- For visual review, load the files in `samples/` manually in Notepad++ and inspect the rendering per language. This is a manual, non-automatable step; do not describe it as machine-verified.
 
 ## Constraints
 - No build tooling, dependencies, installers, or generated files.
