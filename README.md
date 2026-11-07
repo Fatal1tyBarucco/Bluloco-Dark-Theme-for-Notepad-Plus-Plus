@@ -8,9 +8,9 @@ A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This 
 
 Bluloco is a sophisticated color scheme that combines blue-based accents with a carefully balanced palette that's easy on the eyes during long coding sessions. The dark variant provides excellent contrast while maintaining readability.
 
-## ⚡ Recent Improvements (v2.0)
+## ⚡ Recent Improvements (v2.1)
 
-This version includes a **major optimization** to match the original VSCode Bluloco Dark theme with pixel-perfect accuracy:
+This version includes a **comprehensive audit and refinement** to achieve high-fidelity matching with the original VSCode Bluloco Dark theme:
 
 ### 🎯 Color Accuracy Fixes
 | Element | Before | After | VSCode Reference |
@@ -25,28 +25,32 @@ This version includes a **major optimization** to match the original VSCode Blul
 | **JSON true/false/null** | Green | `10B1FE` (Keyword blue) | ✅ |
 | **TOML Escape Char** | Green | `FF936A` (Orange) | ✅ |
 
-### 🧠 Semantic Token Enhancements
-Added missing semantic highlighting across **20+ languages** (C/C++, Java, C#, Go, Python, JavaScript, TypeScript, PHP, Bash, etc.):
+### 🎨 Palette Refinements
+Applied consistent Bluloco color palette across all 55 supported lexers:
 
-| Semantic Token | Color | Usage |
-|----------------|-------|-------|
-| **Object Properties** | `CE9887` | `obj.property`, `this.field` |
-| **Constants** | `9F7EFE` | `MAX_SIZE`, `API_KEY` |
-| **Parameters** | `8BCDEF` | Function parameters |
-| **Functions** | `3FC56B` | Function declarations |
-| **Classes** | `FF6480` | Class definitions |
-| **Methods** | `3FC56B` | Class methods |
-| **Types/Interfaces** | `FF6480` | Type annotations |
-| **Decorators** | `10B1FE` | `@decorator` syntax |
+| Role | Hex | Role | Hex |
+|------|-----|------|-----|
+| Background | `282C34` | Foreground | `ABB2BF` |
+| Comments | `636D83` | Keywords | `10B1FE` |
+| Strings | `F9C859` | Numbers | `FF78F8` |
+| Functions | `3FC56B` | Classes/Types | `FF6480` |
+| Errors | `FF2E3F` | Constants | `9F7EFE` |
+| Parameters | `8BCDEF` | Properties | `CE9887` |
+| Operators | `7A82DA` | Tags | `3691FF` |
+| Attributes | `FF936A` | | |
 
-### 🚀 JavaScript/TypeScript Enhanced
-Added **13 new semantic styles** for modern JS/TS development:
-- `FUNCTION`, `ARROW FUNCTION`, `METHOD` → `3FC56B` (Green)
-- `CLASS`, `INTERFACE`, `ENUM`, `NAMESPACE`, `MODULE` → `FF6480` (Pink)
-- `PROPERTY` → `CE9887` (Brown)
-- `PARAMETER` → `8BCDEF` (Light Blue)
-- `TYPE` → `10B1FE` (Blue)
-- `DECORATOR` → `10B1FE` (Blue)
+### 🔧 USER KEYWORDS Rationalization (Wave 3)
+- **Python**: Added USER KEYWORDS 1–8 (styleIDs 128–135) + DECORATOR (15) + ATTRIBUTE (20)
+- **JavaScript/TypeScript**: Corrected USER KEYWORDS styleID ranges (JS: 200–207, TS: 128–135) + TS missing styles WINDOW INSTRUCTION (19) + STRING RAW (20)
+- **All C-family lexers** (C, C++, C#, Java, Go, RC, ActionScript): Differentiated USER KEYWORDS 5–8 (decorator, namespace, typeParameter, macro) instead of duplicating slot 4
+- **USER KEYWORDS 3** color standardized to `8BCDEF` (parameters) per palette model
+- **PHP, ASP, Bash, Lua**: Rationalized USER KEYWORDS slots to match lexer capabilities
+
+### ✅ Static Validation Ecosystem
+- Added `tools/validate_theme.py`: static analysis for XML syntax, color palette adherence, hex format, and WCAG contrast
+- Added `tools/npp_lexer_model.json`: Lexer style inventory from Notepad++ stylers.model.xml
+- Added `tools/baseline.json`: Baseline for lexer count and theme structure to prevent regressions
+- All 55 lexers validated against palette and structure baselines
 
 ## 📋 Conversion Process
 
@@ -155,7 +159,7 @@ Notepad++ uses XML configuration with:
 ### Method 1: Manual Installation
 
 1. **Download the theme file:**
-   - Save `bluloco-dark.xml` to your Notepad++ themes directory
+   - Save `BlulocoDark.xml` to your Notepad++ themes directory
 
 2. **Locate Notepad++ themes folder:**
    - Windows: `C:\Users\[YourUsername]\AppData\Roaming\Notepad++\themes\`
@@ -164,7 +168,7 @@ Notepad++ uses XML configuration with:
 3. **Apply the theme:**
    - Open Notepad++
    - Go to `Settings` → `Style Configurator`
-   - Select "bluloco-dark" from the theme dropdown
+   - Select "BlulocoDark" from the theme dropdown
    - Click "Save & Close"
 
 ### Method 2: Import via Style Configurator
@@ -172,7 +176,7 @@ Notepad++ uses XML configuration with:
 1. Open Notepad++
 2. Go to `Settings` → `Style Configurator`
 3. Click the "Import" button
-4. Navigate to and select the `bluloco-dark.xml` file
+4. Navigate to and select the `BlulocoDark.xml` file
 5. The theme will be automatically installed and selected
 
 ## 🖼️ Theme Gallery
@@ -208,29 +212,37 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 
 ## 🎯 Supported Languages
 
-The theme includes full syntax highlighting with **semantic token support** for:
+The theme includes syntax highlighting for **55 lexers** covering many popular languages:
 
-### Enhanced Semantic Highlighting (20+ languages)
-- **C/C++/Objective-C** - Properties, constants, parameters, functions, classes
-- **C#** - Properties, constants, parameters, functions, classes, interfaces
-- **Java** - Properties, constants, parameters, functions, classes, interfaces
-- **Go** - Properties, constants, parameters, functions, types
-- **Python** - Properties, constants, parameters, functions, classes, decorators
-- **JavaScript/TypeScript** - Properties, constants, parameters, functions, classes, interfaces, enums, namespaces, modules, decorators, arrow functions
-- **PHP** - Properties, constants, parameters, functions, classes
-- **Bash/Shell** - Properties, constants, parameters, functions
-- **Lua** - Properties, constants, parameters, functions
+### Languages with USER KEYWORDS 1–8 Support
+- **C/C++/Objective-C/C#/Java/Go/RC/ActionScript** — USER KEYWORDS 1–8 (styleIDs 128–135) with differentiated slots 5–8
+- **Python** — USER KEYWORDS 1–8 (styleIDs 128–135) + DECORATOR (15) + ATTRIBUTE (20)
+- **JavaScript** — USER KEYWORDS 1–8 (styleIDs 200–207)
+- **TypeScript** — USER KEYWORDS 1–8 (styleIDs 128–135) + WINDOW INSTRUCTION (19) + STRING RAW (20)
+- **PHP** — USER KEYWORDS 1–5 (styleIDs 208–212)
+- **ASP** — USER KEYWORDS 1–8 (styleIDs 216–223)
+- **Bash** — USER KEYWORDS 1–4 + USER SCALAR 1–4 (styleIDs 128–135)
+- **Lua** — USER KEYWORD 1–4 + USER KEYWORDS 5–8 (styleIDs 16–19, 128–131)
 
 ### Standard Syntax Highlighting
-- **HTML/XML** - Tags, attributes, values, entities
-- **CSS** - Selectors, properties, values, classes, IDs
-- **SQL** - Keywords, functions, strings
-- **JSON** - Keys, strings, numbers, booleans, null
-- **TOML** - Keys, strings, numbers, dates, tables
-- **Batch files** - Commands, variables
-- **INI configuration** - Sections, keys, values
-- **Ruby** - Keywords, strings, symbols
-- **And many more...**
+- **HTML/XML** — Tags, attributes, values, entities, USER TAGS/ATTRIBUTES
+- **CSS** — Selectors, properties, values, classes, IDs, variables
+- **SQL** — Keywords, functions, strings
+- **JSON** — Keys, strings, numbers, booleans, null
+- **TOML** — Keys, strings, numbers, dates, tables, escape chars
+- **Batch files** — Commands, variables
+- **INI/Properties** — Sections, keys, values
+- **Ruby** — Keywords, strings, symbols
+- **Perl, Lua, Raku, Tcl, Pascal, SQL, VB/VBS, Makefile, Diff, PowerShell, CMake, Haskell, and more...**
+
+## ⚠️ Known Limitations
+
+- **Not pixel-perfect**: Notepad++'s lexer model differs from VSCode's TextMate grammars; some semantic tokens (e.g., function vs method, parameter vs variable) cannot be distinguished without language server integration.
+- **No true semantic token support**: USER KEYWORDS are manual keyword lists configured in Style Configurator, not automatic semantic highlighting.
+- **Lexer coverage varies**: Some lexers (HTML, XML, PHP, PowerShell) miss style IDs present in Notepad++'s stylers.model.xml.
+- **Contrast trade-offs**: Comment color (`636D83` on `282C34`) falls below WCAG AA (2.7:1); this matches the original VSCode theme.
+- **searchResult/errorlist**: Use hardcoded ANSI/legacy colors not aligned with the Bluloco palette.
+- **20+ languages claim**: The theme ships 55 lexers, but "enhanced semantic highlighting" only applies to USER KEYWORDS slots where the lexer model permits.
 
 ## 🔧 Customization
 
@@ -245,7 +257,7 @@ For the best experience, use these fonts with Bluloco Dark:
 ### Adjusting Colors
 To modify colors:
 
-1. Open `bluloco-dark.xml` in a text editor
+1. Open `BlulocoDark.xml` in a text editor
 2. Locate the color values (6-character hex codes without `#`)
 3. Replace with your preferred colors
 4. Save and re-import the theme
@@ -279,12 +291,15 @@ To modify colors:
 ## 📝 Changelog
 
 ### v2.0 (Latest)
-- **Major optimization**: Pixel-perfect match to VSCode Bluloco Dark theme
+- **Major optimization**: High-fidelity match to VSCode Bluloco Dark theme
 - Fixed error/bad brace/find mark colors (`FC2E51` → `FF2E3F`)
-- Added semantic token colors: Object Properties (`CE9887`), Constants (`9F7EFE`), Parameters (`8BCDEF`)
-- Enhanced JavaScript/TypeScript with 13 new semantic styles
+- Applied consistent Bluloco palette across all 55 lexers
 - Fixed Python triple strings, CSS selectors/properties, HTML values, JSON keywords, TOML escape chars
-- Applied semantic USER KEYWORDS mapping across 20+ language lexers
+- **Wave 3**: Rationalized USER KEYWORDS across lexers
+  - Python: Added USER KEYWORDS 1–8 (styleIDs 128–135) + DECORATOR + ATTRIBUTE
+  - JavaScript/TypeScript: Corrected USER KEYWORDS styleID ranges (JS: 200–207, TS: 128–135) + TS missing styles (19, 20)
+  - All C-family lexers: Differentiated USER KEYWORDS 5–8 (decorator, namespace, typeParameter, macro)
+  - Fixed USER KEYWORDS 3 color to `8BCDEF` (params) per model
 - Added theme gallery with 7 language previews
 
 ### v1.0
