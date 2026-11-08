@@ -1,0 +1,33 @@
+name: Validate theme
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Gate: XML syntax, uppercase 6-digit hex format, palette adherence
+      # (PALETTE | UI_EXCEPTIONS) for both token and GlobalStyles colours,
+      # WCAG contrast, lexer/style-ID coverage and SHA-256 drift against
+      # tools/baseline.json. Errors fail the job; warnings (low contrast,
+      # partial ID coverage) are reported but do not fail the build — the
+      # script exits 0 while only warnings are present.
+      - name: Run static theme validator
+        run: python3 tools/validate_theme.py
+
+      # Optional second XML syntax check: xmllint ships pre-installed on the
+      # ubuntu-latest runner image. It is skipped when unavailable, since the
+      # Python validator already parses the XML (nothing is installed here).
+      - name: Check XML syntax with xmllint
+        run: |
+          if command -v xmllint >/dev/null 2>&1; then
+            xmllint --noout BlulocoDark.xml
+          else
+            echo "xmllint not available; skipping (the Python validator already parses the XML)"
+          fi
