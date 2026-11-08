@@ -4,9 +4,22 @@ A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This 
 
 ![Bluloco Dark Theme Preview](https://github.com/barucco-renato/Bluloco-Dark-Theme-for-Notepad-Plus-Plus/blob/main/screenshots/js.png)
 
+*Real Notepad++ capture, taken before the v2.1 palette normalization — see the Theme Gallery section below.*
+
 ## 🎨 About Bluloco
 
 Bluloco is a sophisticated color scheme that combines blue-based accents with a carefully balanced palette that's easy on the eyes during long coding sessions. The dark variant provides excellent contrast while maintaining readability.
+
+### 🔗 Source Provenance
+
+| Item | Value |
+|------|-------|
+| **Upstream project** | [uloco/theme-bluloco-dark](https://github.com/uloco/theme-bluloco-dark) — the VSCode *Bluloco Dark* theme by **uloco** |
+| **Reference commit** | `d604c347564d16eea5a98c5fb1fb1703816929b5` |
+| **Reference file** | `themes/bluloco-dark-color-theme.json` |
+| **Upstream license** | LGPL-3.0 (see [LICENSE](https://github.com/uloco/theme-bluloco-dark/blob/d604c347564d16eea5a98c5fb1fb1703816929b5/LICENSE)) |
+
+This Notepad++ port derives from that JSON file, and its colours were audited line by line against it: every `fgColor`/`bgColor` in `BlulocoDark.xml` was compared with the corresponding upstream `colors` / `tokenColors` / `semanticTokenColors` value. `BlulocoDark.xml` remains the source of truth for this port — the upstream file is the palette reference, not a build input.
 
 ## ⚡ Recent Improvements (v2.1)
 
@@ -22,11 +35,11 @@ This version includes a **comprehensive audit and refinement** to achieve high-f
 | **CSS Class/Selector** | Various | `3691FF` (Blue) | ✅ |
 | **CSS Property Names** | Various | `FF936A` (Orange) | ✅ |
 | **HTML Attribute Values** | Pink | `F9C859` (String yellow) | ✅ |
-| **JSON true/false/null** | `3FC56B` (green) | `14B5FF` (Keyword blue) | ✅ |
+| **JSON true/false/null** | `3FC56B` (green) | `10B1FE` (Keyword blue) | ✅ |
 | **TOML Escape Char** | Green | `FF936A` (Orange) | ✅ |
 
 ### 🎨 Palette Refinements
-Applied the canonical Bluloco color palette across all 55 supported lexers (a small set of deliberate off-palette variants is documented under **Known Limitations**):
+Applied the canonical Bluloco color palette across all 55 supported lexers. The token palette was normalized in full against the original VSCode source file, so **no token colour deviates from the canonical palette any more**. The only remaining exceptions are the `errorlist` ANSI terminal ramp, the Notepad++ UI chrome colours in `GlobalStyles`, and the documentation-comment grey — all detailed under **Known Limitations**:
 
 | Role | Hex | Role | Hex |
 |------|-----|------|-----|
@@ -47,10 +60,10 @@ Applied the canonical Bluloco color palette across all 55 supported lexers (a sm
 - **PHP, ASP, Bash, Lua**: Rationalized USER KEYWORDS slots to match lexer capabilities
 
 ### ✅ Static Validation Ecosystem
-- Added `tools/validate_theme.py`: static analysis for XML syntax, color palette adherence, hex format, and WCAG contrast
-- Added `tools/npp_lexer_model.json`: Lexer style inventory from Notepad++ stylers.model.xml
-- Added `tools/baseline.json`: Baseline for lexer count and theme structure to prevent regressions
-- All 55 lexers validated against palette and structure baselines — the validator exits with 0 errors; palette deviations and sub-AA contrast pairs are reported as warnings
+- Added `tools/validate_theme.py`: static analysis for XML syntax, color palette adherence, hex format, and WCAG contrast — it also covers the 39 `GlobalStyles` widget colours against the palette and its documented exceptions
+- Added `tools/npp_lexer_model.json`: Lexer style inventory from Notepad++ v8.9.9 `stylers.model.xml`
+- Added `tools/baseline.json`: Baseline for lexer count and theme structure to prevent regressions — the validator also detects SHA-256 drift of `BlulocoDark.xml` against the recorded baseline
+- All 55 lexers validated against palette and structure baselines — the validator exits with 0 errors; style-ID coverage gaps and sub-AA contrast pairs are reported as warnings
 
 ## 📋 Conversion Process
 
@@ -89,7 +102,7 @@ Notepad++ uses XML configuration with:
 | `#3691ff` | `3691FF` | Tags, HTML elements |
 | `#ff936a` | `FF936A` | Attributes, parameters, escape chars |
 
-> The table above is the canonical **role** palette used throughout the theme. A few token classes deliberately deviate from it (instruction/keyword blues, class/ID pinks and CSS/Tcl variables) — see **Known Limitations** for the exact list.
+> The table above is the canonical **role** palette used throughout the theme. Since the v2.1 palette normalization it is applied without deviation — the only off-palette colours left in the theme are the `errorlist` ANSI terminal ramp, the Notepad++ UI chrome colours and the documentation-comment grey, all listed under **Known Limitations**.
 
 #### UI Element Mapping
 - **Editor Background**: `#282c34` → `282C34`
@@ -104,19 +117,19 @@ Notepad++ uses XML configuration with:
 
 **C/C++/Java Family:**
 - Preprocessor: `#10b1fe` (blue)
-- Instructions: `#14b5ff` (blue)
+- Instructions: `#10b1fe` (blue)
 - Types: `#ff6480` (red-pink)
 - Strings: `#f9c859` (yellow)
 - Numbers: `#ff78f8` (pink)
 
 **Python:**
-- Keywords: `#14b5ff` (blue)
+- Keywords: `#10b1fe` (blue)
 - Function definitions: `#3fc56b` (green)
-- Class names: `#ff7a96` (pink)
+- Class names: `#ff6480` (pink)
 - Triple-double quotes: `#f9c859` (string yellow); single-quote triples: `#636d83` (comments color)
 
 **JavaScript:**
-- Keywords: `#14b5ff` (blue)
+- Keywords: `#10b1fe` (blue)
 - Strings: `#f9c859` (yellow)
 - Regex: `#f9c859` (yellow)
 
@@ -129,7 +142,7 @@ Notepad++ uses XML configuration with:
 - Selectors: `#3691ff` (blue)
 - Properties: `#ff936a` (orange)
 - Values: `#f9c859` (string yellow)
-- Classes: `#3691ff` (blue) · IDs: `#ff7a96` (pink)
+- Classes: `#3691ff` (blue) · IDs: `#ff6480` (pink)
 
 ### Step 4: XML Structure Implementation
 
@@ -194,6 +207,8 @@ Notepad++ uses XML configuration with:
 | **Ruby** | ![Ruby](screenshots/rb.png) |
 
 *Click images to view full-size previews*
+
+> **Note — these previews predate the v2.1 palette normalization.** The 7 PNGs above are real Notepad++ screenshots, but they were captured *before* the palette was normalized against the upstream source, so they may still show the previous colours. Confirming the v2.1 palette visually requires a Windows machine with Notepad++ (Settings → Style Configurator); that check has **not** been performed in the Linux build environment, so treat the screenshots as illustrative rather than as proof of the current palette.
 
 ## 📁 File Structure
 
@@ -277,7 +292,8 @@ Available samples:
 - **Lexer coverage varies**: 11 lexers miss style IDs present in Notepad++'s stylers.model.xml (C++, HTML, XML, PHP, INI, Properties, Pascal, Lua, Lisp, VHDL and PowerShell); the validator reports each gap as a coverage warning.
 - **Contrast trade-offs**: Comment color (`636D83` on `282C34`) falls below WCAG AA (2.7:1); this matches the original VSCode theme.
 - **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette in v2.1 and is no longer an exception.
-- **Off-palette variants**: A few token classes deliberately deviate from the canonical role palette — `14B5FF` for instruction/keyword-like tokens (C-family `INSTRUCTION WORD`, Python `KEYWORDS`, JavaScript/JSON `KEYWORD`), `FF7A96` for class/ID-like tokens (Python `CLASSNAME`, CSS `ID`) and `9FD6F0` for CSS/Tcl variables. The validator reports these as warnings, not errors.
+- **Palette exceptions**: the token palette itself is fully normalized against the upstream source, so the only colours outside the canonical role palette are (1) the `errorlist` ANSI terminal ramp (styleIDs 40–55), carried verbatim from the source's `terminal.ansi*` tokens; (2) the Notepad++ UI chrome colours in `GlobalStyles` (`2D333D`, `22252A`, `3D434F`, `FFCC00`, `177849`, `0084FF`, `25272D`, `DADADA`, `FFFFFF`), which exist because Notepad++ draws its own chrome and has no VSCode counterpart; and (3) `7C8495`, the documentation-comment grey used by `COMMENT DOC KEYWORD`.
+- **Deliberate divergence in `errorlist`**: `ANSI COLOR RED` uses `FF2E3F`, while the upstream source uses `terminal.ansiRed` = `#fc2f52`. `FF2E3F` was kept on purpose, for internal consistency with the theme's canonical error colour — this is a documented decision, not an oversight.
 - **20+ languages claim**: The theme ships 55 lexers, but "enhanced semantic highlighting" only applies to USER KEYWORDS slots where the lexer model permits.
 
 ## 🔧 Customization
@@ -331,12 +347,15 @@ To modify colors:
 - Fixed error/bad brace/find mark colors (`FC2E51` → `FF2E3F`)
 - Applied the canonical Bluloco palette across all 55 lexers
 - Fixed Python triple strings, CSS selectors/properties, HTML values, JSON keywords, TOML escape chars
+- **Palette normalization against the upstream source**: the token palette was normalized in full against `uloco/theme-bluloco-dark` @ `d604c347564d16eea5a98c5fb1fb1703816929b5` (`themes/bluloco-dark-color-theme.json`) — 88 colour attributes across 9 colour pairs were corrected, removing drift that does not exist upstream
+- **License attribution corrected**: the original theme is LGPL-3.0 (the documentation previously claimed MIT)
+- **Source provenance documented**: upstream repository, reference commit, reference file and the fact that the port was audited colour by colour against that file
 - **Wave 3**: Rationalized USER KEYWORDS across lexers
   - Python: Added USER KEYWORDS 1–8 (styleIDs 128–135) + DECORATOR + ATTRIBUTE
   - JavaScript/TypeScript: Corrected USER KEYWORDS styleID ranges (JS: 200–207, TS: 128–135) + TS missing styles (19, 20)
   - All C-family lexers: Differentiated USER KEYWORDS 5–8 (decorator, namespace, typeParameter, macro)
   - Fixed USER KEYWORDS 3 color to `8BCDEF` (params) per model
-- Added theme gallery with 7 language previews
+- Added theme gallery with 7 language previews (real Notepad++ captures, taken before the palette normalization — see **Theme Gallery**)
 
 ### v1.0
 - Initial port from VSCode Bluloco Dark theme
@@ -364,9 +383,11 @@ When reporting issues, please include:
 
 ## 📄 License
 
-This theme is based on the [Bluloco Dark theme](https://github.com/uloco/theme-bluloco-dark) by uloco, converted for Notepad++.
+This theme is based on the [Bluloco Dark theme](https://github.com/uloco/theme-bluloco-dark) by **uloco**, converted for Notepad++.
 
-Original Bluloco theme is licensed under MIT License.
+The original Bluloco theme is licensed under the **GNU Lesser General Public License v3.0 (LGPL-3.0)** — see the upstream [LICENSE file](https://github.com/uloco/theme-bluloco-dark/blob/d604c347564d16eea5a98c5fb1fb1703816929b5/LICENSE). This repository is distributed under the same license (see [`LICENSE`](LICENSE)).
+
+**Source traceability**: upstream repository [uloco/theme-bluloco-dark](https://github.com/uloco/theme-bluloco-dark), reference commit `d604c347564d16eea5a98c5fb1fb1703816929b5`, reference file `themes/bluloco-dark-color-theme.json`.
 
 ## 🙏 Acknowledgments
 

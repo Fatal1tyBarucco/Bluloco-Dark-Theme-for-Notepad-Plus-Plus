@@ -3,13 +3,19 @@
 ## Overview
 This repo is a Notepad++ theme port of VSCode Bluloco Dark. The deliverable is a single XML file, `BlulocoDark.xml`; there is no package manager, build system, or codegen. Static validation lives in `tools/validate_theme.py` (XML syntax, hex format, palette adherence, WCAG contrast); edit the XML directly and run the validator.
 
+## Source provenance
+- Upstream: [uloco/theme-bluloco-dark](https://github.com/uloco/theme-bluloco-dark) — the VSCode *Bluloco Dark* theme by uloco. The Notepad++ port derives from this project.
+- Reference commit: `d604c347564d16eea5a98c5fb1fb1703816929b5`.
+- Reference file: `themes/bluloco-dark-color-theme.json`. The port was audited colour by colour against that file; it is a palette reference, not a build input.
+- License of the original material: **LGPL-3.0** (the upstream `LICENSE` is the GNU LGPL v3). This repository ships the same license. Never describe the upstream theme as MIT.
+
 ## Repo map
 - `BlulocoDark.xml` — canonical theme. `<NotepadPlus>` → `<LexerStyles>` (55 `<LexerType>` blocks) → `<GlobalStyles>` (39 `<WidgetStyle>` entries).
 - `README.md` — user documentation reflecting the audited v2.1 state. It references the real filename (`BlulocoDark.xml`) everywhere and keeps the honest limitations: no native semantic tokens, USER KEYWORDS are manual lists, comment contrast below WCAG AA, partial style-ID coverage in some lexers, and visual validation requiring Windows + Notepad++. The XML remains the source of truth.
 - `PROMPT_APERFEICOAMENTO_BLULOCO_DARK.md` — audit/overhaul brief with project quality rules. Reference material, not a standing TODO.
-- `screenshots/` — 7 PNG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`).
+- `screenshots/` — 7 PNG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`). They are real Notepad++ captures, but they were taken **before** the v2.1 palette normalization, so they may show the previous palette; never present them as evidence of the current colours.
 - `samples/` — 27 per-language code samples used for manual visual validation of the theme. 24 map to a shipped lexer; `sample.rust`, `sample.swift` and `sample.yaml` have no dedicated lexer in the theme and are reference-only. Not referenced by the validator; load them in Notepad++ to eyeball the result.
-- `tools/` — static validation tooling: `validate_theme.py` (XML syntax, hex format, palette adherence, WCAG contrast), `npp_lexer_model.json` (Notepad++ v8.9.9 `stylers.model.xml` inventory), `baseline.json` (regression baseline). The script resolves paths against the repo root, so it runs from any working directory.
+- `tools/` — static validation tooling: `validate_theme.py` (XML syntax, hex format, palette adherence, WCAG contrast, `GlobalStyles` colour coverage, baseline drift detection), `npp_lexer_model.json` (Notepad++ v8.9.9 `stylers.model.xml` inventory), `baseline.json` (regression baseline: `sha256`/`line_count`/`size_bytes` of the XML plus lexer/style counts). The script resolves paths against the repo root, so it runs from any working directory.
 - `.github/workflows/summary.yml` — summarizes newly opened issues via `actions/ai-inference`. It does not build or validate the theme.
 
 ## XML editing rules
@@ -32,6 +38,13 @@ This repo is a Notepad++ theme port of VSCode Bluloco Dark. The deliverable is a
 | operators | `7A82DA` | tags | `3691FF` |
 | attrs | `FF936A` | | |
 
+## Palette exceptions
+The canonical palette above is applied to every token style. The only colours outside it are legitimate exceptions, grouped by provenance:
+- **Terminal ANSI ramp** — the `errorlist` lexer's `ANSI COLOR` styles (styleIDs 40–55) reproduce a real terminal's 16-colour ramp and are carried verbatim from the upstream `terminal.ansi*` tokens.
+- **Notepad++ UI chrome** — `GlobalStyles` widget colours dictated by Notepad++'s own widget model, with no VSCode counterpart: `2D333D`, `22252A`, `3D434F`, `FFCC00`, `177849`, `0084FF`, `25272D`, `DADADA`, `FFFFFF`.
+- **Documentation comment grey** — `7C8495`, used by `COMMENT DOC KEYWORD`.
+- **Deliberate divergence** — `errorlist` `ANSI COLOR RED` is `FF2E3F`, while the upstream source uses `terminal.ansiRed` = `#fc2f52`. `FF2E3F` is kept on purpose, for internal consistency with the canonical error colour. Documented, not a bug.
+
 ## Tasks
 - **Change colors:** edit `fgColor` / `bgColor` in place; keep normal lexer backgrounds `282C34` unless there is a documented reason.
 - **Add a lexer:** confirm the real internal `name` and style IDs for the target Notepad++/Scintilla version; never invent IDs. Insert the `<LexerType>` inside `<LexerStyles>`, before `<GlobalStyles>`. Update README coverage only to match what you actually implemented.
@@ -42,7 +55,7 @@ Run from the repo root:
 - `xmllint --noout BlulocoDark.xml` (fallback: `python3 -c 'import xml.etree.ElementTree as ET; ET.parse("BlulocoDark.xml")'`)
 - `grep -oE '(fg|bg)Color="[^"]*"' BlulocoDark.xml | grep -vE '"[0-9A-F]{6}"'` — expect no output.
 - `grep -c '<LexerType' BlulocoDark.xml` — baseline 55; only changes when adding/removing a lexer.
-- `python3 tools/validate_theme.py` — static checks; resolves paths from the repo root, so it runs from any directory.
+- `python3 tools/validate_theme.py` — static checks; it also validates the `GlobalStyles` widget colours against `PALETTE | UI_EXCEPTIONS` and detects SHA-256 drift of the XML against `tools/baseline.json`; resolves paths from the repo root, so it runs from any directory.
 - Visual check requires Windows + Notepad++: copy to `%APPDATA%\Notepad++\themes\`, then Settings → Style Configurator. It cannot be done natively in this Linux environment; never claim visual verification or add screenshots without a real run.
 - For visual review, load the files in `samples/` manually in Notepad++ and inspect the rendering per language. This is a manual, non-automatable step; do not describe it as machine-verified. The Rust, Swift and YAML samples have no dedicated lexer, so they cannot demonstrate theme colours.
 
