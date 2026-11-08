@@ -1,0 +1,28 @@
+// Sample Rust code to test Bluloco Dark
+// Includes Generics, Traits, and Pattern Matching
+
+trait Describe {
+    fn describe(&self) -> String;
+}
+
+struct User {
+    name: String,
+    id: u32,
+}
+
+impl Describe for User {
+    fn describe(&self) -> String {
+        format!("User {} with ID {}", self.name, self.id)
+    }
+}
+
+fn main() {
+    let user = User { name: "Gemma".to_string(), id: 1 };
+    println!("{}", user.describe());
+    
+    let val = Some(10);
+    match val {
+        Some(i) => println!("Value: {}", i),
+        None => println!("No value"),
+    }
+}

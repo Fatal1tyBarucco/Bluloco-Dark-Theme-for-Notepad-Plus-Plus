@@ -1,0 +1,7284 @@
+{
+  "actionscript": [
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "20",
+      "FUNCTION"
+    ],
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "ada": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "2",
+      "IDENTIFIER"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "DELIMITER"
+    ],
+    [
+      "5",
+      "CHARACTER"
+    ],
+    [
+      "7",
+      "STRING"
+    ],
+    [
+      "9",
+      "LABEL"
+    ],
+    [
+      "10",
+      "COMMENT LINE"
+    ],
+    [
+      "11",
+      "ILLEGAL"
+    ]
+  ],
+  "asn1": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "IDENTIFIERS"
+    ],
+    [
+      "3",
+      "DOUBLE QUOTED STRING"
+    ],
+    [
+      "4",
+      "NUMERIC OID DEFINITION"
+    ],
+    [
+      "5",
+      "NON OID NUMBERS"
+    ],
+    [
+      "6",
+      "KEYWORDS"
+    ],
+    [
+      "7",
+      "ATTRIBUTES"
+    ],
+    [
+      "8",
+      "DESCRIPTORS"
+    ],
+    [
+      "9",
+      "TYPES"
+    ],
+    [
+      "10",
+      "OPERATORS"
+    ]
+  ],
+  "asp": [
+    [
+      "81",
+      "DEFAULT"
+    ],
+    [
+      "82",
+      "COMMENT LINE"
+    ],
+    [
+      "83",
+      "NUMBER"
+    ],
+    [
+      "84",
+      "WORD"
+    ],
+    [
+      "85",
+      "STRING"
+    ],
+    [
+      "86",
+      "IDENTIFIER"
+    ],
+    [
+      "15",
+      "ASP SYMBOL"
+    ],
+    [
+      "16",
+      "SCRIPT TYPE"
+    ],
+    [
+      "216",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "217",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "218",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "219",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "220",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "221",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "222",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "223",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "asm": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "OPERATOR"
+    ],
+    [
+      "5",
+      "IDENTIFIER"
+    ],
+    [
+      "6",
+      "CPU INSTRUCTION"
+    ],
+    [
+      "7",
+      "MATH INSTRUCTION"
+    ],
+    [
+      "8",
+      "REGISTER"
+    ],
+    [
+      "9",
+      "DIRECTIVE"
+    ],
+    [
+      "10",
+      "DIRECTIVE OPERAND"
+    ],
+    [
+      "11",
+      "COMMENT BLOCK"
+    ],
+    [
+      "12",
+      "CHARACTER"
+    ],
+    [
+      "14",
+      "EXT INSTRUCTION"
+    ]
+  ],
+  "autoit": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "COMMENT"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "FUNCTION"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "6",
+      "MACRO"
+    ],
+    [
+      "7",
+      "STRING"
+    ],
+    [
+      "8",
+      "OPERATOR"
+    ],
+    [
+      "9",
+      "VARIABLE"
+    ],
+    [
+      "10",
+      "SENT"
+    ],
+    [
+      "11",
+      "PREPROCESSOR"
+    ],
+    [
+      "12",
+      "SPECIAL"
+    ],
+    [
+      "13",
+      "EXPAND"
+    ],
+    [
+      "14",
+      "COMOBJ"
+    ]
+  ],
+  "avs": [
+    [
+      "32",
+      "DEFAULT"
+    ],
+    [
+      "0",
+      "WHITE SPACE"
+    ],
+    [
+      "1",
+      "COMMENT: /* */"
+    ],
+    [
+      "2",
+      "COMMENT: [* *]"
+    ],
+    [
+      "3",
+      "LINE COMMENT: #"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "OPERATORS"
+    ],
+    [
+      "6",
+      "IDENTIFIERS"
+    ],
+    [
+      "7",
+      "DOUBLE QUOTED STRING"
+    ],
+    [
+      "8",
+      "STRING WITH THREE DOUBLE QUOTES"
+    ],
+    [
+      "9",
+      "KEYWORD"
+    ],
+    [
+      "10",
+      "FILTER"
+    ],
+    [
+      "11",
+      "PLUGIN"
+    ],
+    [
+      "12",
+      "FUNCTION"
+    ],
+    [
+      "13",
+      "CLIP PROPERTIES"
+    ],
+    [
+      "14",
+      "USER DEFINED"
+    ]
+  ],
+  "baanc": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT DOC"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "KEYWORDS"
+    ],
+    [
+      "5",
+      "STRING"
+    ],
+    [
+      "6",
+      "PREPROCESSOR"
+    ],
+    [
+      "7",
+      "OPERATOR"
+    ],
+    [
+      "8",
+      "IDENTIFIER"
+    ],
+    [
+      "9",
+      "STRING EOL NC"
+    ],
+    [
+      "10",
+      "FUNCTIONS"
+    ],
+    [
+      "11",
+      "FUNCTIONS ABRIDGED"
+    ],
+    [
+      "12",
+      "SUB SECTIONS"
+    ],
+    [
+      "13",
+      "MAIN SECTIONS"
+    ],
+    [
+      "14",
+      "PREDEFINED VARIABLE"
+    ],
+    [
+      "15",
+      "PREDEFINED ATTRIBUTES"
+    ],
+    [
+      "16",
+      "ENUM DOMAINS"
+    ],
+    [
+      "17",
+      "USER DEFINED"
+    ],
+    [
+      "18",
+      "TABLE DEFINITIONS"
+    ],
+    [
+      "19",
+      "TABLE SQL"
+    ],
+    [
+      "20",
+      "DLL FUNCTIONS"
+    ],
+    [
+      "21",
+      "DOMAIN DEFINITIONS"
+    ],
+    [
+      "22",
+      "FUNCTION DEFINITIONS"
+    ],
+    [
+      "23",
+      "OBJECT DEFINITIONS"
+    ],
+    [
+      "24",
+      "PREPROC DEFINITIONS"
+    ]
+  ],
+  "bash": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "ERROR"
+    ],
+    [
+      "4",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "STRING"
+    ],
+    [
+      "6",
+      "CHARACTER"
+    ],
+    [
+      "7",
+      "OPERATOR"
+    ],
+    [
+      "8",
+      "IDENTIFIER"
+    ],
+    [
+      "9",
+      "SCALAR"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "10",
+      "PARAM"
+    ],
+    [
+      "11",
+      "BACKTICKS"
+    ],
+    [
+      "12",
+      "HERE DELIM"
+    ],
+    [
+      "13",
+      "HERE Q"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER SCALAR 1"
+    ],
+    [
+      "133",
+      "USER SCALAR 2"
+    ],
+    [
+      "134",
+      "USER SCALAR 3"
+    ],
+    [
+      "135",
+      "USER SCALAR 4"
+    ]
+  ],
+  "batch": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "KEYWORDS"
+    ],
+    [
+      "3",
+      "LABEL"
+    ],
+    [
+      "4",
+      "HIDE SYMBOL"
+    ],
+    [
+      "5",
+      "COMMAND"
+    ],
+    [
+      "6",
+      "VARIABLE"
+    ],
+    [
+      "7",
+      "OPERATOR"
+    ],
+    [
+      "8",
+      "AFTER LABEL"
+    ]
+  ],
+  "blitzbasic": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "KEYWORD1"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "KEYWORD2"
+    ],
+    [
+      "11",
+      "KEYWORD3"
+    ],
+    [
+      "12",
+      "KEYWORD4"
+    ],
+    [
+      "15",
+      "LABEL"
+    ],
+    [
+      "16",
+      "ERROR"
+    ],
+    [
+      "17",
+      "HEXNUMBER"
+    ],
+    [
+      "18",
+      "BINNUMBER"
+    ]
+  ],
+  "c": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "cpp": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "20",
+      "STRINGRAW"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "cs": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "caml": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "IDENTIFIER"
+    ],
+    [
+      "2",
+      "TAGNAME"
+    ],
+    [
+      "3",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "4",
+      "BUILIN FUNC & TYPE"
+    ],
+    [
+      "5",
+      "TYPE"
+    ],
+    [
+      "6",
+      "LINENUM"
+    ],
+    [
+      "7",
+      "OPERATOR"
+    ],
+    [
+      "8",
+      "NUMBER"
+    ],
+    [
+      "9",
+      "CHARACTER"
+    ],
+    [
+      "11",
+      "STRING"
+    ],
+    [
+      "12",
+      "COMMENT"
+    ],
+    [
+      "13",
+      "COMMENT LINE"
+    ],
+    [
+      "14",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ]
+  ],
+  "cmake": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "STRING D"
+    ],
+    [
+      "3",
+      "STRING L"
+    ],
+    [
+      "4",
+      "STRING R"
+    ],
+    [
+      "5",
+      "COMMAND"
+    ],
+    [
+      "6",
+      "PARAMETER"
+    ],
+    [
+      "7",
+      "VARIABLE"
+    ],
+    [
+      "8",
+      "USER DEFINED"
+    ],
+    [
+      "9",
+      "WHILEDEF"
+    ],
+    [
+      "10",
+      "FOREACHDEF"
+    ],
+    [
+      "11",
+      "IFDEF"
+    ],
+    [
+      "12",
+      "MACRODEF"
+    ],
+    [
+      "13",
+      "STRING VARIABLE"
+    ],
+    [
+      "14",
+      "NUMBER"
+    ]
+  ],
+  "cobol": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "DECLARATION"
+    ],
+    [
+      "16",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "8",
+      "KEYWORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ]
+  ],
+  "csound": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "OPERATOR"
+    ],
+    [
+      "4",
+      "INSTR"
+    ],
+    [
+      "5",
+      "IDENTIFIER"
+    ],
+    [
+      "6",
+      "OPCODE"
+    ],
+    [
+      "7",
+      "HEADER STATEMENT"
+    ],
+    [
+      "8",
+      "USER KEYWORDS"
+    ],
+    [
+      "9",
+      "COMMENT BLOCK"
+    ],
+    [
+      "10",
+      "PARAMETER"
+    ],
+    [
+      "11",
+      "A-RATE VARIABLE"
+    ],
+    [
+      "12",
+      "K-RATE VARIABLE"
+    ],
+    [
+      "13",
+      "I-RATE VARIABLE"
+    ],
+    [
+      "14",
+      "GLOBAL VARIABLE"
+    ],
+    [
+      "15",
+      "END OF LINE WHERE STRING IS NOT CLOSED"
+    ]
+  ],
+  "coffeescript": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "19",
+      "PREDEFINED CONSTANT"
+    ],
+    [
+      "22",
+      "COMMENT BLOCK"
+    ],
+    [
+      "23",
+      "VERBOSE REGEX"
+    ],
+    [
+      "24",
+      "VERBOSE REGEX COMMENT"
+    ]
+  ],
+  "css": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "TAG"
+    ],
+    [
+      "2",
+      "CLASS"
+    ],
+    [
+      "3",
+      "PSEUDOCLASS"
+    ],
+    [
+      "4",
+      "UNKNOWN PSEUDOCLASS"
+    ],
+    [
+      "5",
+      "OPERATOR"
+    ],
+    [
+      "6",
+      "IDENTIFIER"
+    ],
+    [
+      "7",
+      "UNKNOWN IDENTIFIER"
+    ],
+    [
+      "8",
+      "VALUE"
+    ],
+    [
+      "9",
+      "COMMENT"
+    ],
+    [
+      "10",
+      "ID"
+    ],
+    [
+      "11",
+      "IMPORTANT"
+    ],
+    [
+      "12",
+      "DIRECTIVE"
+    ],
+    [
+      "13",
+      "DOUBLE STRING"
+    ],
+    [
+      "14",
+      "SINGLE STRING"
+    ],
+    [
+      "16",
+      "ATTRIBUTE"
+    ],
+    [
+      "18",
+      "PSEUDOELEMENT"
+    ],
+    [
+      "20",
+      "LEGACY PSEUDOELEMENT"
+    ],
+    [
+      "22",
+      "MEDIA"
+    ],
+    [
+      "23",
+      "VARIABLE"
+    ]
+  ],
+  "d": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "14",
+      "IDENTIFIER"
+    ],
+    [
+      "6",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "7",
+      "KEYWORD1"
+    ],
+    [
+      "8",
+      "KEYWORD2"
+    ],
+    [
+      "9",
+      "KEYWORD3"
+    ],
+    [
+      "20",
+      "KEYWORD4"
+    ],
+    [
+      "21",
+      "KEYWORD5"
+    ],
+    [
+      "22",
+      "KEYWORD6"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "10",
+      "STRING"
+    ],
+    [
+      "12",
+      "CHARACTER"
+    ],
+    [
+      "13",
+      "OPERATOR"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "4",
+      "COMMENT NESTED"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "16",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "18",
+      "STRING B"
+    ],
+    [
+      "19",
+      "STRING R"
+    ]
+  ],
+  "diff": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMAND"
+    ],
+    [
+      "3",
+      "HEADER"
+    ],
+    [
+      "4",
+      "POSITION"
+    ],
+    [
+      "5",
+      "DELETED"
+    ],
+    [
+      "6",
+      "ADDED"
+    ]
+  ],
+  "erlang": [
+    [
+      "0",
+      "DEFAULT STYLE"
+    ],
+    [
+      "1",
+      "DEFAULT COMMENT"
+    ],
+    [
+      "14",
+      "FUNCTION COMMENT"
+    ],
+    [
+      "15",
+      "MODULE COMMENT"
+    ],
+    [
+      "16",
+      "DOCUMENTATION HELPER IN COMMENT"
+    ],
+    [
+      "17",
+      "DOCUMENTATION MACRO IN COMMENT"
+    ],
+    [
+      "2",
+      "VARIABLE"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "STRING"
+    ],
+    [
+      "9",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "MACRO"
+    ],
+    [
+      "19",
+      "MACRO QUOTED"
+    ],
+    [
+      "11",
+      "RECORD"
+    ],
+    [
+      "20",
+      "RECORD QUOTED"
+    ],
+    [
+      "7",
+      "ATOM"
+    ],
+    [
+      "18",
+      "ATOM QUOTED"
+    ],
+    [
+      "13",
+      "NODE NAME"
+    ],
+    [
+      "21",
+      "NODE NAME QUOTED"
+    ],
+    [
+      "4",
+      "RESERVED WORDS"
+    ],
+    [
+      "22",
+      "BUILT-IN FUNCTIONS"
+    ],
+    [
+      "8",
+      "FUNCTION NAME"
+    ],
+    [
+      "23",
+      "MODULE NAME"
+    ],
+    [
+      "24",
+      "MODULE ATTRIBUTES"
+    ],
+    [
+      "12",
+      "PREPROCESSOR"
+    ],
+    [
+      "6",
+      "OPERATORS"
+    ],
+    [
+      "31",
+      "UNKNOWN: ERROR"
+    ]
+  ],
+  "errorlist": [
+    [
+      "0",
+      "DEFAULT STYLE"
+    ],
+    [
+      "1",
+      "PYTHON Error"
+    ],
+    [
+      "2",
+      "GCC Error"
+    ],
+    [
+      "3",
+      "MS Error"
+    ],
+    [
+      "4",
+      "CMD Error"
+    ],
+    [
+      "5",
+      "BORLAND Error"
+    ],
+    [
+      "6",
+      "PERL Error"
+    ],
+    [
+      "7",
+      "NET Error"
+    ],
+    [
+      "8",
+      "LUA Error"
+    ],
+    [
+      "9",
+      "CTAG Error"
+    ],
+    [
+      "10",
+      "DIFF Changed"
+    ],
+    [
+      "11",
+      "DIFF Addition"
+    ],
+    [
+      "12",
+      "DIFF Deletion"
+    ],
+    [
+      "13",
+      "DIFF Message"
+    ],
+    [
+      "14",
+      "PHP Error"
+    ],
+    [
+      "15",
+      "ELF Error"
+    ],
+    [
+      "16",
+      "IFC Error"
+    ],
+    [
+      "17",
+      "IFORT Error"
+    ],
+    [
+      "18",
+      "ABSF Error"
+    ],
+    [
+      "19",
+      "TIDY Error"
+    ],
+    [
+      "20",
+      "JAVA Stack Error"
+    ],
+    [
+      "21",
+      "VALUE Error"
+    ],
+    [
+      "22",
+      "GCC Included-From Error"
+    ],
+    [
+      "23",
+      "Escape Sequence"
+    ],
+    [
+      "24",
+      "Unknown Escape Sequence"
+    ],
+    [
+      "25",
+      "GCC Excerpt Error"
+    ],
+    [
+      "26",
+      "BASH Error"
+    ],
+    [
+      "40",
+      "ANSI COLOR BLACK"
+    ],
+    [
+      "41",
+      "ANSI COLOR RED"
+    ],
+    [
+      "42",
+      "ANSI COLOR GREEN"
+    ],
+    [
+      "43",
+      "ANSI COLOR BROWN"
+    ],
+    [
+      "44",
+      "ANSI COLOR BLUE"
+    ],
+    [
+      "45",
+      "ANSI COLOR MAGENTA"
+    ],
+    [
+      "46",
+      "ANSI COLOR CYAN"
+    ],
+    [
+      "47",
+      "ANSI COLOR GRAY"
+    ],
+    [
+      "48",
+      "ANSI COLOR DARK GRAY"
+    ],
+    [
+      "49",
+      "ANSI COLOR BRIGHT RED"
+    ],
+    [
+      "50",
+      "ANSI COLOR BRIGHT GREEN"
+    ],
+    [
+      "51",
+      "ANSI COLOR YELLOW"
+    ],
+    [
+      "52",
+      "ANSI COLOR BRIGHT BLUE"
+    ],
+    [
+      "53",
+      "ANSI COLOR BRIGHT MAGENTA"
+    ],
+    [
+      "54",
+      "ANSI COLOR BRIGHT CYAN"
+    ],
+    [
+      "55",
+      "ANSI COLOR WHITE"
+    ]
+  ],
+  "escseq": [
+    [
+      "0",
+      "DEFAULT on DEFAULT"
+    ],
+    [
+      "1",
+      "BLACK on DEFAULT"
+    ],
+    [
+      "2",
+      "RED on DEFAULT"
+    ],
+    [
+      "3",
+      "GREEN on DEFAULT"
+    ],
+    [
+      "4",
+      "YELLOW on DEFAULT"
+    ],
+    [
+      "5",
+      "BLUE on DEFAULT"
+    ],
+    [
+      "6",
+      "MAGENTA on DEFAULT"
+    ],
+    [
+      "7",
+      "CYAN on DEFAULT"
+    ],
+    [
+      "8",
+      "WHITE on DEFAULT"
+    ],
+    [
+      "9",
+      "DEFAULT on BLACK"
+    ],
+    [
+      "10",
+      "BLACK on BLACK"
+    ],
+    [
+      "11",
+      "RED on BLACK"
+    ],
+    [
+      "12",
+      "GREEN on BLACK"
+    ],
+    [
+      "13",
+      "YELLOW on BLACK"
+    ],
+    [
+      "14",
+      "BLUE on BLACK"
+    ],
+    [
+      "15",
+      "MAGENTA on BLACK"
+    ],
+    [
+      "16",
+      "CYAN on BLACK"
+    ],
+    [
+      "17",
+      "WHITE on BLACK"
+    ],
+    [
+      "18",
+      "DEFAULT on RED"
+    ],
+    [
+      "19",
+      "BLACK on RED"
+    ],
+    [
+      "20",
+      "RED on RED"
+    ],
+    [
+      "21",
+      "GREEN on RED"
+    ],
+    [
+      "22",
+      "YELLOW on RED"
+    ],
+    [
+      "23",
+      "BLUE on RED"
+    ],
+    [
+      "24",
+      "MAGENTA on RED"
+    ],
+    [
+      "25",
+      "CYAN on RED"
+    ],
+    [
+      "26",
+      "WHITE on RED"
+    ],
+    [
+      "27",
+      "DEFAULT on GREEN"
+    ],
+    [
+      "28",
+      "BLACK on GREEN"
+    ],
+    [
+      "29",
+      "RED on GREEN"
+    ],
+    [
+      "30",
+      "GREEN on GREEN"
+    ],
+    [
+      "40",
+      "YELLOW on GREEN"
+    ],
+    [
+      "41",
+      "BLUE on GREEN"
+    ],
+    [
+      "42",
+      "MAGENTA on GREEN"
+    ],
+    [
+      "43",
+      "CYAN on GREEN"
+    ],
+    [
+      "44",
+      "WHITE on GREEN"
+    ],
+    [
+      "45",
+      "DEFAULT on YELLOW"
+    ],
+    [
+      "46",
+      "BLACK on YELLOW"
+    ],
+    [
+      "47",
+      "RED on YELLOW"
+    ],
+    [
+      "48",
+      "GREEN on YELLOW"
+    ],
+    [
+      "49",
+      "YELLOW on YELLOW"
+    ],
+    [
+      "50",
+      "BLUE on YELLOW"
+    ],
+    [
+      "51",
+      "MAGENTA on YELLOW"
+    ],
+    [
+      "52",
+      "CYAN on YELLOW"
+    ],
+    [
+      "53",
+      "WHITE on YELLOW"
+    ],
+    [
+      "54",
+      "DEFAULT on BLUE"
+    ],
+    [
+      "55",
+      "BLACK on BLUE"
+    ],
+    [
+      "56",
+      "RED on BLUE"
+    ],
+    [
+      "57",
+      "GREEN on BLUE"
+    ],
+    [
+      "58",
+      "YELLOW on BLUE"
+    ],
+    [
+      "59",
+      "BLUE on BLUE"
+    ],
+    [
+      "60",
+      "MAGENTA on BLUE"
+    ],
+    [
+      "61",
+      "CYAN on BLUE"
+    ],
+    [
+      "62",
+      "WHITE on BLUE"
+    ],
+    [
+      "63",
+      "DEFAULT on MAGENTA"
+    ],
+    [
+      "64",
+      "BLACK on MAGENTA"
+    ],
+    [
+      "65",
+      "RED on MAGENTA"
+    ],
+    [
+      "66",
+      "GREEN on MAGENTA"
+    ],
+    [
+      "67",
+      "YELLOW on MAGENTA"
+    ],
+    [
+      "68",
+      "BLUE on MAGENTA"
+    ],
+    [
+      "69",
+      "MAGENTA on MAGENTA"
+    ],
+    [
+      "70",
+      "CYAN on MAGENTA"
+    ],
+    [
+      "71",
+      "WHITE on MAGENTA"
+    ],
+    [
+      "72",
+      "DEFAULT on CYAN"
+    ],
+    [
+      "73",
+      "BLACK on CYAN"
+    ],
+    [
+      "74",
+      "RED on CYAN"
+    ],
+    [
+      "75",
+      "GREEN on CYAN"
+    ],
+    [
+      "76",
+      "YELLOW on CYAN"
+    ],
+    [
+      "77",
+      "BLUE on CYAN"
+    ],
+    [
+      "78",
+      "MAGENTA on CYAN"
+    ],
+    [
+      "79",
+      "CYAN on CYAN"
+    ],
+    [
+      "80",
+      "WHITE on CYAN"
+    ],
+    [
+      "81",
+      "DEFAULT on WHITE"
+    ],
+    [
+      "82",
+      "BLACK on WHITE"
+    ],
+    [
+      "83",
+      "RED on WHITE"
+    ],
+    [
+      "84",
+      "GREEN on WHITE"
+    ],
+    [
+      "85",
+      "YELLOW on WHITE"
+    ],
+    [
+      "86",
+      "BLUE on WHITE"
+    ],
+    [
+      "87",
+      "MAGENTA on WHITE"
+    ],
+    [
+      "88",
+      "CYAN on WHITE"
+    ],
+    [
+      "89",
+      "WHITE on WHITE"
+    ],
+    [
+      "090",
+      "BOLD DEFAULT on DEFAULT"
+    ],
+    [
+      "091",
+      "BOLD BLACK on DEFAULT"
+    ],
+    [
+      "092",
+      "BOLD RED on DEFAULT"
+    ],
+    [
+      "093",
+      "BOLD GREEN on DEFAULT"
+    ],
+    [
+      "094",
+      "BOLD YELLOW on DEFAULT"
+    ],
+    [
+      "095",
+      "BOLD BLUE on DEFAULT"
+    ],
+    [
+      "096",
+      "BOLD MAGENTA on DEFAULT"
+    ],
+    [
+      "097",
+      "BOLD CYAN on DEFAULT"
+    ],
+    [
+      "098",
+      "BOLD WHITE on DEFAULT"
+    ],
+    [
+      "099",
+      "BOLD DEFAULT on BLACK"
+    ],
+    [
+      "100",
+      "BOLD BLACK on BLACK"
+    ],
+    [
+      "101",
+      "BOLD RED on BLACK"
+    ],
+    [
+      "102",
+      "BOLD GREEN on BLACK"
+    ],
+    [
+      "103",
+      "BOLD YELLOW on BLACK"
+    ],
+    [
+      "104",
+      "BOLD BLUE on BLACK"
+    ],
+    [
+      "105",
+      "BOLD MAGENTA on BLACK"
+    ],
+    [
+      "106",
+      "BOLD CYAN on BLACK"
+    ],
+    [
+      "107",
+      "BOLD WHITE on BLACK"
+    ],
+    [
+      "108",
+      "BOLD DEFAULT on RED"
+    ],
+    [
+      "109",
+      "BOLD BLACK on RED"
+    ],
+    [
+      "110",
+      "BOLD RED on RED"
+    ],
+    [
+      "111",
+      "BOLD GREEN on RED"
+    ],
+    [
+      "112",
+      "BOLD YELLOW on RED"
+    ],
+    [
+      "113",
+      "BOLD BLUE on RED"
+    ],
+    [
+      "114",
+      "BOLD MAGENTA on RED"
+    ],
+    [
+      "115",
+      "BOLD CYAN on RED"
+    ],
+    [
+      "116",
+      "BOLD WHITE on RED"
+    ],
+    [
+      "117",
+      "BOLD DEFAULT on GREEN"
+    ],
+    [
+      "118",
+      "BOLD BLACK on GREEN"
+    ],
+    [
+      "119",
+      "BOLD RED on GREEN"
+    ],
+    [
+      "120",
+      "BOLD GREEN on GREEN"
+    ],
+    [
+      "121",
+      "BOLD YELLOW on GREEN"
+    ],
+    [
+      "122",
+      "BOLD BLUE on GREEN"
+    ],
+    [
+      "123",
+      "BOLD MAGENTA on GREEN"
+    ],
+    [
+      "124",
+      "BOLD CYAN on GREEN"
+    ],
+    [
+      "125",
+      "BOLD WHITE on GREEN"
+    ],
+    [
+      "126",
+      "BOLD DEFAULT on YELLOW"
+    ],
+    [
+      "127",
+      "BOLD BLACK on YELLOW"
+    ],
+    [
+      "128",
+      "BOLD RED on YELLOW"
+    ],
+    [
+      "129",
+      "BOLD GREEN on YELLOW"
+    ],
+    [
+      "130",
+      "BOLD YELLOW on YELLOW"
+    ],
+    [
+      "131",
+      "BOLD BLUE on YELLOW"
+    ],
+    [
+      "132",
+      "BOLD MAGENTA on YELLOW"
+    ],
+    [
+      "133",
+      "BOLD CYAN on YELLOW"
+    ],
+    [
+      "134",
+      "BOLD WHITE on YELLOW"
+    ],
+    [
+      "135",
+      "BOLD DEFAULT on BLUE"
+    ],
+    [
+      "136",
+      "BOLD BLACK on BLUE"
+    ],
+    [
+      "137",
+      "BOLD RED on BLUE"
+    ],
+    [
+      "138",
+      "BOLD GREEN on BLUE"
+    ],
+    [
+      "139",
+      "BOLD YELLOW on BLUE"
+    ],
+    [
+      "140",
+      "BOLD BLUE on BLUE"
+    ],
+    [
+      "141",
+      "BOLD MAGENTA on BLUE"
+    ],
+    [
+      "142",
+      "BOLD CYAN on BLUE"
+    ],
+    [
+      "143",
+      "BOLD WHITE on BLUE"
+    ],
+    [
+      "144",
+      "BOLD DEFAULT on MAGENTA"
+    ],
+    [
+      "145",
+      "BOLD BLACK on MAGENTA"
+    ],
+    [
+      "146",
+      "BOLD RED on MAGENTA"
+    ],
+    [
+      "147",
+      "BOLD GREEN on MAGENTA"
+    ],
+    [
+      "148",
+      "BOLD YELLOW on MAGENTA"
+    ],
+    [
+      "149",
+      "BOLD BLUE on MAGENTA"
+    ],
+    [
+      "150",
+      "BOLD MAGENTA on MAGENTA"
+    ],
+    [
+      "151",
+      "BOLD CYAN on MAGENTA"
+    ],
+    [
+      "152",
+      "BOLD WHITE on MAGENTA"
+    ],
+    [
+      "153",
+      "BOLD DEFAULT on CYAN"
+    ],
+    [
+      "154",
+      "BOLD BLACK on CYAN"
+    ],
+    [
+      "155",
+      "BOLD RED on CYAN"
+    ],
+    [
+      "156",
+      "BOLD GREEN on CYAN"
+    ],
+    [
+      "157",
+      "BOLD YELLOW on CYAN"
+    ],
+    [
+      "158",
+      "BOLD BLUE on CYAN"
+    ],
+    [
+      "159",
+      "BOLD MAGENTA on CYAN"
+    ],
+    [
+      "160",
+      "BOLD CYAN on CYAN"
+    ],
+    [
+      "161",
+      "BOLD WHITE on CYAN"
+    ],
+    [
+      "162",
+      "BOLD DEFAULT on WHITE"
+    ],
+    [
+      "163",
+      "BOLD BLACK on WHITE"
+    ],
+    [
+      "164",
+      "BOLD RED on WHITE"
+    ],
+    [
+      "165",
+      "BOLD GREEN on WHITE"
+    ],
+    [
+      "166",
+      "BOLD YELLOW on WHITE"
+    ],
+    [
+      "167",
+      "BOLD BLUE on WHITE"
+    ],
+    [
+      "168",
+      "BOLD MAGENTA on WHITE"
+    ],
+    [
+      "169",
+      "BOLD CYAN on WHITE"
+    ],
+    [
+      "170",
+      "BOLD WHITE on WHITE"
+    ],
+    [
+      "171",
+      "Sequence Identifier"
+    ],
+    [
+      "172",
+      "Sequence Unknown"
+    ]
+  ],
+  "escript": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "LINE COMMENT"
+    ],
+    [
+      "3",
+      "DOC COMMENT"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "KEYWORD"
+    ],
+    [
+      "6",
+      "DOUBLE QUOTED STRING"
+    ],
+    [
+      "7",
+      "OPERATORS"
+    ],
+    [
+      "8",
+      "IDENTIFIERS"
+    ],
+    [
+      "9",
+      "BRACES"
+    ],
+    [
+      "10",
+      "KEYWORDS2"
+    ],
+    [
+      "11",
+      "KEYWORDS3"
+    ]
+  ],
+  "forth": [
+    [
+      "0",
+      "WHITESPACE"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "ML COMMENT"
+    ],
+    [
+      "3",
+      "IDENTIFIER"
+    ],
+    [
+      "4",
+      "CONTROL"
+    ],
+    [
+      "5",
+      "KEYWORDS"
+    ],
+    [
+      "6",
+      "DEFWORDS"
+    ],
+    [
+      "7",
+      "PREWORD1"
+    ],
+    [
+      "8",
+      "PREWORD2"
+    ],
+    [
+      "9",
+      "NUMBER"
+    ],
+    [
+      "10",
+      "DOUBLE QUOTED STRING"
+    ],
+    [
+      "11",
+      "LOCALE"
+    ]
+  ],
+  "fortran": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "STRING2"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "8",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "9",
+      "FUNCTION1"
+    ],
+    [
+      "10",
+      "FUNCTION2"
+    ],
+    [
+      "11",
+      "PREPROCESSOR"
+    ],
+    [
+      "12",
+      "OPERATOR2"
+    ],
+    [
+      "13",
+      "LABEL"
+    ],
+    [
+      "14",
+      "CONTINUATION"
+    ]
+  ],
+  "fortran77": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "STRING2"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "8",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "9",
+      "FUNCTION1"
+    ],
+    [
+      "10",
+      "FUNCTION2"
+    ],
+    [
+      "11",
+      "PREPROCESSOR"
+    ],
+    [
+      "12",
+      "OPERATOR2"
+    ],
+    [
+      "13",
+      "LABEL"
+    ],
+    [
+      "14",
+      "CONTINUATION"
+    ]
+  ],
+  "freebasic": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "KEYWORD1"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "5",
+      "PREPROCESSOR"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "KEYWORD2"
+    ],
+    [
+      "11",
+      "KEYWORD3"
+    ],
+    [
+      "12",
+      "KEYWORD4"
+    ],
+    [
+      "15",
+      "LABEL"
+    ],
+    [
+      "16",
+      "ERROR"
+    ],
+    [
+      "17",
+      "HEXNUMBER"
+    ],
+    [
+      "18",
+      "BINNUMBER"
+    ]
+  ],
+  "gdscript": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "CHARACTER"
+    ],
+    [
+      "5",
+      "WORD"
+    ],
+    [
+      "6",
+      "TRIPLE"
+    ],
+    [
+      "7",
+      "TRIPLE DOUBLE"
+    ],
+    [
+      "8",
+      "CLASS NAME"
+    ],
+    [
+      "9",
+      "FUNC NAME"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "IDENTIFIER"
+    ],
+    [
+      "12",
+      "COMMENT BLOCK"
+    ],
+    [
+      "13",
+      "STRING EOL"
+    ],
+    [
+      "14",
+      "WORD2"
+    ],
+    [
+      "15",
+      "ANNOTATION"
+    ],
+    [
+      "16",
+      "NODEPATH"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "go": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "19",
+      "PREDECLARED IDENTIFIERS"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "20",
+      "STRING RAW"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "gui4cli": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "COMMENT"
+    ],
+    [
+      "3",
+      "GLOBAL"
+    ],
+    [
+      "4",
+      "EVENT"
+    ],
+    [
+      "5",
+      "ATTRIBUTE"
+    ],
+    [
+      "6",
+      "CONTROL"
+    ],
+    [
+      "7",
+      "COMMAND"
+    ],
+    [
+      "8",
+      "STRING"
+    ],
+    [
+      "9",
+      "OPERATOR"
+    ]
+  ],
+  "haskell": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "IDENTIFIER"
+    ],
+    [
+      "2",
+      "KEYWORD"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "5",
+      "CHARACTER"
+    ],
+    [
+      "6",
+      "CLASS"
+    ],
+    [
+      "7",
+      "MODULE"
+    ],
+    [
+      "8",
+      "CAPITAL"
+    ],
+    [
+      "9",
+      "DATA"
+    ],
+    [
+      "10",
+      "IMPORT"
+    ],
+    [
+      "11",
+      "OPERATOR"
+    ],
+    [
+      "12",
+      "INSTANCE"
+    ],
+    [
+      "13",
+      "COMMENT LINE"
+    ],
+    [
+      "14",
+      "COMMENT BLOCK"
+    ],
+    [
+      "15",
+      "COMMENT BLOCK2"
+    ],
+    [
+      "16",
+      "COMMENT BLOCK3"
+    ]
+  ],
+  "hollywood": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT BLOCK"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "KEYWORD"
+    ],
+    [
+      "5",
+      "CORE API"
+    ],
+    [
+      "6",
+      "PLUGIN API"
+    ],
+    [
+      "7",
+      "PLUGIN METHOD"
+    ],
+    [
+      "8",
+      "STRING"
+    ],
+    [
+      "9",
+      "STRING BLOCK"
+    ],
+    [
+      "10",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "OPERATOR"
+    ],
+    [
+      "12",
+      "IDENTIFIER"
+    ],
+    [
+      "13",
+      "CONSTANT"
+    ],
+    [
+      "14",
+      "HEXNUMBER"
+    ]
+  ],
+  "html": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "9",
+      "COMMENT"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "DOUBLE STRING"
+    ],
+    [
+      "7",
+      "SINGLE STRING"
+    ],
+    [
+      "1",
+      "TAG"
+    ],
+    [
+      "11",
+      "TAG END"
+    ],
+    [
+      "2",
+      "TAG UNKNOWN"
+    ],
+    [
+      "3",
+      "ATTRIBUTE"
+    ],
+    [
+      "4",
+      "ATTRIBUTE UNKNOWN"
+    ],
+    [
+      "21",
+      "SGML DEFAULT"
+    ],
+    [
+      "22",
+      "SGML COMMAND"
+    ],
+    [
+      "23",
+      "SGML 1ST PARAM"
+    ],
+    [
+      "24",
+      "SGML DOUBLESTRING"
+    ],
+    [
+      "25",
+      "SGML SIMPLESTRING"
+    ],
+    [
+      "31",
+      "SGML BLOCK DEFAULT"
+    ],
+    [
+      "17",
+      "CDATA"
+    ],
+    [
+      "19",
+      "VALUE"
+    ],
+    [
+      "10",
+      "ENTITY"
+    ],
+    [
+      "192",
+      "USER TAGS1"
+    ],
+    [
+      "193",
+      "USER TAGS2"
+    ],
+    [
+      "194",
+      "USER TAGS3"
+    ],
+    [
+      "195",
+      "USER TAGS4"
+    ],
+    [
+      "196",
+      "USER ATTRIBUTES1"
+    ],
+    [
+      "197",
+      "USER ATTRIBUTES2"
+    ],
+    [
+      "198",
+      "USER ATTRIBUTES3"
+    ],
+    [
+      "199",
+      "USER ATTRIBUTES4"
+    ]
+  ],
+  "ihex": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "RECSTART"
+    ],
+    [
+      "2",
+      "RECTYPE"
+    ],
+    [
+      "3",
+      "RECTYPE_UNKNOWN"
+    ],
+    [
+      "4",
+      "BYTECOUNT"
+    ],
+    [
+      "5",
+      "BYTECOUNT_WRONG"
+    ],
+    [
+      "6",
+      "NOADDRESS"
+    ],
+    [
+      "7",
+      "DATAADDRESS"
+    ],
+    [
+      "9",
+      "STARTADDRESS"
+    ],
+    [
+      "10",
+      "ADDRESSFIELD_UNKNOWN"
+    ],
+    [
+      "11",
+      "EXTENDEDADDRESS"
+    ],
+    [
+      "12",
+      "DATA_ODD"
+    ],
+    [
+      "13",
+      "DATA_EVEN"
+    ],
+    [
+      "14",
+      "DATA_UNKNOWN"
+    ],
+    [
+      "15",
+      "DATA_EMPTY"
+    ],
+    [
+      "16",
+      "CHECKSUM"
+    ],
+    [
+      "17",
+      "CHECKSUM_WRONG"
+    ],
+    [
+      "18",
+      "GARBAGE"
+    ]
+  ],
+  "ini": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "SECTION"
+    ],
+    [
+      "3",
+      "ASSIGNMENT"
+    ],
+    [
+      "4",
+      "DEFVAL"
+    ],
+    [
+      "5",
+      "KEY"
+    ]
+  ],
+  "inno": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "KEYWORD"
+    ],
+    [
+      "3",
+      "PARAMETER"
+    ],
+    [
+      "4",
+      "SECTION"
+    ],
+    [
+      "5",
+      "PREPROCESSOR"
+    ],
+    [
+      "6",
+      "PREPROCESSOR INLINE"
+    ],
+    [
+      "7",
+      "COMMENT PASCAL"
+    ],
+    [
+      "8",
+      "KEYWORD PASCAL"
+    ],
+    [
+      "9",
+      "KEYWORD USER"
+    ],
+    [
+      "10",
+      "STRING DOUBLE"
+    ],
+    [
+      "11",
+      "STRING SINGLE"
+    ],
+    [
+      "12",
+      "IDENTIFIER"
+    ]
+  ],
+  "java": [
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "javascript": [
+    [
+      "41",
+      "DEFAULT"
+    ],
+    [
+      "45",
+      "NUMBER"
+    ],
+    [
+      "46",
+      "WORD"
+    ],
+    [
+      "47",
+      "KEYWORD"
+    ],
+    [
+      "48",
+      "DOUBLE STRING"
+    ],
+    [
+      "49",
+      "SINGLE STRING"
+    ],
+    [
+      "53",
+      "TEMPLATE LIT. (CLIENT)"
+    ],
+    [
+      "68",
+      "TEMPLATE LIT. (SERVER)"
+    ],
+    [
+      "50",
+      "SYMBOLS"
+    ],
+    [
+      "52",
+      "REGEX"
+    ],
+    [
+      "42",
+      "COMMENT"
+    ],
+    [
+      "43",
+      "COMMENT LINE"
+    ],
+    [
+      "44",
+      "COMMENT DOC"
+    ],
+    [
+      "200",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "201",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "202",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "203",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "204",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "205",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "206",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "207",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "javascript.js": [
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "19",
+      "WINDOW INSTRUCTION"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "20",
+      "STRING RAW"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "json": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "NUMBER"
+    ],
+    [
+      "2",
+      "STRING"
+    ],
+    [
+      "3",
+      "STRING EOL"
+    ],
+    [
+      "4",
+      "PROPERTY NAME"
+    ],
+    [
+      "5",
+      "ESCAPE SEQUENCE"
+    ],
+    [
+      "6",
+      "LINE COMMENT"
+    ],
+    [
+      "7",
+      "BLOCK COMMENT"
+    ],
+    [
+      "8",
+      "OPERATOR"
+    ],
+    [
+      "9",
+      "URI"
+    ],
+    [
+      "10",
+      "COMPACT IRI"
+    ],
+    [
+      "11",
+      "KEYWORD"
+    ],
+    [
+      "12",
+      "LD KEYWORD"
+    ],
+    [
+      "13",
+      "ERROR"
+    ]
+  ],
+  "kix": [
+    [
+      "31",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "STRING"
+    ],
+    [
+      "3",
+      "STRING2"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "VAR"
+    ],
+    [
+      "6",
+      "MACRO"
+    ],
+    [
+      "7",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "8",
+      "FUNCTION"
+    ],
+    [
+      "9",
+      "OPERATOR"
+    ]
+  ],
+  "lisp": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "FUNCTION WORD"
+    ],
+    [
+      "4",
+      "FUNCTION WORD2"
+    ],
+    [
+      "5",
+      "SYMBOL"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "9",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "SPECIAL"
+    ],
+    [
+      "12",
+      "COMMENT"
+    ]
+  ],
+  "latex": [
+    [
+      "0",
+      "WHITE SPACE"
+    ],
+    [
+      "1",
+      "COMMAND"
+    ],
+    [
+      "2",
+      "TAG OPENING"
+    ],
+    [
+      "3",
+      "MATH INLINE"
+    ],
+    [
+      "4",
+      "COMMENT"
+    ],
+    [
+      "5",
+      "TAG CLOSING"
+    ],
+    [
+      "6",
+      "MATH BLOCK"
+    ],
+    [
+      "7",
+      "COMMENT BLOCK"
+    ],
+    [
+      "8",
+      "VERBATIM SEGMENT"
+    ],
+    [
+      "9",
+      "SHORT COMMAND"
+    ],
+    [
+      "10",
+      "SPECIAL CHAR"
+    ],
+    [
+      "11",
+      "COMMAND OPTIONAL ARGUMENT"
+    ],
+    [
+      "12",
+      "SYNTAX ERROR"
+    ]
+  ],
+  "lua": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "8",
+      "LITERAL STRING"
+    ],
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "FUNC1"
+    ],
+    [
+      "14",
+      "FUNC2"
+    ],
+    [
+      "15",
+      "FUNC3"
+    ],
+    [
+      "16",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "17",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "18",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "19",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "11",
+      "IDENTIFIER"
+    ],
+    [
+      "20",
+      "LABEL"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "makefile": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "PREPROCESSOR"
+    ],
+    [
+      "3",
+      "IDENTIFIER"
+    ],
+    [
+      "4",
+      "OPERATOR"
+    ],
+    [
+      "5",
+      "TARGET"
+    ],
+    [
+      "9",
+      "IDEOL"
+    ]
+  ],
+  "matlab": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMAND"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "5",
+      "STRING"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "8",
+      "DOUBLE QUOTE STRING"
+    ]
+  ],
+  "mssql": [
+    [
+      "9",
+      "STATEMENT"
+    ],
+    [
+      "10",
+      "DATA TYPE"
+    ],
+    [
+      "11",
+      "SYSTEM TABLE"
+    ],
+    [
+      "12",
+      "GLOBAL"
+    ],
+    [
+      "13",
+      "FUNCTION"
+    ],
+    [
+      "14",
+      "SYSTEM STORED PROC"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "5",
+      "OPERATOR"
+    ],
+    [
+      "6",
+      "IDENTIFIER"
+    ],
+    [
+      "7",
+      "VARIABLE"
+    ],
+    [
+      "8",
+      "COL NAME"
+    ],
+    [
+      "16",
+      "COL NAME IN []'s"
+    ]
+  ],
+  "mmixal": [
+    [
+      "0",
+      "DIVSION OF LEADING WHITESPACE IN LINE"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "LABEL"
+    ],
+    [
+      "3",
+      "OPCODE"
+    ],
+    [
+      "4",
+      "DIVISION BETWEEN LABEL AND OPCODE"
+    ],
+    [
+      "5",
+      "VALID OPCODE"
+    ],
+    [
+      "6",
+      "UNKNOWN OPCODE"
+    ],
+    [
+      "7",
+      "DIVISION BETWEEN OPCODE AND OPERANDS"
+    ],
+    [
+      "8",
+      "DIVISION OF OPERANDS"
+    ],
+    [
+      "9",
+      "NUMBER"
+    ],
+    [
+      "10",
+      "REFERENCE (TO A LABEL)"
+    ],
+    [
+      "11",
+      "CHAR"
+    ],
+    [
+      "12",
+      "STRING"
+    ],
+    [
+      "13",
+      "REGISTER"
+    ],
+    [
+      "14",
+      "HEXADECIMAL NUMBER"
+    ],
+    [
+      "15",
+      "OPERATOR"
+    ],
+    [
+      "16",
+      "SYMBOL"
+    ],
+    [
+      "17",
+      "COMMENT OTHERWISE"
+    ]
+  ],
+  "nfo": [
+    [
+      "32",
+      "DEFAULT"
+    ]
+  ],
+  "nsis": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "STRING DOUBLE QUOTE"
+    ],
+    [
+      "3",
+      "STRING LEFT QUOTE"
+    ],
+    [
+      "4",
+      "STRING RIGHT QUOTE"
+    ],
+    [
+      "5",
+      "FUNCTION"
+    ],
+    [
+      "6",
+      "VARIABLE"
+    ],
+    [
+      "7",
+      "LABEL"
+    ],
+    [
+      "8",
+      "USER DEFINED"
+    ],
+    [
+      "9",
+      "SECTION"
+    ],
+    [
+      "10",
+      "SUBSECTION"
+    ],
+    [
+      "11",
+      "IF DEFINE"
+    ],
+    [
+      "12",
+      "MACRO"
+    ],
+    [
+      "13",
+      "STRING VAR"
+    ],
+    [
+      "14",
+      "NUMBER"
+    ],
+    [
+      "15",
+      "SECTION GROUP"
+    ],
+    [
+      "16",
+      "PAGE EX"
+    ],
+    [
+      "17",
+      "FUNCTION DEFINITIONS"
+    ],
+    [
+      "18",
+      "COMMENT"
+    ]
+  ],
+  "nim": [
+    [
+      "0",
+      "WHITE SPACE"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "SINGLE QUOTED STRING"
+    ],
+    [
+      "5",
+      "KEYWORD"
+    ],
+    [
+      "6",
+      "TRIPLE QUOTES"
+    ],
+    [
+      "7",
+      "TRIPLE DOUBLE QUOTES"
+    ],
+    [
+      "8",
+      "CLASS NAME DEFINITION"
+    ],
+    [
+      "9",
+      "FUNCTION OR METHOD NAME DEFINITION"
+    ],
+    [
+      "10",
+      "OPERATORS"
+    ],
+    [
+      "11",
+      "IDENTIFIERS"
+    ],
+    [
+      "12",
+      "COMMENT-BLOCKS"
+    ],
+    [
+      "13",
+      "END OF LINE WHERE STRING IS NOT CLOSED"
+    ],
+    [
+      "14",
+      "HIGHLIGHTED IDENTIFIERS"
+    ],
+    [
+      "15",
+      "DECORATORS"
+    ]
+  ],
+  "nncrontab": [
+    [
+      "0",
+      "WHITE SPACE"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "TASK START/END"
+    ],
+    [
+      "3",
+      "SECTION KEYWORDS"
+    ],
+    [
+      "4",
+      "KEYWORDS"
+    ],
+    [
+      "5",
+      "MODIFICATORS"
+    ],
+    [
+      "6",
+      "ASTERISK"
+    ],
+    [
+      "7",
+      "NUMBER"
+    ],
+    [
+      "8",
+      "DOUBLE QUOTED STRING"
+    ],
+    [
+      "9",
+      "ENVIRONMENT VARIABLE"
+    ],
+    [
+      "10",
+      "IDENTIFIER"
+    ]
+  ],
+  "oscript": [
+    [
+      "0",
+      "DEFAULT TEXT STYLE"
+    ],
+    [
+      "1",
+      "SINGLE-LINE COMMENT"
+    ],
+    [
+      "2",
+      "MULTI-LINE COMMENT"
+    ],
+    [
+      "3",
+      "#IFDEF DOC AND #ENDIF"
+    ],
+    [
+      "4",
+      "PREPROCESSOR DIRECTIVE"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING SINGLE QUOTES"
+    ],
+    [
+      "7",
+      "STRING DOUBLE QUOTES"
+    ],
+    [
+      "8",
+      "CONSTANT LITERAL"
+    ],
+    [
+      "9",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "SERVER-GLOBAL VARIABLE (PREFIXED BY $)"
+    ],
+    [
+      "11",
+      "LANGUAGE NATIVE KEYWORD OR RESERVED WORD"
+    ],
+    [
+      "12",
+      "OPERATOR; EITHER SYMBOLIC OR LITERAL"
+    ],
+    [
+      "13",
+      "LABEL TO JUMP TO WITH THE GOTO STATEMENT"
+    ],
+    [
+      "14",
+      "TYPE"
+    ],
+    [
+      "15",
+      "FUNCTION"
+    ],
+    [
+      "16",
+      "STATIC BUILT-IN OBJECT"
+    ],
+    [
+      "17",
+      "OBJECT PROPERTY"
+    ],
+    [
+      "18",
+      "OBJECT METHOD"
+    ]
+  ],
+  "objc": [
+    [
+      "19",
+      "DIRECTIVE"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "20",
+      "QUALIFIER"
+    ],
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ]
+  ],
+  "pascal": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "IDENTIFIER"
+    ],
+    [
+      "2",
+      "COMMENT"
+    ],
+    [
+      "3",
+      "COMMENT LINE"
+    ],
+    [
+      "4",
+      "COMMENT DOC"
+    ],
+    [
+      "5",
+      "PREPROCESSOR"
+    ],
+    [
+      "6",
+      "PREPROCESSOR2"
+    ],
+    [
+      "7",
+      "NUMBER"
+    ],
+    [
+      "8",
+      "HEX NUMBER"
+    ],
+    [
+      "9",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "10",
+      "STRING"
+    ],
+    [
+      "12",
+      "CHARACTER"
+    ],
+    [
+      "13",
+      "OPERATOR"
+    ],
+    [
+      "14",
+      "ASM"
+    ],
+    [
+      "15",
+      "MULTILINESTRING"
+    ]
+  ],
+  "perl": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "IDENTIFIER"
+    ],
+    [
+      "12",
+      "SCALAR"
+    ],
+    [
+      "13",
+      "ARRAY"
+    ],
+    [
+      "14",
+      "HASH"
+    ],
+    [
+      "15",
+      "SYMBOL TABLE"
+    ],
+    [
+      "40",
+      "PROTOTYPE"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "7",
+      "STRING SINGLEQUOTE"
+    ],
+    [
+      "6",
+      "STRING DOUBLEQUOTE"
+    ],
+    [
+      "20",
+      "STRING BACKTICKS"
+    ],
+    [
+      "26",
+      "STRING Q"
+    ],
+    [
+      "27",
+      "STRING QQ"
+    ],
+    [
+      "28",
+      "STRING QX"
+    ],
+    [
+      "29",
+      "STRING QR"
+    ],
+    [
+      "30",
+      "STRING QW"
+    ],
+    [
+      "17",
+      "REGEX MATCH"
+    ],
+    [
+      "18",
+      "REGEX SUBSTITUTION"
+    ],
+    [
+      "44",
+      "TRANSLATION"
+    ],
+    [
+      "22",
+      "HEREDOC DELIMITER"
+    ],
+    [
+      "23",
+      "HEREDOC SINGLEQUOTE"
+    ],
+    [
+      "24",
+      "HEREDOC DOUBLEQUOTE"
+    ],
+    [
+      "25",
+      "HEREDOC BACKTICK"
+    ],
+    [
+      "43",
+      "VAR IN STRING"
+    ],
+    [
+      "54",
+      "VAR IN REGEX"
+    ],
+    [
+      "55",
+      "VAR IN REGEX SUBSTITUTION"
+    ],
+    [
+      "57",
+      "VAR IN BACKTICKS"
+    ],
+    [
+      "61",
+      "VAR IN HEREDOC DOUBLEQUOTE"
+    ],
+    [
+      "62",
+      "VAR IN HEREDOC BACKTICK"
+    ],
+    [
+      "64",
+      "VAR IN STRING QQ"
+    ],
+    [
+      "65",
+      "VAR IN STRING QX"
+    ],
+    [
+      "66",
+      "VAR IN STRING QR"
+    ],
+    [
+      "41",
+      "FORMAT IDENTIFIER"
+    ],
+    [
+      "42",
+      "FORMAT BODY"
+    ],
+    [
+      "21",
+      "DATA SECTION"
+    ],
+    [
+      "3",
+      "POD"
+    ],
+    [
+      "31",
+      "POD VERBATIM"
+    ],
+    [
+      "1",
+      "ERROR"
+    ]
+  ],
+  "php": [
+    [
+      "18",
+      "QUESTION MARK"
+    ],
+    [
+      "118",
+      "DEFAULT"
+    ],
+    [
+      "119",
+      "STRING"
+    ],
+    [
+      "104",
+      "COMPLEX VARIABLE"
+    ],
+    [
+      "126",
+      "STRING VARIABLE"
+    ],
+    [
+      "120",
+      "SIMPLE STRING"
+    ],
+    [
+      "121",
+      "KEYWORDS"
+    ],
+    [
+      "122",
+      "NUMBER"
+    ],
+    [
+      "123",
+      "VARIABLE"
+    ],
+    [
+      "124",
+      "COMMENT"
+    ],
+    [
+      "125",
+      "COMMENT LINE"
+    ],
+    [
+      "127",
+      "OPERATOR"
+    ],
+    [
+      "213",
+      "PREDEFINED"
+    ],
+    [
+      "214",
+      "FUNCS AND METHODS 1"
+    ],
+    [
+      "215",
+      "FUNCS AND METHODS 2"
+    ],
+    [
+      "208",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "209",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "210",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "211",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "212",
+      "USER KEYWORDS 5"
+    ]
+  ],
+  "postscript": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "DSC COMMENT"
+    ],
+    [
+      "3",
+      "DSC VALUE"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "Name"
+    ],
+    [
+      "6",
+      "INSTRUCTION"
+    ],
+    [
+      "7",
+      "LITERAL"
+    ],
+    [
+      "8",
+      "IMMEVAL"
+    ],
+    [
+      "9",
+      "PAREN ARRAY"
+    ],
+    [
+      "10",
+      "PAREN DICT"
+    ],
+    [
+      "11",
+      "PAREN PROC"
+    ],
+    [
+      "12",
+      "TEXT"
+    ],
+    [
+      "13",
+      "HEX STRING"
+    ],
+    [
+      "14",
+      "BASE85 STRING"
+    ],
+    [
+      "15",
+      "BAD STRING CHAR"
+    ]
+  ],
+  "powershell": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "STRING"
+    ],
+    [
+      "3",
+      "CHARACTER"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "VARIABLE"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "8",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "9",
+      "CMDLET"
+    ],
+    [
+      "10",
+      "ALIAS"
+    ],
+    [
+      "11",
+      "FUNCTION"
+    ],
+    [
+      "12",
+      "USER KEYWORDS"
+    ],
+    [
+      "13",
+      "COMMENT STREAM"
+    ],
+    [
+      "14",
+      "HERE STRING"
+    ],
+    [
+      "15",
+      "HERE CHARACTER"
+    ],
+    [
+      "16",
+      "COMMENT DOC KEYWORD"
+    ]
+  ],
+  "props": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "SECTION"
+    ],
+    [
+      "3",
+      "ASSIGNMENT"
+    ],
+    [
+      "4",
+      "DEFVAL"
+    ],
+    [
+      "5",
+      "KEY"
+    ]
+  ],
+  "purebasic": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "KEYWORD1"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "KEYWORD2"
+    ],
+    [
+      "11",
+      "KEYWORD3"
+    ],
+    [
+      "12",
+      "KEYWORD4"
+    ],
+    [
+      "13",
+      "CONSTANT"
+    ],
+    [
+      "15",
+      "LABEL"
+    ],
+    [
+      "16",
+      "ERROR"
+    ],
+    [
+      "17",
+      "HEXNUMBER"
+    ],
+    [
+      "18",
+      "BINNUMBER"
+    ]
+  ],
+  "python": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "CHARACTER"
+    ],
+    [
+      "5",
+      "KEYWORDS"
+    ],
+    [
+      "6",
+      "TRIPLE"
+    ],
+    [
+      "7",
+      "TRIPLE DOUBLE"
+    ],
+    [
+      "8",
+      "CLASS NAME"
+    ],
+    [
+      "9",
+      "DEF NAME"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "IDENTIFIER"
+    ],
+    [
+      "12",
+      "COMMENT BLOCK"
+    ],
+    [
+      "14",
+      "BUILTINS"
+    ],
+    [
+      "15",
+      "DECORATOR"
+    ],
+    [
+      "20",
+      "ATTRIBUTE"
+    ],
+    [
+      "16",
+      "F STRING"
+    ],
+    [
+      "17",
+      "F CHARACTER"
+    ],
+    [
+      "18",
+      "F TRIPLE"
+    ],
+    [
+      "19",
+      "F TRIPLEDOUBLE"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "r": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "3",
+      "BASE WORD"
+    ],
+    [
+      "4",
+      "KEYWORD"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "STRING2"
+    ],
+    [
+      "8",
+      "OPERATOR"
+    ],
+    [
+      "9",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "INFIX"
+    ],
+    [
+      "11",
+      "INFIXEOL"
+    ],
+    [
+      "12",
+      "BACKTICKS"
+    ],
+    [
+      "13",
+      "RAWSTRING"
+    ],
+    [
+      "14",
+      "RAWSTRING2"
+    ],
+    [
+      "15",
+      "ESCAPESEQUENCE"
+    ]
+  ],
+  "raku": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "ERROR"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT EMBED"
+    ],
+    [
+      "4",
+      "POD"
+    ],
+    [
+      "5",
+      "CHARACTER"
+    ],
+    [
+      "6",
+      "HEREDOC Q"
+    ],
+    [
+      "7",
+      "HEREDOC QQ"
+    ],
+    [
+      "8",
+      "STRING"
+    ],
+    [
+      "9",
+      "STRING Q"
+    ],
+    [
+      "10",
+      "STRING QQ"
+    ],
+    [
+      "11",
+      "STRING Q_LANG"
+    ],
+    [
+      "12",
+      "STRING VAR"
+    ],
+    [
+      "13",
+      "REGEX"
+    ],
+    [
+      "14",
+      "REGEX VAR"
+    ],
+    [
+      "15",
+      "ADVERB"
+    ],
+    [
+      "16",
+      "NUMBER"
+    ],
+    [
+      "17",
+      "PREPROCESSOR"
+    ],
+    [
+      "18",
+      "OPERATOR"
+    ],
+    [
+      "19",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "20",
+      "FUNCTION"
+    ],
+    [
+      "21",
+      "IDENTIFIER"
+    ],
+    [
+      "22",
+      "TYPEDEF"
+    ],
+    [
+      "23",
+      "MU"
+    ],
+    [
+      "24",
+      "POSITIONAL"
+    ],
+    [
+      "25",
+      "ASSOCIATIVE"
+    ],
+    [
+      "26",
+      "CALLABLE"
+    ],
+    [
+      "27",
+      "GRAMMAR"
+    ],
+    [
+      "28",
+      "CLASS"
+    ]
+  ],
+  "rc": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "rebol": [
+    [
+      "32",
+      "DEFAULT"
+    ],
+    [
+      "0",
+      "ANY OTHER TEXT"
+    ],
+    [
+      "1",
+      "LINE COMMENT"
+    ],
+    [
+      "2",
+      "BLOCK COMMENT"
+    ],
+    [
+      "3",
+      "PREFACE"
+    ],
+    [
+      "4",
+      "OPERATORS"
+    ],
+    [
+      "5",
+      "CHARACTERS"
+    ],
+    [
+      "6",
+      "STRING WITH QUOTES"
+    ],
+    [
+      "7",
+      "STRING WITH BRACES"
+    ],
+    [
+      "8",
+      "NUMBER"
+    ],
+    [
+      "9",
+      "PAIR ( 800X600 )"
+    ],
+    [
+      "10",
+      "TUPLE ( 127.0.0.1 )"
+    ],
+    [
+      "11",
+      "BINARY ( 16#{1A803F59} )"
+    ],
+    [
+      "12",
+      "MONEY"
+    ],
+    [
+      "13",
+      "ISSUE { #123-CD-456 }"
+    ],
+    [
+      "14",
+      "TAG { <TITLE HEIGHT=100> }"
+    ],
+    [
+      "15",
+      "FILE { %/C/WINNT/SOME.DLL }"
+    ],
+    [
+      "16",
+      "EMAIL { JOE@MAIL.DOM }"
+    ],
+    [
+      "17",
+      "URL { FTP://THERE.DOM }"
+    ],
+    [
+      "18",
+      "DATE { 17-FEB-2004 1/3/99 }"
+    ],
+    [
+      "19",
+      "TIME { 12:30 11:22:59 01:59:59.123 }"
+    ],
+    [
+      "20",
+      "IDENTIFIERS"
+    ],
+    [
+      "21",
+      "KEYWORD (ALL)"
+    ],
+    [
+      "22",
+      "KEYWORD (TEST FUNCTIONS)"
+    ],
+    [
+      "23",
+      "KEYWORD (DATATYPES)"
+    ],
+    [
+      "24",
+      "KEYWORD 4"
+    ],
+    [
+      "25",
+      "KEYWORD 5"
+    ],
+    [
+      "26",
+      "KEYWORD 6"
+    ],
+    [
+      "27",
+      "KEYWORD 7"
+    ]
+  ],
+  "registry": [
+    [
+      "32",
+      "DEFAULT STYLE"
+    ],
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "VALUE NAME"
+    ],
+    [
+      "3",
+      "STRING"
+    ],
+    [
+      "4",
+      "HEX DIGIT"
+    ],
+    [
+      "5",
+      "VALUE TYPE"
+    ],
+    [
+      "6",
+      "ADDED KEY"
+    ],
+    [
+      "7",
+      "REMOVED KEY"
+    ],
+    [
+      "8",
+      "ESCAPED CHARACTERS IN STRINGS"
+    ],
+    [
+      "9",
+      "GUID IN KEY PATH"
+    ],
+    [
+      "10",
+      "GUID IN STRING"
+    ],
+    [
+      "11",
+      "PARAMETER"
+    ],
+    [
+      "12",
+      "OPERATORS"
+    ]
+  ],
+  "ruby": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "ERROR"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "POD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "INSTRUCTION"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "8",
+      "CLASS NAME"
+    ],
+    [
+      "9",
+      "DEF NAME"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "IDENTIFIER"
+    ],
+    [
+      "12",
+      "REGEX"
+    ],
+    [
+      "13",
+      "GLOBAL"
+    ],
+    [
+      "14",
+      "SYMBOL"
+    ],
+    [
+      "15",
+      "MODULE NAME"
+    ],
+    [
+      "16",
+      "INSTANCE VAR"
+    ],
+    [
+      "17",
+      "CLASS VAR"
+    ],
+    [
+      "18",
+      "BACKTICKS"
+    ],
+    [
+      "19",
+      "DATA SECTION"
+    ],
+    [
+      "24",
+      "STRING Q"
+    ]
+  ],
+  "rust": [
+    [
+      "32",
+      "DEFAULT"
+    ],
+    [
+      "0",
+      "WHITESPACE"
+    ],
+    [
+      "1",
+      "BLOCK COMMENT"
+    ],
+    [
+      "2",
+      "LINE COMMENT"
+    ],
+    [
+      "3",
+      "BLOCK DOC COMMENT"
+    ],
+    [
+      "4",
+      "LINE DOC COMMENT"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "KEYWORDS 1"
+    ],
+    [
+      "7",
+      "KEYWORDS 2"
+    ],
+    [
+      "8",
+      "KEYWORDS 3"
+    ],
+    [
+      "9",
+      "KEYWORDS 4"
+    ],
+    [
+      "10",
+      "KEYWORDS 5"
+    ],
+    [
+      "11",
+      "KEYWORDS 6"
+    ],
+    [
+      "12",
+      "KEYWORDS 7"
+    ],
+    [
+      "13",
+      "REGULAR STRING"
+    ],
+    [
+      "14",
+      "RAW STRING"
+    ],
+    [
+      "15",
+      "CHARACTER"
+    ],
+    [
+      "16",
+      "OPERATOR"
+    ],
+    [
+      "17",
+      "IDENTIFIER"
+    ],
+    [
+      "18",
+      "LIFETIME"
+    ],
+    [
+      "19",
+      "MACRO"
+    ],
+    [
+      "20",
+      "LEXICAL ERROR"
+    ],
+    [
+      "21",
+      "BYTE STRING"
+    ],
+    [
+      "22",
+      "RAW BYTE STRING"
+    ],
+    [
+      "23",
+      "BYTE CHARACTER"
+    ],
+    [
+      "24",
+      "C STRING"
+    ],
+    [
+      "25",
+      "RAW C STRING"
+    ]
+  ],
+  "sas": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT BLOCK"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "OPERATOR"
+    ],
+    [
+      "6",
+      "IDENTIFIER"
+    ],
+    [
+      "7",
+      "STRING"
+    ],
+    [
+      "11",
+      "MACRO"
+    ],
+    [
+      "12",
+      "MACRO KEYWORD"
+    ],
+    [
+      "14",
+      "MACRO FUNCTION"
+    ],
+    [
+      "13",
+      "FUNCTION"
+    ],
+    [
+      "15",
+      "STATEMENT"
+    ]
+  ],
+  "fcST": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "KEYWORD"
+    ],
+    [
+      "4",
+      "TYPE"
+    ],
+    [
+      "5",
+      "FUNCTION"
+    ],
+    [
+      "6",
+      "FUNCTION BLOCK"
+    ],
+    [
+      "7",
+      "NUMBER"
+    ],
+    [
+      "8",
+      "HEX NUMBER"
+    ],
+    [
+      "9",
+      "PRAGMA"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "CHARACTER"
+    ],
+    [
+      "12",
+      "STRING"
+    ],
+    [
+      "13",
+      "DOUBLE-QUOTED STRING"
+    ],
+    [
+      "14",
+      "STRING EOL"
+    ],
+    [
+      "15",
+      "IDENTIFIER"
+    ],
+    [
+      "16",
+      "DATE AND TIME"
+    ],
+    [
+      "17",
+      "VARIABLE"
+    ],
+    [
+      "18",
+      "PRAGMA KEYWORD"
+    ]
+  ],
+  "scheme": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT LINE"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "FUNCTION WORD"
+    ],
+    [
+      "4",
+      "FUNCTION WORD2"
+    ],
+    [
+      "5",
+      "SYMBOL"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "9",
+      "IDENTIFIER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "11",
+      "SPECIAL"
+    ],
+    [
+      "12",
+      "COMMENT"
+    ]
+  ],
+  "smalltalk": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "STRING"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "COMMENT"
+    ],
+    [
+      "4",
+      "SYMBOL"
+    ],
+    [
+      "5",
+      "BINARY"
+    ],
+    [
+      "6",
+      "BOOL"
+    ],
+    [
+      "7",
+      "SELF"
+    ],
+    [
+      "8",
+      "SUPER"
+    ],
+    [
+      "9",
+      "NIL"
+    ],
+    [
+      "10",
+      "GLOBAL"
+    ],
+    [
+      "11",
+      "RETURN"
+    ],
+    [
+      "12",
+      "SPECIAL"
+    ],
+    [
+      "13",
+      "KWS END"
+    ],
+    [
+      "14",
+      "ASSIGN"
+    ],
+    [
+      "15",
+      "CHARACTER"
+    ],
+    [
+      "16",
+      "SPECIAL SELECTOR"
+    ]
+  ],
+  "spice": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "IDENTIFIERS"
+    ],
+    [
+      "2",
+      "KEYWORD"
+    ],
+    [
+      "3",
+      "KEYWORD2"
+    ],
+    [
+      "4",
+      "KEYWORD3"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "OPERATORS (DELIMITERS)"
+    ],
+    [
+      "7",
+      "VALUE"
+    ],
+    [
+      "8",
+      "COMMENT"
+    ]
+  ],
+  "sql": [
+    [
+      "5",
+      "KEYWORD"
+    ],
+    [
+      "16",
+      "USER1"
+    ],
+    [
+      "19",
+      "KEYWORD2"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "STRING2"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "24",
+      "Q OPERATOR"
+    ]
+  ],
+  "srec": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "RECSTART"
+    ],
+    [
+      "2",
+      "RECTYPE"
+    ],
+    [
+      "3",
+      "RECTYPE_UNKNOWN"
+    ],
+    [
+      "4",
+      "BYTECOUNT"
+    ],
+    [
+      "5",
+      "BYTECOUNT_WRONG"
+    ],
+    [
+      "6",
+      "NOADDRESS"
+    ],
+    [
+      "7",
+      "DATAADDRESS"
+    ],
+    [
+      "8",
+      "RECCOUNT"
+    ],
+    [
+      "9",
+      "STARTADDRESS"
+    ],
+    [
+      "10",
+      "ADDRESSFIELD_UNKNOWN"
+    ],
+    [
+      "12",
+      "DATA_ODD"
+    ],
+    [
+      "13",
+      "DATA_EVEN"
+    ],
+    [
+      "14",
+      "DATA_UNKNOWN"
+    ],
+    [
+      "15",
+      "DATA_EMPTY"
+    ],
+    [
+      "16",
+      "CHECKSUM"
+    ],
+    [
+      "17",
+      "CHECKSUM_WRONG"
+    ],
+    [
+      "18",
+      "GARBAGE"
+    ]
+  ],
+  "swift": [
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "23",
+      "PREPROCESSOR COMMENT"
+    ],
+    [
+      "24",
+      "PREPROCESSOR COMMENT DOC"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "tcl": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "10",
+      "MODIFIER"
+    ],
+    [
+      "11",
+      "EXPAND"
+    ],
+    [
+      "12",
+      "TCL KEYWORD"
+    ],
+    [
+      "13",
+      "iTCL KEYWORD"
+    ],
+    [
+      "14",
+      "TK KEYWORD"
+    ],
+    [
+      "15",
+      "TK COMMAND"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "9",
+      "SUB BRACE"
+    ],
+    [
+      "8",
+      "SUBSTITUTION"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "7",
+      "IDENTIFIER"
+    ],
+    [
+      "4",
+      "WORD IN QUOTE"
+    ],
+    [
+      "5",
+      "IN QUOTE"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "20",
+      "COMMENT BOX"
+    ],
+    [
+      "21",
+      "BLOCK COMMENT"
+    ],
+    [
+      "16",
+      "USER1"
+    ],
+    [
+      "17",
+      "USER2"
+    ],
+    [
+      "18",
+      "USER3"
+    ],
+    [
+      "19",
+      "USER4"
+    ]
+  ],
+  "tehex": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "RECSTART"
+    ],
+    [
+      "2",
+      "RECTYPE"
+    ],
+    [
+      "3",
+      "RECTYPE_UNKNOWN"
+    ],
+    [
+      "4",
+      "BYTECOUNT"
+    ],
+    [
+      "5",
+      "BYTECOUNT_WRONG"
+    ],
+    [
+      "7",
+      "DATAADDRESS"
+    ],
+    [
+      "9",
+      "STARTADDRESS"
+    ],
+    [
+      "10",
+      "ADDRESSFIELD_UNKNOWN"
+    ],
+    [
+      "12",
+      "DATA_ODD"
+    ],
+    [
+      "13",
+      "DATA_EVEN"
+    ],
+    [
+      "16",
+      "CHECKSUM"
+    ],
+    [
+      "17",
+      "CHECKSUM_WRONG"
+    ],
+    [
+      "18",
+      "GARBAGE"
+    ]
+  ],
+  "tex": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "SPECIAL"
+    ],
+    [
+      "2",
+      "GROUP"
+    ],
+    [
+      "3",
+      "SYMBOL"
+    ],
+    [
+      "4",
+      "COMMAND"
+    ],
+    [
+      "5",
+      "TEXT"
+    ]
+  ],
+  "toml": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "IDENTIFIER"
+    ],
+    [
+      "3",
+      "KEYWORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "TABLE"
+    ],
+    [
+      "6",
+      "KEY"
+    ],
+    [
+      "7",
+      "ERROR"
+    ],
+    [
+      "8",
+      "OPERATOR"
+    ],
+    [
+      "9",
+      "STRING SQ"
+    ],
+    [
+      "10",
+      "STRING DQ"
+    ],
+    [
+      "11",
+      "TRIPLE STRING SQ"
+    ],
+    [
+      "12",
+      "TRIPLE STRING DQ"
+    ],
+    [
+      "13",
+      "ESCAPE CHAR"
+    ],
+    [
+      "14",
+      "DATETIME"
+    ]
+  ],
+  "txt2tags": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "SPECIAL"
+    ],
+    [
+      "2",
+      "STRONG"
+    ],
+    [
+      "3",
+      "STRONG 2 (NOT USED)"
+    ],
+    [
+      "4",
+      "EM1 (ITALIC)"
+    ],
+    [
+      "5",
+      "EM2 (UNDERLINE)"
+    ],
+    [
+      "6",
+      "H1"
+    ],
+    [
+      "7",
+      "H2"
+    ],
+    [
+      "8",
+      "H3"
+    ],
+    [
+      "9",
+      "H4"
+    ],
+    [
+      "10",
+      "H5"
+    ],
+    [
+      "11",
+      "H6"
+    ],
+    [
+      "12",
+      "PRECHAR (NOT USED)"
+    ],
+    [
+      "13",
+      "ULIST"
+    ],
+    [
+      "14",
+      "OLIST"
+    ],
+    [
+      "15",
+      "BLOCKQUOTE"
+    ],
+    [
+      "16",
+      "STRIKEOUT"
+    ],
+    [
+      "17",
+      "HRULE"
+    ],
+    [
+      "18",
+      "LINK"
+    ],
+    [
+      "19",
+      "CODE"
+    ],
+    [
+      "20",
+      "CODE2"
+    ],
+    [
+      "21",
+      "CODEBLOCK"
+    ],
+    [
+      "22",
+      "COMMENT"
+    ],
+    [
+      "23",
+      "OPTION"
+    ],
+    [
+      "24",
+      "PREPROC"
+    ],
+    [
+      "25",
+      "POSTPROC"
+    ]
+  ],
+  "typescript": [
+    [
+      "11",
+      "DEFAULT"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "16",
+      "TYPE WORD"
+    ],
+    [
+      "19",
+      "WINDOW INSTRUCTION"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "20",
+      "STRING RAW"
+    ],
+    [
+      "7",
+      "CHARACTER"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "VERBATIM"
+    ],
+    [
+      "14",
+      "REGEX"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT DOC"
+    ],
+    [
+      "15",
+      "COMMENT LINE DOC"
+    ],
+    [
+      "17",
+      "COMMENT DOC KEYWORD"
+    ],
+    [
+      "18",
+      "COMMENT DOC KEYWORD ERROR"
+    ],
+    [
+      "128",
+      "USER KEYWORDS 1"
+    ],
+    [
+      "129",
+      "USER KEYWORDS 2"
+    ],
+    [
+      "130",
+      "USER KEYWORDS 3"
+    ],
+    [
+      "131",
+      "USER KEYWORDS 4"
+    ],
+    [
+      "132",
+      "USER KEYWORDS 5"
+    ],
+    [
+      "133",
+      "USER KEYWORDS 6"
+    ],
+    [
+      "134",
+      "USER KEYWORDS 7"
+    ],
+    [
+      "135",
+      "USER KEYWORDS 8"
+    ]
+  ],
+  "vb": [
+    [
+      "7",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "NUMBER"
+    ],
+    [
+      "3",
+      "WORD"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "5",
+      "PREPROCESSOR"
+    ],
+    [
+      "6",
+      "OPERATOR"
+    ],
+    [
+      "8",
+      "DATE"
+    ]
+  ],
+  "verilog": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "11",
+      "IDENTIFIER"
+    ],
+    [
+      "5",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "7",
+      "KEYWORD"
+    ],
+    [
+      "10",
+      "OPERATOR"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "9",
+      "PREPROCESSOR"
+    ],
+    [
+      "6",
+      "STRING"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE"
+    ],
+    [
+      "3",
+      "COMMENT LINE BANG"
+    ],
+    [
+      "19",
+      "USER"
+    ]
+  ],
+  "vhdl": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "2",
+      "COMMENT LINE BANG"
+    ],
+    [
+      "15",
+      "COMMENT BLOCK"
+    ],
+    [
+      "3",
+      "NUMBER"
+    ],
+    [
+      "4",
+      "STRING"
+    ],
+    [
+      "7",
+      "STRING EOL"
+    ],
+    [
+      "5",
+      "OPERATOR"
+    ],
+    [
+      "6",
+      "IDENTIFIER"
+    ],
+    [
+      "8",
+      "INSTRUCTION"
+    ],
+    [
+      "9",
+      "STD OPERATOR"
+    ],
+    [
+      "10",
+      "ATTRIBUTE"
+    ],
+    [
+      "11",
+      "STD FUNCTION"
+    ],
+    [
+      "12",
+      "STD PACKAGE"
+    ],
+    [
+      "13",
+      "STD TYPE"
+    ],
+    [
+      "14",
+      "USER DEFINE"
+    ]
+  ],
+  "visualprolog": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "1",
+      "MAJOR"
+    ],
+    [
+      "2",
+      "MINOR"
+    ],
+    [
+      "3",
+      "DIRECTIVE"
+    ],
+    [
+      "4",
+      "COMMENT BLOCK"
+    ],
+    [
+      "5",
+      "COMMENT LINE"
+    ],
+    [
+      "6",
+      "COMMENT KEY"
+    ],
+    [
+      "7",
+      "COMMENT KEY ERROR"
+    ],
+    [
+      "8",
+      "IDENTIFIER"
+    ],
+    [
+      "9",
+      "VARIABLE"
+    ],
+    [
+      "10",
+      "ANONYMOUS"
+    ],
+    [
+      "11",
+      "NUMBER"
+    ],
+    [
+      "12",
+      "OPERATOR"
+    ],
+    [
+      "13",
+      "CHARACTER"
+    ],
+    [
+      "14",
+      "CHARACTER TOO MANY"
+    ],
+    [
+      "15",
+      "CHARACTER ESCAPE ERROR"
+    ],
+    [
+      "16",
+      "STRING"
+    ],
+    [
+      "17",
+      "STRING ESCAPE"
+    ],
+    [
+      "18",
+      "STRING ESCAPE ERROR"
+    ],
+    [
+      "19",
+      "STRING EOL OPEN"
+    ],
+    [
+      "20",
+      "STRING VERBATIM"
+    ],
+    [
+      "21",
+      "STRING VERBATIM SPECIAL"
+    ],
+    [
+      "22",
+      "STRING VERBATIM EOL"
+    ]
+  ],
+  "xml": [
+    [
+      "12",
+      "XML START"
+    ],
+    [
+      "13",
+      "XML END"
+    ],
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "9",
+      "COMMENT"
+    ],
+    [
+      "5",
+      "NUMBER"
+    ],
+    [
+      "6",
+      "DOUBLE STRING"
+    ],
+    [
+      "7",
+      "SINGLE STRING"
+    ],
+    [
+      "1",
+      "TAG"
+    ],
+    [
+      "11",
+      "TAG END"
+    ],
+    [
+      "2",
+      "TAG UNKNOWN"
+    ],
+    [
+      "3",
+      "ATTRIBUTE"
+    ],
+    [
+      "4",
+      "ATTRIBUTE UNKNOWN"
+    ],
+    [
+      "21",
+      "SGML DEFAULT"
+    ],
+    [
+      "22",
+      "SGML COMMAND"
+    ],
+    [
+      "23",
+      "SGML 1ST PARAM"
+    ],
+    [
+      "24",
+      "SGML DOUBLESTRING"
+    ],
+    [
+      "25",
+      "SGML SIMPLESTRING"
+    ],
+    [
+      "31",
+      "SGML BLOCK DEFAULT"
+    ],
+    [
+      "17",
+      "CDATA"
+    ],
+    [
+      "10",
+      "ENTITY"
+    ],
+    [
+      "192",
+      "USER ATTRIBUTES 1"
+    ],
+    [
+      "193",
+      "USER ATTRIBUTES 2"
+    ],
+    [
+      "194",
+      "USER ATTRIBUTES 3"
+    ],
+    [
+      "195",
+      "USER ATTRIBUTES 4"
+    ],
+    [
+      "196",
+      "USER ATTRIBUTES 5"
+    ],
+    [
+      "197",
+      "USER ATTRIBUTES 6"
+    ],
+    [
+      "198",
+      "USER ATTRIBUTES 7"
+    ],
+    [
+      "199",
+      "USER ATTRIBUTES 8"
+    ]
+  ],
+  "yaml": [
+    [
+      "0",
+      "DEFAULT"
+    ],
+    [
+      "2",
+      "IDENTIFIER"
+    ],
+    [
+      "1",
+      "COMMENT"
+    ],
+    [
+      "3",
+      "INSTRUCTION WORD"
+    ],
+    [
+      "4",
+      "NUMBER"
+    ],
+    [
+      "5",
+      "REFERENCE"
+    ],
+    [
+      "6",
+      "DOCUMENT"
+    ],
+    [
+      "7",
+      "TEXT"
+    ],
+    [
+      "8",
+      "ERROR"
+    ]
+  ],
+  "searchResult": [
+    [
+      "1",
+      "Search Header"
+    ],
+    [
+      "2",
+      "File Header"
+    ],
+    [
+      "3",
+      "Line Number"
+    ],
+    [
+      "4",
+      "Hit Word"
+    ],
+    [
+      "6",
+      "Current line background colour"
+    ]
+  ]
+}

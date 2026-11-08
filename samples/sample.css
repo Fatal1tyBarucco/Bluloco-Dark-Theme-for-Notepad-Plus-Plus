@@ -1,0 +1,24 @@
+/* Sample CSS code to test Bluloco Dark */
+:root {
+    --bg-color: #282C34;
+    --fg-color: #ABB2BF;
+    --accent: #10B1FE;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: 'Consolas', monospace;
+}
+
+.container > .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+}
