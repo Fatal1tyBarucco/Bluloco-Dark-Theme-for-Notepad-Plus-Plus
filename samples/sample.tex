@@ -1,0 +1,76 @@
+% LaTeX sample — \documentclass, \begin/\end, commands, math inline/display, comments %.
+% Targets the tex lexer.
+
+% --- Comments ---
+% Single-line comment.
+
+\documentclass[12pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, geometry}
+\geometry{margin=1in}
+
+% --- Title and author ---
+\title{Sample Document}
+\author{Ada Lovelace}
+\date{\today}
+
+\begin{document}
+
+% --- Maketitle and sections ---
+\maketitle
+
+\section{Introduction}
+This is a sample \LaTeX{} document demonstrating common constructs.
+
+\subsection{Inline Math}
+Inline math looks like $E = mc^2$ or $\int_{a}^{b} f(x) \, dx$.
+
+\subsection{Display Math}
+Display math uses the equation environment:
+
+\begin{equation}
+    \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+\end{equation}
+
+Or with \[ \] delimiters:
+\[
+    \lim_{x \to \infty} \frac{1}{x} = 0
+\]
+
+% --- Lists ---
+\begin{itemize}
+    \item First item
+    \item Second item with \textbf{bold} and \textit{italic} text
+\end{itemize}
+
+\begin{enumerate}
+    \item Step one
+    \item Step two
+\end{enumerate}
+
+% --- Tables ---
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Column A & Column B \\
+        \hline
+        1 & 2 \\
+        3 & 4 \\
+        \hline
+    \end{tabular}
+    \caption{Sample table}
+\end{table}
+
+% --- Verbatim / code ---
+\begin{verbatim}
+This is verbatim text with $math$ and \commands that should not render.
+\end{verbatim}
+
+% --- Edge cases: comments with %, special chars, escaped chars ---
+% A comment with % symbol inside.
+Price: \$100.50 \textbackslash{} special \# char.
+
+\end{document}

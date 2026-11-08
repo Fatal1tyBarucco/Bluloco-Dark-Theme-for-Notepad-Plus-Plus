@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2] - 2026-11-08
+
+### Added
+- **12 new themed lexers**: rust, swift, yaml, javascript.js (standalone), coffeescript, erlang, d, nim, r, scheme, latex, gdscript — coverage against the Notepad++ v8.9.9 `stylers.model.xml` with exact `keywordClass` values.
+- **26 missing styleIDs added** across 11 existing lexers: cpp STRINGRAW 20; html/xml SGML 22–25/31; php COMPLEX VARIABLE 104; ini KEY 5; props SECTION 2/KEY 5; pascal 6/8/10/15; lua 11/20; lisp FUNCTION WORD2 4; vhdl COMMENT BLOCK 15; powershell IDENTIFIER 7/FUNCTION 11/USER KEYWORDS 12.
+- **New USER KEYWORDS 1–8 scheme** traceable to upstream `semanticTokenColors`: 1=property `CE9887`, 2=constant `9F7EFE`, 3=parameter `8BCDEF`, 4=function `3FC56B`, 5=decorator `50ACAE`, 6=namespace `FF839B`, 7=typeParameter `FF6480`, 8=macro `3FC56B`.
+- **New palette colors**: `50ACAE` (decorator/label), `FF839B` (namespace/module).
+- **GlobalStyles**: selection/search/mark/tab tints (`1C4670`, `1C6143`, `36465A`, `215471`, `684B44`, `675B3F`, `4C4571`, `2F5A45`, `3A3F58`, `735047`); Find status widgets: Not found, Message, Search end reached, Active tab unfocused indicator, Tab color 1–5 and Tab color dark mode 1–5.
+- `tools/generate_baseline.py` (reproducible) + regeneration of `tools/baseline.json`.
+- Hardening of `tools/validate_theme.py`: out-of-palette→error with documented exceptions; text in `WordsStyle`; duplicates; fg==bg; unknown IDs; widget bg-only contrast; README consistency.
+
+### Changed
+- **VERBATIM**: `FF78F8` → `F9C859` (string color) in all lexers that had it.
+- **Default Style**: removed `fontName="monofur for Powerline"` and `fontSize="12"` (respects the user's font).
+- **fontStyle** normalized to `0` for code tokens (except `searchResult` 1/2 and Brace highlight).
+- **75 "neutralized" tokens** (`fgColor` `ABB2BF` with a semantic role) corrected to the correct semantic color.
+- **Renamings aligned to the model**: php 121 KEYWORDS; pascal 3/4; lua 16–19; vhdl 2.
+
+### Removed
+- Spurious text inside `<WordsStyle>` of `searchResult` styles 5/6.
+
+### Fixed
+- `searchResult` styles 5/6 had no inner content.
+
+### Documentação
+- `README.md`/`AGENTS.md` reconciled with the XML v2.2 (counts, colors, honest limitations).
+- 8 new samples in `samples/`: `sample.coffee`, `sample.erl`, `sample.d`, `sample.nim`, `sample.r`, `sample.scm`, `sample.tex`, `sample.gd`.
+
 ## [2.1] - 2026-11-07
 ### Fixed
 - **Color accuracy audit**: Corrected 9 critical color mismatches vs VSCode Bluloco Dark reference
