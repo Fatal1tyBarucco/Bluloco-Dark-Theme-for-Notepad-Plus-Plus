@@ -23,6 +23,16 @@ This Notepad++ port derives from that JSON file, and its colours were audited li
 
 ## ⚡ Recent Improvements
 
+### v2.3 (2026-11-09)
+
+- **Structural fix**: the `ini` KEY (styleID 5) and `vhdl` COMMENT BLOCK (styleID 15) styles were declared outside their `<LexerType>` blocks, where Notepad++ never loads them; both are now inside their blocks and every themed lexer has full style-ID coverage against the Notepad++ v8.9.9 `stylers.model.xml`.
+- **`IDENTIFIER` policy**: all plain identifier styles now use the default foreground `ABB2BF` (the upstream theme colours plain identifiers `#abb2bf`); Scintilla cannot tell variables apart from function calls, so function colouring stays with USER KEYWORDS 4.
+- **Upstream fidelity**: python triple-quoted strings `F9C859`, decorator `50ACAE`, builtins `3FC56B`; CSS property names `CE9887`; erlang/haskell module names `FF839B`; haskell class `FF6480`; ini/props assignment `7A82DA`; javascript.js window instructions `10B1FE`; vhdl attribute `FF6480` / std package `FF839B`; gdscript string EOL `F9C859`.
+- **Cross-lexer consistency**: `COMMENT DOC KEYWORD ERROR` unified to `636D83` (swift, javascript.js, coffeescript, d); `json` ERROR now `FF2E3F` on `282C34` like every other ERROR style.
+- **searchResult**: legacy `Selected Line` (styleID 5) fixed from `ABB2BF` to `FFFFFF` on `3691FF` and documented as an inert legacy declaration (absent from the v8.9.9 model and the stock dark theme); `Current line background colour` is bg-only again.
+- **46 style names** aligned to `tools/npp_lexer_model.json` (`DOUBLESTRING` → `DOUBLE STRING`, `USER TAGS 1` → `USER TAGS1`, …) so Style Configurator labels match the Notepad++ model.
+- **Validator hardened**: style-name drift warnings vs the model, stray-element errors (`<WordsStyle>` outside its lexer, `<WidgetStyle>` outside `GlobalStyles`) and a `KNOWN_LEXILLA_STATES` whitelist for the 10 Lexilla-only states verified in `SciLexer.h`; `tools/baseline.json` regenerated.
+
 ### v2.2 (2026-11-08)
 
 - **12 new themed lexers**: rust, swift, yaml, javascript.js (standalone), coffeescript, erlang, d, nim, r, scheme, latex, gdscript — coverage against the Notepad++ v8.9.9 stylers.model.xml with exact `keywordClass` values.
@@ -45,7 +55,7 @@ This version includes a **comprehensive audit and refinement** to achieve high-f
 | **Find Mark** | `FC2E51` | `FF2E3F` | `#ff2e3f` ✅ |
 | **Python Triple-Double Strings** | `3FC56B` (green) | `F9C859` (String yellow) | ✅ |
 | **CSS Class/Selector** | Various | `3691FF` (Blue) | ✅ |
-| **CSS Property Names** | Various | `FF936A` (Orange) | ✅ |
+| **CSS Property Names** | Various | `FF936A` (Orange) | superseded in v2.3 → `CE9887` |
 | **HTML Attribute Values** | Pink | `F9C859` (String yellow) | ✅ |
 | **JSON true/false/null** | `3FC56B` (green) | `10B1FE` (Keyword blue) | ✅ |
 | **TOML Escape Char** | Green | `FF936A` (Orange) | ✅ |
@@ -160,7 +170,7 @@ Notepad++ uses XML configuration with:
 - Keywords: `#10b1fe` (blue)
 - Function definitions: `#3fc56b` (green)
 - Class names: `#ff6480` (pink)
-- Triple-double quotes: `#f9c859` (string yellow); single-quote triples: `#636d83` (comments color)
+- Triple-quoted strings (single, double and f-string variants): `#f9c859` (string yellow) — since v2.3 every Python string style follows the upstream `string` rule
 
 **JavaScript:**
 - Keywords: `#10b1fe` (blue)
@@ -174,7 +184,7 @@ Notepad++ uses XML configuration with:
 
 **CSS:**
 - Selectors: `#3691ff` (blue)
-- Properties: `#ff936a` (orange)
+- Properties: `#ce9887` (object-property brown; corrected in v2.3 — was `#ff936a`)
 - Values: `#f9c859` (string yellow)
 - Classes: `#3691ff` (blue) · IDs: `#ff6480` (pink)
 
@@ -318,7 +328,7 @@ The theme includes syntax highlighting for **67 lexers** covering many popular l
 
 ### ❌ Lexers without a theme (26 — honest limitation)
 
-26 lexers present in Notepad++ v8.9.9's `stylers.model.xml` (93 total) have no dedicated style block in `BlulocoDark.xml`: asn1, blitzbasic, cobol, csound, er, escript, escseq, fcST, forth, freebasic, gui4cli, hollywood, ihex, mmixal, mssql, nncrontab, oscript, purebasic, rebol, registry, spice, srec, tehex, txt2tags, visualprolog.
+26 lexers present in Notepad++ v8.9.9's `stylers.model.xml` (93 total) have no dedicated style block in `BlulocoDark.xml`: asn1, avs, baanc, blitzbasic, cobol, csound, escseq, escript, fcST, forth, freebasic, gui4cli, hollywood, ihex, mmixal, mssql, nncrontab, oscript, purebasic, rebol, registry, spice, srec, tehex, txt2tags, visualprolog.
 
 Files using these lexers fall back to the Default Style (`ABB2BF` on `282C34`) and receive no syntax coloring beyond the base style.
 
@@ -378,14 +388,15 @@ Available samples:
 
 - **Notepad++ lexer model differs from VSCode**: Notepad++ uses Scintilla lexers, not TextMate grammars. Some semantic tokens (e.g., function vs method, parameter vs variable) cannot be distinguished without language server integration. This is a model limitation, not a theme bug.
 - **No true semantic token support**: USER KEYWORDS are manual keyword lists configured in Style Configurator, not automatic semantic highlighting.
+- **Identifier colouring**: since v2.3 every `IDENTIFIER` style uses the default foreground (`ABB2BF`), matching the upstream theme (plain identifiers → `#abb2bf`). Scintilla identifier states cannot tell variables apart from function calls, so never rely on `IDENTIFIER` for function-call colouring — use the USER KEYWORDS 4 (function) list in Style Configurator instead.
 - **Lexer coverage**: 67 of Notepad++ v8.9.9's 93 model lexers have a dedicated style block. 26 lexers have no theme (listed above) and fall back to the Default Style.
-- **Style-ID coverage gaps**: A few themed lexers still miss style IDs present in `stylers.model.xml`; the validator reports each gap as a coverage warning.
+- **Style-ID coverage**: every themed lexer now covers the full style-ID inventory of the v8.9.9 `stylers.model.xml` — the two v2.2 gaps (`ini` KEY, `vhdl` COMMENT BLOCK) were structural (the styles sat outside their `<LexerType>` blocks) and are fixed. The only extra style is `searchResult` `Selected Line` (styleID 5), absent from the model and from the stock dark theme; it is kept as a documented, inert legacy declaration.
 - **Contrast trade-offs**: Comment color (`636D83` on `282C34`) falls below WCAG AA (2.7:1); this matches the original VSCode theme.
 - **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette and is no longer an exception.
 - **Palette exceptions**: the token palette is fully normalized against the upstream source, so the only colours outside the canonical role palette are (1) the `errorlist` ANSI terminal ramp (styleIDs 40–55), carried verbatim from the source's `terminal.ansi*` tokens; (2) the Notepad++ UI chrome colours in `GlobalStyles` (`2D333D`, `22252A`, `3D434F`, `FFCC00`, `177849`, `0084FF`, `25272D`, `DADADA`, `FFFFFF`), which exist because Notepad++ draws its own chrome and has no VSCode counterpart; (3) `7C8495`, the documentation-comment grey used by `COMMENT DOC KEYWORD`; and (4) GlobalStyles selection/search/mark/tab tints.
 - **Deliberate divergence in `errorlist`**: `ANSI COLOR RED` uses `FF2E3F`, while the upstream source uses `terminal.ansiRed` = `#fc2f52`. `FF2E3F` was kept on purpose, for internal consistency with the theme's canonical error colour — this is a documented decision, not an oversight.
 - **Screenshots**: the 7 PNGs in `screenshots/` are real Notepad++ captures taken **before** the v2.1 palette normalization; they may show the previous colours. They are illustrative, not proof of the current palette. Visual confirmation requires Windows + Notepad++.
-- **Renders**: the 7 SVGs in `renders/` are programmatic previews generated from the current `BlulocoDark.xml`; every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
+- **Renders**: the 7 SVGs in `renders/` are programmatic previews generated from the v2.2 `BlulocoDark.xml` (they have not been re-rendered after the v2.3 colour adjustments); every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
 
 ## 🔧 Customization
 
@@ -440,7 +451,14 @@ To modify colors:
 
 See [`CHANGELOG.md`](CHANGELOG.md) for the full release history.
 
-### [2.2] - 2026-11-08 (current)
+### [2.3] - 2026-11-09 (current)
+
+- Structural: `ini` KEY / `vhdl` COMMENT BLOCK moved inside their lexer blocks (full style-ID coverage for every themed lexer).
+- Colours: upstream fidelity fixes (python, css, erlang, haskell, ini/props, vhdl, gdscript, javascript.js), `IDENTIFIER` policy (`ABB2BF`), consistency fixes (`COMMENT DOC KEYWORD ERROR` → `636D83`, `json` ERROR → `FF2E3F` on `282C34`), searchResult contrast fix.
+- Names: 46 styles aligned to `tools/npp_lexer_model.json`.
+- Tooling: validator hardening (name-drift warnings, stray checks, `KNOWN_LEXILLA_STATES` whitelist) + regenerated `tools/baseline.json`.
+
+### [2.2] - 2026-11-08
 - Added 12 themed lexers (rust, swift, yaml, javascript.js, coffeescript, erlang, d, nim, r, scheme, latex, gdscript).
 - Added 26 missing styleIDs across 11 existing lexers.
 - Added USER KEYWORDS 1–8 scheme traceable to upstream `semanticTokenColors`.
