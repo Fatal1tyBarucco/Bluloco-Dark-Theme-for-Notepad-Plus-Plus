@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+### Added
+- `renders/` — 7 programmatic SVG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`) generated directly from the v2.2 `BlulocoDark.xml`: every colour is extracted from the theme file and the content comes from `samples/sample.*`. Clearly labelled as renders, **not** screenshots; visual verification still requires Windows + Notepad++.
+- README: new "v2.2 Renders" gallery subsection, updated repository tree and Known Limitations.
+
 ## [2.2] - 2026-11-08
 
 ### Added

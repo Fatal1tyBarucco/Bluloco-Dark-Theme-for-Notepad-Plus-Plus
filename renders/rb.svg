@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="525" height="479" viewBox="0 0 525 479">
+<!-- Render de demonstracao gerado programaticamente a partir de BlulocoDark.xml (v2.2). Nao e uma captura de tela do Notepad++. -->
+<rect width="525" height="479" rx="8" fill="#25272D"/>
+<rect x="12" y="7" width="168" height="27" rx="4" fill="#282C34"/>
+<rect x="12" y="7" width="168" height="2.6" rx="1.3" fill="#3691FF"/>
+<text x="24" y="25" font-size="12" fill="#ABB2BF" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">sample.rb</text>
+<text x="166" y="25" font-size="12" fill="#636D83" font-family="Consolas,monospace">×</text>
+<text x="196" y="25" font-size="12" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">README.md</text>
+<rect x="0" y="34" width="525" height="425" fill="#282C34"/>
+<rect x="0" y="34" width="46" height="425" fill="#22252A"/>
+<rect x="46" y="317" width="479" height="19" fill="#2D333D"/>
+<text x="37" y="47" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">1</text>
+<text x="37" y="66" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">2</text>
+<text x="37" y="85" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">3</text>
+<text x="37" y="104" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">4</text>
+<text x="37" y="123" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">5</text>
+<text x="37" y="142" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">6</text>
+<text x="37" y="161" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">7</text>
+<text x="37" y="180" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">8</text>
+<text x="37" y="199" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">9</text>
+<text x="37" y="218" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">10</text>
+<text x="37" y="237" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">11</text>
+<text x="37" y="256" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">12</text>
+<text x="37" y="275" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">13</text>
+<text x="37" y="294" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">14</text>
+<text x="37" y="313" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">15</text>
+<text x="37" y="332" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">16</text>
+<text x="37" y="351" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">17</text>
+<text x="37" y="370" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">18</text>
+<text x="37" y="389" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">19</text>
+<text x="37" y="408" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">20</text>
+<text x="37" y="427" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">21</text>
+<text font-size="13" x="58.0" y="50" fill="#636D83" textLength="304.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace"># Sample Ruby code to test Bluloco Dark</text>
+<text font-size="13" x="58.0" y="69" fill="#636D83" textLength="351.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace"># Includes blocks, symbols, and interpolation</text>
+<text font-size="13" x="58.0" y="107" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">class</text>
+<text font-size="13" x="104.8" y="107" fill="#FF6480" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Theme</text>
+<text font-size="13" x="73.6" y="126" fill="#10B1FE" textLength="101.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">attr_accessor</text>
+<text font-size="13" x="182.8" y="126" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:name</text>
+<text font-size="13" x="73.6" y="164" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">def</text>
+<text font-size="13" x="104.8" y="164" fill="#3FC56B" textLength="78.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">initialize</text>
+<text font-size="13" x="182.8" y="164" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
+<text font-size="13" x="190.6" y="164" fill="#3FC56B" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">name</text>
+<text font-size="13" x="221.8" y="164" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
+<text font-size="13" x="89.2" y="183" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">@name</text>
+<text font-size="13" x="136.0" y="183" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
+<text font-size="13" x="151.6" y="183" fill="#3FC56B" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">name</text>
+<text font-size="13" x="73.6" y="202" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">end</text>
+<text font-size="13" x="73.6" y="240" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">def</text>
+<text font-size="13" x="104.8" y="240" fill="#3FC56B" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">describe</text>
+<text font-size="13" x="89.2" y="259" fill="#3FC56B" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">puts</text>
+<text font-size="13" x="128.2" y="259" fill="#F9C859" textLength="132.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">&quot;Theme: #{@name}&quot;</text>
+<text font-size="13" x="73.6" y="278" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">end</text>
+<text font-size="13" x="58.0" y="297" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">end</text>
+<text font-size="13" x="58.0" y="335" fill="#3FC56B" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">themes</text>
+<text font-size="13" x="112.6" y="335" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
+<text font-size="13" x="128.2" y="335" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">[</text>
+<text font-size="13" x="136.0" y="335" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:dark</text>
+<text font-size="13" x="175.0" y="335" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">,</text>
+<text font-size="13" x="190.6" y="335" fill="#ABB2BF" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:light</text>
+<text font-size="13" x="237.4" y="335" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">,</text>
+<text font-size="13" x="253.0" y="335" fill="#ABB2BF" textLength="70.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:contrast</text>
+<text font-size="13" x="323.2" y="335" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">]</text>
+<text font-size="13" x="58.0" y="354" fill="#3FC56B" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">themes</text>
+<text font-size="13" x="104.8" y="354" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.</text>
+<text font-size="13" x="112.6" y="354" fill="#3FC56B" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">each</text>
+<text font-size="13" x="151.6" y="354" fill="#10B1FE" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">do</text>
+<text font-size="13" x="175.0" y="354" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">|</text>
+<text font-size="13" x="182.8" y="354" fill="#3FC56B" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">t</text>
+<text font-size="13" x="190.6" y="354" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">|</text>
+<text font-size="13" x="73.6" y="373" fill="#3FC56B" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">puts</text>
+<text font-size="13" x="112.6" y="373" fill="#F9C859" textLength="156.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">&quot;Processing #{t}...&quot;</text>
+<text font-size="13" x="58.0" y="392" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">end</text>
+<text font-size="13" x="58.0" y="430" fill="#FF6480" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Theme</text>
+<text font-size="13" x="97.0" y="430" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.</text>
+<text font-size="13" x="104.8" y="430" fill="#3FC56B" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">new</text>
+<text font-size="13" x="128.2" y="430" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
+<text font-size="13" x="136.0" y="430" fill="#F9C859" textLength="109.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">&quot;Bluloco Dark&quot;</text>
+<text font-size="13" x="245.2" y="430" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">).</text>
+<text font-size="13" x="260.8" y="430" fill="#3FC56B" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">describe</text>
+<rect x="58" y="323" width="1.6" height="15" fill="#FFCC00"/>
+<rect x="0" y="459" width="525" height="20" fill="#22252A"/>
+<text x="12" y="472.5" font-size="10" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Render de demonstração — Bluloco Dark v2.2 · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++</text>
+</svg>
