@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-07T19:16:20.168891+00:00",
+  "generated_at": "2026-11-08T03:01:36.585015+00:00",
   "theme": {
     "path": "BlulocoDark.xml",
-    "sha256": "8d3d27ebeb3b371bd65027f7ed68a5e0b5351aa73a900b58bb3e88ba18376c11",
+    "sha256": "36d93abaa87fa538391b592b2fa7974df0f36029bd66e29d4976860d2f495401",
     "line_count": 1175,
     "size_bytes": 151062,
     "lexer_type_count": 55,
-    "words_style_count": 928,
+    "words_style_count": 950,
     "widget_style_count": 39
   },
   "reference": {
@@ -31,24 +31,22 @@
         "c",
         "cpp",
         "cs",
-        "rc",
-        "typescript"
+        "rc"
       ],
       [
         "fortran",
         "fortran77"
       ]
     ],
-    "total_unknown_style_ids": 26,
-    "total_missing_model_style_ids": 63,
-    "total_name_mismatches": 22,
+    "total_unknown_style_ids": 11,
+    "total_missing_model_style_ids": 26,
+    "total_name_mismatches": 8,
     "lexers_with_unknown_ids": [
       "ada",
       "asm",
       "asp",
       "fortran",
       "fortran77",
-      "javascript",
       "lisp",
       "python",
       "searchResult",
@@ -56,12 +54,7 @@
       "verilog"
     ],
     "lexers_with_missing_styles": [
-      "actionscript",
-      "c",
       "cpp",
-      "cs",
-      "css",
-      "go",
       "html",
       "ini",
       "lisp",
@@ -70,53 +63,36 @@
       "php",
       "powershell",
       "props",
-      "python",
-      "rc",
-      "tcl",
-      "typescript",
       "vhdl",
       "xml"
     ],
-    "suspected_copied_lexers": [
-      "tcl"
-    ],
+    "suspected_copied_lexers": [],
     "widgets_missing": 14,
     "widgets_duplicate_names": [],
     "widgets_extra": [],
     "invalid_color_attributes": 0,
-    "out_of_palette_attributes": 13,
+    "out_of_palette_attributes": 0,
+    "out_of_palette_criteria": "not in PALETTE | UI_EXCEPTIONS (tools/validate_theme.py)",
     "words_styles_with_text": 2
   },
   "lexers": {
     "c": {
       "in_model": true,
       "desc": "C",
-      "style_count": 24,
+      "style_count": 26,
       "model_style_count": 26,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "23",
-        "24"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "23",
-          "model_name": "PREPROCESSOR COMMENT"
-        },
-        {
-          "styleID": "24",
-          "model_name": "PREPROCESSOR COMMENT DOC"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 24,
-      "exact_id_name_matches": 24,
-      "own_model_similarity": 0.9231,
-      "model_style_coverage": 0.9231,
-      "best_other_model_lexer": "java",
-      "best_other_model_similarity": 0.9583,
+      "id_overlap_count": 26,
+      "exact_id_name_matches": 26,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
+      "best_other_model_lexer": "cs",
+      "best_other_model_similarity": 1.0,
       "exact_containment_sources": [
         {
           "lexer": "cs",
@@ -322,6 +298,28 @@
           "text": ""
         },
         {
+          "styleID": "23",
+          "name": "PREPROCESSOR COMMENT",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "24",
+          "name": "PREPROCESSOR COMMENT DOC",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "128",
           "name": "USER KEYWORDS 1",
           "fgColor": "CE9887",
@@ -368,7 +366,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -379,7 +377,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -390,7 +388,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -401,7 +399,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -414,37 +412,27 @@
     "cpp": {
       "in_model": true,
       "desc": "C++",
-      "style_count": 24,
+      "style_count": 26,
       "model_style_count": 27,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
       "missing_model_style_ids": [
-        "20",
-        "23",
-        "24"
+        "20"
       ],
       "missing_model_style_details": [
         {
           "styleID": "20",
           "model_name": "STRINGRAW"
-        },
-        {
-          "styleID": "23",
-          "model_name": "PREPROCESSOR COMMENT"
-        },
-        {
-          "styleID": "24",
-          "model_name": "PREPROCESSOR COMMENT DOC"
         }
       ],
       "name_mismatches": [],
-      "id_overlap_count": 24,
-      "exact_id_name_matches": 24,
-      "own_model_similarity": 0.8889,
-      "model_style_coverage": 0.8889,
-      "best_other_model_lexer": "java",
-      "best_other_model_similarity": 0.9583,
+      "id_overlap_count": 26,
+      "exact_id_name_matches": 26,
+      "own_model_similarity": 0.963,
+      "model_style_coverage": 0.963,
+      "best_other_model_lexer": "c",
+      "best_other_model_similarity": 1.0,
       "exact_containment_sources": [
         {
           "lexer": "c",
@@ -650,6 +638,28 @@
           "text": ""
         },
         {
+          "styleID": "23",
+          "name": "PREPROCESSOR COMMENT",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "24",
+          "name": "PREPROCESSOR COMMENT DOC",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "128",
           "name": "USER KEYWORDS 1",
           "fgColor": "CE9887",
@@ -696,7 +706,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -707,7 +717,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -718,7 +728,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -729,7 +739,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -742,32 +752,20 @@
     "go": {
       "in_model": true,
       "desc": "Go",
-      "style_count": 26,
+      "style_count": 28,
       "model_style_count": 28,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "23",
-        "24"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "23",
-          "model_name": "PREPROCESSOR COMMENT"
-        },
-        {
-          "styleID": "24",
-          "model_name": "PREPROCESSOR COMMENT DOC"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 26,
-      "exact_id_name_matches": 26,
-      "own_model_similarity": 0.9286,
-      "model_style_coverage": 0.9286,
+      "id_overlap_count": 28,
+      "exact_id_name_matches": 28,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
       "best_other_model_lexer": "cpp",
-      "best_other_model_similarity": 0.8929,
+      "best_other_model_similarity": 0.9643,
       "exact_containment_sources": [],
       "suspected_source_lexer": null,
       "styles": [
@@ -970,6 +968,28 @@
           "text": ""
         },
         {
+          "styleID": "23",
+          "name": "PREPROCESSOR COMMENT",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "24",
+          "name": "PREPROCESSOR COMMENT DOC",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "128",
           "name": "USER KEYWORDS 1",
           "fgColor": "CE9887",
@@ -1016,7 +1036,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1027,7 +1047,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1038,7 +1058,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1049,7 +1069,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1328,7 +1348,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1339,7 +1359,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1350,7 +1370,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1361,7 +1381,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1374,32 +1394,20 @@
     "cs": {
       "in_model": true,
       "desc": "C#",
-      "style_count": 24,
+      "style_count": 26,
       "model_style_count": 26,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "23",
-        "24"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "23",
-          "model_name": "PREPROCESSOR COMMENT"
-        },
-        {
-          "styleID": "24",
-          "model_name": "PREPROCESSOR COMMENT DOC"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 24,
-      "exact_id_name_matches": 24,
-      "own_model_similarity": 0.9231,
-      "model_style_coverage": 0.9231,
-      "best_other_model_lexer": "java",
-      "best_other_model_similarity": 0.9583,
+      "id_overlap_count": 26,
+      "exact_id_name_matches": 26,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
+      "best_other_model_lexer": "c",
+      "best_other_model_similarity": 1.0,
       "exact_containment_sources": [
         {
           "lexer": "c",
@@ -1605,6 +1613,28 @@
           "text": ""
         },
         {
+          "styleID": "23",
+          "name": "PREPROCESSOR COMMENT",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "24",
+          "name": "PREPROCESSOR COMMENT DOC",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "128",
           "name": "USER KEYWORDS 1",
           "fgColor": "CE9887",
@@ -1651,7 +1681,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1662,7 +1692,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1673,7 +1703,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -1684,7 +1714,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2113,7 +2143,7 @@
         {
           "styleID": "49",
           "name": "ANSI COLOR BRIGHT RED",
-          "fgColor": "FF637F",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2124,7 +2154,7 @@
         {
           "styleID": "50",
           "name": "ANSI COLOR BRIGHT GREEN",
-          "fgColor": "3FC56A",
+          "fgColor": "3FC56B",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2135,7 +2165,7 @@
         {
           "styleID": "51",
           "name": "ANSI COLOR YELLOW",
-          "fgColor": "F9C858",
+          "fgColor": "F9C859",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2146,7 +2176,7 @@
         {
           "styleID": "52",
           "name": "ANSI COLOR BRIGHT BLUE",
-          "fgColor": "10B0FE",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2533,32 +2563,20 @@
     "rc": {
       "in_model": true,
       "desc": "RC",
-      "style_count": 24,
+      "style_count": 26,
       "model_style_count": 26,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "23",
-        "24"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "23",
-          "model_name": "PREPROCESSOR COMMENT"
-        },
-        {
-          "styleID": "24",
-          "model_name": "PREPROCESSOR COMMENT DOC"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 24,
-      "exact_id_name_matches": 24,
-      "own_model_similarity": 0.9231,
-      "model_style_coverage": 0.9231,
-      "best_other_model_lexer": "java",
-      "best_other_model_similarity": 0.9583,
+      "id_overlap_count": 26,
+      "exact_id_name_matches": 26,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
+      "best_other_model_lexer": "c",
+      "best_other_model_similarity": 1.0,
       "exact_containment_sources": [
         {
           "lexer": "c",
@@ -2764,6 +2782,28 @@
           "text": ""
         },
         {
+          "styleID": "23",
+          "name": "PREPROCESSOR COMMENT",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "24",
+          "name": "PREPROCESSOR COMMENT DOC",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "128",
           "name": "USER KEYWORDS 1",
           "fgColor": "CE9887",
@@ -2810,7 +2850,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2821,7 +2861,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2832,7 +2872,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2843,7 +2883,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -2856,266 +2896,27 @@
     "tcl": {
       "in_model": true,
       "desc": "TCL",
-      "style_count": 16,
+      "style_count": 22,
       "model_style_count": 22,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "0",
-        "8",
-        "12",
-        "19",
-        "20",
-        "21"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "0",
-          "model_name": "DEFAULT"
-        },
-        {
-          "styleID": "8",
-          "model_name": "SUBSTITUTION"
-        },
-        {
-          "styleID": "12",
-          "model_name": "TCL KEYWORD"
-        },
-        {
-          "styleID": "19",
-          "model_name": "USER4"
-        },
-        {
-          "styleID": "20",
-          "model_name": "COMMENT BOX"
-        },
-        {
-          "styleID": "21",
-          "model_name": "BLOCK COMMENT"
-        }
-      ],
-      "name_mismatches": [
-        {
-          "styleID": "3",
-          "theme_name": "COMMENT DOC",
-          "model_name": "NUMBER"
-        },
-        {
-          "styleID": "4",
-          "theme_name": "NUMBER",
-          "model_name": "WORD IN QUOTE"
-        },
-        {
-          "styleID": "5",
-          "theme_name": "INSTRUCTION WORD",
-          "model_name": "IN QUOTE"
-        },
-        {
-          "styleID": "6",
-          "theme_name": "STRING",
-          "model_name": "OPERATOR"
-        },
-        {
-          "styleID": "7",
-          "theme_name": "CHARACTER",
-          "model_name": "IDENTIFIER"
-        },
-        {
-          "styleID": "9",
-          "theme_name": "PREPROCESSOR",
-          "model_name": "SUB BRACE"
-        },
-        {
-          "styleID": "10",
-          "theme_name": "OPERATOR",
-          "model_name": "MODIFIER"
-        },
-        {
-          "styleID": "11",
-          "theme_name": "DEFAULT",
-          "model_name": "EXPAND"
-        },
-        {
-          "styleID": "13",
-          "theme_name": "VERBATIM",
-          "model_name": "iTCL KEYWORD"
-        },
-        {
-          "styleID": "14",
-          "theme_name": "REGEX",
-          "model_name": "TK KEYWORD"
-        },
-        {
-          "styleID": "15",
-          "theme_name": "COMMENT LINE DOC",
-          "model_name": "TK COMMAND"
-        },
-        {
-          "styleID": "16",
-          "theme_name": "TYPE WORD",
-          "model_name": "USER1"
-        },
-        {
-          "styleID": "17",
-          "theme_name": "COMMENT DOC KEYWORD",
-          "model_name": "USER2"
-        },
-        {
-          "styleID": "18",
-          "theme_name": "COMMENT DOC KEYWORD ERROR",
-          "model_name": "USER3"
-        }
-      ],
-      "id_overlap_count": 16,
-      "exact_id_name_matches": 2,
-      "own_model_similarity": 0.0556,
-      "model_style_coverage": 0.7273,
-      "best_other_model_lexer": "objc",
-      "best_other_model_similarity": 0.8889,
-      "exact_containment_sources": [
-        {
-          "lexer": "objc",
-          "model_style_count": 18
-        },
-        {
-          "lexer": "coffeescript",
-          "model_style_count": 20
-        },
-        {
-          "lexer": "c",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "cs",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "rc",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "swift",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "actionscript",
-          "model_style_count": 27
-        },
-        {
-          "lexer": "cpp",
-          "model_style_count": 27
-        },
-        {
-          "lexer": "go",
-          "model_style_count": 28
-        }
-      ],
-      "suspected_source_lexer": "objc",
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
+      "name_mismatches": [],
+      "id_overlap_count": 22,
+      "exact_id_name_matches": 22,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
+      "best_other_model_lexer": "matlab",
+      "best_other_model_similarity": 0.1923,
+      "exact_containment_sources": [],
+      "suspected_source_lexer": null,
       "styles": [
         {
-          "styleID": "9",
-          "name": "PREPROCESSOR",
-          "fgColor": "10B1FE",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "11",
+          "styleID": "0",
           "name": "DEFAULT",
           "fgColor": "ABB2BF",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "5",
-          "name": "INSTRUCTION WORD",
-          "fgColor": "10B1FE",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": "instre1",
-          "text": ""
-        },
-        {
-          "styleID": "16",
-          "name": "TYPE WORD",
-          "fgColor": "FF6480",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": "type1",
-          "text": ""
-        },
-        {
-          "styleID": "4",
-          "name": "NUMBER",
-          "fgColor": "FF78F8",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "6",
-          "name": "STRING",
-          "fgColor": "F9C859",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "7",
-          "name": "CHARACTER",
-          "fgColor": "F9C859",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "10",
-          "name": "OPERATOR",
-          "fgColor": "7A82DA",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "13",
-          "name": "VERBATIM",
-          "fgColor": "FF78F8",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "14",
-          "name": "REGEX",
-          "fgColor": "F9C859",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -3147,18 +2948,194 @@
         },
         {
           "styleID": "3",
-          "name": "COMMENT DOC",
-          "fgColor": "636D83",
+          "name": "NUMBER",
+          "fgColor": "FF78F8",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
           "fontSize": "",
           "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "4",
+          "name": "WORD IN QUOTE",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "5",
+          "name": "IN QUOTE",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "6",
+          "name": "OPERATOR",
+          "fgColor": "7A82DA",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "7",
+          "name": "IDENTIFIER",
+          "fgColor": "ABB2BF",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "8",
+          "name": "SUBSTITUTION",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "9",
+          "name": "SUB BRACE",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "10",
+          "name": "MODIFIER",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "11",
+          "name": "EXPAND",
+          "fgColor": "ABB2BF",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type3",
+          "text": ""
+        },
+        {
+          "styleID": "12",
+          "name": "TCL KEYWORD",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "instre1",
+          "text": ""
+        },
+        {
+          "styleID": "13",
+          "name": "iTCL KEYWORD",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type1",
+          "text": ""
+        },
+        {
+          "styleID": "14",
+          "name": "TK KEYWORD",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "instre2",
           "text": ""
         },
         {
           "styleID": "15",
-          "name": "COMMENT LINE DOC",
+          "name": "TK COMMAND",
+          "fgColor": "3FC56B",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type2",
+          "text": ""
+        },
+        {
+          "styleID": "16",
+          "name": "USER1",
+          "fgColor": "CE9887",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type4",
+          "text": ""
+        },
+        {
+          "styleID": "17",
+          "name": "USER2",
+          "fgColor": "9F7EFE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type5",
+          "text": ""
+        },
+        {
+          "styleID": "18",
+          "name": "USER3",
+          "fgColor": "8BCDEF",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type6",
+          "text": ""
+        },
+        {
+          "styleID": "19",
+          "name": "USER4",
+          "fgColor": "3FC56B",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "type7",
+          "text": ""
+        },
+        {
+          "styleID": "20",
+          "name": "COMMENT BOX",
           "fgColor": "636D83",
           "bgColor": "282C34",
           "fontName": "",
@@ -3168,19 +3145,8 @@
           "text": ""
         },
         {
-          "styleID": "17",
-          "name": "COMMENT DOC KEYWORD",
-          "fgColor": "7C8495",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "18",
-          "name": "COMMENT DOC KEYWORD ERROR",
+          "styleID": "21",
+          "name": "BLOCK COMMENT",
           "fgColor": "636D83",
           "bgColor": "282C34",
           "fontName": "",
@@ -4244,7 +4210,7 @@
         {
           "styleID": "212",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -4257,97 +4223,20 @@
     "javascript": {
       "in_model": true,
       "desc": "JavaScript (embedded)",
-      "style_count": 36,
+      "style_count": 21,
       "model_style_count": 21,
       "duplicate_style_ids": [],
-      "unknown_style_ids": [
-        "20",
-        "51",
-        "55",
-        "56",
-        "57",
-        "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
-      ],
-      "unknown_style_details": [
-        {
-          "styleID": "20",
-          "name": "STRINGRAW"
-        },
-        {
-          "styleID": "51",
-          "name": "STRINGEOL"
-        },
-        {
-          "styleID": "55",
-          "name": "FUNCTION"
-        },
-        {
-          "styleID": "56",
-          "name": "CLASS"
-        },
-        {
-          "styleID": "57",
-          "name": "METHOD"
-        },
-        {
-          "styleID": "58",
-          "name": "ARROW FUNCTION"
-        },
-        {
-          "styleID": "59",
-          "name": "PROPERTY"
-        },
-        {
-          "styleID": "60",
-          "name": "VARIABLE"
-        },
-        {
-          "styleID": "61",
-          "name": "PARAMETER"
-        },
-        {
-          "styleID": "62",
-          "name": "TYPE"
-        },
-        {
-          "styleID": "63",
-          "name": "INTERFACE"
-        },
-        {
-          "styleID": "64",
-          "name": "ENUM"
-        },
-        {
-          "styleID": "65",
-          "name": "NAMESPACE"
-        },
-        {
-          "styleID": "66",
-          "name": "MODULE"
-        },
-        {
-          "styleID": "67",
-          "name": "DECORATOR"
-        }
-      ],
+      "unknown_style_ids": [],
+      "unknown_style_details": [],
       "missing_model_style_ids": [],
       "missing_model_style_details": [],
       "name_mismatches": [],
       "id_overlap_count": 21,
       "exact_id_name_matches": 21,
-      "own_model_similarity": 0.5833,
+      "own_model_similarity": 1.0,
       "model_style_coverage": 1.0,
-      "best_other_model_lexer": "javascript.js",
-      "best_other_model_similarity": 0.0167,
+      "best_other_model_lexer": null,
+      "best_other_model_similarity": 0.0,
       "exact_containment_sources": [],
       "suspected_source_lexer": null,
       "styles": [
@@ -4393,17 +4282,6 @@
           "fontStyle": "0",
           "fontSize": "",
           "keywordClass": "instre1",
-          "text": ""
-        },
-        {
-          "styleID": "20",
-          "name": "STRINGRAW",
-          "fgColor": "F9C859",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
           "text": ""
         },
         {
@@ -4462,17 +4340,6 @@
           "text": ""
         },
         {
-          "styleID": "51",
-          "name": "STRINGEOL",
-          "fgColor": "F9C859",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
           "styleID": "52",
           "name": "REGEX",
           "fgColor": "F9C859",
@@ -4509,149 +4376,6 @@
           "styleID": "44",
           "name": "COMMENTDOC",
           "fgColor": "636D83",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "55",
-          "name": "FUNCTION",
-          "fgColor": "3FC56B",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "56",
-          "name": "CLASS",
-          "fgColor": "FF6480",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "57",
-          "name": "METHOD",
-          "fgColor": "3FC56B",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "58",
-          "name": "ARROW FUNCTION",
-          "fgColor": "3FC56B",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "59",
-          "name": "PROPERTY",
-          "fgColor": "CE9887",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "60",
-          "name": "VARIABLE",
-          "fgColor": "ABB2BF",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "61",
-          "name": "PARAMETER",
-          "fgColor": "8BCDEF",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "62",
-          "name": "TYPE",
-          "fgColor": "10B1FE",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "63",
-          "name": "INTERFACE",
-          "fgColor": "FF6480",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "64",
-          "name": "ENUM",
-          "fgColor": "FF6480",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "65",
-          "name": "NAMESPACE",
-          "fgColor": "FF6480",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "66",
-          "name": "MODULE",
-          "fgColor": "FF6480",
-          "bgColor": "282C34",
-          "fontName": "",
-          "fontStyle": "0",
-          "fontSize": "",
-          "keywordClass": null,
-          "text": ""
-        },
-        {
-          "styleID": "67",
-          "name": "DECORATOR",
-          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -4706,7 +4430,7 @@
         {
           "styleID": "204",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -4717,7 +4441,7 @@
         {
           "styleID": "205",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -4728,7 +4452,7 @@
         {
           "styleID": "206",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -4739,7 +4463,7 @@
         {
           "styleID": "207",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -5098,7 +4822,7 @@
         {
           "styleID": "220",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -5109,7 +4833,7 @@
         {
           "styleID": "221",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -5120,7 +4844,7 @@
         {
           "styleID": "222",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -5131,7 +4855,7 @@
         {
           "styleID": "223",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -5972,57 +5696,20 @@
     "css": {
       "in_model": true,
       "desc": "CSS",
-      "style_count": 13,
+      "style_count": 20,
       "model_style_count": 20,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "13",
-        "14",
-        "16",
-        "18",
-        "20",
-        "22",
-        "23"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "13",
-          "model_name": "DOUBLE STRING"
-        },
-        {
-          "styleID": "14",
-          "model_name": "SINGLE STRING"
-        },
-        {
-          "styleID": "16",
-          "model_name": "ATTRIBUTE"
-        },
-        {
-          "styleID": "18",
-          "model_name": "PSEUDOELEMENT"
-        },
-        {
-          "styleID": "20",
-          "model_name": "LEGACY PSEUDOELEMENT"
-        },
-        {
-          "styleID": "22",
-          "model_name": "MEDIA"
-        },
-        {
-          "styleID": "23",
-          "model_name": "VARIABLE"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 13,
-      "exact_id_name_matches": 13,
-      "own_model_similarity": 0.65,
-      "model_style_coverage": 0.65,
+      "id_overlap_count": 20,
+      "exact_id_name_matches": 20,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
       "best_other_model_lexer": "sas",
-      "best_other_model_similarity": 0.1304,
+      "best_other_model_similarity": 0.1,
       "exact_containment_sources": [],
       "suspected_source_lexer": null,
       "styles": [
@@ -6162,6 +5849,83 @@
           "styleID": "12",
           "name": "DIRECTIVE",
           "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "13",
+          "name": "DOUBLE STRING",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "14",
+          "name": "SINGLE STRING",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "16",
+          "name": "ATTRIBUTE",
+          "fgColor": "FF936A",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "18",
+          "name": "PSEUDOELEMENT",
+          "fgColor": "3691FF",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "20",
+          "name": "LEGACY PSEUDOELEMENT",
+          "fgColor": "3691FF",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "22",
+          "name": "MEDIA",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "23",
+          "name": "VARIABLE",
+          "fgColor": "CE9887",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -6823,7 +6587,7 @@
     "python": {
       "in_model": true,
       "desc": "Python",
-      "style_count": 19,
+      "style_count": 29,
       "model_style_count": 28,
       "duplicate_style_ids": [],
       "unknown_style_ids": [
@@ -6835,67 +6599,15 @@
           "name": "STRINGEOL"
         }
       ],
-      "missing_model_style_ids": [
-        "15",
-        "20",
-        "128",
-        "129",
-        "130",
-        "131",
-        "132",
-        "133",
-        "134",
-        "135"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "15",
-          "model_name": "DECORATOR"
-        },
-        {
-          "styleID": "20",
-          "model_name": "ATTRIBUTE"
-        },
-        {
-          "styleID": "128",
-          "model_name": "USER KEYWORDS 1"
-        },
-        {
-          "styleID": "129",
-          "model_name": "USER KEYWORDS 2"
-        },
-        {
-          "styleID": "130",
-          "model_name": "USER KEYWORDS 3"
-        },
-        {
-          "styleID": "131",
-          "model_name": "USER KEYWORDS 4"
-        },
-        {
-          "styleID": "132",
-          "model_name": "USER KEYWORDS 5"
-        },
-        {
-          "styleID": "133",
-          "model_name": "USER KEYWORDS 6"
-        },
-        {
-          "styleID": "134",
-          "model_name": "USER KEYWORDS 7"
-        },
-        {
-          "styleID": "135",
-          "model_name": "USER KEYWORDS 8"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 18,
-      "exact_id_name_matches": 18,
-      "own_model_similarity": 0.6207,
-      "model_style_coverage": 0.6429,
+      "id_overlap_count": 28,
+      "exact_id_name_matches": 28,
+      "own_model_similarity": 0.9655,
+      "model_style_coverage": 1.0,
       "best_other_model_lexer": "gdscript",
-      "best_other_model_similarity": 0.375,
+      "best_other_model_similarity": 0.5882,
       "exact_containment_sources": [],
       "suspected_source_lexer": null,
       "styles": [
@@ -7065,6 +6777,17 @@
           "text": ""
         },
         {
+          "styleID": "15",
+          "name": "DECORATOR",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "16",
           "name": "F STRING",
           "fgColor": "F9C859",
@@ -7106,6 +6829,105 @@
           "fontStyle": "0",
           "fontSize": "",
           "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "20",
+          "name": "ATTRIBUTE",
+          "fgColor": "CE9887",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "128",
+          "name": "USER KEYWORDS 1",
+          "fgColor": "CE9887",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle1",
+          "text": ""
+        },
+        {
+          "styleID": "129",
+          "name": "USER KEYWORDS 2",
+          "fgColor": "9F7EFE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle2",
+          "text": ""
+        },
+        {
+          "styleID": "130",
+          "name": "USER KEYWORDS 3",
+          "fgColor": "8BCDEF",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle3",
+          "text": ""
+        },
+        {
+          "styleID": "131",
+          "name": "USER KEYWORDS 4",
+          "fgColor": "3FC56B",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle4",
+          "text": ""
+        },
+        {
+          "styleID": "132",
+          "name": "USER KEYWORDS 5",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle5",
+          "text": ""
+        },
+        {
+          "styleID": "133",
+          "name": "USER KEYWORDS 6",
+          "fgColor": "FF6480",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle6",
+          "text": ""
+        },
+        {
+          "styleID": "134",
+          "name": "USER KEYWORDS 7",
+          "fgColor": "7A82DA",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle7",
+          "text": ""
+        },
+        {
+          "styleID": "135",
+          "name": "USER KEYWORDS 8",
+          "fgColor": "FF936A",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": "substyle8",
           "text": ""
         }
       ]
@@ -7485,7 +7307,7 @@
         {
           "styleID": "128",
           "name": "USER KEYWORDS 5",
-          "fgColor": "CE9887",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -7496,7 +7318,7 @@
         {
           "styleID": "129",
           "name": "USER KEYWORDS 6",
-          "fgColor": "9F7EFE",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -7507,7 +7329,7 @@
         {
           "styleID": "130",
           "name": "USER KEYWORDS 7",
-          "fgColor": "8BCDEF",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -7518,7 +7340,7 @@
         {
           "styleID": "131",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -8037,32 +7859,20 @@
     "actionscript": {
       "in_model": true,
       "desc": "ActionScript",
-      "style_count": 25,
+      "style_count": 27,
       "model_style_count": 27,
       "duplicate_style_ids": [],
       "unknown_style_ids": [],
       "unknown_style_details": [],
-      "missing_model_style_ids": [
-        "23",
-        "24"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "23",
-          "model_name": "PREPROCESSOR COMMENT"
-        },
-        {
-          "styleID": "24",
-          "model_name": "PREPROCESSOR COMMENT DOC"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 25,
-      "exact_id_name_matches": 25,
-      "own_model_similarity": 0.9259,
-      "model_style_coverage": 0.9259,
-      "best_other_model_lexer": "java",
-      "best_other_model_similarity": 0.92,
+      "id_overlap_count": 27,
+      "exact_id_name_matches": 27,
+      "own_model_similarity": 1.0,
+      "model_style_coverage": 1.0,
+      "best_other_model_lexer": "c",
+      "best_other_model_similarity": 0.963,
       "exact_containment_sources": [],
       "suspected_source_lexer": null,
       "styles": [
@@ -8254,6 +8064,28 @@
           "text": ""
         },
         {
+          "styleID": "23",
+          "name": "PREPROCESSOR COMMENT",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "24",
+          "name": "PREPROCESSOR COMMENT DOC",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "128",
           "name": "USER KEYWORDS 1",
           "fgColor": "CE9887",
@@ -8300,7 +8132,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -8311,7 +8143,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -8322,7 +8154,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -8333,7 +8165,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -11762,8 +11594,8 @@
         {
           "styleID": "1",
           "name": "Search Header",
-          "fgColor": "000080",
-          "bgColor": "BBBBFF",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "1",
           "fontSize": "",
@@ -11773,8 +11605,8 @@
         {
           "styleID": "2",
           "name": "File Header",
-          "fgColor": "008000",
-          "bgColor": "D5FFD5",
+          "fgColor": "3FC56B",
+          "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "1",
           "fontSize": "",
@@ -11784,8 +11616,8 @@
         {
           "styleID": "3",
           "name": "Line Number",
-          "fgColor": "000000",
-          "bgColor": "FFFFFF",
+          "fgColor": "636D83",
+          "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
           "fontSize": "",
@@ -11795,8 +11627,8 @@
         {
           "styleID": "4",
           "name": "Hit Word",
-          "fgColor": "FF0000",
-          "bgColor": "FFFFBF",
+          "fgColor": "FF2E3F",
+          "bgColor": "F9C859",
           "fontName": "",
           "fontStyle": "0",
           "fontSize": "",
@@ -11806,8 +11638,8 @@
         {
           "styleID": "5",
           "name": "Selected Line",
-          "fgColor": "000080",
-          "bgColor": "FFFF4F",
+          "fgColor": "ABB2BF",
+          "bgColor": "3691FF",
           "fontName": "",
           "fontStyle": "0",
           "fontSize": "",
@@ -11817,8 +11649,8 @@
         {
           "styleID": "6",
           "name": "Current line background colour",
-          "fgColor": "0080FF",
-          "bgColor": "E8E8FF",
+          "fgColor": "10B1FE",
+          "bgColor": "2D333D",
           "fontName": null,
           "fontStyle": "0",
           "fontSize": "",
@@ -12023,7 +11855,7 @@
     "typescript": {
       "in_model": true,
       "desc": "TypeScript",
-      "style_count": 24,
+      "style_count": 26,
       "model_style_count": 25,
       "duplicate_style_ids": [],
       "unknown_style_ids": [
@@ -12035,57 +11867,16 @@
           "name": "PREPROCESSOR"
         }
       ],
-      "missing_model_style_ids": [
-        "19",
-        "20"
-      ],
-      "missing_model_style_details": [
-        {
-          "styleID": "19",
-          "model_name": "WINDOW INSTRUCTION"
-        },
-        {
-          "styleID": "20",
-          "model_name": "STRING RAW"
-        }
-      ],
+      "missing_model_style_ids": [],
+      "missing_model_style_details": [],
       "name_mismatches": [],
-      "id_overlap_count": 23,
-      "exact_id_name_matches": 23,
-      "own_model_similarity": 0.8846,
-      "model_style_coverage": 0.92,
-      "best_other_model_lexer": "java",
-      "best_other_model_similarity": 0.9583,
-      "exact_containment_sources": [
-        {
-          "lexer": "c",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "cs",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "rc",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "swift",
-          "model_style_count": 26
-        },
-        {
-          "lexer": "actionscript",
-          "model_style_count": 27
-        },
-        {
-          "lexer": "cpp",
-          "model_style_count": 27
-        },
-        {
-          "lexer": "go",
-          "model_style_count": 28
-        }
-      ],
+      "id_overlap_count": 25,
+      "exact_id_name_matches": 25,
+      "own_model_similarity": 0.9615,
+      "model_style_coverage": 1.0,
+      "best_other_model_lexer": "javascript.js",
+      "best_other_model_similarity": 0.9615,
+      "exact_containment_sources": [],
       "suspected_source_lexer": null,
       "styles": [
         {
@@ -12133,6 +11924,17 @@
           "text": ""
         },
         {
+          "styleID": "19",
+          "name": "WINDOW INSTRUCTION",
+          "fgColor": "10B1FE",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
           "styleID": "4",
           "name": "NUMBER",
           "fgColor": "FF78F8",
@@ -12146,6 +11948,17 @@
         {
           "styleID": "6",
           "name": "STRING",
+          "fgColor": "F9C859",
+          "bgColor": "282C34",
+          "fontName": "",
+          "fontStyle": "0",
+          "fontSize": "",
+          "keywordClass": null,
+          "text": ""
+        },
+        {
+          "styleID": "20",
+          "name": "STRING RAW",
           "fgColor": "F9C859",
           "bgColor": "282C34",
           "fontName": "",
@@ -12311,7 +12124,7 @@
         {
           "styleID": "132",
           "name": "USER KEYWORDS 5",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -12322,7 +12135,7 @@
         {
           "styleID": "133",
           "name": "USER KEYWORDS 6",
-          "fgColor": "3FC56B",
+          "fgColor": "FF6480",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -12333,7 +12146,7 @@
         {
           "styleID": "134",
           "name": "USER KEYWORDS 7",
-          "fgColor": "3FC56B",
+          "fgColor": "7A82DA",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -12344,7 +12157,7 @@
         {
           "styleID": "135",
           "name": "USER KEYWORDS 8",
-          "fgColor": "3FC56B",
+          "fgColor": "FF936A",
           "bgColor": "282C34",
           "fontName": "",
           "fontStyle": "0",
@@ -12571,28 +12384,28 @@
         "name": "Change History modified",
         "styleID": "0",
         "fgColor": "FF936A",
-        "bgColor": "FF936A",
+        "bgColor": "22252A",
         "text": ""
       },
       {
         "name": "Change History revert modified",
         "styleID": "0",
         "fgColor": "3FC56B",
-        "bgColor": "3FC56B",
+        "bgColor": "22252A",
         "text": ""
       },
       {
         "name": "Change History revert origin",
         "styleID": "0",
         "fgColor": "10B1FE",
-        "bgColor": "10B1FE",
+        "bgColor": "22252A",
         "text": ""
       },
       {
         "name": "Change History saved",
         "styleID": "0",
         "fgColor": "3FC56B",
-        "bgColor": "3FC56B",
+        "bgColor": "22252A",
         "text": ""
       },
       {
@@ -12752,150 +12565,107 @@
     ]
   },
   "colors": {
-    "total_color_attributes": 1910,
-    "unique_colors": 46,
+    "total_color_attributes": 1954,
+    "unique_colors": 32,
     "counts": {
-      "282C34": 927,
-      "ABB2BF": 234,
-      "F9C859": 142,
-      "636D83": 126,
-      "3FC56B": 105,
-      "10B1FE": 85,
-      "FF78F8": 61,
-      "7A82DA": 38,
-      "FF2E3F": 27,
-      "FF936A": 27,
-      "FF6480": 19,
-      "3691FF": 18,
-      "9F7EFE": 18,
-      "CE9887": 15,
+      "282C34": 952,
+      "ABB2BF": 236,
+      "F9C859": 146,
+      "636D83": 138,
+      "10B1FE": 103,
+      "3FC56B": 63,
+      "FF78F8": 60,
+      "7A82DA": 50,
+      "FF936A": 39,
+      "FF2E3F": 28,
+      "FF6480": 26,
+      "3691FF": 21,
+      "9F7EFE": 19,
+      "CE9887": 17,
       "8BCDEF": 14,
-      "7C8495": 11,
-      "22252A": 6,
+      "22252A": 10,
+      "7C8495": 10,
       "3D434F": 5,
-      "FFFFFF": 3,
-      "000080": 2,
+      "2D333D": 2,
       "FFCC00": 2,
-      "000000": 1,
-      "008000": 1,
-      "0080FF": 1,
+      "FFFFFF": 2,
       "0084FF": 1,
-      "10B0FE": 1,
       "177849": 1,
       "25272D": 1,
       "25A45C": 1,
-      "2D333D": 1,
       "3375FE": 1,
-      "3FC56A": 1,
       "42444D": 1,
       "4483AA": 1,
       "5FB9BC": 1,
       "8F9AAE": 1,
-      "BBBBFF": 1,
       "CDD3E0": 1,
-      "D5FFD5": 1,
-      "DADADA": 1,
-      "E8E8FF": 1,
-      "F9C858": 1,
-      "FF0000": 1,
-      "FF637F": 1,
-      "FFFF4F": 1,
-      "FFFFBF": 1
+      "DADADA": 1
     },
     "by_role": {
       "bgColor": {
-        "282C34": 927,
-        "22252A": 4,
-        "3FC56B": 3,
-        "10B1FE": 2,
-        "3691FF": 2,
+        "282C34": 952,
+        "22252A": 8,
+        "3691FF": 3,
+        "F9C859": 3,
+        "2D333D": 2,
         "9F7EFE": 2,
-        "F9C859": 2,
         "FF2E3F": 2,
-        "FF936A": 2,
         "0084FF": 1,
+        "10B1FE": 1,
         "177849": 1,
         "25272D": 1,
-        "2D333D": 1,
+        "3FC56B": 1,
         "636D83": 1,
-        "BBBBFF": 1,
-        "D5FFD5": 1,
-        "E8E8FF": 1,
-        "FFFF4F": 1,
-        "FFFFBF": 1,
-        "FFFFFF": 1
+        "FF936A": 1
       },
       "fgColor": {
-        "ABB2BF": 234,
-        "F9C859": 140,
-        "636D83": 125,
-        "3FC56B": 102,
-        "10B1FE": 83,
-        "FF78F8": 61,
-        "7A82DA": 38,
-        "FF2E3F": 25,
-        "FF936A": 25,
-        "FF6480": 19,
-        "3691FF": 16,
-        "9F7EFE": 16,
-        "CE9887": 15,
+        "ABB2BF": 236,
+        "F9C859": 143,
+        "636D83": 137,
+        "10B1FE": 102,
+        "3FC56B": 62,
+        "FF78F8": 60,
+        "7A82DA": 50,
+        "FF936A": 38,
+        "FF2E3F": 26,
+        "FF6480": 26,
+        "3691FF": 18,
+        "9F7EFE": 17,
+        "CE9887": 17,
         "8BCDEF": 14,
-        "7C8495": 11,
+        "7C8495": 10,
         "3D434F": 5,
-        "000080": 2,
         "22252A": 2,
         "FFCC00": 2,
         "FFFFFF": 2,
-        "000000": 1,
-        "008000": 1,
-        "0080FF": 1,
-        "10B0FE": 1,
         "25A45C": 1,
         "3375FE": 1,
-        "3FC56A": 1,
         "42444D": 1,
         "4483AA": 1,
         "5FB9BC": 1,
         "8F9AAE": 1,
         "CDD3E0": 1,
-        "DADADA": 1,
-        "F9C858": 1,
-        "FF0000": 1,
-        "FF637F": 1
+        "DADADA": 1
       }
     },
     "invalid_format": [],
     "invalid_format_count": 0,
-    "out_of_palette": {
-      "10B0FE": 1,
-      "25A45C": 1,
-      "3375FE": 1,
-      "3FC56A": 1,
-      "42444D": 1,
-      "4483AA": 1,
-      "5FB9BC": 1,
-      "8F9AAE": 1,
-      "CDD3E0": 1,
-      "DADADA": 1,
-      "F9C858": 1,
-      "FF0000": 1,
-      "FF637F": 1
-    },
-    "out_of_palette_count": 13,
+    "out_of_palette": {},
+    "out_of_palette_count": 0,
     "locations": {
       "10B1FE": [
         "c / PREPROCESSOR (styleID 9) [fgColor]",
         "c / INSTRUCTION WORD (styleID 5) [fgColor]",
+        "c / USER KEYWORDS 5 (styleID 132) [fgColor]",
         "cpp / PREPROCESSOR (styleID 9) [fgColor]",
         "cpp / INSTRUCTION WORD (styleID 5) [fgColor]",
+        "cpp / USER KEYWORDS 5 (styleID 132) [fgColor]",
         "go / PREPROCESSOR (styleID 9) [fgColor]",
         "go / INSTRUCTION WORD (styleID 5) [fgColor]",
+        "go / USER KEYWORDS 5 (styleID 132) [fgColor]",
         "java / INSTRUCTION WORD (styleID 5) [fgColor]",
-        "cs / PREPROCESSOR (styleID 9) [fgColor]",
-        "cs / INSTRUCTION WORD (styleID 5) [fgColor]",
-        "errorlist / DIFF Message (styleID 13) [fgColor]",
-        "raku / ADVERB (styleID 15) [fgColor]",
-        "raku / PREPROCESSOR (styleID 17) [fgColor]"
+        "java / USER KEYWORDS 5 (styleID 132) [fgColor]",
+        "cs / PREPROCESSOR (styleID 9) [fgColor]"
       ],
       "282C34": [
         "c / PREPROCESSOR (styleID 9) [bgColor]",
@@ -12927,17 +12697,17 @@
       ],
       "FF6480": [
         "c / TYPE WORD (styleID 16) [fgColor]",
+        "c / USER KEYWORDS 6 (styleID 133) [fgColor]",
         "cpp / TYPE WORD (styleID 16) [fgColor]",
+        "cpp / USER KEYWORDS 6 (styleID 133) [fgColor]",
         "go / TYPE WORD (styleID 16) [fgColor]",
+        "go / USER KEYWORDS 6 (styleID 133) [fgColor]",
         "java / TYPE WORD (styleID 16) [fgColor]",
+        "java / USER KEYWORDS 6 (styleID 133) [fgColor]",
         "cs / TYPE WORD (styleID 16) [fgColor]",
-        "raku / CLASS (styleID 28) [fgColor]",
-        "rc / TYPE WORD (styleID 16) [fgColor]",
-        "tcl / TYPE WORD (styleID 16) [fgColor]",
-        "objc / TYPE WORD (styleID 16) [fgColor]",
-        "sql / KEYWORD2 (styleID 19) [fgColor]",
-        "javascript / CLASS (styleID 56) [fgColor]",
-        "javascript / INTERFACE (styleID 63) [fgColor]"
+        "cs / USER KEYWORDS 6 (styleID 133) [fgColor]",
+        "errorlist / ANSI COLOR BRIGHT RED (styleID 49) [fgColor]",
+        "raku / CLASS (styleID 28) [fgColor]"
       ],
       "FF78F8": [
         "c / NUMBER (styleID 4) [fgColor]",
@@ -12969,17 +12739,17 @@
       ],
       "7A82DA": [
         "c / OPERATOR (styleID 10) [fgColor]",
+        "c / USER KEYWORDS 7 (styleID 134) [fgColor]",
         "cpp / OPERATOR (styleID 10) [fgColor]",
+        "cpp / USER KEYWORDS 7 (styleID 134) [fgColor]",
         "go / OPERATOR (styleID 10) [fgColor]",
+        "go / USER KEYWORDS 7 (styleID 134) [fgColor]",
         "java / OPERATOR (styleID 10) [fgColor]",
+        "java / USER KEYWORDS 7 (styleID 134) [fgColor]",
         "cs / OPERATOR (styleID 10) [fgColor]",
+        "cs / USER KEYWORDS 7 (styleID 134) [fgColor]",
         "raku / OPERATOR (styleID 18) [fgColor]",
-        "rc / OPERATOR (styleID 10) [fgColor]",
-        "tcl / OPERATOR (styleID 10) [fgColor]",
-        "objc / OPERATOR (styleID 10) [fgColor]",
-        "sas / OPERATOR (styleID 5) [fgColor]",
-        "sql / OPERATOR (styleID 10) [fgColor]",
-        "php / OPERATOR (styleID 127) [fgColor]"
+        "rc / OPERATOR (styleID 10) [fgColor]"
       ],
       "636D83": [
         "c / COMMENT (styleID 1) [fgColor]",
@@ -12987,13 +12757,13 @@
         "c / COMMENT DOC (styleID 3) [fgColor]",
         "c / COMMENT LINE DOC (styleID 15) [fgColor]",
         "c / COMMENT DOC KEYWORD ERROR (styleID 18) [fgColor]",
+        "c / PREPROCESSOR COMMENT (styleID 23) [fgColor]",
+        "c / PREPROCESSOR COMMENT DOC (styleID 24) [fgColor]",
         "cpp / COMMENT (styleID 1) [fgColor]",
         "cpp / COMMENT LINE (styleID 2) [fgColor]",
         "cpp / COMMENT DOC (styleID 3) [fgColor]",
         "cpp / COMMENT LINE DOC (styleID 15) [fgColor]",
-        "cpp / COMMENT DOC KEYWORD ERROR (styleID 18) [fgColor]",
-        "go / COMMENT (styleID 1) [fgColor]",
-        "go / COMMENT LINE (styleID 2) [fgColor]"
+        "cpp / COMMENT DOC KEYWORD ERROR (styleID 18) [fgColor]"
       ],
       "7C8495": [
         "c / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
@@ -13002,7 +12772,6 @@
         "java / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
         "cs / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
         "rc / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
-        "tcl / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
         "objc / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
         "actionscript / COMMENT DOC KEYWORD (styleID 17) [fgColor]",
         "powershell / COMMENT DOC KEYWORD (styleID 16) [fgColor]",
@@ -13015,12 +12784,12 @@
         "java / USER KEYWORDS 1 (styleID 128) [fgColor]",
         "cs / USER KEYWORDS 1 (styleID 128) [fgColor]",
         "rc / USER KEYWORDS 1 (styleID 128) [fgColor]",
+        "tcl / USER1 (styleID 16) [fgColor]",
         "php / USER KEYWORDS 1 (styleID 208) [fgColor]",
-        "javascript / PROPERTY (styleID 59) [fgColor]",
         "javascript / USER KEYWORDS 1 (styleID 200) [fgColor]",
         "json / PROPERTY NAME (styleID 4) [fgColor]",
         "asp / USER KEYWORDS 1 (styleID 216) [fgColor]",
-        "lua / USER KEYWORDS 5 (styleID 128) [fgColor]"
+        "css / VARIABLE (styleID 23) [fgColor]"
       ],
       "9F7EFE": [
         "c / USER KEYWORDS 2 (styleID 129) [fgColor]",
@@ -13031,10 +12800,10 @@
         "cs / USER KEYWORDS 2 (styleID 129) [fgColor]",
         "errorlist / ANSI COLOR MAGENTA (styleID 45) [fgColor]",
         "rc / USER KEYWORDS 2 (styleID 129) [fgColor]",
+        "tcl / USER2 (styleID 17) [fgColor]",
         "php / USER KEYWORDS 2 (styleID 209) [fgColor]",
         "javascript / USER KEYWORDS 2 (styleID 201) [fgColor]",
-        "asp / USER KEYWORDS 2 (styleID 217) [fgColor]",
-        "lua / USER KEYWORDS 6 (styleID 129) [fgColor]"
+        "asp / USER KEYWORDS 2 (styleID 217) [fgColor]"
       ],
       "8BCDEF": [
         "c / USER KEYWORDS 3 (styleID 130) [fgColor]",
@@ -13043,26 +12812,40 @@
         "java / USER KEYWORDS 3 (styleID 130) [fgColor]",
         "cs / USER KEYWORDS 3 (styleID 130) [fgColor]",
         "rc / USER KEYWORDS 3 (styleID 130) [fgColor]",
+        "tcl / USER3 (styleID 18) [fgColor]",
         "php / USER KEYWORDS 3 (styleID 210) [fgColor]",
-        "javascript / PARAMETER (styleID 61) [fgColor]",
         "javascript / USER KEYWORDS 3 (styleID 202) [fgColor]",
         "asp / USER KEYWORDS 3 (styleID 218) [fgColor]",
-        "lua / USER KEYWORDS 7 (styleID 130) [fgColor]",
+        "python / USER KEYWORDS 3 (styleID 130) [fgColor]",
         "actionscript / USER KEYWORDS 3 (styleID 130) [fgColor]"
       ],
       "3FC56B": [
         "c / USER KEYWORDS 4 (styleID 131) [fgColor]",
-        "c / USER KEYWORDS 5 (styleID 132) [fgColor]",
-        "c / USER KEYWORDS 6 (styleID 133) [fgColor]",
-        "c / USER KEYWORDS 7 (styleID 134) [fgColor]",
-        "c / USER KEYWORDS 8 (styleID 135) [fgColor]",
         "cpp / USER KEYWORDS 4 (styleID 131) [fgColor]",
-        "cpp / USER KEYWORDS 5 (styleID 132) [fgColor]",
-        "cpp / USER KEYWORDS 6 (styleID 133) [fgColor]",
-        "cpp / USER KEYWORDS 7 (styleID 134) [fgColor]",
-        "cpp / USER KEYWORDS 8 (styleID 135) [fgColor]",
         "go / USER KEYWORDS 4 (styleID 131) [fgColor]",
-        "go / USER KEYWORDS 5 (styleID 132) [fgColor]"
+        "java / USER KEYWORDS 4 (styleID 131) [fgColor]",
+        "cs / USER KEYWORDS 4 (styleID 131) [fgColor]",
+        "errorlist / DIFF Addition (styleID 11) [fgColor]",
+        "errorlist / ANSI COLOR BRIGHT GREEN (styleID 50) [fgColor]",
+        "raku / FUNCTION (styleID 20) [fgColor]",
+        "rc / USER KEYWORDS 4 (styleID 131) [fgColor]",
+        "tcl / TK COMMAND (styleID 15) [fgColor]",
+        "tcl / USER4 (styleID 19) [fgColor]",
+        "sas / STATEMENT (styleID 15) [fgColor]"
+      ],
+      "FF936A": [
+        "c / USER KEYWORDS 8 (styleID 135) [fgColor]",
+        "cpp / USER KEYWORDS 8 (styleID 135) [fgColor]",
+        "go / USER KEYWORDS 8 (styleID 135) [fgColor]",
+        "java / USER KEYWORDS 8 (styleID 135) [fgColor]",
+        "cs / USER KEYWORDS 8 (styleID 135) [fgColor]",
+        "errorlist / ANSI COLOR BROWN (styleID 43) [fgColor]",
+        "rc / USER KEYWORDS 8 (styleID 135) [fgColor]",
+        "html / ATTRIBUTE (styleID 3) [fgColor]",
+        "html / ATTRIBUTEUNKNOWN (styleID 4) [fgColor]",
+        "html / USER ATTRIBUTES 1 (styleID 196) [fgColor]",
+        "html / USER ATTRIBUTES 2 (styleID 197) [fgColor]",
+        "html / USER ATTRIBUTES 3 (styleID 198) [fgColor]"
       ],
       "FF2E3F": [
         "errorlist / PYTHON Error (styleID 1) [fgColor]",
@@ -13084,20 +12867,6 @@
       "25A45C": [
         "errorlist / ANSI COLOR GREEN (styleID 42) [fgColor]"
       ],
-      "FF936A": [
-        "errorlist / ANSI COLOR BROWN (styleID 43) [fgColor]",
-        "html / ATTRIBUTE (styleID 3) [fgColor]",
-        "html / ATTRIBUTEUNKNOWN (styleID 4) [fgColor]",
-        "html / USER ATTRIBUTES 1 (styleID 196) [fgColor]",
-        "html / USER ATTRIBUTES 2 (styleID 197) [fgColor]",
-        "html / USER ATTRIBUTES 3 (styleID 198) [fgColor]",
-        "html / USER ATTRIBUTES 4 (styleID 199) [fgColor]",
-        "json / ESCAPE SEQUENCE (styleID 5) [fgColor]",
-        "json / COMPACT IRI (styleID 10) [fgColor]",
-        "xml / ATTRIBUTE (styleID 3) [fgColor]",
-        "xml / ATTRIBUTEUNKNOWN (styleID 4) [fgColor]",
-        "xml / USER ATTRIBUTES 1 (styleID 192) [fgColor]"
-      ],
       "3375FE": [
         "errorlist / ANSI COLOR BLUE (styleID 44) [fgColor]"
       ],
@@ -13110,24 +12879,11 @@
       "8F9AAE": [
         "errorlist / ANSI COLOR DARK GRAY (styleID 48) [fgColor]"
       ],
-      "FF637F": [
-        "errorlist / ANSI COLOR BRIGHT RED (styleID 49) [fgColor]"
-      ],
-      "3FC56A": [
-        "errorlist / ANSI COLOR BRIGHT GREEN (styleID 50) [fgColor]"
-      ],
-      "F9C858": [
-        "errorlist / ANSI COLOR YELLOW (styleID 51) [fgColor]"
-      ],
-      "10B0FE": [
-        "errorlist / ANSI COLOR BRIGHT BLUE (styleID 52) [fgColor]"
-      ],
       "5FB9BC": [
         "errorlist / ANSI COLOR BRIGHT CYAN (styleID 54) [fgColor]"
       ],
       "FFFFFF": [
         "errorlist / ANSI COLOR WHITE (styleID 55) [fgColor]",
-        "searchResult / Line Number (styleID 3) [bgColor]",
         "GlobalStyles / Selected text colour (styleID 0) [fgColor]"
       ],
       "3691FF": [
@@ -13144,36 +12900,9 @@
         "css / TAG (styleID 1) [fgColor]",
         "css / CLASS (styleID 2) [fgColor]"
       ],
-      "000080": [
-        "searchResult / Search Header (styleID 1) [fgColor]",
-        "searchResult / Selected Line (styleID 5) [fgColor]"
-      ],
-      "BBBBFF": [
-        "searchResult / Search Header (styleID 1) [bgColor]"
-      ],
-      "008000": [
-        "searchResult / File Header (styleID 2) [fgColor]"
-      ],
-      "D5FFD5": [
-        "searchResult / File Header (styleID 2) [bgColor]"
-      ],
-      "000000": [
-        "searchResult / Line Number (styleID 3) [fgColor]"
-      ],
-      "FF0000": [
-        "searchResult / Hit Word (styleID 4) [fgColor]"
-      ],
-      "FFFFBF": [
-        "searchResult / Hit Word (styleID 4) [bgColor]"
-      ],
-      "FFFF4F": [
-        "searchResult / Selected Line (styleID 5) [bgColor]"
-      ],
-      "0080FF": [
-        "searchResult / Current line background colour (styleID 6) [fgColor]"
-      ],
-      "E8E8FF": [
-        "searchResult / Current line background colour (styleID 6) [bgColor]"
+      "2D333D": [
+        "searchResult / Current line background colour (styleID 6) [bgColor]",
+        "GlobalStyles / Current line background colour (styleID 0) [bgColor]"
       ],
       "3D434F": [
         "GlobalStyles / Indent guideline style (styleID 37) [fgColor]",
@@ -13181,9 +12910,6 @@
         "GlobalStyles / Fold margin (styleID 0) [fgColor]",
         "GlobalStyles / White space symbol (styleID 0) [fgColor]",
         "GlobalStyles / Non-printing characters custom color (styleID 0) [fgColor]"
-      ],
-      "2D333D": [
-        "GlobalStyles / Current line background colour (styleID 0) [bgColor]"
       ],
       "0084FF": [
         "GlobalStyles / Selected text colour (styleID 0) [bgColor]"
@@ -13196,6 +12922,10 @@
         "GlobalStyles / Line number margin (styleID 33) [bgColor]",
         "GlobalStyles / Bookmark margin (styleID 0) [bgColor]",
         "GlobalStyles / Change History margin (styleID 0) [bgColor]",
+        "GlobalStyles / Change History modified (styleID 0) [bgColor]",
+        "GlobalStyles / Change History revert modified (styleID 0) [bgColor]",
+        "GlobalStyles / Change History revert origin (styleID 0) [bgColor]",
+        "GlobalStyles / Change History saved (styleID 0) [bgColor]",
         "GlobalStyles / Fold (styleID 0) [fgColor]",
         "GlobalStyles / Fold active (styleID 0) [fgColor]",
         "GlobalStyles / Fold margin (styleID 0) [bgColor]"
@@ -13212,38 +12942,37 @@
     }
   },
   "palette": [
-    "000000",
-    "000080",
-    "008000",
-    "0080FF",
     "0084FF",
     "10B1FE",
     "177849",
     "22252A",
     "25272D",
+    "25A45C",
     "282C34",
     "2D333D",
+    "3375FE",
     "3691FF",
     "3D434F",
     "3FC56B",
+    "42444D",
+    "4483AA",
+    "5FB9BC",
     "636D83",
     "7A82DA",
     "7C8495",
     "8BCDEF",
+    "8F9AAE",
     "9F7EFE",
     "ABB2BF",
-    "BBBBFF",
+    "CDD3E0",
     "CE9887",
-    "D5FFD5",
-    "E8E8FF",
+    "DADADA",
     "F9C859",
     "FF2E3F",
     "FF6480",
     "FF78F8",
     "FF936A",
     "FFCC00",
-    "FFFF4F",
-    "FFFFBF",
     "FFFFFF"
   ],
   "text_content": [

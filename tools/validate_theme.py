@@ -3,6 +3,7 @@ import json
 import re
 import sys
 import os
+import hashlib
 
 # Repository root: parent directory of this script's directory (tools/).
 # Resolving against __file__ keeps the script runnable from any working directory.
@@ -88,12 +89,18 @@ def validate_theme(theme_path, model_path, baseline_path):
     warnings = []
     
     # 1. Syntax Validation
+    # The theme file is read once as raw bytes: the same byte string is used for
+    # the XML parse and for the SHA-256 drift check below, so the digest matches
+    # `sha256sum BlulocoDark.xml` exactly (no newline/text normalisation).
     try:
-        tree = ET.parse(theme_path)
-        root = tree.getroot()
+        with open(theme_path, "rb") as f:
+            theme_bytes = f.read()
+        root = ET.fromstring(theme_bytes)
     except ET.ParseError as e:
         print(f"CRITICAL: XML Syntax Error: {e}")
         sys.exit(1)
+
+    theme_sha256 = hashlib.sha256(theme_bytes).hexdigest()
 
     # Load Model and Baseline
     with open(model_path, 'r') as f:
@@ -114,9 +121,52 @@ def validate_theme(theme_path, model_path, baseline_path):
     if current_count != baseline_count:
         errors.append(f"Lexer count mismatch: baseline {baseline_count}, current {current_count}")
 
+    # Baseline SHA-256 Drift Detection
+    # The baseline pins the exact bytes of the audited theme. A mismatch means the
+    # XML changed without a baseline refresh, so the regression gate is stale.
+    baseline_sha256 = baseline["theme"].get("sha256")
+    if baseline_sha256 and baseline_sha256 != theme_sha256:
+        warnings.append(
+            "Theme SHA-256 differs from baseline (XML changed without a baseline refresh): "
+            f"baseline={baseline_sha256}, current={theme_sha256}"
+        )
+
     # Global Styles analysis
     global_styles = root.findall(".//WidgetStyle")
-    
+
+    # Baseline Structural Count Drift Detection
+    # The baseline also pins the number of <WordsStyle> and <WidgetStyle>
+    # elements. A drift means the theme's structure changed without a baseline
+    # refresh, which the SHA-256 check above already flags; reporting the counts
+    # makes the drift actionable (it says *how many* styles moved) instead of
+    # leaving the reader to diff the hashes by hand.
+    #
+    # These are warnings, not errors: a theme may legitimately gain or lose
+    # styles in a change that has not been baselined yet, and the SHA-256
+    # warning above is the authoritative "stale baseline" signal. The
+    # lexer_type_count comparison stays an error because a lexer count change
+    # is a structural contract violation, not an audit refresh.
+    #
+    # line_count and size_bytes are deliberately NOT checked here: they are
+    # fully redundant against the SHA-256 above, since any change to the line
+    # count or the file size necessarily changes the hash, which is already
+    # reported. Checking them would only add duplicate noise.
+    baseline_words_count = baseline["theme"].get("words_style_count")
+    current_words_count = len(root.findall(".//WordsStyle"))
+    if baseline_words_count is not None and baseline_words_count != current_words_count:
+        warnings.append(
+            "Theme WordsStyle count differs from baseline: "
+            f"baseline={baseline_words_count}, current={current_words_count}"
+        )
+
+    baseline_widget_count = baseline["theme"].get("widget_style_count")
+    current_widget_count = len(global_styles)
+    if baseline_widget_count is not None and baseline_widget_count != current_widget_count:
+        warnings.append(
+            "Theme WidgetStyle count differs from baseline: "
+            f"baseline={baseline_widget_count}, current={current_widget_count}"
+        )
+
     # Detailed Token Audit
     for lexer in theme_lexers:
         name = lexer.get("name")
@@ -132,7 +182,12 @@ def validate_theme(theme_path, model_path, baseline_path):
             coverage = (len(theme_ids & model_ids) / len(model_ids)) * 100 if model_ids else 100
             
             if coverage < 100:
-                warnings.append(f"Lexer '{name}' coverage: {coverage:.1f}% (Missing IDs: {list(missing)})")
+                # sorted() keeps the output byte-identical across runs: `missing`
+                # is a set, whose iteration order depends on PYTHONHASHSEED.
+                warnings.append(
+                    f"Lexer '{name}' coverage: {coverage:.1f}% "
+                    f"(Missing IDs: {sorted(missing)})"
+                )
         
         for style in styles:
             fg = style.get("fgColor")
@@ -155,6 +210,34 @@ def validate_theme(theme_path, model_path, baseline_path):
                 contrast = get_contrast(fg, bg)
                 if contrast < 4.5:
                     warnings.append(f"Low contrast ({contrast:.2f}) in {name} style {style.get('styleID')} (fg:{fg}, bg:{bg})")
+
+    # Detailed GlobalStyles Widget Audit
+    # <WidgetStyle> entries were previously collected but never inspected, so the
+    # 39 UI colours escaped the hex-format, palette and contrast checks entirely.
+    # The checks below mirror the lexer audit; every message is tagged with
+    # "GlobalStyles" so UI findings stay distinguishable from lexer findings.
+    for widget in global_styles:
+        widget_name = widget.get("name") or f"styleID={widget.get('styleID')}"
+        fg = widget.get("fgColor")
+        bg = widget.get("bgColor")
+
+        # Hex Format (6 Uppercase)
+        if fg and not re.match(r"^[0-9A-F]{6}$", fg):
+            errors.append(f"Invalid fgColor format in GlobalStyles widget '{widget_name}': {fg}")
+        if bg and not re.match(r"^[0-9A-F]{6}$", bg):
+            errors.append(f"Invalid bgColor format in GlobalStyles widget '{widget_name}': {bg}")
+
+        # Palette Membership
+        if fg and fg not in palette_set:
+            warnings.append(f"Color {fg} in GlobalStyles widget '{widget_name}' not in palette")
+        if bg and bg not in palette_set:
+            warnings.append(f"Color {bg} in GlobalStyles widget '{widget_name}' not in palette")
+
+        # Contrast Check
+        if fg and bg:
+            contrast = get_contrast(fg, bg)
+            if contrast < 4.5:
+                warnings.append(f"Low contrast ({contrast:.2f}) in GlobalStyles widget '{widget_name}' (fg:{fg}, bg:{bg})")
 
     # Summary
     print(f"--- Theme Validation Report ---")
