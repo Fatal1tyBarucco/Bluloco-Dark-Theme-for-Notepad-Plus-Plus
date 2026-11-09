@@ -32,4 +32,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           #model: opencode/x-preview-f-free
-          model: opencode/mimo-v2.6-flash-free
+          #model: opencode/mimo-v2.6-flash-free
+          model: opencode/crouton-alpha-free
