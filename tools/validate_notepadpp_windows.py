@@ -11,6 +11,7 @@ import time
 import xml.etree.ElementTree as ET
 from ctypes import wintypes
 from pathlib import Path
+from PIL import ImageGrab
 
 SCI_GETLENGTH = 2006
 SCI_GETSTYLEAT = 2010
@@ -88,6 +89,8 @@ def _windows_api():
     user32.GetClassNameW.restype = ctypes.c_int
     user32.IsWindowVisible.argtypes = [wintypes.HWND]
     user32.IsWindowVisible.restype = wintypes.BOOL
+    user32.GetWindowRect.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.RECT)]
+    user32.GetWindowRect.restype = wintypes.BOOL
     user32.ShowWindow.argtypes = [wintypes.HWND, ctypes.c_int]
     user32.SetForegroundWindow.argtypes = [wintypes.HWND]
     user32.SendMessageW.argtypes = [wintypes.HWND, wintypes.UINT, wintypes.WPARAM, wintypes.LPARAM]
@@ -173,7 +176,7 @@ def _load_theme_styles(theme_path):
     return lexer_styles
 
 
-def _verify_sample(user32, enum_proc_type, executable, settings_dir, sample_path, language, test_cases, lexer_styles):
+def _verify_sample(user32, enum_proc_type, executable, settings_dir, screenshots_dir, sample_path, language, test_cases, lexer_styles):
     process = subprocess.Popen(
         [
             str(executable),
@@ -203,7 +206,7 @@ def _verify_sample(user32, enum_proc_type, executable, settings_dir, sample_path
         if not main_window:
             raise TimeoutError(f"Notepad++ window did not appear for {sample_path.name}")
 
-        user32.ShowWindow(main_window, SW_RESTORE)
+        user32.ShowWindow(main_window, 3)
         user32.SetForegroundWindow(main_window)
         scintilla_windows = _find_scintilla_windows(user32, enum_proc_type, main_window)
         if not scintilla_windows:
@@ -228,6 +231,14 @@ def _verify_sample(user32, enum_proc_type, executable, settings_dir, sample_path
 
         user32.SendMessageW(selected_scintilla, SCI_COLOURISE, 0, -1)
         time.sleep(0.5)
+
+        window_rectangle = wintypes.RECT()
+        screenshot_path = screenshots_dir / f"{sample_path.stem}.png"
+        if user32.GetWindowRect(main_window, ctypes.byref(window_rectangle)):
+            screenshot = ImageGrab.grab(bbox=(window_rectangle.left, window_rectangle.top, window_rectangle.right, window_rectangle.bottom))
+            screenshot.save(screenshot_path)
+        else:
+            screenshot_path = None
         sample_content = sample_path.read_bytes().decode("utf-8")
         results = []
         errors = []
@@ -271,6 +282,7 @@ def _verify_sample(user32, enum_proc_type, executable, settings_dir, sample_path
                 "actual_foreground": actual_foreground,
                 "expected_background": style_definition["bg"],
                 "actual_background": actual_background,
+                "native_screenshot": str(screenshot_path) if screenshot_path else None,
             })
 
             if actual_style_ids != [expected_style_id]:
@@ -306,6 +318,7 @@ def main():
     parser.add_argument("--settings-dir", required=True)
     parser.add_argument("--samples", default="samples")
     parser.add_argument("--output", default="artifacts/notepadpp-native-validation.json")
+    parser.add_argument("--screenshots-dir", default="artifacts/notepadpp-screenshots")
     arguments = parser.parse_args()
 
     if os.name != "nt":
@@ -316,6 +329,8 @@ def main():
     theme_path = Path(arguments.theme).resolve()
     samples_dir = Path(arguments.samples).resolve()
     settings_dir = Path(arguments.settings_dir).resolve()
+    screenshots_dir = Path(arguments.screenshots_dir).resolve()
+    screenshots_dir.mkdir(parents=True, exist_ok=True)
     if not executable.is_file():
         raise FileNotFoundError(executable)
     if not theme_path.is_file():
@@ -349,6 +364,7 @@ def main():
             enum_proc_type,
             executable,
             settings_dir,
+            screenshots_dir,
             samples_dir / filename,
             language,
             cases,
@@ -362,6 +378,7 @@ def main():
         "notepadpp_version": file_version,
         "theme": str(theme_path),
         "sample_checks": len(all_results),
+        "screenshots": [str(path.relative_to(Path.cwd())) for path in sorted(screenshots_dir.glob("*.png"))],
         "errors": all_errors,
         "results": all_results,
     }
