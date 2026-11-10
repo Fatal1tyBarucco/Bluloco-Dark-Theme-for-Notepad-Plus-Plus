@@ -21,6 +21,11 @@ jobs:
       - name: Run static theme validator
         run: python3 tools/validate_theme.py
 
+      # SVG guard: syntax, release marker, honest disclosure and colour provenance.
+      # This does not claim to reproduce Scintilla token classification or native UI.
+      - name: Validate generated SVG renders
+        run: python3 tools/validate_renders.py
+
       # Optional second XML syntax check: xmllint ships pre-installed on the
       # ubuntu-latest runner image. It is skipped when unavailable, since the
       # Python validator already parses the XML (nothing is installed here).
