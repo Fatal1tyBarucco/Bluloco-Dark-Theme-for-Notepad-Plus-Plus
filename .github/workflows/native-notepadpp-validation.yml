@@ -41,11 +41,8 @@ jobs:
           }
 
           New-Item -ItemType File -Path (Join-Path $installDirectory "doLocalConf.xml") -Force | Out-Null
-          $themesDirectory = Join-Path $installDirectory "themes"
-          New-Item -ItemType Directory -Path $themesDirectory -Force | Out-Null
-          Copy-Item -LiteralPath "BlulocoDark.xml" -Destination (Join-Path $themesDirectory "BlulocoDark.xml") -Force
-
-          $themePath = Join-Path $themesDirectory "BlulocoDark.xml"
+          $themePath = Join-Path $installDirectory "stylers.xml"
+          Copy-Item -LiteralPath "BlulocoDark.xml" -Destination $themePath -Force
           $configPath = Join-Path $installDirectory "config.xml"
           $escapedThemePath = [System.Security.SecurityElement]::Escape($themePath)
           $configXml = @"
