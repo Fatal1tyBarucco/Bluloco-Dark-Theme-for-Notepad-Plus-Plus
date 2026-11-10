@@ -19,6 +19,7 @@ SCI_STYLEGETFORE = 2481
 SCI_STYLEGETBACK = 2482
 WM_CLOSE = 0x0010
 SW_RESTORE = 9
+STYLE_LEXER_BY_LANGUAGE = {"javascript": "cpp"}
 
 TEST_CASES = (
     ("css", "sample.css", 9, "background-color", 0, 6),
@@ -230,7 +231,8 @@ def _verify_sample(user32, enum_proc_type, executable, settings_dir, sample_path
         sample_content = sample_path.read_bytes().decode("utf-8")
         results = []
         errors = []
-        styles = lexer_styles.get(language, {})
+        style_lexer = STYLE_LEXER_BY_LANGUAGE.get(language, language)
+        styles = lexer_styles.get(style_lexer, {})
 
         for line_number, token, occurrence, expected_style_id in test_cases:
             style_id_text = str(expected_style_id)
