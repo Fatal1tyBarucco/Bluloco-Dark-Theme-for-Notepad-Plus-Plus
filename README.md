@@ -23,7 +23,7 @@ This Notepad++ port derives from that JSON file, and its colours were audited li
 
 ## Render integrity and visual verification
 
-The seven SVG files in `renders/` are illustrative programmatic previews. Their SVG structure, release marker, disclosure text, and use of colours present in `BlulocoDark.xml` are checked by `python3 tools/validate_renders.py` in CI. This check does **not** verify that each token is classified exactly as the native Scintilla lexer would classify it, nor does it reproduce Notepad++ UI metrics, fonts, margins, or widget behaviour. The PNG files in `screenshots/` are historical real captures made before v2.1 and must not be used to claim visual fidelity for the current release. Definitive visual validation requires opening the theme and the matching files in `samples/` in a real Windows Notepad++ installation.
+The seven SVG files in `renders/` are illustrative programmatic previews. Their SVG structure, release marker, disclosure text, and use of colours declared by the matching language lexer or `GlobalStyles` in `BlulocoDark.xml` are checked by `python3 tools/validate_renders.py` in CI. This check does **not** verify that each token is classified exactly as the native Scintilla lexer would classify it, nor does it reproduce Notepad++ UI metrics, fonts, margins, or widget behaviour. The PNG files in `screenshots/` are historical real captures made before v2.1 and must not be used to claim visual fidelity for the current release. Definitive visual validation requires opening the theme and the matching files in `samples/` in a real Windows Notepad++ installation.
 
 ## ⚡ Recent Improvements
 
