@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="525" height="498" viewBox="0 0 525 498">
-<!-- Render de demonstracao gerado programaticamente a partir de BlulocoDark.xml (v2.2). Nao e uma captura de tela do Notepad++. -->
+<!-- Render de demonstracao gerado programaticamente a partir de BlulocoDark.xml (v2.3.1). Nao e uma captura de tela do Notepad++. -->
 <rect width="525" height="498" rx="8" fill="#25272D"/>
 <rect x="12" y="7" width="168" height="27" rx="4" fill="#282C34"/>
 <rect x="12" y="7" width="168" height="2.6" rx="1.3" fill="#3691FF"/>
@@ -31,7 +31,7 @@
 <text x="37" y="408" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">20</text>
 <text x="37" y="427" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">21</text>
 <text x="37" y="446" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">22</text>
-<text font-size="13" x="58.0" y="50" fill="#ABB2BF" textLength="358.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">// Sample TypeScript code to test Bluloco Dark</text>
+<text font-size="13" x="58.0" y="50" fill="#636D83" textLength="358.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">// Sample TypeScript code to test Bluloco Dark</text>
 <text font-size="13" x="58.0" y="69" fill="#10B1FE" textLength="70.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">interface</text>
 <text font-size="13" x="128.2" y="69" fill="#ABB2BF" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace"> User </text>
 <text font-size="13" x="175.0" y="69" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
@@ -126,5 +126,5 @@
 <text font-size="13" x="338.8" y="449" fill="#7A82DA" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">&gt;();</text>
 <rect x="58" y="361" width="1.6" height="15" fill="#FFCC00"/>
 <rect x="0" y="478" width="525" height="20" fill="#22252A"/>
-<text x="12" y="491.5" font-size="10" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Render de demonstração — Bluloco Dark v2.2 · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++</text>
+<text x="12" y="491.5" font-size="10" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Render de demonstração — Bluloco Dark v2.3.1 · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++</text>
 </svg>

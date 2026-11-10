@@ -79,7 +79,7 @@ Installation:
             <WordsStyle name="DEFAULT" styleID="11" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="INSTRUCTION WORD" styleID="5" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="TYPE WORD" styleID="16" fgColor="FF6480" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="type1"></WordsStyle>
-            <WordsStyle name="PREDECLARED IDENTIFIERS" styleID="19" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
+            <WordsStyle name="PREDECLARED IDENTIFIERS" styleID="19" fgColor="3FC56B" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="4" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="STRING" styleID="6" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="STRING RAW" styleID="20" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -527,7 +527,7 @@ Installation:
             <WordsStyle name="IDENTIFIER" styleID="3" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="4" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="TARGET" styleID="5" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="IDEOL" styleID="9" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="IDEOL" styleID="9" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <!-- VB/VBS -->
         <LexerType name="vb" desc="VB / VBS" ext="">
@@ -545,7 +545,7 @@ Installation:
             <WordsStyle name="DEFAULT" styleID="0" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="TAG" styleID="1" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="CLASS" styleID="2" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="PSEUDOCLASS" styleID="3" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PSEUDOCLASS" styleID="3" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="UNKNOWN PSEUDOCLASS" styleID="4" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="5" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="6" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
@@ -558,8 +558,8 @@ Installation:
             <WordsStyle name="DOUBLE STRING" styleID="13" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SINGLE STRING" styleID="14" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ATTRIBUTE" styleID="16" fgColor="FF936A" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="PSEUDOELEMENT" styleID="18" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="LEGACY PSEUDOELEMENT" styleID="20" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PSEUDOELEMENT" styleID="18" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="type3"></WordsStyle>
+            <WordsStyle name="LEGACY PSEUDOELEMENT" styleID="20" fgColor="3691FF" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="type5"></WordsStyle>
             <WordsStyle name="MEDIA" styleID="22" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="VARIABLE" styleID="23" fgColor="CE9887" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
@@ -710,7 +710,7 @@ Installation:
             <WordsStyle name="DEFAULT" styleID="0" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="1" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="2" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="KEYWORD" styleID="3" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="KEYWORD" styleID="3" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="4" fgColor="FF78F8" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="TABLE" styleID="5" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="KEY" styleID="6" fgColor="10B1FE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -1346,8 +1346,8 @@ Installation:
             <WordsStyle name="OPERATORS" styleID="10" fgColor="7A82DA" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="IDENTIFIERS" styleID="11" fgColor="ABB2BF" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT-BLOCKS" styleID="12" fgColor="636D83" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="END OF LINE WHERE STRING IS NOT CLOSED" styleID="13" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="HIGHLIGHTED IDENTIFIERS" styleID="14" fgColor="9F7EFE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="END OF LINE WHERE STRING IS NOT CLOSED" styleID="13" fgColor="F9C859" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="HIGHLIGHTED IDENTIFIERS" styleID="14" fgColor="FF2E3F" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DECORATORS" styleID="15" fgColor="50ACAE" bgColor="282C34" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <!-- R -->
@@ -1459,6 +1459,7 @@ Installation:
         <WidgetStyle name="Mark Style 4" styleID="22" bgColor="4C4571"></WidgetStyle>
         <WidgetStyle name="Mark Style 5" styleID="21" bgColor="2F5A45"></WidgetStyle>
         <WidgetStyle name="Incremental highlight all" styleID="28" bgColor="1C6143"></WidgetStyle>
+        <WidgetStyle name="Find matches highlight all" styleID="28" bgColor="1C6143"></WidgetStyle>
         <WidgetStyle name="Tags match highlighting" styleID="27" bgColor="3A3F58"></WidgetStyle>
         <WidgetStyle name="Tags attribute" styleID="26" bgColor="735047"></WidgetStyle>
         <WidgetStyle name="Active tab focused indicator" styleID="0" fgColor="3691FF"></WidgetStyle>
@@ -1470,6 +1471,8 @@ Installation:
         <WidgetStyle name="EOL custom color" styleID="0" fgColor="DADADA"></WidgetStyle>
         <WidgetStyle name="Non-printing characters custom color" styleID="0" fgColor="3D434F"></WidgetStyle>
         <WidgetStyle name="Find status: Not found" styleID="0" fgColor="FF2E3F" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
+        <WidgetStyle name="Find status: Message" styleID="0" fgColor="3691FF" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
+        <WidgetStyle name="Find status: Search end reached" styleID="0" fgColor="3FC56B" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Active tab unfocused indicator" styleID="0" fgColor="636D83" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Tab color 1" styleID="0" bgColor="215471" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Tab color 2" styleID="0" bgColor="684B44" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
