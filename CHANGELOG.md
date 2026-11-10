@@ -7,6 +7,25 @@ All notable changes to this project will be documented in this file.
 - `renders/` — 7 programmatic SVG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`) generated directly from the v2.2 `BlulocoDark.xml`: every colour is extracted from the theme file and the content comes from `samples/sample.*`. Clearly labelled as renders, **not** screenshots; visual verification still requires Windows + Notepad++.
 - README: new "v2.2 Renders" gallery subsection, updated repository tree and Known Limitations.
 
+## [2.3] - 2026-11-09
+
+### Fixed
+- **Structural bug**: the `ini` KEY (styleID 5) and `vhdl` COMMENT BLOCK (styleID 15) styles were declared after their `</LexerType>` closers (with stray LF line endings), where Notepad++ never loads them. Both now sit inside their `<LexerType>` blocks; every themed lexer has full style-ID coverage against the v8.9.9 `stylers.model.xml`.
+- **Upstream fidelity**: python TRIPLE (6) / F TRIPLE (18) → `F9C859`, DECORATOR (15) → `50ACAE`, BUILTINS (14) → `3FC56B`; css IDENTIFIER (6) / UNKNOWN_IDENTIFIER (7) → `CE9887` (`meta.property-name`); erlang MODULE NAME (23) → `FF839B`; haskell MODULE (7) → `FF839B`, CLASS (6) → `FF6480`; ini/props ASSIGNMENT (3) → `7A82DA` (`punctuation.separator.key-value`); javascript.js WINDOW INSTRUCTION (19) → `10B1FE`; vhdl ATTRIBUTE (10) → `FF6480`, STD PACKAGE (12) → `FF839B`; gdscript STRING EOL (13) → `F9C859`.
+- **`IDENTIFIER` policy**: 16 lexers coloured plain identifier states as keywords, functions or types; Scintilla identifier states cannot distinguish variables from function calls, and the upstream theme renders plain identifiers `#abb2bf`, so all `IDENTIFIER` styles now use `ABB2BF` (asp 86, makefile 3, pascal 1, bash 8, fortran 7, fortran77 7, lisp 9, asm 5, ruby 11, vhdl 6, caml 1, verilog 11, ada 2, matlab 7, haskell 1, inno 12). Function colouring remains USER KEYWORDS 4.
+- **Contrast**: `searchResult` `Selected Line` (styleID 5) used `ABB2BF` on `3691FF` (≈1.5:1); now `FFFFFF` on `3691FF`. `json` ERROR (13) used `F9C859` on `FF2E3F` (≈2.4:1); now `FF2E3F` on `282C34` like all other ERROR styles.
+- **README**: the unthemed-lexer list cited `er` (which does not exist in the model) and omitted `avs` and `baanc`; corrected to the real 26 lexer names.
+- **nfo** DEFAULT (32): missing `fontStyle="0"` added.
+
+### Changed
+- **46 style names** aligned to `tools/npp_lexer_model.json` (`DOUBLESTRING` → `DOUBLE STRING`, `USER TAGS 1` → `USER TAGS1`, `COMMENTLINE` → `COMMENT LINE`, …) so Style Configurator labels match the Notepad++ model.
+- **`COMMENT DOC KEYWORD ERROR`** unified to the comment colour `636D83` in swift (18), javascript.js (18), coffeescript (18) and d (17) — was `7C8495`; Scintilla treats an unrecognized doc keyword as plain comment text, matching the other 9 lexers.
+- **`searchResult` `Current line background colour`** (6) is bg-only again (`fgColor` removed), matching the stock theme.
+
+### Added
+- **`tools/validate_theme.py` hardening**: warns on style-name drift vs `tools/npp_lexer_model.json`, errors on `<WordsStyle>` outside its lexer block or `<WidgetStyle>` outside `<GlobalStyles>` (the exact v2.2 bug class), and whitelists the 10 Lexilla-only states (`KNOWN_LEXILLA_STATES`) that exist in SciLexer.h but not in the v8.9.9 model.
+- **`tools/baseline.json`** regenerated against the v2.3 XML (SHA-256, line/byte counts, full per-style inventory).
+
 ## [2.2] - 2026-11-08
 
 ### Added

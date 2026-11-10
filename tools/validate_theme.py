@@ -97,6 +97,29 @@ DOCUMENTED_EXCEPTIONS = {
     "FF839B",  # semanticTokenColors upstream
 }
 
+# Known Lexilla-only states: (lexer, styleID) pairs that exist in the
+# Scintilla/Lexilla source (SciLexer.h) and are legitimately themed, but are
+# absent from the Notepad++ v8.9.9 stylers.model.xml inventory used by
+# tools/npp_lexer_model.json. Notepad++ simply does not model them yet, so the
+# unknown-styleID check must not flag them.
+KNOWN_LEXILLA_STATES = {
+    ("asp", "87"),         # SCE_HBA_STRINGEOL
+    ("python", "13"),      # SCE_P_STRINGEOL
+    ("fortran", "5"),      # SCE_F_STRINGEOL
+    ("fortran77", "5"),    # SCE_F_STRINGEOL
+    ("lisp", "8"),         # SCE_LISP_STRINGEOL
+    ("asm", "13"),         # SCE_ASM_STRINGEOL
+    ("verilog", "12"),     # SCE_V_STRINGEOL
+    ("ada", "6"),          # SCE_ADA_CHARACTEREOL
+    ("ada", "8"),          # SCE_ADA_STRINGEOL
+    ("typescript", "9"),   # SCE_C_PREPROCESSOR (model gap for TypeScript)
+
+    # Legacy widget declaration: absent from the v8.9.9 stylers.model.xml and
+    # from the stock DarkModeDefault.xml theme. Kept deliberately (inert
+    # unless a Notepad++ build reads it); documented in README.md and AGENTS.md.
+    ("searchResult", "5"),
+}
+
 # Union of every color the theme is allowed to use. Anything outside this set
 # is a palette drift and is reported as an ERROR (not a warning).
 ALLOWED_COLORS = set(PALETTE.values()) | UI_EXCEPTIONS | DOCUMENTED_EXCEPTIONS
@@ -285,12 +308,29 @@ def validate_theme(theme_path, model_path, baseline_path):
                     f"fgColor == bgColor ({fg}) in {name} style {sid}")
 
             # --- NEW CHECK: unknown styleID (not in model) -> WARNING ---
+            # KNOWN_LEXILLA_STATES whitelists lexer states that exist in the
+            # Scintilla/Lexilla source (SciLexer.h) but not in the v8.9.9
+            # stylers.model.xml inventory: theming them is correct and
+            # future-proof, so they must not be reported as drift.
             if sid is not None and name in model:
                 model_ids = {s[0] for s in model[name]}
-                if sid not in model_ids:
+                if sid not in model_ids and (name, sid) not in KNOWN_LEXILLA_STATES:
                     warnings.append(
                         f"Unknown styleID '{sid}' in lexer '{name}' "
                         f"(style '{style.get('name')}') not in npp_lexer_model.json")
+
+            # --- NEW CHECK: style name drift vs the model -> WARNING ---
+            # Style names must match tools/npp_lexer_model.json exactly
+            # (spacing included: 'DOUBLE STRING', 'USER TAGS1'). ElementTree
+            # already decodes XML entities, so '&' compares decoded-to-decoded.
+            if sid is not None and name in model:
+                model_name_by_id = {str(s[0]): s[1] for s in model[name]
+                                    if isinstance(s, (list, tuple)) and len(s) >= 2}
+                expected = model_name_by_id.get(sid)
+                if expected is not None and (style.get("name") or "") != expected:
+                    warnings.append(
+                        f"Style name drift in lexer '{name}' styleID {sid}: "
+                        f"found {style.get('name')!r}, model expects {expected!r}")
 
             # Contrast Check
             if fg and bg:
@@ -353,6 +393,34 @@ def validate_theme(theme_path, model_path, baseline_path):
                     f"WordsStyle '{lname}' styleID={style.get('styleID')} "
                     f"name={style.get('name')!r} has internal text "
                     f"(<WordsStyle> must be empty): {text[:80]!r}")
+
+    # --- NEW CHECK: stray <WordsStyle> outside any <LexerType> -> ERROR ---
+    # The v2.2 theme declared ini KEY (5) and vhdl COMMENT BLOCK (15) after
+    # their </LexerType> closers, where Notepad++ never loads them. ElementTree
+    # exposes no parent pointers, so membership is checked by object identity:
+    # every <WordsStyle> must be a child of a <LexerType>, and every
+    # <WidgetStyle> a child of <GlobalStyles>.
+    lexer_style_ids = set()
+    for lexer in theme_lexers:
+        for style in lexer.findall("WordsStyle"):
+            lexer_style_ids.add(id(style))
+    for ws in root.iter("WordsStyle"):
+        if id(ws) not in lexer_style_ids:
+            errors.append(
+                f"Stray <WordsStyle> outside any <LexerType> block: "
+                f"styleID={ws.get('styleID')} name={ws.get('name')!r} "
+                f"(Notepad++ never applies it)")
+
+    global_styles_element = root.find(".//GlobalStyles")
+    widget_ids = set()
+    if global_styles_element is not None:
+        for w in global_styles_element.findall("WidgetStyle"):
+            widget_ids.add(id(w))
+    for w in root.iter("WidgetStyle"):
+        if id(w) not in widget_ids:
+            errors.append(
+                f"Stray <WidgetStyle> outside <GlobalStyles>: "
+                f"styleID={w.get('styleID')} name={w.get('name')!r}")
 
     # README filename/links consistency: README.md must reference the real
     # theme file name "BlulocoDark.xml". Warning only (not a failure).
