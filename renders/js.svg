@@ -30,75 +30,75 @@
 <text x="37" y="389" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">19</text>
 <text x="37" y="408" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">20</text>
 <text x="37" y="427" font-size="10" fill="#636D83" text-anchor="end" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">21</text>
-<text font-size="13" x="58.0" y="50" fill="#636D83" textLength="296.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">// Sample JS code to test Bluloco Dark</text>
-<text font-size="13" x="58.0" y="69" fill="#636D83" textLength="405.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">// Includes ES6+, template literals, and async/await</text>
-<text font-size="13" x="58.0" y="107" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">const</text>
-<text font-size="13" x="104.8" y="107" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">apiCall</text>
-<text font-size="13" x="167.2" y="107" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
-<text font-size="13" x="182.8" y="107" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">async</text>
-<text font-size="13" x="229.6" y="107" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
-<text font-size="13" x="237.4" y="107" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">url</text>
-<text font-size="13" x="260.8" y="107" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
-<text font-size="13" x="276.4" y="107" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=&gt;</text>
-<text font-size="13" x="299.8" y="107" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
-<text font-size="13" x="89.2" y="126" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">try</text>
-<text font-size="13" x="120.4" y="126" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
-<text font-size="13" x="120.4" y="145" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">const</text>
-<text font-size="13" x="167.2" y="145" fill="#ABB2BF" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">response</text>
-<text font-size="13" x="237.4" y="145" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
-<text font-size="13" x="253.0" y="145" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">await</text>
-<text font-size="13" x="299.8" y="145" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">fetch</text>
-<text font-size="13" x="338.8" y="145" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
-<text font-size="13" x="346.6" y="145" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">url</text>
-<text font-size="13" x="370.0" y="145" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">);</text>
-<text font-size="13" x="120.4" y="164" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">const</text>
-<text font-size="13" x="167.2" y="164" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">data</text>
-<text font-size="13" x="206.2" y="164" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
-<text font-size="13" x="221.8" y="164" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">await</text>
-<text font-size="13" x="268.6" y="164" fill="#ABB2BF" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">response</text>
-<text font-size="13" x="331.0" y="164" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.</text>
-<text font-size="13" x="338.8" y="164" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">json</text>
-<text font-size="13" x="370.0" y="164" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">();</text>
-<text font-size="13" x="120.4" y="183" fill="#10B1FE" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">return</text>
-<text font-size="13" x="175.0" y="183" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">data</text>
-<text font-size="13" x="206.2" y="183" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">;</text>
-<text font-size="13" x="89.2" y="202" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">}</text>
-<text font-size="13" x="104.8" y="202" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">catch</text>
-<text font-size="13" x="151.6" y="202" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
-<text font-size="13" x="159.4" y="202" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">err</text>
-<text font-size="13" x="182.8" y="202" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
-<text font-size="13" x="198.4" y="202" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
-<text font-size="13" x="120.4" y="221" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">console</text>
-<text font-size="13" x="175.0" y="221" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.</text>
-<text font-size="13" x="182.8" y="221" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">error</text>
-<text font-size="13" x="221.8" y="221" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
-<text font-size="13" x="229.6" y="221" fill="#F9C859" textLength="241.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">`Error fetching ${url}: ${err}`</text>
-<text font-size="13" x="471.4" y="221" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">);</text>
-<text font-size="13" x="89.2" y="240" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">}</text>
-<text font-size="13" x="58.0" y="259" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">};</text>
-<text font-size="13" x="58.0" y="297" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">const</text>
-<text font-size="13" x="104.8" y="297" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">user</text>
-<text font-size="13" x="143.8" y="297" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
-<text font-size="13" x="159.4" y="297" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
-<text font-size="13" x="89.2" y="316" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">name</text>
-<text font-size="13" x="120.4" y="316" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:</text>
-<text font-size="13" x="136.0" y="316" fill="#F9C859" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">'Gemma'</text>
-<text font-size="13" x="190.6" y="316" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">,</text>
-<text font-size="13" x="89.2" y="335" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">greet</text>
-<text font-size="13" x="128.2" y="335" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">()</text>
-<text font-size="13" x="151.6" y="335" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
-<text font-size="13" x="120.4" y="354" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">console</text>
-<text font-size="13" x="175.0" y="354" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.</text>
-<text font-size="13" x="182.8" y="354" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">log</text>
-<text font-size="13" x="206.2" y="354" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
-<text font-size="13" x="214.0" y="354" fill="#F9C859" textLength="210.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">`Hello, I am ${this.name}!`</text>
-<text font-size="13" x="424.6" y="354" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">);</text>
-<text font-size="13" x="89.2" y="373" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">}</text>
-<text font-size="13" x="58.0" y="392" fill="#ABB2BF" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">};</text>
-<text font-size="13" x="58.0" y="430" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">user</text>
-<text font-size="13" x="89.2" y="430" fill="#ABB2BF" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.</text>
-<text font-size="13" x="97.0" y="430" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">greet</text>
-<text font-size="13" x="136.0" y="430" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">();</text>
+<text font-size="13" x="58.0" y="50" fill="#636D83" textLength="296.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="2">// Sample JS code to test Bluloco Dark</text>
+<text font-size="13" x="58.0" y="69" fill="#636D83" textLength="405.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="2">// Includes ES6+, template literals, and async/await</text>
+<text font-size="13" x="58.0" y="107" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">const</text>
+<text font-size="13" x="104.8" y="107" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">apiCall</text>
+<text font-size="13" x="167.2" y="107" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">=</text>
+<text font-size="13" x="182.8" y="107" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">async</text>
+<text font-size="13" x="229.6" y="107" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">(</text>
+<text font-size="13" x="237.4" y="107" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">url</text>
+<text font-size="13" x="260.8" y="107" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">)</text>
+<text font-size="13" x="276.4" y="107" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">=&gt;</text>
+<text font-size="13" x="299.8" y="107" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">{</text>
+<text font-size="13" x="89.2" y="126" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">try</text>
+<text font-size="13" x="120.4" y="126" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">{</text>
+<text font-size="13" x="120.4" y="145" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">const</text>
+<text font-size="13" x="167.2" y="145" fill="#ABB2BF" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">response</text>
+<text font-size="13" x="237.4" y="145" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">=</text>
+<text font-size="13" x="253.0" y="145" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">await</text>
+<text font-size="13" x="299.8" y="145" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">fetch</text>
+<text font-size="13" x="338.8" y="145" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">(</text>
+<text font-size="13" x="346.6" y="145" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">url</text>
+<text font-size="13" x="370.0" y="145" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">);</text>
+<text font-size="13" x="120.4" y="164" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">const</text>
+<text font-size="13" x="167.2" y="164" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">data</text>
+<text font-size="13" x="206.2" y="164" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">=</text>
+<text font-size="13" x="221.8" y="164" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">await</text>
+<text font-size="13" x="268.6" y="164" fill="#ABB2BF" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">response</text>
+<text font-size="13" x="331.0" y="164" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">.</text>
+<text font-size="13" x="338.8" y="164" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">json</text>
+<text font-size="13" x="370.0" y="164" fill="#7A82DA" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">();</text>
+<text font-size="13" x="120.4" y="183" fill="#10B1FE" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">return</text>
+<text font-size="13" x="175.0" y="183" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">data</text>
+<text font-size="13" x="206.2" y="183" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">;</text>
+<text font-size="13" x="89.2" y="202" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">}</text>
+<text font-size="13" x="104.8" y="202" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">catch</text>
+<text font-size="13" x="151.6" y="202" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">(</text>
+<text font-size="13" x="159.4" y="202" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">err</text>
+<text font-size="13" x="182.8" y="202" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">)</text>
+<text font-size="13" x="198.4" y="202" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">{</text>
+<text font-size="13" x="120.4" y="221" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">console</text>
+<text font-size="13" x="175.0" y="221" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">.</text>
+<text font-size="13" x="182.8" y="221" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">error</text>
+<text font-size="13" x="221.8" y="221" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">(</text>
+<text font-size="13" x="229.6" y="221" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace"><tspan x="229.6" y="221" textLength="124.8" lengthAdjust="spacingAndGlyphs" fill="#F9C859" data-style-id="20" xml:space="preserve">`Error fetching </tspan><tspan x="354.4" y="221" textLength="15.6" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">${</tspan><tspan x="370.0" y="221" textLength="23.4" lengthAdjust="spacingAndGlyphs" fill="#ABB2BF" data-style-id="11">url</tspan><tspan x="393.4" y="221" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">}</tspan><tspan x="401.2" y="221" textLength="15.6" lengthAdjust="spacingAndGlyphs" fill="#F9C859" data-style-id="20" xml:space="preserve">: </tspan><tspan x="416.8" y="221" textLength="15.6" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">${</tspan><tspan x="432.4" y="221" textLength="23.4" lengthAdjust="spacingAndGlyphs" fill="#ABB2BF" data-style-id="11">err</tspan><tspan x="455.8" y="221" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">}</tspan><tspan x="463.6" y="221" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#F9C859" data-style-id="20">`</tspan></text>
+<text font-size="13" x="471.4" y="221" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">);</text>
+<text font-size="13" x="89.2" y="240" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">}</text>
+<text font-size="13" x="58.0" y="259" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">};</text>
+<text font-size="13" x="58.0" y="297" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="5">const</text>
+<text font-size="13" x="104.8" y="297" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">user</text>
+<text font-size="13" x="143.8" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">=</text>
+<text font-size="13" x="159.4" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">{</text>
+<text font-size="13" x="89.2" y="316" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">name</text>
+<text font-size="13" x="120.4" y="316" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">:</text>
+<text font-size="13" x="136.0" y="316" fill="#F9C859" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="6">'Gemma'</text>
+<text font-size="13" x="190.6" y="316" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">,</text>
+<text font-size="13" x="89.2" y="335" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">greet</text>
+<text font-size="13" x="128.2" y="335" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">()</text>
+<text font-size="13" x="151.6" y="335" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">{</text>
+<text font-size="13" x="120.4" y="354" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">console</text>
+<text font-size="13" x="175.0" y="354" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">.</text>
+<text font-size="13" x="182.8" y="354" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">log</text>
+<text font-size="13" x="206.2" y="354" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">(</text>
+<text font-size="13" x="214.0" y="354" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace"><tspan x="214.0" y="354" textLength="101.4" lengthAdjust="spacingAndGlyphs" fill="#F9C859" data-style-id="20" xml:space="preserve">`Hello, I am </tspan><tspan x="315.4" y="354" textLength="15.6" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">${</tspan><tspan x="331.0" y="354" textLength="31.2" lengthAdjust="spacingAndGlyphs" fill="#10B1FE" data-style-id="5">this</tspan><tspan x="362.2" y="354" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">.</tspan><tspan x="370.0" y="354" textLength="31.2" lengthAdjust="spacingAndGlyphs" fill="#ABB2BF" data-style-id="11">name</tspan><tspan x="401.2" y="354" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#7A82DA" data-style-id="10">}</tspan><tspan x="409.0" y="354" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#F9C859" data-style-id="20">!</tspan><tspan x="416.8" y="354" textLength="7.8" lengthAdjust="spacingAndGlyphs" fill="#F9C859" data-style-id="20">`</tspan></text>
+<text font-size="13" x="424.6" y="354" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">);</text>
+<text font-size="13" x="89.2" y="373" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">}</text>
+<text font-size="13" x="58.0" y="392" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">};</text>
+<text font-size="13" x="58.0" y="430" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">user</text>
+<text font-size="13" x="89.2" y="430" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">.</text>
+<text font-size="13" x="97.0" y="430" fill="#ABB2BF" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="11">greet</text>
+<text font-size="13" x="136.0" y="430" fill="#7A82DA" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="10">();</text>
 <rect x="58" y="95" width="1.6" height="15" fill="#FFCC00"/>
 <rect x="0" y="459" width="540" height="20" fill="#22252A"/>
 <text x="12" y="472.5" font-size="10" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Render de demonstração — Bluloco Dark v2.3.1 · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++</text>
