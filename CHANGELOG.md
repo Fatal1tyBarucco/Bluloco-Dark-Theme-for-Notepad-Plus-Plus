@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
-- Added a Windows CI workflow that runs portable Notepad++ 8.9.9 and verifies native Scintilla style IDs plus actual foreground/background colours for selected tokens across all seven sample languages.
+- Added a Windows CI workflow that runs portable Notepad++ 8.9.9, verifies 50 curated native Scintilla token style IDs and foreground/background colours across all seven sample languages, and uploads seven authentic Notepad++ screenshots as a workflow artifact.
 - Added explicit `data-style-id` annotations and regression checks for reviewed tokens in CSS, HTML, standalone JavaScript, Python, Ruby and TypeScript renders.
 - Added `tools/validate_renders.py` and a CI step to validate all seven SVG previews for XML well-formedness, current README release marker, explicit non-screenshot disclosure, and fill/stroke colour provenance against the corresponding language lexer and `GlobalStyles` in `BlulocoDark.xml`.
 
