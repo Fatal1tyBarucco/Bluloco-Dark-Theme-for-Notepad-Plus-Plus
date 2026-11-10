@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file.
 - Updated the README hero image to use the current programmatic SVG preview and explicitly separated it from historical pre-v2.1 PNG screenshots.
 
 ### Validation limits
-- SVG validation does not verify Scintilla token classification or native Notepad++ rendering. A real Windows + Notepad++ visual pass remains required before claiming 100% visual fidelity.
+- Automated SVG checks cover curated token mappings only. The Windows workflow verifies selected tokens and their native Notepad++ style colours, but does not inspect every token or certify full editor chrome, font metrics, margins, and widget rendering. A complete manual visual review remains required before claiming 100% visual fidelity.
 
 ## [2.3.1] - 2026-11-10
 
