@@ -94,9 +94,9 @@
 <text font-size="13" x="58.0" y="373" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">}</text>
 <text font-size="13" x="58.0" y="411" fill="#10B1FE" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">@media</text>
 <text font-size="13" x="112.6" y="411" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
-<text font-size="13" x="120.4" y="411" fill="#CE9887" textLength="70.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="6">max-width</text>
+<text font-size="13" x="120.4" y="411" fill="#10B1FE" textLength="70.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="6" data-style-id="22">max-width</text>
 <text font-size="13" x="190.6" y="411" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:</text>
-<text font-size="13" x="206.2" y="411" fill="#F9C859" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="8">600px</text>
+<text font-size="13" x="206.2" y="411" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace" data-style-id="8" data-style-id="22">600px</text>
 <text font-size="13" x="245.2" y="411" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
 <text font-size="13" x="260.8" y="411" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">{</text>
 <text font-size="13" x="89.2" y="430" fill="#3691FF" textLength="78.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">.container</text>
