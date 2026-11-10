@@ -5,15 +5,17 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
-- Added explicit `data-style-id` annotations and regression checks for reviewed tokens in CSS, HTML, Python, Ruby and TypeScript renders.
+- Added a Windows CI workflow that runs portable Notepad++ 8.9.9 and verifies native Scintilla style IDs plus actual foreground/background colours for selected tokens across all seven sample languages.
+- Added explicit `data-style-id` annotations and regression checks for reviewed tokens in CSS, HTML, standalone JavaScript, Python, Ruby and TypeScript renders.
 - Added `tools/validate_renders.py` and a CI step to validate all seven SVG previews for XML well-formedness, current README release marker, explicit non-screenshot disclosure, and fill/stroke colour provenance against the corresponding language lexer and `GlobalStyles` in `BlulocoDark.xml`.
 
 ### Fixed
-- Corrected CSS declaration/property and media-query value colours to CSS lexer styles (`IDENTIFIER` styleID 6 and `VALUE` styleID 8).
+- Corrected CSS declaration/property colours to `IDENTIFIER` styleID 6 and media-query terms (`max-width`, `600px`) to `MEDIA` styleID 22.
 - Corrected Ruby method calls, variables, parameters and constants that had incorrectly reused the green method-definition or keyword colours; retained green only for method definitions.
 - Corrected the HTML `<!DOCTYPE html>` SGML command and first-parameter segmentation.
 - Corrected Python f-string interpolation to render expression identifiers, attributes, operators and numeric literals using their lexer styles rather than colouring the entire f-string as a string.
 - Corrected TypeScript `undefined` from `TYPE WORD` to `INSTRUCTION WORD` styleID 5, matching the Notepad++ 8.9.9 keyword list.
+- Corrected standalone JavaScript render token styles to the native C++ lexer IDs (keywords 5, operators 10, identifiers 11, template literals 20); interpolated expressions are now rendered as code rather than plain string text.
 
 ### Changed
 - Updated `AGENTS.md` from stale v2.2/v2.3 render references to the released v2.3.1 state and documented the limits of automated render validation.
