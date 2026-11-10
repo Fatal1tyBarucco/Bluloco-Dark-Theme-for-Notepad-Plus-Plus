@@ -69,8 +69,8 @@ Run from the repo root:
 - `xmllint --noout BlulocoDark.xml` (fallback: `python3 -c 'import xml.etree.ElementTree as ET; ET.parse("BlulocoDark.xml")'`)
 - `grep -oE '(fg|bg)Color="[^"]*"' BlulocoDark.xml | grep -vE '"[0-9A-F]{6}"'` — expect no output.
 - `grep -c '<LexerType' BlulocoDark.xml` — baseline 67; only changes when adding/removing a lexer.
-- `python3 tools/validate_theme.py` — theme XML static checks;
-- `python3 tools/validate_renders.py` — SVG syntax, current release marker, disclosure label, and every SVG fill/stroke colour must occur in `BlulocoDark.xml`; this does not validate token classification; it also validates the `GlobalStyles` widget colours against `PALETTE | UI_EXCEPTIONS` and detects SHA-256 drift of the XML against `tools/baseline.json`, warns on style-name drift against `tools/npp_lexer_model.json`, rejects `<WordsStyle>` entries that sit outside their lexer block and `<WidgetStyle>` entries outside `<GlobalStyles>`, and whitelists the documented Lexilla-only states in `KNOWN_LEXILLA_STATES`; resolves paths from the repo root, so it runs from any directory.
+- `python3 tools/validate_theme.py` — XML syntax, palette, contrast, lexer/style-ID coverage, baseline drift and structural checks.
+- `python3 tools/validate_renders.py` — SVG syntax, release marker, explicit non-screenshot disclosure, and colour provenance against `BlulocoDark.xml`; it does not validate token classification or native rendering.
 - `python3 tools/generate_baseline.py` — regenerates `tools/baseline.json` reproducibly.
 - Visual check requires Windows + Notepad++: copy to `%APPDATA%\Notepad++\themes\`, then Settings → Style Configurator. It cannot be done natively in this Linux environment; never claim visual verification or add screenshots without a real run.
 - For visual review, load the files in `samples/` manually in Notepad++ and inspect the rendering per language. This is a manual, non-automatable step; do not describe it as machine-verified.
