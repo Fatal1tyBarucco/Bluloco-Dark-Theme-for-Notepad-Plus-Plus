@@ -22,8 +22,8 @@ SW_RESTORE = 9
 
 TEST_CASES = (
     ("css", "sample.css", 9, "background-color", 0, 6),
-    ("css", "sample.css", 20, "max-width", 0, 6),
-    ("css", "sample.css", 20, "600px", 0, 8),
+    ("css", "sample.css", 20, "max-width", 0, 22),
+    ("css", "sample.css", 20, "600px", 0, 22),
     ("css", "sample.css", 22, "padding", 0, 6),
     ("html", "sample.html", 1, "<!", 0, 21),
     ("html", "sample.html", 1, "DOCTYPE", 0, 22),
@@ -163,9 +163,17 @@ def _load_theme_styles(theme_path):
     return lexer_styles
 
 
-def _verify_sample(user32, enum_proc_type, executable, sample_path, language, test_cases, lexer_styles):
+def _verify_sample(user32, enum_proc_type, executable, settings_dir, sample_path, language, test_cases, lexer_styles):
     process = subprocess.Popen(
-        [str(executable), "-multiInst", "-nosession", "-noPlugin", str(sample_path)],
+        [
+            str(executable),
+            "-multiInst",
+            "-nosession",
+            "-noPlugin",
+            f"-settingsDir={settings_dir}",
+            f"-L{language}",
+            str(sample_path),
+        ],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
@@ -284,6 +292,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--notepadpp", required=True)
     parser.add_argument("--theme", default="BlulocoDark.xml")
+    parser.add_argument("--settings-dir", required=True)
     parser.add_argument("--samples", default="samples")
     parser.add_argument("--output", default="artifacts/notepadpp-native-validation.json")
     arguments = parser.parse_args()
@@ -295,6 +304,7 @@ def main():
     executable = Path(arguments.notepadpp).resolve()
     theme_path = Path(arguments.theme).resolve()
     samples_dir = Path(arguments.samples).resolve()
+    settings_dir = Path(arguments.settings_dir).resolve()
     if not executable.is_file():
         raise FileNotFoundError(executable)
     if not theme_path.is_file():
@@ -327,6 +337,7 @@ def main():
             user32,
             enum_proc_type,
             executable,
+            settings_dir,
             samples_dir / filename,
             language,
             cases,
