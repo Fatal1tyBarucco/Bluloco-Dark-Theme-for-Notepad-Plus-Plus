@@ -76,7 +76,7 @@ Run from the repo root:
 - For visual review, load the files in `samples/` manually in Notepad++ and inspect the rendering per language. This is a manual, non-automatable step; do not describe it as machine-verified.
 
 ## Constraints
-- No build tooling, dependencies, installers, or generated files.
+- No package manager, build system, dependencies, or installer. Keep generated previews confined to the documented `renders/` directory.
 - Do not whole-file reformat or reorder; do not remove existing lexers/styles without justification.
 - Do not rename the XML to match stale README text; fix the docs instead.
 - Do not touch `BlulocoDark.xml`, `tools/`, or `screenshots/` unless the assigned task explicitly requires it.
