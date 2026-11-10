@@ -251,9 +251,9 @@ Notepad++ uses XML configuration with:
 4. Navigate to and select the `BlulocoDark.xml` file
 5. The theme will be automatically installed and selected
 
-## 🖼️ Theme Gallery
+## 🖼️ Historical Screenshot Gallery (pre-v2.1)
 
-| Language | Preview |
+| Language | Historical Notepad++ capture |
 |----------|---------|
 | **JavaScript** | ![JavaScript](screenshots/js.png) |
 | **TypeScript** | ![TypeScript](screenshots/ts.png) |
@@ -263,9 +263,9 @@ Notepad++ uses XML configuration with:
 | **PHP** | ![PHP](screenshots/php.png) |
 | **Ruby** | ![Ruby](screenshots/rb.png) |
 
-*Click images to view full-size previews*
+*These are original captures from an earlier theme revision; they are retained only as historical references.*
 
-> **Note — these previews predate the v2.1 palette normalization.** The 7 PNGs above are real Notepad++ screenshots, but they were captured *before* the palette was normalized against the upstream source, so they may still show the previous colours. Confirming the v2.1 palette visually requires a Windows machine with Notepad++ (Settings → Style Configurator); that check has **not** been performed in the Linux build environment, so treat the screenshots as illustrative rather than as proof of the current palette.
+> **Note — these previews predate the v2.1 palette normalization.** The 7 PNGs above are real Notepad++ screenshots, captured *before* the palette was normalized against the upstream source. They may show obsolete colours and are **not** evidence of the current release. Do not use them to assess v2.3.1.
 
 ### 🖼️ v2.3.1 Renders (generated from the theme XML)
 
