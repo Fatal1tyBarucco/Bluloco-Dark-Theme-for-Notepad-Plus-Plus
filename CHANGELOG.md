@@ -7,6 +7,22 @@ All notable changes to this project will be documented in this file.
 - `renders/` — 7 programmatic SVG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`) generated directly from the v2.2 `BlulocoDark.xml`: every colour is extracted from the theme file and the content comes from `samples/sample.*`. Clearly labelled as renders, **not** screenshots; visual verification still requires Windows + Notepad++.
 - README: new "v2.2 Renders" gallery subsection, updated repository tree and Known Limitations.
 
+## [2.3.1] - 2026-11-10
+
+### Fixed
+- **css**: restored the three missing `keywordClass` mappings — `PSEUDOCLASS` (styleID 3) `instre2`, `PSEUDOELEMENT` (18) `type3`, `LEGACY PSEUDOELEMENT` (20) `type5` — the only keyword lists the theme had silently dropped (all other 311 theme `keywordClass` values match the current `stylers.model.xml` exactly).
+- **nim**: `END OF LINE WHERE STRING IS NOT CLOSED` (13, `SCE_NIM_STRINGEOL`) `FF2E3F` → `F9C859`, matching all 12 other string-EOL states; `HIGHLIGHTED IDENTIFIERS` (14, actually `SCE_NIM_NUMERROR` per `SciLexer.h`/`LexNim.cxx` — the stylers label is stale) `9F7EFE` → `FF2E3F`, matching the theme ERROR convention (json/yaml/toml).
+- **makefile**: `IDEOL` (9, `SCE_MAKE_IDEOL`, "error identifier / incomplete identifier reference" per `LexMake.cxx`) `FF936A` → `FF2E3F`.
+- **toml**: `KEYWORD` (3, instre1 = `false inf nan true`) `9F7EFE` → `10B1FE`, matching upstream `constant.language` and the theme's json `KEYWORD`.
+- **go**: `PREDECLARED IDENTIFIERS` (19, instre2 = 19 builtin functions + 5 constants) `9F7EFE` → `3FC56B`, matching upstream `function.defaultLibrary` and the theme's python `BUILTINS`.
+
+### Added
+- **GlobalStyles**: `Find status: Message` (`3691FF`, upstream `debugConsole.infoForeground`) and `Find status: Search end reached` (`3FC56B`) — documented since v2.2 but never actually present in the XML; without them Notepad++ falls back to its `0000FF`/`008000` defaults, unreadable on the dark background.
+- **GlobalStyles**: `Find matches highlight all` (styleID 28, bg `1C6143`) alongside the legacy `Incremental highlight all` name — the current `stylers.model.xml` renamed this widget; identical colours under both names cover every Notepad++ build.
+
+### Changed
+- `tools/baseline.json` regenerated for the new XML (67 lexers, 1212 words styles, 54 widget styles).
+
 ## [2.3] - 2026-11-09
 
 ### Fixed

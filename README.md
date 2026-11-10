@@ -23,6 +23,14 @@ This Notepad++ port derives from that JSON file, and its colours were audited li
 
 ## ⚡ Recent Improvements
 
+### v2.3.1 (2026-11-10)
+
+- **css keywordClass gaps**: `PSEUDOCLASS` (styleID 3) now carries `instre2`, `PSEUDOELEMENT` (18) `type3` and `LEGACY PSEUDOELEMENT` (20) `type5` — the only three stock keyword lists the theme silently dropped (verified: all other 311 theme `keywordClass` values match the current `stylers.model.xml` exactly).
+- **Lexilla state corrections** (verified in `SciLexer.h` and the lexer sources): nim `END OF LINE WHERE STRING IS NOT CLOSED` (13, `SCE_NIM_STRINGEOL`) `FF2E3F` → `F9C859` like all 12 other string-EOL states; nim `HIGHLIGHTED IDENTIFIERS` (14, actually `SCE_NIM_NUMERROR` — the stylers label is stale) `9F7EFE` → `FF2E3F` per the theme ERROR convention; makefile `IDEOL` (9, `SCE_MAKE_IDEOL`, "error identifier") `FF936A` → `FF2E3F`.
+- **Keyword colour consistency**: toml `KEYWORD` (3, instre1 = `false inf nan true`) `9F7EFE` → `10B1FE` (upstream `constant.language`, same role as json `KEYWORD`); go `PREDECLARED IDENTIFIERS` (19, instre2 = 19 builtin functions + 5 constants) `9F7EFE` → `3FC56B` (upstream `function.defaultLibrary`, same role as python `BUILTINS`).
+- **GlobalStyles**: added `Find status: Message` (`3691FF`) and `Find status: Search end reached` (`3FC56B`) — documented since v2.2 but never actually present in the XML; added future-proof `Find matches highlight all` (styleID 28, `1C6143`) alongside `Incremental highlight all`, which the current Notepad++ `stylers.model.xml` renamed.
+- `tools/baseline.json` regenerated (67 lexers, 1212 words styles, 54 widget styles).
+
 ### v2.3 (2026-11-09)
 
 - **Structural fix**: the `ini` KEY (styleID 5) and `vhdl` COMMENT BLOCK (styleID 15) styles were declared outside their `<LexerType>` blocks, where Notepad++ never loads them; both are now inside their blocks and every themed lexer has full style-ID coverage against the Notepad++ v8.9.9 `stylers.model.xml`.
