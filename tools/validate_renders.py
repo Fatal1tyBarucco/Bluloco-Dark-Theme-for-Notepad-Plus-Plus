@@ -32,7 +32,7 @@ def main():
         for attribute in ("fgColor", "bgColor")
         if (value := element.get(attribute))
     }
-    release_match = re.search(r"^### v([0-9]+\\.[0-9]+\\.[0-9]+)", readme, re.MULTILINE)
+    release_match = re.search(r"^### v([0-9]+\.[0-9]+\.[0-9]+)", readme, re.MULTILINE)
     if not release_match:
         errors.append("README.md has no current semantic-version heading (### vX.Y.Z)")
         expected_version = None
