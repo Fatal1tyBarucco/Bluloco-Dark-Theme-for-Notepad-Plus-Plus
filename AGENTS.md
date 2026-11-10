@@ -10,7 +10,7 @@ This repo is a Notepad++ theme port of VSCode Bluloco Dark. The deliverable is a
 - License of the original material: **LGPL-3.0** (the upstream `LICENSE` is the GNU LGPL v3). This repository ships the same license. Never describe the upstream theme as MIT.
 
 ## Repo map
-- `BlulocoDark.xml` — canonical theme. `<NotepadPlus>` → `<LexerStyles>` (**67 `<LexerType>` blocks**) → `<GlobalStyles>` (**51 `<WidgetStyle>` entries**).
+- `BlulocoDark.xml` — canonical theme. `<NotepadPlus>` → `<LexerStyles>` (**67 `<LexerType>` blocks**) → `<GlobalStyles>` (**54 `<WidgetStyle>` entries**).
 - `README.md` — user documentation for the v2.3.1 state; renders are explicitly identified as programmatic previews. It references the real filename (`BlulocoDark.xml`) everywhere and keeps the honest limitations: no native semantic tokens, USER KEYWORDS are manual lists, comment contrast below WCAG AA, partial style-ID coverage in some lexers, visual validation requiring Windows + Notepad++. The XML remains the source of truth.
 - `CHANGELOG.md` — release history; entry `[2.3.1] - 2026-11-10` documents the current released theme.
 - `PROMPT_APERFEICOAMENTO_BLULOCO_DARK.md` — audit/overhaul brief with project quality rules. Reference material, not a standing TODO.
@@ -68,7 +68,7 @@ The canonical palette above is applied to every token style. The only colours ou
 Run from the repo root:
 - `xmllint --noout BlulocoDark.xml` (fallback: `python3 -c 'import xml.etree.ElementTree as ET; ET.parse("BlulocoDark.xml")'`)
 - `grep -oE '(fg|bg)Color="[^"]*"' BlulocoDark.xml | grep -vE '"[0-9A-F]{6}"'` — expect no output.
-- `grep -c '<LexerType' BlulocoDark.xml` — baseline 67 (v2.2); only changes when adding/removing a lexer.
+- `grep -c '<LexerType' BlulocoDark.xml` — baseline 67; only changes when adding/removing a lexer.
 - `python3 tools/validate_theme.py` — theme XML static checks;
 - `python3 tools/validate_renders.py` — SVG syntax, current release marker, disclosure label, and every SVG fill/stroke colour must occur in `BlulocoDark.xml`; this does not validate token classification; it also validates the `GlobalStyles` widget colours against `PALETTE | UI_EXCEPTIONS` and detects SHA-256 drift of the XML against `tools/baseline.json`, warns on style-name drift against `tools/npp_lexer_model.json`, rejects `<WordsStyle>` entries that sit outside their lexer block and `<WidgetStyle>` entries outside `<GlobalStyles>`, and whitelists the documented Lexilla-only states in `KNOWN_LEXILLA_STATES`; resolves paths from the repo root, so it runs from any directory.
 - `python3 tools/generate_baseline.py` — regenerates `tools/baseline.json` reproducibly.
