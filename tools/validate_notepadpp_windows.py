@@ -233,7 +233,7 @@ def _verify_sample(user32, enum_proc_type, executable, settings_dir, screenshots
         time.sleep(0.5)
 
         window_rectangle = wintypes.RECT()
-        screenshot_path = screenshots_dir / f"{sample_path.stem}.png"
+        screenshot_path = screenshots_dir / f"{language}-{sample_path.stem}.png"
         if user32.GetWindowRect(main_window, ctypes.byref(window_rectangle)):
             screenshot = ImageGrab.grab(bbox=(window_rectangle.left, window_rectangle.top, window_rectangle.right, window_rectangle.bottom))
             screenshot.save(screenshot_path)
@@ -331,6 +331,8 @@ def main():
     settings_dir = Path(arguments.settings_dir).resolve()
     screenshots_dir = Path(arguments.screenshots_dir).resolve()
     screenshots_dir.mkdir(parents=True, exist_ok=True)
+    for previous_screenshot in screenshots_dir.glob("*.png"):
+        previous_screenshot.unlink()
     if not executable.is_file():
         raise FileNotFoundError(executable)
     if not theme_path.is_file():
@@ -374,11 +376,20 @@ def main():
         all_errors.extend(errors)
         print(f"{filename}: {len(results)} native token checks, {len(errors)} errors")
 
+    screenshot_paths = sorted(screenshots_dir.glob("*.png"))
+    expected_screenshot_count = len(grouped_cases)
+    if len(screenshot_paths) != expected_screenshot_count:
+        all_errors.append(
+            f"Expected {expected_screenshot_count} language-specific screenshots, "
+            f"found {len(screenshot_paths)}"
+        )
+
     report = {
         "notepadpp_version": file_version,
         "theme": str(theme_path),
         "sample_checks": len(all_results),
-        "screenshots": [str(path.relative_to(Path.cwd())) for path in sorted(screenshots_dir.glob("*.png"))],
+        "screenshot_count": len(screenshot_paths),
+        "screenshots": [str(path.relative_to(Path.cwd())) for path in screenshot_paths],
         "errors": all_errors,
         "results": all_results,
     }
