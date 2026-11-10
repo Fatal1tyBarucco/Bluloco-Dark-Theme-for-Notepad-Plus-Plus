@@ -26,6 +26,36 @@ RENDER_LEXERS = {
     "ts": "typescript",
 }
 HEX_COLOR = re.compile(r"^#[0-9A-Fa-f]{6}$")
+TOKEN_STYLE_REGRESSION_CASES = {
+    "css": (
+        ("89.2", "202", "background-color", "6"),
+        ("89.2", "221", "color", "6"),
+        ("89.2", "240", "font-family", "6"),
+        ("89.2", "316", "display", "6"),
+        ("89.2", "335", "grid-template-columns", "6"),
+        ("89.2", "354", "gap", "6"),
+        ("120.4", "411", "max-width", "6"),
+        ("206.2", "411", "600px", "8"),
+        ("120.4", "449", "padding", "6"),
+    ),
+    "rb": (
+        ("73.6", "126", "attr_accessor", "11"),
+        ("190.6", "164", "name", "11"),
+        ("151.6", "183", "name", "11"),
+        ("89.2", "259", "puts", "11"),
+        ("58.0", "335", "themes", "11"),
+        ("58.0", "354", "themes", "11"),
+        ("112.6", "354", "each", "11"),
+        ("182.8", "354", "t", "11"),
+        ("73.6", "373", "puts", "11"),
+        ("58.0", "430", "Theme", "11"),
+        ("104.8", "430", "new", "11"),
+        ("260.8", "430", "describe", "11"),
+    ),
+    "ts": (
+        ("292.0", "354", "undefined", "5"),
+    ),
+}
 
 
 def main():
@@ -121,7 +151,62 @@ def main():
                         f"the {lexer_name!r} lexer and GlobalStyles in BlulocoDark.xml"
                     )
 
+    regression_count = 0
+    for render_name, cases in TOKEN_STYLE_REGRESSION_CASES.items():
+        render_path = os.path.join(RENDER_DIR, render_name + ".svg")
+        if not os.path.isfile(render_path):
+            continue
+        try:
+            root = ET.parse(render_path).getroot()
+        except ET.ParseError:
+            continue
+        lexer_name = RENDER_LEXERS[render_name]
+        style_lookup = lexer_styles.get(lexer_name, {})
+        for expected_x, expected_y, expected_text, expected_style_id in cases:
+            matching_elements = []
+            for element in root.iter():
+                if not element.tag.endswith("text"):
+                    continue
+                if element.get("x") != expected_x or element.get("y") != expected_y:
+                    continue
+                rendered_text = "".join(element.itertext())
+                if rendered_text == expected_text:
+                    matching_elements.append(element)
+            if len(matching_elements) != 1:
+                errors.append(
+                    f"{render_name}.svg expected exactly one token "
+                    f"{expected_text!r} at ({expected_x}, {expected_y}); "
+                    f"found {len(matching_elements)}"
+                )
+                continue
+            element = matching_elements[0]
+            actual_style_id = element.get("data-style-id")
+            if actual_style_id != expected_style_id:
+                errors.append(
+                    f"{render_name}.svg token {expected_text!r} at "
+                    f"({expected_x}, {expected_y}) has data-style-id "
+                    f"{actual_style_id!r}; expected {expected_style_id!r}"
+                )
+                continue
+            style = style_lookup.get(expected_style_id)
+            if style is None:
+                errors.append(
+                    f"{render_name}.svg token {expected_text!r} references "
+                    f"styleID {expected_style_id}, absent from {lexer_name!r} in XML"
+                )
+                continue
+            actual_fill = (element.get("fill") or "").upper()
+            if actual_fill != style["fg"]:
+                errors.append(
+                    f"{render_name}.svg token {expected_text!r} uses fill "
+                    f"{actual_fill!r}; {lexer_name!r} styleID {expected_style_id} "
+                    f"({style['name']}) requires {style['fg']!r}"
+                )
+                continue
+            regression_count += 1
+
     print("--- Render Validation Report ---")
+    print(f"Semantic token regression cases: {regression_count}")
     print(f"Theme colours available: {len(theme_colors)}")
     print("Render colours checked against their matching lexer plus GlobalStyles")
     print(f"Expected renders: {len(EXPECTED_RENDERS)}")
