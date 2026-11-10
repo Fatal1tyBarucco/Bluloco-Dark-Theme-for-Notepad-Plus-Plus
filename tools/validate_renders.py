@@ -112,8 +112,18 @@ def main():
         if (value := element.get(attribute))
     }
     lexer_colors = {}
+    lexer_styles = {}
     for lexer in theme_xml.findall(".//LexerType"):
         lexer_name = lexer.get("name")
+        lexer_styles[lexer_name] = {
+            element.get("styleID"): {
+                "name": element.get("name"),
+                "fg": "#" + element.get("fgColor", "").upper()
+                if element.get("fgColor")
+                else None,
+            }
+            for element in lexer.findall("WordsStyle")
+        }
         lexer_colors[lexer_name] = {
             "#" + value.upper()
             for element in lexer.findall("WordsStyle")
