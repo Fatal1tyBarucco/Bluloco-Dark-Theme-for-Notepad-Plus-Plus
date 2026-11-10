@@ -210,7 +210,7 @@ def _verify_sample(user32, enum_proc_type, executable, sample_path, language, te
 
         user32.SendMessageW(selected_scintilla, SCI_COLOURISE, 0, -1)
         time.sleep(0.5)
-        sample_content = sample_path.read_text(encoding="utf-8")
+        sample_content = sample_path.read_bytes().decode("utf-8")
         results = []
         errors = []
         styles = lexer_styles.get(language, {})
