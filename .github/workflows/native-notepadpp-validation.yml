@@ -40,10 +40,13 @@ jobs:
             throw "Portable Notepad++ executable was not found after extraction."
           }
 
-          New-Item -ItemType File -Path (Join-Path $installDirectory "doLocalConf.xml") -Force | Out-Null
-          $themePath = Join-Path $installDirectory "stylers.xml"
-          Copy-Item -LiteralPath "BlulocoDark.xml" -Destination $themePath -Force
-          $configPath = Join-Path $installDirectory "config.xml"
+          $settingsDirectory = Join-Path $env:RUNNER_TEMP "notepadpp-settings"
+          $themesDirectory = Join-Path $settingsDirectory "themes"
+          New-Item -ItemType Directory -Path $themesDirectory -Force | Out-Null
+          Copy-Item -LiteralPath "BlulocoDark.xml" -Destination (Join-Path $themesDirectory "BlulocoDark.xml") -Force
+          Copy-Item -LiteralPath "BlulocoDark.xml" -Destination (Join-Path $settingsDirectory "stylers.xml") -Force
+          $themePath = Join-Path $themesDirectory "BlulocoDark.xml"
+          $configPath = Join-Path $settingsDirectory "config.xml"
           $escapedThemePath = [System.Security.SecurityElement]::Escape($themePath)
           $configXml = @"
           <?xml version="1.0" encoding="UTF-8" ?>
@@ -56,11 +59,12 @@ jobs:
           [System.IO.File]::WriteAllText($configPath, $configXml, [System.Text.UTF8Encoding]::new($false))
 
           "NOTEPADPP_EXE=$executable" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+          "NOTEPADPP_SETTINGS=$settingsDirectory" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
 
       - name: Verify native lexer style IDs and theme colours
         shell: pwsh
         run: |
-          python tools/validate_notepadpp_windows.py --notepadpp "$env:NOTEPADPP_EXE" --theme BlulocoDark.xml --samples samples --output artifacts/notepadpp-native-validation.json
+          python tools/validate_notepadpp_windows.py --notepadpp "$env:NOTEPADPP_EXE" --settings-dir "$env:NOTEPADPP_SETTINGS" --theme BlulocoDark.xml --samples samples --output artifacts/notepadpp-native-validation.json
 
       - name: Upload native validation report
         if: always()
