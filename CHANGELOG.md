@@ -3,9 +3,6 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-### Added
-- `renders/` — 7 programmatic SVG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`) generated directly from the v2.2 `BlulocoDark.xml`: every colour is extracted from the theme file and the content comes from `samples/sample.*`. Clearly labelled as renders, **not** screenshots; visual verification still requires Windows + Notepad++.
-- README: new "v2.2 Renders" gallery subsection, updated repository tree and Known Limitations.
 
 ## [2.3.1] - 2026-11-10
 
@@ -19,6 +16,8 @@ All notable changes to this project will be documented in this file.
 ### Added
 - **GlobalStyles**: `Find status: Message` (`3691FF`, upstream `debugConsole.infoForeground`) and `Find status: Search end reached` (`3FC56B`) — documented since v2.2 but never actually present in the XML; without them Notepad++ falls back to its `0000FF`/`008000` defaults, unreadable on the dark background.
 - **GlobalStyles**: `Find matches highlight all` (styleID 28, bg `1C6143`) alongside the legacy `Incremental highlight all` name — the current `stylers.model.xml` renamed this widget; identical colours under both names cover every Notepad++ build.
+- `renders/` — 7 programmatic SVG previews (`css`, `html`, `js`, `php`, `py`, `rb`, `ts`) generated directly from the v2.3.1 `BlulocoDark.xml`: every colour is extracted from the theme file and the content comes from `samples/sample.*`. Clearly labelled as renders, **not** screenshots; visual verification still requires Windows + Notepad++. Python preview: `BUILTINS` (`print`, `sum`, `int`) `3FC56B` and `DECORATOR` (`@debug`) `50ACAE` (`None` keeps the keyword colour `10B1FE` — it is instre1, not a builtin); TypeScript preview: the line-1 comment now uses the comment colour (`636D83`).
+- README: Renders gallery subsection, repository tree and Known Limitations updated for the regenerated previews.
 
 ### Changed
 - `tools/baseline.json` regenerated for the new XML (67 lexers, 1212 words styles, 54 widget styles).

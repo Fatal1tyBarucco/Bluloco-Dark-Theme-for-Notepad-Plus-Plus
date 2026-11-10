@@ -29,6 +29,7 @@ This Notepad++ port derives from that JSON file, and its colours were audited li
 - **Lexilla state corrections** (verified in `SciLexer.h` and the lexer sources): nim `END OF LINE WHERE STRING IS NOT CLOSED` (13, `SCE_NIM_STRINGEOL`) `FF2E3F` → `F9C859` like all 12 other string-EOL states; nim `HIGHLIGHTED IDENTIFIERS` (14, actually `SCE_NIM_NUMERROR` — the stylers label is stale) `9F7EFE` → `FF2E3F` per the theme ERROR convention; makefile `IDEOL` (9, `SCE_MAKE_IDEOL`, "error identifier") `FF936A` → `FF2E3F`.
 - **Keyword colour consistency**: toml `KEYWORD` (3, instre1 = `false inf nan true`) `9F7EFE` → `10B1FE` (upstream `constant.language`, same role as json `KEYWORD`); go `PREDECLARED IDENTIFIERS` (19, instre2 = 19 builtin functions + 5 constants) `9F7EFE` → `3FC56B` (upstream `function.defaultLibrary`, same role as python `BUILTINS`).
 - **GlobalStyles**: added `Find status: Message` (`3691FF`) and `Find status: Search end reached` (`3FC56B`) — documented since v2.2 but never actually present in the XML; added future-proof `Find matches highlight all` (styleID 28, `1C6143`) alongside `Incremental highlight all`, which the current Notepad++ `stylers.model.xml` renamed.
+- **Renders**: all 7 `renders/*.svg` previews regenerated from the v2.3.1 XML — python `BUILTINS` (`print`, `sum`, `int`) `3FC56B` and `DECORATOR` (`@debug`) `50ACAE`; the TypeScript preview's line-1 comment now uses the comment colour (`636D83`); version labels updated to v2.3.1.
 - `tools/baseline.json` regenerated (67 lexers, 1212 words styles, 54 widget styles).
 
 ### v2.3 (2026-11-09)
@@ -262,9 +263,9 @@ Notepad++ uses XML configuration with:
 
 > **Note — these previews predate the v2.1 palette normalization.** The 7 PNGs above are real Notepad++ screenshots, but they were captured *before* the palette was normalized against the upstream source, so they may still show the previous colours. Confirming the v2.1 palette visually requires a Windows machine with Notepad++ (Settings → Style Configurator); that check has **not** been performed in the Linux build environment, so treat the screenshots as illustrative rather than as proof of the current palette.
 
-### 🖼️ v2.2 Renders (generated from the theme XML)
+### 🖼️ v2.3.1 Renders (generated from the theme XML)
 
-The previews below are programmatic renders generated directly from the current `BlulocoDark.xml` (v2.2): every colour is extracted from the theme file, and the code shown is the `samples/sample.*` content. **They are not screenshots of Notepad++** — the token classification approximates the Scintilla lexers and the editor chrome is stylized. Visual confirmation of the theme still requires Windows + Notepad++.
+The previews below are programmatic renders generated directly from the current `BlulocoDark.xml` (v2.3.1): every colour is extracted from the theme file, and the code shown is the `samples/sample.*` content. **They are not screenshots of Notepad++** — the token classification approximates the Scintilla lexers and the editor chrome is stylized. Visual confirmation of the theme still requires Windows + Notepad++.
 
 | Language | Render |
 |----------|---------|
@@ -299,7 +300,7 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 │   ├── sample.tex
 │   ├── sample.gd
 │   └── ... (27 pre-existing samples)
-├── renders/                  # v2.2 programmatic SVG renders (not screenshots)
+├── renders/                  # v2.3.1 programmatic SVG renders (not screenshots)
 │   ├── css.svg
 │   ├── html.svg
 │   ├── js.svg
@@ -404,7 +405,7 @@ Available samples:
 - **Palette exceptions**: the token palette is fully normalized against the upstream source, so the only colours outside the canonical role palette are (1) the `errorlist` ANSI terminal ramp (styleIDs 40–55), carried verbatim from the source's `terminal.ansi*` tokens; (2) the Notepad++ UI chrome colours in `GlobalStyles` (`2D333D`, `22252A`, `3D434F`, `FFCC00`, `177849`, `0084FF`, `25272D`, `DADADA`, `FFFFFF`), which exist because Notepad++ draws its own chrome and has no VSCode counterpart; (3) `7C8495`, the documentation-comment grey used by `COMMENT DOC KEYWORD`; and (4) GlobalStyles selection/search/mark/tab tints.
 - **Deliberate divergence in `errorlist`**: `ANSI COLOR RED` uses `FF2E3F`, while the upstream source uses `terminal.ansiRed` = `#fc2f52`. `FF2E3F` was kept on purpose, for internal consistency with the theme's canonical error colour — this is a documented decision, not an oversight.
 - **Screenshots**: the 7 PNGs in `screenshots/` are real Notepad++ captures taken **before** the v2.1 palette normalization; they may show the previous colours. They are illustrative, not proof of the current palette. Visual confirmation requires Windows + Notepad++.
-- **Renders**: the 7 SVGs in `renders/` are programmatic previews generated from the v2.2 `BlulocoDark.xml` (they have not been re-rendered after the v2.3 colour adjustments); every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
+- **Renders**: the 7 SVGs in `renders/` are programmatic previews regenerated from the v2.3.1 `BlulocoDark.xml`; every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
 
 ## 🔧 Customization
 

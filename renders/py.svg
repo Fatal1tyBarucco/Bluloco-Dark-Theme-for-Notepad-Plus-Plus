@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="728" height="441" viewBox="0 0 728 441">
-<!-- Render de demonstracao gerado programaticamente a partir de BlulocoDark.xml (v2.2). Nao e uma captura de tela do Notepad++. -->
+<!-- Render de demonstracao gerado programaticamente a partir de BlulocoDark.xml (v2.3.1). Nao e uma captura de tela do Notepad++. -->
 <rect width="728" height="441" rx="8" fill="#25272D"/>
 <rect x="12" y="7" width="168" height="27" rx="4" fill="#282C34"/>
 <rect x="12" y="7" width="168" height="2.6" rx="1.3" fill="#3691FF"/>
@@ -51,7 +51,7 @@
 <text font-size="13" x="237.4" y="183" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">**</text>
 <text font-size="13" x="253.0" y="183" fill="#ABB2BF" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">kwargs</text>
 <text font-size="13" x="299.8" y="183" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">):</text>
-<text font-size="13" x="120.4" y="202" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">print</text>
+<text font-size="13" x="120.4" y="202" fill="#3FC56B" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">print</text>
 <text font-size="13" x="159.4" y="202" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
 <text font-size="13" x="167.2" y="202" fill="#F9C859" textLength="296.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">f&quot;Calling {func.__name__} with {args}&quot;</text>
 <text font-size="13" x="463.6" y="202" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
@@ -65,7 +65,7 @@
 <text font-size="13" x="331.0" y="221" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
 <text font-size="13" x="89.2" y="240" fill="#10B1FE" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">return</text>
 <text font-size="13" x="143.8" y="240" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">wrapper</text>
-<text font-size="13" x="58.0" y="278" fill="#10B1FE" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">@debug</text>
+<text font-size="13" x="58.0" y="278" fill="#50ACAE" textLength="46.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">@debug</text>
 <text font-size="13" x="58.0" y="297" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">def</text>
 <text font-size="13" x="89.2" y="297" fill="#3FC56B" textLength="101.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">calculate_sum</text>
 <text font-size="13" x="190.6" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
@@ -73,23 +73,23 @@
 <text font-size="13" x="253.0" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:</text>
 <text font-size="13" x="268.6" y="297" fill="#ABB2BF" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">List</text>
 <text font-size="13" x="299.8" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">[</text>
-<text font-size="13" x="307.6" y="297" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">int</text>
+<text font-size="13" x="307.6" y="297" fill="#3FC56B" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">int</text>
 <text font-size="13" x="331.0" y="297" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">],</text>
 <text font-size="13" x="354.4" y="297" fill="#ABB2BF" textLength="78.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">multiplier</text>
 <text font-size="13" x="432.4" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:</text>
 <text font-size="13" x="448.0" y="297" fill="#ABB2BF" textLength="62.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Optional</text>
 <text font-size="13" x="510.4" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">[</text>
-<text font-size="13" x="518.2" y="297" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">int</text>
+<text font-size="13" x="518.2" y="297" fill="#3FC56B" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">int</text>
 <text font-size="13" x="541.6" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">]</text>
 <text font-size="13" x="557.2" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
 <text font-size="13" x="572.8" y="297" fill="#10B1FE" textLength="31.2" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">None</text>
 <text font-size="13" x="604.0" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
 <text font-size="13" x="619.6" y="297" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">-&gt;</text>
-<text font-size="13" x="643.0" y="297" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">int</text>
+<text font-size="13" x="643.0" y="297" fill="#3FC56B" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">int</text>
 <text font-size="13" x="666.4" y="297" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:</text>
 <text font-size="13" x="89.2" y="316" fill="#ABB2BF" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">res</text>
 <text font-size="13" x="120.4" y="316" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">=</text>
-<text font-size="13" x="136.0" y="316" fill="#10B1FE" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">sum</text>
+<text font-size="13" x="136.0" y="316" fill="#3FC56B" textLength="23.4" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">sum</text>
 <text font-size="13" x="159.4" y="316" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
 <text font-size="13" x="167.2" y="316" fill="#ABB2BF" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">numbers</text>
 <text font-size="13" x="221.8" y="316" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
@@ -106,11 +106,11 @@
 <text font-size="13" x="151.6" y="373" fill="#7A82DA" textLength="15.6" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">==</text>
 <text font-size="13" x="175.0" y="373" fill="#F9C859" textLength="78.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">&quot;__main__&quot;</text>
 <text font-size="13" x="253.0" y="373" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">:</text>
-<text font-size="13" x="89.2" y="392" fill="#10B1FE" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">print</text>
+<text font-size="13" x="89.2" y="392" fill="#3FC56B" textLength="39.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">print</text>
 <text font-size="13" x="128.2" y="392" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">(</text>
 <text font-size="13" x="136.0" y="392" fill="#F9C859" textLength="312.0" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">f&quot;Result: {calculate_sum([1, 2, 3], 2)}&quot;</text>
 <text font-size="13" x="448.0" y="392" fill="#7A82DA" textLength="7.8" lengthAdjust="spacingAndGlyphs" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">)</text>
 <rect x="58" y="285" width="1.6" height="15" fill="#FFCC00"/>
 <rect x="0" y="421" width="728" height="20" fill="#22252A"/>
-<text x="12" y="434.5" font-size="10" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Render de demonstração — Bluloco Dark v2.2 · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++</text>
+<text x="12" y="434.5" font-size="10" fill="#636D83" font-family="Consolas,'DejaVu Sans Mono',Menlo,monospace">Render de demonstração — Bluloco Dark v2.3.1 · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++</text>
 </svg>
