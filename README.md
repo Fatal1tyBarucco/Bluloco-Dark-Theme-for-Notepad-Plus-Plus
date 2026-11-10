@@ -2,9 +2,9 @@
 
 A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This theme brings the beautiful, carefully crafted Bluloco color scheme to Notepad++ with syntax highlighting across **67 lexers** (see **Known Limitations** for the exact coverage caveats).
 
-![Bluloco Dark Theme Preview](https://github.com/barucco-renato/Bluloco-Dark-Theme-for-Notepad-Plus-Plus/blob/main/screenshots/js.png)
+![Bluloco Dark programmatic preview](renders/js.svg)
 
-*Real Notepad++ capture, taken before the v2.1 palette normalization — see the Theme Gallery section below.*
+*Programmatic SVG preview generated from the current theme XML; not a Notepad++ screenshot. Historical PNG captures in `screenshots/` predate the v2.1 palette normalization and are not evidence of the current appearance.*
 
 ## 🎨 About Bluloco
 
@@ -20,6 +20,10 @@ Bluloco is a sophisticated color scheme that combines blue-based accents with a 
 | **Upstream license** | LGPL-3.0 (see [LICENSE](https://github.com/uloco/theme-bluloco-dark/blob/d604c347564d16eea5a98c5fb1fb1703816929b5/LICENSE)) |
 
 This Notepad++ port derives from that JSON file, and its colours were audited line by line against it: every `fgColor`/`bgColor` in `BlulocoDark.xml` was compared with the corresponding upstream `colors` / `tokenColors` / `semanticTokenColors` value. `BlulocoDark.xml` remains the source of truth for this port — the upstream file is the palette reference, not a build input.
+
+## Render integrity and visual verification
+
+The seven SVG files in `renders/` are illustrative programmatic previews. Their SVG structure, release marker, disclosure text, and use of colours present in `BlulocoDark.xml` are checked by `python3 tools/validate_renders.py` in CI. This check does **not** verify that each token is classified exactly as the native Scintilla lexer would classify it, nor does it reproduce Notepad++ UI metrics, fonts, margins, or widget behaviour. The PNG files in `screenshots/` are historical real captures made before v2.1 and must not be used to claim visual fidelity for the current release. Definitive visual validation requires opening the theme and the matching files in `samples/` in a real Windows Notepad++ installation.
 
 ## ⚡ Recent Improvements
 
