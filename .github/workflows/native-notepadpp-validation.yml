@@ -61,16 +61,19 @@ jobs:
           "NOTEPADPP_EXE=$executable" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
           "NOTEPADPP_SETTINGS=$settingsDirectory" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
 
-      - name: Verify native lexer style IDs and theme colours
+      - name: Install screenshot dependency
+        run: python -m pip install --disable-pip-version-check Pillow
+
+      - name: Verify native lexer style IDs, theme colours, and screenshots
         shell: pwsh
         run: |
-          python tools/validate_notepadpp_windows.py --notepadpp "$env:NOTEPADPP_EXE" --settings-dir "$env:NOTEPADPP_SETTINGS" --theme BlulocoDark.xml --samples samples --output artifacts/notepadpp-native-validation.json
+          python tools/validate_notepadpp_windows.py --notepadpp "$env:NOTEPADPP_EXE" --settings-dir "$env:NOTEPADPP_SETTINGS" --theme BlulocoDark.xml --samples samples --output artifacts/notepadpp-native-validation.json --screenshots-dir artifacts/notepadpp-screenshots
 
       - name: Upload native validation report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: notepadpp-native-validation
-          path: artifacts/notepadpp-native-validation.json
+          path: artifacts/
           if-no-files-found: warn
           retention-days: 14
