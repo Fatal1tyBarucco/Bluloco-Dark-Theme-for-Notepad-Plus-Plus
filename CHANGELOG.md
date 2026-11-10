@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
-- Added `tools/validate_renders.py` and a CI step to validate all seven SVG previews for XML well-formedness, current README release marker, explicit non-screenshot disclosure, and fill/stroke colour provenance against `BlulocoDark.xml`.
+- Added `tools/validate_renders.py` and a CI step to validate all seven SVG previews for XML well-formedness, current README release marker, explicit non-screenshot disclosure, and fill/stroke colour provenance against the corresponding language lexer and `GlobalStyles` in `BlulocoDark.xml`.
 
 ### Changed
 - Updated `AGENTS.md` from stale v2.2/v2.3 render references to the released v2.3.1 state and documented the limits of automated render validation.
