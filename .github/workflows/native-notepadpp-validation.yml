@@ -1,0 +1,75 @@
+name: Native Notepad++ validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-validation:
+    name: Notepad++ 8.9.9 native lexer verification
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install portable Notepad++ 8.9.9 and theme
+        shell: pwsh
+        run: |
+          $archive = Join-Path $env:RUNNER_TEMP "notepadpp-8.9.9.zip"
+          $installDirectory = Join-Path $env:RUNNER_TEMP "notepadpp-8.9.9"
+          $downloadUrl = "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9/npp.8.9.9.portable.x64.zip"
+
+          Invoke-WebRequest -Uri $downloadUrl -OutFile $archive
+          New-Item -ItemType Directory -Path $installDirectory -Force | Out-Null
+          Expand-Archive -LiteralPath $archive -DestinationPath $installDirectory -Force
+
+          $executable = Join-Path $installDirectory "notepad++.exe"
+          if (-not (Test-Path -LiteralPath $executable)) {
+            throw "Portable Notepad++ executable was not found after extraction."
+          }
+
+          New-Item -ItemType File -Path (Join-Path $installDirectory "doLocalConf.xml") -Force | Out-Null
+          $themesDirectory = Join-Path $installDirectory "themes"
+          New-Item -ItemType Directory -Path $themesDirectory -Force | Out-Null
+          Copy-Item -LiteralPath "BlulocoDark.xml" -Destination (Join-Path $themesDirectory "BlulocoDark.xml") -Force
+
+          $themePath = Join-Path $themesDirectory "BlulocoDark.xml"
+          $configPath = Join-Path $installDirectory "config.xml"
+          $escapedThemePath = [System.Security.SecurityElement]::Escape($themePath)
+          $configXml = @"
+          <?xml version="1.0" encoding="UTF-8" ?>
+          <NotepadPlus>
+            <GUIConfigs>
+              <GUIConfig name="stylerTheme" path="$escapedThemePath" />
+            </GUIConfigs>
+          </NotepadPlus>
+          "@
+          [System.IO.File]::WriteAllText($configPath, $configXml, [System.Text.UTF8Encoding]::new($false))
+
+          "NOTEPADPP_EXE=$executable" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+
+      - name: Verify native lexer style IDs and theme colours
+        shell: pwsh
+        run: |
+          python tools/validate_notepadpp_windows.py --notepadpp "$env:NOTEPADPP_EXE" --theme BlulocoDark.xml --samples samples --output artifacts/notepadpp-native-validation.json
+
+      - name: Upload native validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: notepadpp-native-validation
+          path: artifacts/notepadpp-native-validation.json
+          if-no-files-found: warn
+          retention-days: 14
