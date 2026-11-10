@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+- Added `tools/validate_renders.py` and a CI step to validate all seven SVG previews for XML well-formedness, current README release marker, explicit non-screenshot disclosure, and fill/stroke colour provenance against `BlulocoDark.xml`.
+
+### Changed
+- Updated `AGENTS.md` from stale v2.2/v2.3 render references to the released v2.3.1 state and documented the limits of automated render validation.
+- Updated the README hero image to use the current programmatic SVG preview and explicitly separated it from historical pre-v2.1 PNG screenshots.
+
+### Validation limits
+- SVG validation does not verify Scintilla token classification or native Notepad++ rendering. A real Windows + Notepad++ visual pass remains required before claiming 100% visual fidelity.
+
 ## [2.3.1] - 2026-11-10
 
 ### Fixed
