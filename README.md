@@ -4,7 +4,7 @@ A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This 
 
 ![Bluloco Dark programmatic preview](renders/js.svg)
 
-*Programmatic SVG preview generated from the current theme XML; not a Notepad++ screenshot. Historical PNG captures in `screenshots/` predate the v2.1 palette normalization and are not evidence of the current appearance.*
+*Programmatic SVG preview generated from the current theme XML; not a Notepad++ screenshot.*
 
 ## 🎨 About Bluloco
 
@@ -23,7 +23,7 @@ This Notepad++ port derives from that JSON file, and its colours were audited li
 
 ## Render integrity and visual verification
 
-The seven SVG files in `renders/` are illustrative programmatic previews. Their SVG structure, release marker, disclosure text, and use of colours declared by the matching language lexer or `GlobalStyles` in `BlulocoDark.xml` are checked by `python3 tools/validate_renders.py` in CI. The validator also includes explicit token-to-style regression cases for CSS declaration and media-query tokens, HTML SGML DOCTYPE segments, standalone JavaScript (using Notepad++'s C++ lexer styles, including template-literal interpolation), Python f-string expressions, Ruby identifiers/method calls, and the TypeScript `undefined` keyword. These cases compare the SVG token's `data-style-id` and foreground colour with the corresponding `<WordsStyle>` in the XML. They are targeted regression checks, not exhaustive coverage. A separate Windows workflow runs Notepad++ 8.9.9 itself, checks 50 curated native token style IDs and foreground/background colours across all seven samples, and uploads seven authentic Notepad++ screenshots as a workflow artifact. Those screenshots are evidence from the real editor, not synthetic renders, and are not automatically copied over the historical PNGs in this repository. The native checks are targeted rather than exhaustive; they do not certify every token or every UI metric, font, margin, and widget behaviour. The PNG files in `screenshots/` are historical real captures made before v2.1 and must not be used to claim visual fidelity for the current release. Definitive visual validation requires opening the theme and the matching files in `samples/` in a real Windows Notepad++ installation.
+The seven SVG files in `renders/` are illustrative programmatic previews. Their SVG structure, release marker, disclosure text, and use of colours declared by the matching language lexer or `GlobalStyles` in `BlulocoDark.xml` are checked by `python3 tools/validate_renders.py` in CI. The validator also includes explicit token-to-style regression cases for CSS declaration and media-query tokens, HTML SGML DOCTYPE segments, standalone JavaScript (using Notepad++'s C++ lexer styles, including template-literal interpolation), Python f-string expressions, Ruby identifiers/method calls, and the TypeScript `undefined` keyword. These cases compare the SVG token's `data-style-id` and foreground colour with the corresponding `<WordsStyle>` in the XML. They are targeted regression checks, not exhaustive coverage. A separate Windows workflow runs Notepad++ 8.9.9 itself, checks 50 curated native token style IDs and foreground/background colours across all seven samples, and uploads seven authentic Notepad++ screenshots as a workflow artifact. Those screenshots are evidence from the real editor, not synthetic renders. The native checks are targeted rather than exhaustive; they do not certify every token or every UI metric, font, margin, and widget behaviour. Definitive visual validation requires opening the theme and the matching files in `samples/` in a real Windows Notepad++ installation.
 
 ## ⚡ Recent Improvements
 
@@ -251,22 +251,6 @@ Notepad++ uses XML configuration with:
 4. Navigate to and select the `BlulocoDark.xml` file
 5. The theme will be automatically installed and selected
 
-## 🖼️ Historical Screenshot Gallery (pre-v2.1)
-
-| Language | Historical Notepad++ capture |
-|----------|---------|
-| **JavaScript** | ![JavaScript](screenshots/js.png) |
-| **TypeScript** | ![TypeScript](screenshots/ts.png) |
-| **Python** | ![Python](screenshots/py.png) |
-| **HTML** | ![HTML](screenshots/html.png) |
-| **CSS** | ![CSS](screenshots/css.png) |
-| **PHP** | ![PHP](screenshots/php.png) |
-| **Ruby** | ![Ruby](screenshots/rb.png) |
-
-*These are original captures from an earlier theme revision; they are retained only as historical references.*
-
-> **Note — these previews predate the v2.1 palette normalization.** The 7 PNGs above are real Notepad++ screenshots, captured *before* the palette was normalized against the upstream source. They may show obsolete colours and are **not** evidence of the current release. Do not use them to assess v2.3.1.
-
 ### 🖼️ v2.3.1 Renders (generated from the theme XML)
 
 The previews below are programmatic renders generated directly from the current `BlulocoDark.xml` (v2.3.1): every colour is extracted from the theme file, and the code shown is the `samples/sample.*` content. **They are not screenshots of Notepad++** — the token classification approximates the Scintilla lexers and the editor chrome is stylized. Visual confirmation of the theme still requires Windows + Notepad++.
@@ -312,14 +296,6 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 │   ├── py.svg
 │   ├── rb.svg
 │   └── ts.svg
-└── screenshots/              # Theme preview images (7 PNGs)
-    ├── css.png
-    ├── html.png
-    ├── js.png
-    ├── php.png
-    ├── py.png
-    ├── rb.png
-    └── ts.png
 
 ```
 
@@ -408,7 +384,6 @@ Available samples:
 - **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette and is no longer an exception.
 - **Palette exceptions**: the token palette is fully normalized against the upstream source, so the only colours outside the canonical role palette are (1) the `errorlist` ANSI terminal ramp (styleIDs 40–55), carried verbatim from the source's `terminal.ansi*` tokens; (2) the Notepad++ UI chrome colours in `GlobalStyles` (`2D333D`, `22252A`, `3D434F`, `FFCC00`, `177849`, `0084FF`, `25272D`, `DADADA`, `FFFFFF`), which exist because Notepad++ draws its own chrome and has no VSCode counterpart; (3) `7C8495`, the documentation-comment grey used by `COMMENT DOC KEYWORD`; and (4) GlobalStyles selection/search/mark/tab tints.
 - **Deliberate divergence in `errorlist`**: `ANSI COLOR RED` uses `FF2E3F`, while the upstream source uses `terminal.ansiRed` = `#fc2f52`. `FF2E3F` was kept on purpose, for internal consistency with the theme's canonical error colour — this is a documented decision, not an oversight.
-- **Screenshots**: the 7 PNGs in `screenshots/` are real Notepad++ captures taken **before** the v2.1 palette normalization; they may show the previous colours. They are illustrative, not proof of the current palette. Visual confirmation requires Windows + Notepad++.
 - **Renders**: the 7 SVGs in `renders/` are programmatic previews regenerated from the v2.3.1 `BlulocoDark.xml`; every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
 
 ## 🔧 Customization
