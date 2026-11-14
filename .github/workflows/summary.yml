@@ -1,9 +1,7 @@
 name: Summarize new issues
-
 on:
   issues:
     types: [opened]
-
 jobs:
   summary:
     runs-on: ubuntu-latest
@@ -11,12 +9,19 @@ jobs:
       issues: write
       models: read
       contents: read
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - name: Check AI Inference availability
+        id: ai
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          code=$(curl -sS -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY" || echo 000)
+          if [ "$code" = "200" ]; then echo "available=true" >> "$GITHUB_OUTPUT"; else echo "available=false" >> "$GITHUB_OUTPUT"; echo "::warning::AI Inference pode não estar disponível (HTTP $code)"; fi
       - name: Run AI inference
+        if: steps.ai.outputs.available == 'true'
         id: inference
         uses: actions/ai-inference@v1
         with:
@@ -24,10 +29,9 @@ jobs:
             Summarize the following GitHub issue in one paragraph:
             Title: ${{ github.event.issue.title }}
             Body: ${{ github.event.issue.body }}
-
       - name: Comment with AI summary
-        run: |
-          gh issue comment $ISSUE_NUMBER --body '${{ steps.inference.outputs.response }}'
+        if: steps.ai.outputs.available == 'true'
+        run: gh issue comment $ISSUE_NUMBER --body '${{ steps.inference.outputs.response }}'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
