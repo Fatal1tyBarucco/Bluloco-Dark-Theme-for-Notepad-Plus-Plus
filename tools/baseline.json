@@ -96,7 +96,7 @@
       "FFFFFF"
     ]
   },
-  "generated_at": "2026-11-10T05:26:19.031+00:00",
+  "generated_at": "2026-11-14T02:54:09.169983+00:00",
   "lexers": {
     "actionscript": {
       "desc": "ActionScript",
@@ -411,7 +411,7 @@
       "duplicate_style_ids": [],
       "ext": "",
       "name": "ada",
-      "style_count": 12,
+      "style_count": 10,
       "styles": [
         {
           "bgColor": "282C34",
@@ -437,7 +437,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -486,30 +486,8 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "CHARACTER EOL",
-          "styleID": "6",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
           "name": "STRING",
           "styleID": "7",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRING EOL",
-          "styleID": "8",
           "text": ""
         },
         {
@@ -546,27 +524,15 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "CHARACTER EOL",
-          "styleID": "6"
-        },
-        {
-          "name": "STRING EOL",
-          "styleID": "8"
-        }
-      ],
-      "unknown_style_ids": [
-        "6",
-        "8"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "asm": {
       "desc": "Assembler",
       "duplicate_style_ids": [],
       "ext": "",
       "name": "asm",
-      "style_count": 15,
+      "style_count": 14,
       "styles": [
         {
           "bgColor": "282C34",
@@ -625,7 +591,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -713,17 +679,6 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRINGEOL",
-          "styleID": "13",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
           "fgColor": "ABB2BF",
           "fontName": "",
           "fontSize": "",
@@ -734,22 +689,147 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
+    "asn1": {
+      "desc": "ASN.1",
+      "duplicate_style_ids": [],
+      "ext": "asn",
+      "name": "asn1",
+      "style_count": 11,
+      "styles": [
         {
-          "name": "STRINGEOL",
-          "styleID": "13"
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIERS",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DOUBLE QUOTED STRING",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMERIC OID DEFINITION",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NON OID NUMBERS",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "KEYWORDS",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "CE9887",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ATTRIBUTES",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "CE9887",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DESCRIPTORS",
+          "styleID": "8",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type1",
+          "name": "TYPES",
+          "styleID": "9",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATORS",
+          "styleID": "10",
+          "text": ""
         }
       ],
-      "unknown_style_ids": [
-        "13"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "asp": {
       "desc": "asp",
       "duplicate_style_ids": [],
       "ext": "asp",
       "name": "asp",
-      "style_count": 17,
+      "style_count": 16,
       "styles": [
         {
           "bgColor": "282C34",
@@ -769,7 +849,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "82",
           "text": ""
         },
@@ -808,18 +888,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRINGEOL",
-          "styleID": "87",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -835,7 +904,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "ASP SYMBOL",
+          "name": "ASPSYMBOL",
           "styleID": "15",
           "text": ""
         },
@@ -846,7 +915,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SCRIPT TYPE",
+          "name": "SCRIPTTYPE",
           "styleID": "16",
           "text": ""
         },
@@ -939,15 +1008,8 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "STRINGEOL",
-          "styleID": "87"
-        }
-      ],
-      "unknown_style_ids": [
-        "87"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "autoit": {
       "desc": "autoIt",
@@ -1211,7 +1273,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1805,7 +1867,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1843,7 +1905,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "instre2",
-          "name": "BUILIN FUNC &amp; TYPE",
+          "name": "BUILIN FUNC & TYPE",
           "styleID": "4",
           "text": ""
         },
@@ -2137,6 +2199,182 @@
       "unknown_style_details": [],
       "unknown_style_ids": []
     },
+    "cobol": {
+      "desc": "COBOL",
+      "duplicate_style_ids": [],
+      "ext": "cob",
+      "name": "cobol",
+      "style_count": 15,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "11",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT LINE",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT DOC",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "CHARACTER",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "KEYWORD",
+          "styleID": "8",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATOR",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre2",
+          "name": "PREPROCESSOR",
+          "styleID": "9",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DECLARATION",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre2",
+          "name": "INSTRUCTION WORD",
+          "styleID": "16",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT LINE DOC",
+          "styleID": "15",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7C8495",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT DOC KEYWORD",
+          "styleID": "17",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7C8495",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT DOC KEYWORD ERROR",
+          "styleID": "18",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
     "coffeescript": {
       "desc": "CoffeeScript",
       "duplicate_style_ids": [],
@@ -2311,7 +2549,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "7C8495",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3019,7 +3257,7 @@
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
-          "keywordClass": "instre2",
+          "keywordClass": null,
           "name": "PSEUDOCLASS",
           "styleID": "3",
           "text": ""
@@ -3031,7 +3269,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "UNKNOWN PSEUDOCLASS",
+          "name": "UNKNOWN_PSEUDOCLASS",
           "styleID": "4",
           "text": ""
         },
@@ -3048,7 +3286,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "CE9887",
+          "fgColor": "FF936A",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3059,12 +3297,12 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "CE9887",
+          "fgColor": "FF936A",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "UNKNOWN IDENTIFIER",
+          "name": "UNKNOWN_IDENTIFIER",
           "styleID": "7",
           "text": ""
         },
@@ -3162,7 +3400,7 @@
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
-          "keywordClass": "type3",
+          "keywordClass": null,
           "name": "PSEUDOELEMENT",
           "styleID": "18",
           "text": ""
@@ -3173,7 +3411,7 @@
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
-          "keywordClass": "type5",
+          "keywordClass": null,
           "name": "LEGACY PSEUDOELEMENT",
           "styleID": "20",
           "text": ""
@@ -3422,7 +3660,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "7C8495",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3785,7 +4023,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF839B",
+          "fgColor": "FF6480",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4326,12 +4564,155 @@
       "unknown_style_details": [],
       "unknown_style_ids": []
     },
+    "forth": {
+      "desc": "Forth",
+      "duplicate_style_ids": [],
+      "ext": "fs",
+      "name": "forth",
+      "style_count": 12,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "WHITESPACE",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ML COMMENT",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIER",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "CONTROL",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre2",
+          "name": "KEYWORDS",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "3FC56B",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFWORDS",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "50ACAE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "PREWORD1",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "8BCDEF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "PREWORD2",
+          "styleID": "8",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "9",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DOUBLE QUOTED STRING",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "LOCALE",
+          "styleID": "11",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
     "fortran": {
       "desc": "Fortran",
       "duplicate_style_ids": [],
       "ext": "",
       "name": "fortran",
-      "style_count": 15,
+      "style_count": 14,
       "styles": [
         {
           "bgColor": "282C34",
@@ -4390,17 +4771,6 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRINGEOL",
-          "styleID": "5",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
           "fgColor": "7A82DA",
           "fontName": "",
           "fontSize": "",
@@ -4412,7 +4782,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4499,22 +4869,15 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "STRINGEOL",
-          "styleID": "5"
-        }
-      ],
-      "unknown_style_ids": [
-        "5"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "fortran77": {
       "desc": "Fortran (fixed form)",
       "duplicate_style_ids": [],
       "ext": "",
       "name": "fortran77",
-      "style_count": 15,
+      "style_count": 14,
       "styles": [
         {
           "bgColor": "282C34",
@@ -4573,17 +4936,6 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRINGEOL",
-          "styleID": "5",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
           "fgColor": "7A82DA",
           "fontName": "",
           "fontSize": "",
@@ -4595,7 +4947,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4682,15 +5034,184 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
+    "freebasic": {
+      "desc": "FreeBASIC",
+      "duplicate_style_ids": [],
+      "ext": "bas",
+      "name": "freebasic",
+      "style_count": 15,
+      "styles": [
         {
-          "name": "STRINGEOL",
-          "styleID": "5"
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "KEYWORD1",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre2",
+          "name": "PREPROCESSOR",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATOR",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIER",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type1",
+          "name": "KEYWORD2",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type2",
+          "name": "KEYWORD3",
+          "styleID": "11",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "50ACAE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD4",
+          "styleID": "12",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "8BCDEF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "LABEL",
+          "styleID": "15",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ERROR",
+          "styleID": "16",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "HEXNUMBER",
+          "styleID": "17",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "BINNUMBER",
+          "styleID": "18",
+          "text": ""
         }
       ],
-      "unknown_style_ids": [
-        "5"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "gdscript": {
       "desc": "GDScript",
@@ -4844,7 +5365,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
+          "fgColor": "FF2E3F",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5031,7 +5552,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "3FC56B",
+          "fgColor": "9F7EFE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5317,7 +5838,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5372,7 +5893,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF6480",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5383,7 +5904,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF839B",
+          "fgColor": "9F7EFE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5454,7 +5975,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "13",
           "text": ""
         },
@@ -5465,7 +5986,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT BLOCK",
+          "name": "COMMENTBLOCK",
           "styleID": "14",
           "text": ""
         },
@@ -5476,7 +5997,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT BLOCK2",
+          "name": "COMMENTBLOCK2",
           "styleID": "15",
           "text": ""
         },
@@ -5487,7 +6008,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT BLOCK3",
+          "name": "COMMENTBLOCK3",
           "styleID": "16",
           "text": ""
         }
@@ -5542,7 +6063,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "DOUBLE STRING",
+          "name": "DOUBLESTRING",
           "styleID": "6",
           "text": ""
         },
@@ -5553,7 +6074,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SINGLE STRING",
+          "name": "SINGLESTRING",
           "styleID": "7",
           "text": ""
         },
@@ -5575,7 +6096,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "TAG END",
+          "name": "TAGEND",
           "styleID": "11",
           "text": ""
         },
@@ -5586,7 +6107,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "TAG UNKNOWN",
+          "name": "TAGUNKNOWN",
           "styleID": "2",
           "text": ""
         },
@@ -5608,7 +6129,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "ATTRIBUTE UNKNOWN",
+          "name": "ATTRIBUTEUNKNOWN",
           "styleID": "4",
           "text": ""
         },
@@ -5619,7 +6140,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SGML DEFAULT",
+          "name": "SGMLDEFAULT",
           "styleID": "21",
           "text": ""
         },
@@ -5718,7 +6239,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle1",
-          "name": "USER TAGS1",
+          "name": "USER TAGS 1",
           "styleID": "192",
           "text": ""
         },
@@ -5729,7 +6250,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle2",
-          "name": "USER TAGS2",
+          "name": "USER TAGS 2",
           "styleID": "193",
           "text": ""
         },
@@ -5740,7 +6261,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle3",
-          "name": "USER TAGS3",
+          "name": "USER TAGS 3",
           "styleID": "194",
           "text": ""
         },
@@ -5751,7 +6272,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle4",
-          "name": "USER TAGS4",
+          "name": "USER TAGS 4",
           "styleID": "195",
           "text": ""
         },
@@ -5762,7 +6283,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle5",
-          "name": "USER ATTRIBUTES1",
+          "name": "USER ATTRIBUTES 1",
           "styleID": "196",
           "text": ""
         },
@@ -5773,7 +6294,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle6",
-          "name": "USER ATTRIBUTES2",
+          "name": "USER ATTRIBUTES 2",
           "styleID": "197",
           "text": ""
         },
@@ -5784,7 +6305,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle7",
-          "name": "USER ATTRIBUTES3",
+          "name": "USER ATTRIBUTES 3",
           "styleID": "198",
           "text": ""
         },
@@ -5795,7 +6316,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": "substyle8",
-          "name": "USER ATTRIBUTES4",
+          "name": "USER ATTRIBUTES 4",
           "styleID": "199",
           "text": ""
         }
@@ -5845,7 +6366,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "7A82DA",
+          "fgColor": "10B1FE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6021,7 +6542,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6356,7 +6877,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "DOUBLE STRING",
+          "name": "DOUBLESTRING",
           "styleID": "48",
           "text": ""
         },
@@ -6367,7 +6888,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SINGLE STRING",
+          "name": "SINGLESTRING",
           "styleID": "49",
           "text": ""
         },
@@ -6433,7 +6954,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "43",
           "text": ""
         },
@@ -6444,7 +6965,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT DOC",
+          "name": "COMMENTDOC",
           "styleID": "44",
           "text": ""
         },
@@ -6582,7 +7103,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "10B1FE",
+          "fgColor": "ABB2BF",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6725,7 +7246,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "7C8495",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7271,7 +7792,7 @@
       "duplicate_style_ids": [],
       "ext": "",
       "name": "lisp",
-      "style_count": 12,
+      "style_count": 11,
       "styles": [
         {
           "bgColor": "282C34",
@@ -7291,7 +7812,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "1",
           "text": ""
         },
@@ -7352,18 +7873,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRINGEOL",
-          "styleID": "8",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7406,15 +7916,8 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "STRINGEOL",
-          "styleID": "8"
-        }
-      ],
-      "unknown_style_ids": [
-        "8"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "lua": {
       "desc": "Lua",
@@ -7474,7 +7977,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "LITERAL STRING",
+          "name": "LITERALSTRING",
           "styleID": "8",
           "text": ""
         },
@@ -7733,7 +8236,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7766,7 +8269,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF2E3F",
+          "fgColor": "FF936A",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7865,7 +8368,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7889,6 +8392,200 @@
       "unknown_style_details": [],
       "unknown_style_ids": []
     },
+    "mssql": {
+      "desc": "T-SQL",
+      "duplicate_style_ids": [],
+      "ext": "sql",
+      "name": "mssql",
+      "style_count": 16,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT LINE",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATOR",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIER",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "VARIABLE",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "CE9887",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COL NAME",
+          "styleID": "8",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "STATEMENT",
+          "styleID": "9",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type1",
+          "name": "DATA TYPE",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "SYSTEM TABLE",
+          "styleID": "11",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "9F7EFE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "GLOBAL",
+          "styleID": "12",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "3FC56B",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type2",
+          "name": "FUNCTION",
+          "styleID": "13",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "3FC56B",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "SYSTEM STORED PROC",
+          "styleID": "14",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "CE9887",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COL NAME IN []",
+          "styleID": "16",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [
+        {
+          "name": "DEFAULT",
+          "styleID": "0"
+        }
+      ],
+      "unknown_style_ids": [
+        "0"
+      ]
+    },
     "nfo": {
       "desc": "Dos Style",
       "duplicate_style_ids": [],
@@ -7899,9 +8596,9 @@
         {
           "bgColor": "282C34",
           "fgColor": "ABB2BF",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
+          "fontName": null,
+          "fontSize": null,
+          "fontStyle": null,
           "keywordClass": null,
           "name": "DEFAULT",
           "styleID": "32",
@@ -8063,7 +8760,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
+          "fgColor": "FF2E3F",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8074,7 +8771,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF2E3F",
+          "fgColor": "9F7EFE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8123,7 +8820,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "1",
           "text": ""
         },
@@ -8558,7 +9255,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9234,7 +9931,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SIMPLE STRING",
+          "name": "SIMPLESTRING",
           "styleID": "120",
           "text": ""
         },
@@ -9289,7 +9986,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "125",
           "text": ""
         },
@@ -9823,7 +10520,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "7A82DA",
+          "fgColor": "10B1FE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9858,12 +10555,12 @@
       "unknown_style_details": [],
       "unknown_style_ids": []
     },
-    "python": {
-      "desc": "Python",
+    "purebasic": {
+      "desc": "PureBasic",
       "duplicate_style_ids": [],
-      "ext": "",
-      "name": "python",
-      "style_count": 29,
+      "ext": "pb",
+      "name": "purebasic",
+      "style_count": 15,
       "styles": [
         {
           "bgColor": "282C34",
@@ -9883,7 +10580,183 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "KEYWORD1",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATOR",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIER",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre2",
+          "name": "KEYWORD2",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type1",
+          "name": "KEYWORD3",
+          "styleID": "11",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "50ACAE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD4",
+          "styleID": "12",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "9F7EFE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "CONSTANT",
+          "styleID": "13",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "8BCDEF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "LABEL",
+          "styleID": "15",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ERROR",
+          "styleID": "16",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "HEXNUMBER",
+          "styleID": "17",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "BINNUMBER",
+          "styleID": "18",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
+    "python": {
+      "desc": "Python",
+      "duplicate_style_ids": [],
+      "ext": "",
+      "name": "python",
+      "style_count": 28,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENTLINE",
           "styleID": "1",
           "text": ""
         },
@@ -9949,7 +10822,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "TRIPLE DOUBLE",
+          "name": "TRIPLEDOUBLE",
           "styleID": "7",
           "text": ""
         },
@@ -9960,7 +10833,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "CLASS NAME",
+          "name": "CLASSNAME",
           "styleID": "8",
           "text": ""
         },
@@ -9971,7 +10844,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "DEF NAME",
+          "name": "DEFNAME",
           "styleID": "9",
           "text": ""
         },
@@ -10004,24 +10877,13 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT BLOCK",
+          "name": "COMMENTBLOCK",
           "styleID": "12",
           "text": ""
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRINGEOL",
-          "styleID": "13",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
-          "fgColor": "3FC56B",
+          "fgColor": "10B1FE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10032,7 +10894,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "50ACAE",
+          "fgColor": "10B1FE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10185,15 +11047,8 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "STRINGEOL",
-          "styleID": "13"
-        }
-      ],
-      "unknown_style_ids": [
-        "13"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "r": {
       "desc": "R",
@@ -11009,6 +11864,336 @@
       "unknown_style_details": [],
       "unknown_style_ids": []
     },
+    "rebol": {
+      "desc": "Rebol",
+      "duplicate_style_ids": [],
+      "ext": "r",
+      "name": "rebol",
+      "style_count": 29,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "32",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ANY OTHER TEXT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "LINE COMMENT",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "BLOCK COMMENT",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "PREFACE",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATORS",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "CHARACTERS",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING WITH QUOTES",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING WITH BRACES",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "8",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "PAIR",
+          "styleID": "9",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "TUPLE",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "BINARY",
+          "styleID": "11",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "MONEY",
+          "styleID": "12",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "CE9887",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ISSUE",
+          "styleID": "13",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "3691FF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "TAG",
+          "styleID": "14",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "FILE",
+          "styleID": "15",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "EMAIL",
+          "styleID": "16",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "3691FF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "URL",
+          "styleID": "17",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DATE",
+          "styleID": "18",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "TIME",
+          "styleID": "19",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIERS",
+          "styleID": "20",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "KEYWORD (ALL)",
+          "styleID": "21",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "3FC56B",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD (TEST FUNCTIONS)",
+          "styleID": "22",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type1",
+          "name": "KEYWORD (DATATYPES)",
+          "styleID": "23",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "50ACAE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD 4",
+          "styleID": "24",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "8BCDEF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD 5",
+          "styleID": "25",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "9F7EFE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD 6",
+          "styleID": "26",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF839B",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD 7",
+          "styleID": "27",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
     "ruby": {
       "desc": "Ruby",
       "duplicate_style_ids": [],
@@ -11045,7 +12230,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "COMMENT LINE",
+          "name": "COMMENTLINE",
           "styleID": "2",
           "text": ""
         },
@@ -11139,7 +12324,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11850,7 +13035,7 @@
       "duplicate_style_ids": [],
       "ext": "",
       "name": "searchResult",
-      "style_count": 6,
+      "style_count": 5,
       "styles": [
         {
           "bgColor": "282C34",
@@ -11887,7 +13072,7 @@
         },
         {
           "bgColor": "F9C859",
-          "fgColor": "FF2E3F",
+          "fgColor": "282C34",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11897,19 +13082,8 @@
           "text": ""
         },
         {
-          "bgColor": "3691FF",
-          "fgColor": "FFFFFF",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "Selected Line",
-          "styleID": "5",
-          "text": ""
-        },
-        {
           "bgColor": "2D333D",
-          "fgColor": null,
+          "fgColor": "10B1FE",
           "fontName": null,
           "fontSize": "",
           "fontStyle": "0",
@@ -11919,15 +13093,8 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "Selected Line",
-          "styleID": "5"
-        }
-      ],
-      "unknown_style_ids": [
-        "5"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "smalltalk": {
       "desc": "Smalltalk",
@@ -12121,6 +13288,116 @@
           "keywordClass": null,
           "name": "SPECIAL SELECTOR",
           "styleID": "16",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
+    "spice": {
+      "desc": "SPICE",
+      "duplicate_style_ids": [],
+      "ext": "sp",
+      "name": "spice",
+      "style_count": 9,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIERS",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "KEYWORD",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF6480",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "type1",
+          "name": "KEYWORD2",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "50ACAE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "KEYWORD3",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATORS (DELIMITERS)",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "VALUE",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT",
+          "styleID": "8",
           "text": ""
         }
       ],
@@ -12433,7 +13710,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "7C8495",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12928,7 +14205,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "10B1FE",
+          "fgColor": "9F7EFE",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13067,19 +14344,8 @@
       "duplicate_style_ids": [],
       "ext": "ts",
       "name": "typescript",
-      "style_count": 26,
+      "style_count": 25,
       "styles": [
-        {
-          "bgColor": "282C34",
-          "fgColor": "10B1FE",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "PREPROCESSOR",
-          "styleID": "9",
-          "text": ""
-        },
         {
           "bgColor": "282C34",
           "fgColor": "ABB2BF",
@@ -13356,15 +14622,8 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "PREPROCESSOR",
-          "styleID": "9"
-        }
-      ],
-      "unknown_style_ids": [
-        "9"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "vb": {
       "desc": "VB / VBS",
@@ -13470,7 +14729,7 @@
       "duplicate_style_ids": [],
       "ext": "",
       "name": "verilog",
-      "style_count": 13,
+      "style_count": 12,
       "styles": [
         {
           "bgColor": "282C34",
@@ -13485,7 +14744,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13595,17 +14854,6 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "F9C859",
-          "fontName": "",
-          "fontSize": "",
-          "fontStyle": "0",
-          "keywordClass": null,
-          "name": "STRING EOL",
-          "styleID": "12",
-          "text": ""
-        },
-        {
-          "bgColor": "282C34",
           "fgColor": "ABB2BF",
           "fontName": "",
           "fontSize": "",
@@ -13616,15 +14864,8 @@
           "text": ""
         }
       ],
-      "unknown_style_details": [
-        {
-          "name": "STRING EOL",
-          "styleID": "12"
-        }
-      ],
-      "unknown_style_ids": [
-        "12"
-      ]
+      "unknown_style_details": [],
+      "unknown_style_ids": []
     },
     "vhdl": {
       "desc": "VHDL",
@@ -13701,7 +14942,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "ABB2BF",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13745,7 +14986,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF6480",
+          "fgColor": "3FC56B",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13767,7 +15008,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "FF839B",
+          "fgColor": "ABB2BF",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13813,6 +15054,270 @@
       "unknown_style_details": [],
       "unknown_style_ids": []
     },
+    "visualprolog": {
+      "desc": "Visual Prolog",
+      "duplicate_style_ids": [],
+      "ext": "pro",
+      "name": "visualprolog",
+      "style_count": 23,
+      "styles": [
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DEFAULT",
+          "styleID": "0",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre1",
+          "name": "MAJOR",
+          "styleID": "1",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "10B1FE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": "instre2",
+          "name": "MINOR",
+          "styleID": "2",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "50ACAE",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "DIRECTIVE",
+          "styleID": "3",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT BLOCK",
+          "styleID": "4",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "636D83",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT LINE",
+          "styleID": "5",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7C8495",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT KEY",
+          "styleID": "6",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7C8495",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "COMMENT KEY ERROR",
+          "styleID": "7",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "ABB2BF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "IDENTIFIER",
+          "styleID": "8",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "8BCDEF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "VARIABLE",
+          "styleID": "9",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "8BCDEF",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "ANONYMOUS",
+          "styleID": "10",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF78F8",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "NUMBER",
+          "styleID": "11",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "7A82DA",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "OPERATOR",
+          "styleID": "12",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "CHARACTER",
+          "styleID": "13",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "CHARACTER TOO MANY",
+          "styleID": "14",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "CHARACTER ESCAPE ERROR",
+          "styleID": "15",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING",
+          "styleID": "16",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING ESCAPE",
+          "styleID": "17",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING ESCAPE ERROR",
+          "styleID": "18",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING EOL OPEN",
+          "styleID": "19",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING VERBATIM",
+          "styleID": "20",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "F9C859",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING VERBATIM SPECIAL",
+          "styleID": "21",
+          "text": ""
+        },
+        {
+          "bgColor": "282C34",
+          "fgColor": "FF2E3F",
+          "fontName": "",
+          "fontSize": "",
+          "fontStyle": "0",
+          "keywordClass": null,
+          "name": "STRING VERBATIM EOL",
+          "styleID": "22",
+          "text": ""
+        }
+      ],
+      "unknown_style_details": [],
+      "unknown_style_ids": []
+    },
     "xml": {
       "desc": "XML",
       "duplicate_style_ids": [],
@@ -13827,7 +15332,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "XML START",
+          "name": "XMLSTART",
           "styleID": "12",
           "text": ""
         },
@@ -13838,7 +15343,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "XML END",
+          "name": "XMLEND",
           "styleID": "13",
           "text": ""
         },
@@ -13882,7 +15387,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "DOUBLE STRING",
+          "name": "DOUBLESTRING",
           "styleID": "6",
           "text": ""
         },
@@ -13893,7 +15398,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SINGLE STRING",
+          "name": "SINGLESTRING",
           "styleID": "7",
           "text": ""
         },
@@ -13915,7 +15420,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "TAG END",
+          "name": "TAGEND",
           "styleID": "11",
           "text": ""
         },
@@ -13926,7 +15431,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "TAG UNKNOWN",
+          "name": "TAGUNKNOWN",
           "styleID": "2",
           "text": ""
         },
@@ -13948,7 +15453,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "ATTRIBUTE UNKNOWN",
+          "name": "ATTRIBUTEUNKNOWN",
           "styleID": "4",
           "text": ""
         },
@@ -13959,7 +15464,7 @@
           "fontSize": "",
           "fontStyle": "0",
           "keywordClass": null,
-          "name": "SGML DEFAULT",
+          "name": "SGMLDEFAULT",
           "styleID": "21",
           "text": ""
         },
@@ -14307,23 +15812,14 @@
     ],
     "duplicate_lexers": [],
     "fg_eq_bg_styles": [],
-    "lexers_in_theme": 67,
+    "lexers_in_theme": 76,
     "lexers_with_duplicate_style_ids": [],
     "lexers_with_unknown_ids": [
-      "asp",
-      "python",
-      "fortran",
-      "fortran77",
-      "lisp",
-      "asm",
-      "verilog",
-      "ada",
-      "searchResult",
-      "typescript"
+      "mssql"
     ],
     "out_of_palette": [],
     "out_of_palette_criteria": "not in PALETTE | UI_EXCEPTIONS | DOCUMENTED_EXCEPTIONS (tools/validate_theme.py)",
-    "total_unknown_style_ids": 11,
+    "total_unknown_style_ids": 1,
     "widget_styles_with_text": 0,
     "words_styles_with_text": 0
   },
@@ -14332,13 +15828,13 @@
     "words_styles_with_text": []
   },
   "theme": {
-    "lexer_type_count": 67,
-    "line_count": 1488,
+    "lexer_type_count": 76,
+    "line_count": 1646,
     "path": "BlulocoDark.xml",
-    "sha256": "3b1ae502a02925b7fc49688240e970ce666bf0b43dad6ae48458617070212c38",
-    "size_bytes": 193063,
-    "widget_style_count": 54,
-    "words_style_count": 1212
+    "sha256": "70602a344ca441ba494cfcf7c0d09f041e0c1bc048f89daca76fc3ace966e3d6",
+    "size_bytes": 213291,
+    "widget_style_count": 51,
+    "words_style_count": 1346
   },
   "widgets": [
     {
@@ -14545,13 +16041,6 @@
       "text": ""
     },
     {
-      "bgColor": "1C6143",
-      "fgColor": null,
-      "name": "Find matches highlight all",
-      "styleID": "28",
-      "text": ""
-    },
-    {
       "bgColor": "3A3F58",
       "fgColor": null,
       "name": "Tags match highlighting",
@@ -14625,20 +16114,6 @@
       "bgColor": null,
       "fgColor": "FF2E3F",
       "name": "Find status: Not found",
-      "styleID": "0",
-      "text": ""
-    },
-    {
-      "bgColor": null,
-      "fgColor": "3691FF",
-      "name": "Find status: Message",
-      "styleID": "0",
-      "text": ""
-    },
-    {
-      "bgColor": null,
-      "fgColor": "3FC56B",
-      "name": "Find status: Search end reached",
       "styleID": "0",
       "text": ""
     },
