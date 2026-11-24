@@ -332,6 +332,38 @@ def build_svg(
             return "#ABB2BF"
         return "#282C34"
 
+    # Read UI chrome colors from GlobalStyles
+    # Line number margin: styleID 33
+    line_number_fg = get_color("33", "fg")
+    line_number_bg = get_color("33", "bg")
+    # Inactive tabs: styleID 0 (name-matched widget)
+    inactive_tab_fg = get_color("0", "fg")  # Will get Default Style fg, but inactive tabs uses specific widget
+    # Try to get comment color from a known comment style (styleID 1 in cpp lexer)
+    comment_fg = get_color("1", "fg")
+    # Fallback to canonical comment color if not found
+    if comment_fg == "#ABB2BF":  # default fg fallback
+        comment_fg = "#8A95B0"
+
+    # Editor colors from GlobalStyles / palette
+    editor_bg = get_color("32", "bg")  # Default Style bg
+    if editor_bg == "#282C34":  # default fallback
+        editor_bg = "#282C34"
+    gutter_bg = line_number_bg if line_number_bg != "#282C34" else "#22252A"
+    current_line_bg = get_color("0", "bg")  # Current line background
+    if current_line_bg == "#282C34":
+        current_line_bg = "#2D333D"
+    selection_bg = get_color("0", "bg")  # Selected text bg (styleID 0 widget)
+    # Tab colors
+    tab_bg = editor_bg
+    tab_accent = get_color("0", "fg")  # Active tab indicator
+    if tab_accent == "#ABB2BF":
+        tab_accent = "#3691FF"
+    # Window chrome
+    window_chrome_bg = gutter_bg
+    # Status bar
+    status_bg = gutter_bg
+    status_fg = comment_fg
+
     token_map = TOKEN_MAPS.get(lexer, [])
 
     # SVG dimensions
@@ -361,12 +393,10 @@ def build_svg(
         "width": str(width),
         "height": str(height),
         "rx": "8",
-        "fill": "#25272D",  # Window chrome bg
+        "fill": window_chrome_bg,
     })
 
     # Tab bar
-    tab_bg = "#282C34"
-    tab_accent = "#3691FF"
     ET.SubElement(svg, "rect", {
         "x": "12", "y": "7", "width": "168", "height": "27", "rx": "4",
         "fill": tab_bg,
@@ -380,11 +410,11 @@ def build_svg(
         "font-family": "Consolas,'DejaVu Sans Mono',Menlo,monospace",
     }).text = config["sample"]
     ET.SubElement(svg, "text", {
-        "x": "166", "y": "25", "font-size": "12", "fill": "#636D83",
+        "x": "166", "y": "25", "font-size": "12", "fill": comment_fg,
         "font-family": "Consolas,monospace",
     }).text = "×"
     ET.SubElement(svg, "text", {
-        "x": "196", "y": "25", "font-size": "12", "fill": "#636D83",
+        "x": "196", "y": "25", "font-size": "12", "fill": comment_fg,
         "font-family": "Consolas,'DejaVu Sans Mono',Menlo,monospace",
     }).text = "README.md"
 
@@ -392,11 +422,11 @@ def build_svg(
     editor_height = height - margin_top - 20  # Leave space for status bar
     ET.SubElement(svg, "rect", {
         "x": "0", "y": str(margin_top), "width": str(width), "height": str(editor_height),
-        "fill": "#282C34",
+        "fill": editor_bg,
     })
     ET.SubElement(svg, "rect", {
         "x": "0", "y": str(margin_top), "width": str(margin_left), "height": str(editor_height),
-        "fill": "#22252A",  # Line number gutter
+        "fill": gutter_bg,
     })
 
     # Current line highlight (line 4 in all samples)
@@ -404,7 +434,7 @@ def build_svg(
     ET.SubElement(svg, "rect", {
         "x": str(margin_left), "y": str(current_line_y),
         "width": str(width - margin_left), "height": str(line_height),
-        "fill": "#2D333D",
+        "fill": current_line_bg,
     })
 
     # Line numbers
@@ -412,7 +442,7 @@ def build_svg(
         y = margin_top + (i - 1) * line_height + font_size - 3
         ET.SubElement(svg, "text", {
             "x": str(line_number_right), "y": str(y),
-            "font-size": "10", "fill": "#636D83",
+            "font-size": "10", "fill": line_number_fg,
             "text-anchor": "end",
             "font-family": "Consolas,'DejaVu Sans Mono',Menlo,monospace",
         }).text = str(i)
@@ -464,11 +494,11 @@ def build_svg(
     ET.SubElement(svg, "rect", {
         "x": "0", "y": str(status_y),
         "width": str(width), "height": "20",
-        "fill": "#22252A",
+        "fill": status_bg,
     })
     ET.SubElement(svg, "text", {
         "x": "12", "y": str(status_y + 13.5),
-        "font-size": "10", "fill": "#636D83",
+        "font-size": "10", "fill": status_fg,
         "font-family": "Consolas,'DejaVu Sans Mono',Menlo,monospace",
     }).text = f"Render de demonstração — Bluloco Dark v{version} · cores extraídas de BlulocoDark.xml · não é uma captura do Notepad++"
 

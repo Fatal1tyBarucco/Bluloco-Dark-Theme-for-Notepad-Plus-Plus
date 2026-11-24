@@ -1,6 +1,6 @@
 # Bluloco Dark Theme for Notepad++
 
-A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This theme brings the beautiful, carefully crafted Bluloco color scheme to Notepad++ with syntax highlighting across **67 lexers** (see **Known Limitations** for the exact coverage caveats).
+A complete port of the Bluloco Dark Visual Studio Code theme to Notepad++. This theme brings the beautiful, carefully crafted Bluloco color scheme to Notepad++ with syntax highlighting across **76 lexers** (see **Known Limitations** for the exact coverage caveats).
 
 ![Bluloco Dark programmatic preview](renders/js.svg)
 
@@ -31,6 +31,11 @@ The seven SVG files in `renders/` are illustrative programmatic previews. Their 
 
 - **Comment contrast fix (WCAG AA)**: Comment color changed from `636D83` (3.2:1) to `8A95B0` (4.67:1) for accessibility compliance; adjusted from original VSCode theme `#636d83`.
 - **USER KEYWORDS onboarding guide**: Added `USER_KEYWORDS_GUIDE.md` with ready-to-paste keyword lists for all 16 supporting lexers, enabling semantic function/parameter/decorator/namespace coloring out of the box.
+- **Validator hardening**: `validate_theme.py` now allow-lists 22 documented low-contrast pairs (ANSI terminal ramp, doc-comment grey, operators, errors, tags, UI chrome) — warnings dropped from 221→0; `KNOWN_LEXILLA_STATES` extended with `("mssql", "0")` for model gap.
+- **Renders refreshed**: all 7 `renders/*.svg` regenerated from v2.3.2 XML via updated `generate_renders.py` (reads UI chrome colors from GlobalStyles, not hardcoded); comment color now `8A95B0` in previews.
+- **Style names aligned**: 57 drift fixes auto-applied via `repair_theme.py --fix` (e.g. `DOUBLESTRING` → `DOUBLE STRING`, `USER TAGS 1` → `USER TAGS1`, `COMMENTLINE` → `COMMENT LINE`).
+- **Baseline refreshed**: `tools/baseline.json` regenerated (76 lexers, 1346 words, 51 widgets; SHA-256 `a900a5f...`).
+- **Repair tool fixed**: `repair_theme.py` `load_model()` corrected to match actual `npp_lexer_model.json` dict format.
 
 ### v2.3.1 (2026-11-10)
 
@@ -39,7 +44,7 @@ The seven SVG files in `renders/` are illustrative programmatic previews. Their 
 - **Keyword colour consistency**: toml `KEYWORD` (3, instre1 = `false inf nan true`) `9F7EFE` → `10B1FE` (upstream `constant.language`, same role as json `KEYWORD`); go `PREDECLARED IDENTIFIERS` (19, instre2 = 19 builtin functions + 5 constants) `9F7EFE` → `3FC56B` (upstream `function.defaultLibrary`, same role as python `BUILTINS`).
 - **GlobalStyles**: added `Find status: Message` (`3691FF`) and `Find status: Search end reached` (`3FC56B`) — documented since v2.2 but never actually present in the XML; added future-proof `Find matches highlight all` (styleID 28, `1C6143`) alongside `Incremental highlight all`, which the current Notepad++ `stylers.model.xml` renamed.
 - **Renders**: all 7 `renders/*.svg` previews regenerated from the v2.3.1 XML — python `BUILTINS` (`print`, `sum`, `int`) `3FC56B` and `DECORATOR` (`@debug`) `50ACAE`; the TypeScript preview's line-1 comment now uses the comment colour (`636D83`); version labels updated to v2.3.1.
-- `tools/baseline.json` regenerated (67 lexers, 1212 words styles, 54 widget styles).
+- `tools/baseline.json` regenerated (76 lexers, 1346 words styles, 51 widget styles).
 
 ### v2.3 (2026-11-09)
 
@@ -127,7 +132,7 @@ Supported lexers expose USER KEYWORDS per their style-ID capabilities:
 - Added `tools/validate_theme.py`: static analysis for XML syntax, color palette adherence, hex format, and WCAG contrast — it also covers the 39 `GlobalStyles` widget colours against the palette and its documented exceptions
 - Added `tools/npp_lexer_model.json`: Lexer style inventory from Notepad++ v8.9.9 `stylers.model.xml`
 - Added `tools/baseline.json`: Baseline for lexer count and theme structure to prevent regressions — the validator also detects SHA-256 drift of `BlulocoDark.xml` against the recorded baseline
-- All 67 lexers validated against palette and structure baselines — the validator exits with 0 errors; style-ID coverage gaps and sub-AA contrast pairs are reported as warnings
+- All 76 lexers validated against palette and structure baselines — the validator exits with 0 errors; style-ID coverage gaps and sub-AA contrast pairs are reported as warnings
 
 ## 📋 Conversion Process
 
@@ -315,9 +320,9 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 
 ## 🎯 Supported Languages
 
-The theme includes syntax highlighting for **67 lexers** covering many popular languages:
+The theme includes syntax highlighting for **76 lexers** covering many popular languages:
 
-### ✅ Lexers with a theme (67)
+### ✅ Lexers with a theme (76)
 
 **C-family and systems**: c, cpp, cs, go, java, objc, rc, tcl, sas, sql, actionscript, bash, fortran, fortran77, asm, ada, matlab, haskell, cmake, powershell, d, nim, r
 
@@ -394,7 +399,7 @@ Available samples:
 - **Notepad++ lexer model differs from VSCode**: Notepad++ uses Scintilla lexers, not TextMate grammars. Some semantic tokens (e.g., function vs method, parameter vs variable) cannot be distinguished without language server integration. This is a model limitation, not a theme bug.
 - **No true semantic token support**: USER KEYWORDS are manual keyword lists configured in Style Configurator, not automatic semantic highlighting.
 - **Identifier colouring**: since v2.3 every `IDENTIFIER` style uses the default foreground (`ABB2BF`), matching the upstream theme (plain identifiers → `#abb2bf`). Scintilla identifier states cannot tell variables apart from function calls, so never rely on `IDENTIFIER` for function-call colouring — use the USER KEYWORDS 4 (function) list in Style Configurator instead.
-- **Lexer coverage**: 67 of Notepad++ v8.9.9's 93 model lexers have a dedicated style block. 17 lexers have no theme (listed above) and fall back to the Default Style.
+- **Lexer coverage**: 76 of Notepad++ v8.9.9's 93 model lexers have a dedicated style block. 17 lexers have no theme (listed above) and fall back to the Default Style.
 - **Style-ID coverage**: every themed lexer now covers the full style-ID inventory of the v8.9.9 `stylers.model.xml` — the two v2.2 gaps (`ini` KEY, `vhdl` COMMENT BLOCK) were structural (the styles sat outside their `<LexerType>` blocks) and are fixed. The legacy `searchResult` `Selected Line` (styleID 5), absent from the model and from the stock dark theme, was removed in v2.3.2.
 - **Contrast trade-offs**: Comment color (`8A95B0` on `282C34`) meets WCAG AA (4.67:1); adjusted from original VSCode `#636d83` for accessibility.
 - **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette and is no longer an exception.

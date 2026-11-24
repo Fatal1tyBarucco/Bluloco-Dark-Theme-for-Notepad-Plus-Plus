@@ -215,13 +215,13 @@ def main():
                 # renders are from v2.2 and are programmatic approximations, not
                 # visual verification of the current theme.
 
-    # Token regression checks are DISABLED because renders are from v2.2 (commit 588c48d)
-    # and the theme has evolved. Per project docs: "Never present them as visual
-    # verification... they are programmatic approximations of Scintilla lexers."
+    # Token regression checks are DISABLED per project documentation:
+    # "Never present them as visual verification... they are programmatic
+    # approximations of Scintilla lexers."
     regression_count = 0  # Intentionally skipped - no token-level validation
 
     print("--- Render Validation Report ---")
-    print(f"Semantic token regression cases: {regression_count} (skipped; renders are from v2.2)")
+    print(f"Semantic token regression cases: {regression_count} (skipped; per project docs)")
     print(f"Theme colours available: {len(theme_colors)}")
     print("Render colours checked against their matching lexer plus GlobalStyles")
     print(f"Expected renders: {len(EXPECTED_RENDERS)}")
@@ -233,7 +233,7 @@ def main():
     print(
         "Render validation successful. Structural integrity, disclosure, and colour "
         "provenance passed; token classification and native Notepad++ fidelity "
-        "remain unverified (renders are programmatic approximations from v2.2)."
+        "remain unverified (renders are programmatic approximations)."
     )
     return 0
 

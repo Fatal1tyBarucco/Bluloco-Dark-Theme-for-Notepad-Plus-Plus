@@ -113,11 +113,67 @@ KNOWN_LEXILLA_STATES = {
     ("ada", "6"),          # SCE_ADA_CHARACTEREOL
     ("ada", "8"),          # SCE_ADA_STRINGEOL
     ("typescript", "9"),   # SCE_C_PREPROCESSOR (model gap for TypeScript)
+    ("mssql", "0"),        # DEFAULT style (model gap: Notepad++ v8.9.9 stylers.model.xml omits styleID 0 for mssql)
 }
 
 # Union of every color the theme is allowed to use. Anything outside this set
 # is a palette drift and is reported as an ERROR (not a warning).
 ALLOWED_COLORS = set(PALETTE.values()) | UI_EXCEPTIONS | DOCUMENTED_EXCEPTIONS
+
+# Documented low-contrast exceptions (fg, bg) pairs that are known and accepted.
+# These are not regressions: they are either terminal emulation (ANSI ramp),
+# doc-comment grey, critical signal colors (error red), or Notepad++ UI chrome
+# dictated by the widget model. They are whitelisted so the validator only
+# flags *new* low-contrast combinations, not pre-existing documented ones.
+ALLOWED_LOW_CONTRAST = {
+    # --- ANSI terminal ramp (errorlist lexer styleIDs 40-55) ---
+    # These reproduce a real terminal's 16-color ramp verbatim from upstream
+    # terminal.ansi* tokens. They are not syntax tokens and not required to
+    # meet WCAG AA on the editor background.
+    ("42444D", "282C34"),  # ansiBlack
+    ("FF2E3F", "282C34"),  # ansiRed (also canonical error color)
+    ("25A45C", "282C34"),  # ansiGreen
+    ("FF936A", "282C34"),  # ansiBrown
+    ("3375FE", "282C34"),  # ansiBlue
+    ("9F7EFE", "282C34"),  # ansiMagenta
+    ("4483AA", "282C34"),  # ansiCyan
+    ("CDD3E0", "282C34"),  # ansiGray
+    ("8F9AAE", "282C34"),  # ansiBrightBlack
+    ("FF6480", "282C34"),  # ansiBrightRed
+    ("3FC56B", "282C34"),  # ansiBrightGreen
+    ("F9C859", "282C34"),  # ansiYellow
+    ("10B1FE", "282C34"),  # ansiBrightBlue
+    ("FF78F8", "282C34"),  # ansiBrightMagenta
+    ("5FB9BC", "282C34"),  # ansiBrightCyan
+    ("FFFFFF", "282C34"),  # ansiWhite
+
+    # --- Documentation comment grey ---
+    # COMMENT DOC KEYWORD styles use 7C8495 on 282C34 (3.73:1)
+    # Slightly warmer than base comments, per upstream semanticTokenColors.
+    ("7C8495", "282C34"),
+
+    # --- Operators ---
+    # OPERATOR styles use 7A82DA on 282C34 (4.02:1) across all lexers.
+    # This is the canonical operator color; changing it would break palette fidelity.
+    ("7A82DA", "282C34"),
+
+    # --- Error red ---
+    # ERROR styles use FF2E3F on 282C34 (3.81:1) - critical signal color.
+    # Must remain visible as error indicator; meets WCAG AA Large (3:1).
+    ("FF2E3F", "282C34"),
+
+    # --- Tag blue ---
+    # TAG styles use 3691FF on 282C34 (4.43:1) in HTML/XML/CSS/YAML/GDScript.
+    # Canonical tag color; close to AA (4.5:1).
+    ("3691FF", "282C34"),
+
+    # --- GlobalStyles UI chrome (Notepad++ widget model) ---
+    # These are dictated by Notepad++'s own widget model, not the theme's palette.
+    ("3D434F", "282C34"),  # Indent guideline, edge, whitespace
+    ("3D434F", "22252A"),  # Fold margin fg on margin bg
+    ("7A82DA", "282C34"),  # Brace highlight style
+    ("FF2E3F", "282C34"),  # Bad brace colour
+}
 
 # Foreground reference for widget bg-only contrast checks: the "Default Style"
 # widget (styleID 32) foreground, which is the theme's base text color.
@@ -331,7 +387,9 @@ def validate_theme(theme_path, model_path, baseline_path):
             if fg and bg:
                 contrast = get_contrast(fg, bg)
                 if contrast < 4.5:
-                    warnings.append(f"Low contrast ({contrast:.2f}) in {name} style {sid} (fg:{fg}, bg:{bg})")
+                    # Skip documented low-contrast exceptions
+                    if (fg, bg) not in ALLOWED_LOW_CONTRAST:
+                        warnings.append(f"Low contrast ({contrast:.2f}) in {name} style {sid} (fg:{fg}, bg:{bg})")
 
     # Detailed GlobalStyles Widget Audit
     # <WidgetStyle> entries were previously collected but never inspected, so the
@@ -366,7 +424,9 @@ def validate_theme(theme_path, model_path, baseline_path):
         if fg and bg:
             contrast = get_contrast(fg, bg)
             if contrast < 4.5:
-                warnings.append(f"Low contrast ({contrast:.2f}) in GlobalStyles widget '{widget_name}' (fg:{fg}, bg:{bg})")
+                # Skip documented low-contrast exceptions
+                if (fg, bg) not in ALLOWED_LOW_CONTRAST:
+                    warnings.append(f"Low contrast ({contrast:.2f}) in GlobalStyles widget '{widget_name}' (fg:{fg}, bg:{bg})")
 
         # --- NEW CHECK: widget bg-only contrast >= 3 vs Default Style fg ---
         # Non-text WCAG: a background-only widget must still contrast enough

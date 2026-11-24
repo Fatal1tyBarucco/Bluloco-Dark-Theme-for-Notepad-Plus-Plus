@@ -80,13 +80,13 @@ def load_model() -> Dict[str, List[Tuple[str, str]]]:
     with open(MODEL_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
     model = {}
-    for lexer in data.get("lexers", []):
-        name = lexer.get("name")
-        styles = []
-        for s in lexer.get("styles", []):
+    # The model is a dict with lexer names as keys, not a "lexers" array
+    for name, styles in data.items():
+        parsed_styles = []
+        for s in styles:
             if isinstance(s, list) and len(s) >= 2:
-                styles.append((str(s[0]), s[1]))
-        model[name] = styles
+                parsed_styles.append((str(s[0]), s[1]))
+        model[name] = parsed_styles
     return model
 
 
