@@ -13,7 +13,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PALETTE = {
     "bg": "282C34",
     "fg": "ABB2BF",
-    "comments": "636D83",
+    "comments": "8A95B0",
     "keywords": "10B1FE",
     "strings": "F9C859",
     "numbers": "FF78F8",
@@ -113,11 +113,6 @@ KNOWN_LEXILLA_STATES = {
     ("ada", "6"),          # SCE_ADA_CHARACTEREOL
     ("ada", "8"),          # SCE_ADA_STRINGEOL
     ("typescript", "9"),   # SCE_C_PREPROCESSOR (model gap for TypeScript)
-
-    # Legacy widget declaration: absent from the v8.9.9 stylers.model.xml and
-    # from the stock DarkModeDefault.xml theme. Kept deliberately (inert
-    # unless a Notepad++ build reads it); documented in README.md and AGENTS.md.
-    ("searchResult", "5"),
 }
 
 # Union of every color the theme is allowed to use. Anything outside this set

@@ -27,6 +27,11 @@ The seven SVG files in `renders/` are illustrative programmatic previews. Their 
 
 ## ⚡ Recent Improvements
 
+### v2.3.2 (2026-11-23)
+
+- **Comment contrast fix (WCAG AA)**: Comment color changed from `636D83` (3.2:1) to `8A95B0` (4.67:1) for accessibility compliance; adjusted from original VSCode theme `#636d83`.
+- **USER KEYWORDS onboarding guide**: Added `USER_KEYWORDS_GUIDE.md` with ready-to-paste keyword lists for all 16 supporting lexers, enabling semantic function/parameter/decorator/namespace coloring out of the box.
+
 ### v2.3.1 (2026-11-10)
 
 - **css keywordClass gaps**: `PSEUDOCLASS` (styleID 3) now carries `instre2`, `PSEUDOELEMENT` (18) `type3` and `LEGACY PSEUDOELEMENT` (20) `type5` — the only three stock keyword lists the theme silently dropped (verified: all other 311 theme `keywordClass` values match the current `stylers.model.xml` exactly).
@@ -79,7 +84,7 @@ Applied the canonical Bluloco color palette across all 55 supported lexers. The 
 | Role | Hex | Role | Hex |
 |------|-----|------|-----|
 | Background | `282C34` | Foreground | `ABB2BF` |
-| Comments | `636D83` | Keywords | `10B1FE` |
+| Comments | `8A95B0` | Keywords | `10B1FE` |
 | Strings | `F9C859` | Numbers | `FF78F8` |
 | Functions | `3FC56B` | Classes/Types | `FF6480` |
 | Errors | `FF2E3F` | Constants | `9F7EFE` |
@@ -102,6 +107,8 @@ USER KEYWORDS slots 1–8 are manual keyword lists the user fills in Notepad++'s
 | 6 | Namespace | `FF839B` |
 | 7 | Type parameter | `FF6480` |
 | 8 | Macro | `3FC56B` |
+
+**📖 Quick-start guide:** See **[USER_KEYWORDS_GUIDE.md](USER_KEYWORDS_GUIDE.md)** for ready-to-paste keyword lists per language, step-by-step configuration instructions, and troubleshooting.
 
 Supported lexers expose USER KEYWORDS per their style-ID capabilities:
 - **C/C++/C#/Java/Go/RC/ActionScript** — USER KEYWORDS 1–8 (styleIDs 128–135) with differentiated slots 5–8
@@ -145,7 +152,7 @@ Notepad++ uses XML configuration with:
 |--------------|-----------------|-------|
 | `#282c34` | `282C34` | Main background |
 | `#abb2bf` | `ABB2BF` | Default text |
-| `#636d83` | `636D83` | Comments |
+| `#636d83` | `8A95B0` | Comments (adjusted for WCAG AA) |
 | `#10b1fe` | `10B1FE` | Keywords, storage types |
 | `#3fc56b` | `3FC56B` | Functions, methods |
 | `#ff6480` | `FF6480` | Classes, types |
@@ -243,6 +250,11 @@ Notepad++ uses XML configuration with:
    - Select "BlulocoDark" from the theme dropdown
    - Click "Save & Close"
 
+4. **🎯 Unlock semantic coloring (optional but recommended):**
+   - The theme's USER KEYWORDS 1–8 enable function/parameter/decorator/namespace colors
+   - See **[USER_KEYWORDS_GUIDE.md](USER_KEYWORDS_GUIDE.md)** for copy-paste keyword lists per language
+   - Configure once per language in `Settings` → `Style Configurator` → your language → USER KEYWORDS 1–8
+
 ### Method 2: Import via Style Configurator
 
 1. Open Notepad++
@@ -251,9 +263,9 @@ Notepad++ uses XML configuration with:
 4. Navigate to and select the `BlulocoDark.xml` file
 5. The theme will be automatically installed and selected
 
-### 🖼️ v2.3.1 Renders (generated from the theme XML)
+### 🖼️ v2.3.2 Renders (generated from the theme XML)
 
-The previews below are programmatic renders generated directly from the current `BlulocoDark.xml` (v2.3.1): every colour is extracted from the theme file, and the code shown is the `samples/sample.*` content. **They are not screenshots of Notepad++** — the token classification approximates the Scintilla lexers and the editor chrome is stylized. Visual confirmation of the theme still requires Windows + Notepad++.
+The previews below are programmatic renders generated directly from the current `BlulocoDark.xml` (v2.3.2): every colour is extracted from the theme file, and the code shown is the `samples/sample.*` content. **They are not screenshots of Notepad++** — the token classification approximates the Scintilla lexers and the editor chrome is stylized. Visual confirmation of the theme still requires Windows + Notepad++.
 
 | Language | Render |
 |----------|---------|
@@ -269,16 +281,18 @@ The previews below are programmatic renders generated directly from the current 
 
 ```
 Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
-├── BlulocoDark.xml          # Main theme file
-├── README.md                 # This file
-├── CHANGELOG.md              # Release history
-├── LICENSE                   # License file
-├── tools/                    # Static validation tooling
+├── BlulocoDark.xml                    # Main theme file
+├── README.md                          # This file
+├── USER_KEYWORDS_GUIDE.md             # USER KEYWORDS 1–8 configuration guide
+├── GLOBALSTYLES_GUIDE.md              # GlobalStyles widget documentation (54 styles)
+├── CHANGELOG.md                       # Release history
+├── LICENSE                            # License file
+├── tools/                             # Static validation tooling
 │   ├── validate_theme.py
 │   ├── generate_baseline.py
 │   ├── npp_lexer_model.json
 │   └── baseline.json
-├── samples/                  # 35 manual visual-validation samples
+├── samples/                     # 35 manual visual-validation samples
 │   ├── sample.coffee
 │   ├── sample.erl
 │   ├── sample.d
@@ -288,7 +302,7 @@ Bluloco-Dark-Theme-for-Notepad-Plus-Plus/
 │   ├── sample.tex
 │   ├── sample.gd
 │   └── ... (27 pre-existing samples)
-├── renders/                  # v2.3.1 programmatic SVG renders (not screenshots)
+├── renders/                     # v2.3.2 programmatic SVG renders (not screenshots)
 │   ├── css.svg
 │   ├── html.svg
 │   ├── js.svg
@@ -379,12 +393,12 @@ Available samples:
 - **No true semantic token support**: USER KEYWORDS are manual keyword lists configured in Style Configurator, not automatic semantic highlighting.
 - **Identifier colouring**: since v2.3 every `IDENTIFIER` style uses the default foreground (`ABB2BF`), matching the upstream theme (plain identifiers → `#abb2bf`). Scintilla identifier states cannot tell variables apart from function calls, so never rely on `IDENTIFIER` for function-call colouring — use the USER KEYWORDS 4 (function) list in Style Configurator instead.
 - **Lexer coverage**: 67 of Notepad++ v8.9.9's 93 model lexers have a dedicated style block. 26 lexers have no theme (listed above) and fall back to the Default Style.
-- **Style-ID coverage**: every themed lexer now covers the full style-ID inventory of the v8.9.9 `stylers.model.xml` — the two v2.2 gaps (`ini` KEY, `vhdl` COMMENT BLOCK) were structural (the styles sat outside their `<LexerType>` blocks) and are fixed. The only extra style is `searchResult` `Selected Line` (styleID 5), absent from the model and from the stock dark theme; it is kept as a documented, inert legacy declaration.
-- **Contrast trade-offs**: Comment color (`636D83` on `282C34`) falls below WCAG AA (2.7:1); this matches the original VSCode theme.
+- **Style-ID coverage**: every themed lexer now covers the full style-ID inventory of the v8.9.9 `stylers.model.xml` — the two v2.2 gaps (`ini` KEY, `vhdl` COMMENT BLOCK) were structural (the styles sat outside their `<LexerType>` blocks) and are fixed. The legacy `searchResult` `Selected Line` (styleID 5), absent from the model and from the stock dark theme, was removed in v2.3.2.
+- **Contrast trade-offs**: Comment color (`8A95B0` on `282C34`) meets WCAG AA (4.67:1); adjusted from original VSCode `#636d83` for accessibility.
 - **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette and is no longer an exception.
 - **Palette exceptions**: the token palette is fully normalized against the upstream source, so the only colours outside the canonical role palette are (1) the `errorlist` ANSI terminal ramp (styleIDs 40–55), carried verbatim from the source's `terminal.ansi*` tokens; (2) the Notepad++ UI chrome colours in `GlobalStyles` (`2D333D`, `22252A`, `3D434F`, `FFCC00`, `177849`, `0084FF`, `25272D`, `DADADA`, `FFFFFF`), which exist because Notepad++ draws its own chrome and has no VSCode counterpart; (3) `7C8495`, the documentation-comment grey used by `COMMENT DOC KEYWORD`; and (4) GlobalStyles selection/search/mark/tab tints.
 - **Deliberate divergence in `errorlist`**: `ANSI COLOR RED` uses `FF2E3F`, while the upstream source uses `terminal.ansiRed` = `#fc2f52`. `FF2E3F` was kept on purpose, for internal consistency with the theme's canonical error colour — this is a documented decision, not an oversight.
-- **Renders**: the 7 SVGs in `renders/` are programmatic previews regenerated from the v2.3.1 `BlulocoDark.xml`; every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
+- **Renders**: the 7 SVGs in `renders/` are programmatic previews regenerated from the v2.3.2 `BlulocoDark.xml`; every colour comes from the theme file, but the token classification approximates the Scintilla lexers. They are illustrative renders — not screenshots and not visual verification; confirming the rendering in Notepad++ still requires Windows + Notepad++.
 
 ## 🔧 Customization
 

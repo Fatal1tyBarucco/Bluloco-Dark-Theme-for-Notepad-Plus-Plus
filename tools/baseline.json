@@ -14,7 +14,9 @@
       "user_keyword_ramp_a": "50ACAE",
       "user_keyword_ramp_b": "FF839B"
     },
-    "out_of_palette": [],
+    "out_of_palette": [
+      "8A95B0"
+    ],
     "palette": {
       "attrs": "FF936A",
       "bg": "282C34",
@@ -73,12 +75,12 @@
       "4C4571",
       "50ACAE",
       "5FB9BC",
-      "636D83",
       "675B3F",
       "684B44",
       "735047",
       "7A82DA",
       "7C8495",
+      "8A95B0",
       "8BCDEF",
       "8F9AAE",
       "9F7EFE",
@@ -96,7 +98,7 @@
       "FFFFFF"
     ]
   },
-  "generated_at": "2026-11-14T02:54:09.169983+00:00",
+  "generated_at": "2026-11-24T01:57:51.186039+00:00",
   "lexers": {
     "actionscript": {
       "desc": "ActionScript",
@@ -228,7 +230,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -239,7 +241,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -250,7 +252,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -261,7 +263,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -283,7 +285,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -294,7 +296,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -305,7 +307,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -503,7 +505,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -547,7 +549,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -657,7 +659,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -712,7 +714,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -844,7 +846,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1031,7 +1033,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1042,7 +1044,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1295,7 +1297,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1460,7 +1462,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1537,7 +1539,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1669,7 +1671,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1680,7 +1682,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1691,7 +1693,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1702,7 +1704,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1724,7 +1726,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1735,7 +1737,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1746,7 +1748,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1977,7 +1979,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1988,7 +1990,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -1999,7 +2001,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2010,7 +2012,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2043,7 +2045,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2219,7 +2221,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2230,7 +2232,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2241,7 +2243,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2340,7 +2342,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2494,7 +2496,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2505,7 +2507,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2516,7 +2518,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2527,7 +2529,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2571,7 +2573,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2593,7 +2595,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2725,7 +2727,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2736,7 +2738,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2747,7 +2749,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2758,7 +2760,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2780,7 +2782,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2802,7 +2804,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -2813,7 +2815,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3033,7 +3035,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3044,7 +3046,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3055,7 +3057,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3066,7 +3068,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3088,7 +3090,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3099,7 +3101,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3110,7 +3112,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3319,7 +3321,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3594,7 +3596,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3605,7 +3607,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3616,7 +3618,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3627,7 +3629,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3638,7 +3640,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3715,7 +3717,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3803,7 +3805,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3814,7 +3816,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -3825,7 +3827,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4584,7 +4586,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4595,7 +4597,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4727,7 +4729,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -4892,7 +4894,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5057,7 +5059,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5233,7 +5235,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5354,7 +5356,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5640,7 +5642,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5651,7 +5653,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5662,7 +5664,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5673,7 +5675,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5695,7 +5697,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5706,7 +5708,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5717,7 +5719,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5970,7 +5972,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5981,7 +5983,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -5992,7 +5994,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6003,7 +6005,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6036,7 +6038,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6344,7 +6346,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6421,7 +6423,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6487,7 +6489,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6663,7 +6665,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6674,7 +6676,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6685,7 +6687,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6696,7 +6698,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6718,7 +6720,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6938,7 +6940,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6949,7 +6951,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -6960,7 +6962,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7191,7 +7193,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7202,7 +7204,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7213,7 +7215,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7224,7 +7226,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7422,7 +7424,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7433,7 +7435,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7532,7 +7534,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7686,7 +7688,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7719,7 +7721,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7807,7 +7809,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7906,7 +7908,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7939,7 +7941,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7950,7 +7952,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -7961,7 +7963,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8214,7 +8216,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8302,7 +8304,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8412,7 +8414,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8423,7 +8425,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8628,7 +8630,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8749,7 +8751,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -8815,7 +8817,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9002,7 +9004,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9156,7 +9158,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9167,7 +9169,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9178,7 +9180,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9189,7 +9191,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9211,7 +9213,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9354,7 +9356,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9376,7 +9378,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9387,7 +9389,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9519,7 +9521,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9970,7 +9972,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -9981,7 +9983,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10113,7 +10115,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10124,7 +10126,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10300,7 +10302,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10432,7 +10434,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10498,7 +10500,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10575,7 +10577,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10751,7 +10753,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -10872,7 +10874,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11070,7 +11072,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11268,7 +11270,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11279,7 +11281,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11686,7 +11688,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11697,7 +11699,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11708,7 +11710,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11719,7 +11721,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11741,7 +11743,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11752,7 +11754,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11763,7 +11765,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11895,7 +11897,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11906,7 +11908,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -11917,7 +11919,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12225,7 +12227,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12467,7 +12469,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12478,7 +12480,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12489,7 +12491,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12500,7 +12502,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12764,7 +12766,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12775,7 +12777,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12786,7 +12788,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -12918,7 +12920,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13017,7 +13019,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13061,7 +13063,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13138,7 +13140,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13391,7 +13393,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13490,7 +13492,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13501,7 +13503,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13512,7 +13514,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13655,7 +13657,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13666,7 +13668,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13677,7 +13679,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13688,7 +13690,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13721,7 +13723,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13732,7 +13734,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13853,7 +13855,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -13864,7 +13866,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14062,7 +14064,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14073,7 +14075,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14183,7 +14185,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14469,7 +14471,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14480,7 +14482,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14491,7 +14493,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14502,7 +14504,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14524,7 +14526,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14645,7 +14647,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14821,7 +14823,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14832,7 +14834,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14843,7 +14845,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14887,7 +14889,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -14898,7 +14900,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -15041,7 +15043,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -15107,7 +15109,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -15118,7 +15120,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -15360,7 +15362,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -15668,7 +15670,7 @@
         },
         {
           "bgColor": "282C34",
-          "fgColor": "636D83",
+          "fgColor": "8A95B0",
           "fontName": "",
           "fontSize": "",
           "fontStyle": "0",
@@ -15788,12 +15790,12 @@
       "4C4571",
       "50ACAE",
       "5FB9BC",
-      "636D83",
       "675B3F",
       "684B44",
       "735047",
       "7A82DA",
       "7C8495",
+      "8A95B0",
       "8BCDEF",
       "8F9AAE",
       "9F7EFE",
@@ -15817,7 +15819,9 @@
     "lexers_with_unknown_ids": [
       "mssql"
     ],
-    "out_of_palette": [],
+    "out_of_palette": [
+      "8A95B0"
+    ],
     "out_of_palette_criteria": "not in PALETTE | UI_EXCEPTIONS | DOCUMENTED_EXCEPTIONS (tools/validate_theme.py)",
     "total_unknown_style_ids": 1,
     "widget_styles_with_text": 0,
@@ -15831,7 +15835,7 @@
     "lexer_type_count": 76,
     "line_count": 1646,
     "path": "BlulocoDark.xml",
-    "sha256": "70602a344ca441ba494cfcf7c0d09f041e0c1bc048f89daca76fc3ace966e3d6",
+    "sha256": "635b8f325ed09d7422aff10f2778fe919ee13941b470fa2b3b41ac500f3e1939",
     "size_bytes": 213291,
     "widget_style_count": 51,
     "words_style_count": 1346
@@ -15909,7 +15913,7 @@
     },
     {
       "bgColor": "22252A",
-      "fgColor": "636D83",
+      "fgColor": "8A95B0",
       "name": "Line number margin",
       "styleID": "33",
       "text": ""
@@ -15958,7 +15962,7 @@
     },
     {
       "bgColor": "22252A",
-      "fgColor": "636D83",
+      "fgColor": "8A95B0",
       "name": "Fold",
       "styleID": "0",
       "text": ""
@@ -16070,7 +16074,7 @@
     },
     {
       "bgColor": "25272D",
-      "fgColor": "636D83",
+      "fgColor": "8A95B0",
       "name": "Inactive tabs",
       "styleID": "0",
       "text": ""
@@ -16119,7 +16123,7 @@
     },
     {
       "bgColor": null,
-      "fgColor": "636D83",
+      "fgColor": "8A95B0",
       "name": "Active tab unfocused indicator",
       "styleID": "0",
       "text": ""
