@@ -447,9 +447,39 @@ def validate_theme(theme_path, model_path, baseline_path):
         print("Validation successful!")
 
 
-if __name__ == "__main__":
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Validate BlulocoDark.xml theme")
+    parser.add_argument("--fix", action="store_true",
+                        help="Run repair_theme.py to auto-fix common corruptions")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="With --fix: show what would change without writing")
+    parser.add_argument("--backup", action="store_true",
+                        help="With --fix: create backup before fixing")
+    args = parser.parse_args()
+
+    if args.fix:
+        # Delegate to repair_theme.py
+        import subprocess
+        cmd = [sys.executable, os.path.join(REPO_ROOT, "tools", "repair_theme.py")]
+        if args.dry_run:
+            cmd.append("--dry-run")
+        if args.backup:
+            cmd.append("--backup")
+        else:
+            cmd.append("--fix")
+        result = subprocess.run(cmd)
+        if result.returncode != 0:
+            sys.exit(result.returncode)
+        # Re-validate after fix
+        print("\n--- Re-validating after repair ---")
+
     validate_theme(
         os.path.join(REPO_ROOT, "BlulocoDark.xml"),
         os.path.join(REPO_ROOT, "tools", "npp_lexer_model.json"),
         os.path.join(REPO_ROOT, "tools", "baseline.json"),
     )
+
+
+if __name__ == "__main__":
+    main()

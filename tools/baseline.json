@@ -98,7 +98,7 @@
       "FFFFFF"
     ]
   },
-  "generated_at": "2026-11-24T01:57:51.186039+00:00",
+  "generated_at": "2026-11-24T02:16:26.369991+00:00",
   "lexers": {
     "actionscript": {
       "desc": "ActionScript",
@@ -15833,10 +15833,10 @@
   },
   "theme": {
     "lexer_type_count": 76,
-    "line_count": 1646,
+    "line_count": 1556,
     "path": "BlulocoDark.xml",
-    "sha256": "635b8f325ed09d7422aff10f2778fe919ee13941b470fa2b3b41ac500f3e1939",
-    "size_bytes": 213291,
+    "sha256": "4d07bc420559fde989213f8a4bb1f72ee119638952da10ce721b0c97d075ede4",
+    "size_bytes": 194062,
     "widget_style_count": 51,
     "words_style_count": 1346
   },
