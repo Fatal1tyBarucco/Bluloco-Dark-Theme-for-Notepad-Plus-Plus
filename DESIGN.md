@@ -5,7 +5,7 @@ colors:
   # Canonical token palette (14 roles) — normalized against upstream bluloco-dark-color-theme.json
   base-bg: "#282C34"
   base-fg: "#ABB2BF"
-  comment: "#636D83"
+  comment: "#8A95B0"
   keyword: "#10B1FE"
   string: "#F9C859"
   number: "#FF78F8"
@@ -41,7 +41,7 @@ colors:
   ui-tag-attr: "#735047"
   ui-tab-inactive-bg: "#25272D"
   ui-tab-active-indicator: "#3691FF"
-  ui-tab-unfocused: "#636D83"
+  ui-tab-unfocused: "#8A95B0"
   ui-url-hover: "#3691FF"
   ui-doc-map: "#282C34"
   ui-eol: "#DADADA"
@@ -90,7 +90,7 @@ components: {}
 
 A clinical, audited dark syntax theme where every color has a defined semantic role and every deviation from the canonical palette is documented with provenance. The system prioritizes fidelity to the upstream Bluloco Dark VSCode theme over completeness — 67 lexers are covered with palette-perfect accuracy, while 26 lexers honestly fall back to the default style rather than receiving invented colors.
 
-The aesthetic is precise and tool-like: blue-based accents (`#10B1FE` keywords, `#3691FF` tags, `#8BCDEF` parameters) against a deep charcoal base (`#282C34`), with warm gold strings (`#F9C859`), magenta numbers (`#FF78F8`), green functions (`#3FC56B`), and coral types (`#FF6480`). Comments sit at a deliberate sub-AA contrast (`#636D83` on `#282C34` = 2.7:1), matching the upstream's trade-off. The only colors outside the 14-role token palette are the `errorlist` ANSI terminal ramp (16 colors, styleIDs 40–55), Notepad++ UI chrome widgets (28 GlobalStyles entries), the documentation-comment grey (`#7C8495`), and selection/search/mark/tab tints — each group documented with its rationale.
+The aesthetic is precise and tool-like: blue-based accents (`#10B1FE` keywords, `#3691FF` tags, `#8BCDEF` parameters) against a deep charcoal base (`#282C34`), with warm gold strings (`#F9C859`), magenta numbers (`#FF78F8`), green functions (`#3FC56B`), and coral types (`#FF6480`). Comments meet WCAG AA at `#8A95B0` on `#282C34` (4.67:1); adjusted from upstream `#636D83` for accessibility. The only colors outside the 14-role token palette are the `errorlist` ANSI terminal ramp (16 colors, styleIDs 40–55), Notepad++ UI chrome widgets (28 GlobalStyles entries), the documentation-comment grey (`#7C8495`), and selection/search/mark/tab tints — each group documented with its rationale.
 
 **Key Characteristics:**
 - 14-role canonical token palette applied without deviation across all 67 lexers
@@ -130,7 +130,7 @@ A single 14-role palette governs all token styles. Every `fgColor`/`bgColor` in 
 
 ### Neutral
 
-- **Comment Slate** (`#636D83`): All comments, doc comments, comment lines — deliberately sub-AA (2.7:1) to match upstream
+- **Comment Slate** (`#8A95B0`): All comments, doc comments, comment lines — meets WCAG AA (4.67:1 on `#282C34`); adjusted from upstream `#636D83` for accessibility
 - **Doc Comment Grey** (`#7C8495`): Documentation comment keywords (COMMENT DOC KEYWORD) — slightly warmer than base comments
 
 ### Named Rules
@@ -160,7 +160,7 @@ Notepad++ themes do not control layout — they provide color assignments for Sc
 - **Current line highlight:** `#2D333D` (bg only)
 - **Selection:** `#1C4670` bg / `#FFFFFF` fg
 - **Multi-selection:** `#1C6143` bg
-- **Line numbers:** `#636D83` fg / `#22252A` bg
+- **Line numbers:** `#8A95B0` fg / `#22252A` bg
 - **Fold margin:** `#3D434F` fg / `#22252A` bg
 - **Indent guides:** `#3D434F`
 - **Smart highlighting:** `#36465A` bg
@@ -168,7 +168,7 @@ Notepad++ themes do not control layout — they provide color assignments for Sc
 - **Mark styles 1–5:** `#215471`, `#684B44`, `#675B3F`, `#4C4571`, `#2F5A45` bg
 - **Tab colors 1–5 (light/dark):** `#215471`, `#684B44`, `#675B3F`, `#4C4571`, `#2F5A45` bg
 - **Active tab indicator:** `#3691FF` fg
-- **Inactive tabs:** `#636D83` fg / `#25272D` bg
+- **Inactive tabs:** `#8A95B0` fg / `#25272D` bg
 
 ## Elevation & Depth
 
@@ -205,7 +205,7 @@ Each widget maps a Notepad++ UI element to a color role. Key widgets:
 | Multi-selected text | 0 | `#1C6143` | Multi-caret selection |
 | Brace highlight | 34 | `#7A82DA` / `#282C34` (bold) | Matching brace |
 | Bad brace | 35 | `#FF2E3F` / `#282C34` | Mismatched brace |
-| Line number margin | 33 | `#636D83` / `#22252A` | Line numbers |
+| Line number margin | 33 | `#8A95B0` / `#22252A` | Line numbers |
 | Caret | 2069 | `#FFCC00` | Insertion point |
 | Smart Highlighting | 29 | `#36465A` | Symbol matches |
 | Find Mark | 31 | `#1C6143` | Find results |
@@ -223,7 +223,7 @@ Each lexer defines `WordsStyle` entries mapping Scintilla styleIDs to palette ro
 | Functions | `#3FC56B` | Python, Ruby, Lua, PowerShell, NSIS, etc. |
 | Strings | `#F9C859` | Universal |
 | Numbers | `#FF78F8` | Universal |
-| Comments | `#636D83` | Universal |
+| Comments | `#8A95B0` | Universal |
 | Operators | `#7A82DA` | Universal |
 | Tags (HTML/XML) | `#3691FF` | HTML, XML, CSS, LaTeX, GDScript |
 | Attributes | `#FF936A` | HTML, XML, CSS, TOML, YAML |
