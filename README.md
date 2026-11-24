@@ -329,11 +329,13 @@ The theme includes syntax highlighting for **67 lexers** covering many popular l
 
 **12 newly added in v2.2**: rust, swift, yaml, javascript.js (standalone), coffeescript, erlang, d, nim, r, scheme, latex, gdscript — each with full coverage against the Notepad++ v8.9.9 stylers.model.xml.
 
-### ❌ Lexers without a theme (26 — honest limitation)
+### ❌ Lexers without a theme (17 — honest limitation)
 
-26 lexers present in Notepad++ v8.9.9's `stylers.model.xml` (93 total) have no dedicated style block in `BlulocoDark.xml`: asn1, avs, baanc, blitzbasic, cobol, csound, escseq, escript, fcST, forth, freebasic, gui4cli, hollywood, ihex, mmixal, mssql, nncrontab, oscript, purebasic, rebol, registry, spice, srec, tehex, txt2tags, visualprolog.
+17 lexers present in Notepad++ v8.9.9's `stylers.model.xml` (93 total) have no dedicated style block in `BlulocoDark.xml`: avs, baanc, blitzbasic, csound, escseq, escript, fcST, gui4cli, hollywood, ihex, mmixal, nncrontab, oscript, registry, srec, tehex, txt2tags.
 
 Files using these lexers fall back to the Default Style (`ABB2BF` on `282C34`) and receive no syntax coloring beyond the base style.
+
+> **Note:** The v2.2 release notes listed 26 unthemed lexers; subsequent audit revealed 9 of those (asn1, cobol, forth, freebasic, mssql, purebasic, rebol, spice, visualprolog) already had theme blocks. The count above reflects the actual v8.9.9 model inventory.
 
 ### Languages with USER KEYWORDS 1–8 Support
 - **C/C++/C#/Java/Go/RC/ActionScript** — USER KEYWORDS 1–8 (styleIDs 128–135) with differentiated slots 5–8
@@ -392,7 +394,7 @@ Available samples:
 - **Notepad++ lexer model differs from VSCode**: Notepad++ uses Scintilla lexers, not TextMate grammars. Some semantic tokens (e.g., function vs method, parameter vs variable) cannot be distinguished without language server integration. This is a model limitation, not a theme bug.
 - **No true semantic token support**: USER KEYWORDS are manual keyword lists configured in Style Configurator, not automatic semantic highlighting.
 - **Identifier colouring**: since v2.3 every `IDENTIFIER` style uses the default foreground (`ABB2BF`), matching the upstream theme (plain identifiers → `#abb2bf`). Scintilla identifier states cannot tell variables apart from function calls, so never rely on `IDENTIFIER` for function-call colouring — use the USER KEYWORDS 4 (function) list in Style Configurator instead.
-- **Lexer coverage**: 67 of Notepad++ v8.9.9's 93 model lexers have a dedicated style block. 26 lexers have no theme (listed above) and fall back to the Default Style.
+- **Lexer coverage**: 67 of Notepad++ v8.9.9's 93 model lexers have a dedicated style block. 17 lexers have no theme (listed above) and fall back to the Default Style.
 - **Style-ID coverage**: every themed lexer now covers the full style-ID inventory of the v8.9.9 `stylers.model.xml` — the two v2.2 gaps (`ini` KEY, `vhdl` COMMENT BLOCK) were structural (the styles sat outside their `<LexerType>` blocks) and are fixed. The legacy `searchResult` `Selected Line` (styleID 5), absent from the model and from the stock dark theme, was removed in v2.3.2.
 - **Contrast trade-offs**: Comment color (`8A95B0` on `282C34`) meets WCAG AA (4.67:1); adjusted from original VSCode `#636d83` for accessibility.
 - **errorlist**: The `ANSI COLOR` styles (styleIDs 40–55) keep the hardcoded legacy terminal palette and are not aligned with the Bluloco palette. The `searchResult` lexer was migrated to the Bluloco dark palette and is no longer an exception.
