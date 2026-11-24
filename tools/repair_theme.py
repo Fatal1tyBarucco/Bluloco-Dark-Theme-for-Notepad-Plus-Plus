@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Bluloco Dark Theme Repair Tool
+Bluloco Dark Theme Repair Tool - Optimized
 
 Fixes common issues detected by validate_theme.py:
 - Invalid hex color formats (lowercase -> uppercase, 3->6 digits)
@@ -24,6 +24,7 @@ import os
 import shutil
 from pathlib import Path
 from typing import Dict, List, Set, Tuple, Optional
+from functools import lru_cache
 
 REPO_ROOT = Path(__file__).parent.parent
 THEME_PATH = REPO_ROOT / "BlulocoDark.xml"
@@ -74,13 +75,17 @@ KNOWN_LEXILLA_STATES = {
     ("typescript", "9"),
 }
 
+# Pre-compile regex
+HEX_RE = re.compile(r"^[0-9A-F]{6}$")
+HEX_3_RE = re.compile(r"^[0-9A-F]{3}$")
 
+
+@lru_cache(maxsize=1)
 def load_model() -> Dict[str, List[Tuple[str, str]]]:
-    """Load npp_lexer_model.json as {lexer_name: [(styleID, styleName), ...]}"""
+    """Load npp_lexer_model.json as {lexer_name: [(styleID, styleName), ...]} - cached."""
     with open(MODEL_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
     model = {}
-    # The model is a dict with lexer names as keys, not a "lexers" array
     for name, styles in data.items():
         parsed_styles = []
         for s in styles:
@@ -95,67 +100,97 @@ def normalize_hex(color: str) -> str:
     if not color:
         return color
     c = color.strip().upper()
-    # Remove # if present
     if c.startswith("#"):
         c = c[1:]
-    # Expand 3-digit to 6-digit
     if len(c) == 3:
         c = "".join(ch * 2 for ch in c)
-    # Pad with zeros if needed
     if len(c) < 6:
         c = c.zfill(6)
-    # Truncate if too long
     if len(c) > 6:
         c = c[:6]
-    # Validate hex digits
-    if not re.match(r"^[0-9A-F]{6}$", c):
-        return "282C34"  # fallback to background
+    if not HEX_RE.match(c):
+        return "282C34"
     return c
 
 
+# Pre-compute color distances for palette mapping
+@lru_cache(maxsize=256)
 def color_distance(c1: str, c2: str) -> float:
-    """Euclidean distance in RGB space."""
+    """Euclidean distance in RGB space (cached)."""
     r1, g1, b1 = int(c1[0:2], 16), int(c1[2:4], 16), int(c1[4:6], 16)
     r2, g2, b2 = int(c2[0:2], 16), int(c2[2:4], 16), int(c2[4:6], 16)
     return ((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2) ** 0.5
 
 
+# Pre-compute closest allowed color for any 6-digit hex
+@lru_cache(maxsize=4096)
 def map_to_palette(color: str) -> str:
-    """Map an out-of-palette color to the closest allowed color."""
+    """Map an out-of-palette color to the closest allowed color (cached)."""
     if color in ALLOWED_COLORS:
         return color
     normalized = normalize_hex(color)
     if normalized in ALLOWED_COLORS:
         return normalized
-    # Find closest allowed color
+    # Find closest allowed color (cached distance)
     best = min(ALLOWED_COLORS, key=lambda c: color_distance(normalized, c))
     return best
 
 
-def fix_hex_format(tree: ET.ElementTree) -> int:
-    """Fix invalid hex color formats. Returns count of fixes."""
-    fixes = 0
-    for elem in tree.iter():
-        for attr in ("fgColor", "bgColor"):
-            val = elem.get(attr)
+def build_parent_map(root: ET.Element) -> Dict[ET.Element, ET.Element]:
+    """Build a parent map for O(1) parent lookups."""
+    parent_map = {}
+    for parent in root.iter():
+        for child in parent:
+            parent_map[child] = parent
+    return parent_map
+
+
+def single_pass_color_fixes(root: ET.Element) -> Tuple[int, int, int]:
+    """
+    Single-pass traversal fixing:
+    - hex_format (fgColor/bgColor normalization)
+    - fg_eq_bg (fgColor == bgColor)
+    - palette_drift (out-of-palette colors)
+    Returns: (hex_fixes, fg_eq_bg_fixes, palette_fixes)
+    """
+    hex_fixes = 0
+    fg_eq_bg_fixes = 0
+    palette_fixes = 0
+
+    # Pre-fetch all style elements we care about
+    style_elements = []
+    for elem in root.iter():
+        if elem.tag in ("WordsStyle", "WidgetStyle"):
+            style_elements.append(elem)
+
+    for elem in style_elements:
+        fg = elem.get("fgColor")
+        bg = elem.get("bgColor")
+
+        # Fix hex format + palette drift in one go
+        for attr, val in (("fgColor", fg), ("bgColor", bg)):
             if val:
                 normalized = normalize_hex(val)
                 if normalized != val:
                     elem.set(attr, normalized)
-                    fixes += 1
-    return fixes
+                    hex_fixes += 1
+                    val = normalized  # use normalized for subsequent checks
 
+                # Palette drift check
+                mapped = map_to_palette(val)
+                if mapped != val:
+                    elem.set(attr, mapped)
+                    palette_fixes += 1
+                    if attr == "fgColor":
+                        fg = mapped
+                    else:
+                        bg = mapped
 
-def fix_fg_eq_bg(tree: ET.ElementTree) -> int:
-    """Fix fgColor == bgColor by slightly adjusting bgColor. Returns count of fixes."""
-    fixes = 0
-    for elem in tree.iter("WordsStyle"):
+        # Fix fg == bg
         fg = elem.get("fgColor")
         bg = elem.get("bgColor")
         if fg and bg and fg == bg:
-            # Lighten or darken bg slightly
             r, g, b = int(bg[0:2], 16), int(bg[2:4], 16), int(bg[4:6], 16)
-            # If dark, lighten; if light, darken
             if r + g + b < 384:  # dark
                 r = min(255, r + 16)
                 g = min(255, g + 16)
@@ -166,38 +201,28 @@ def fix_fg_eq_bg(tree: ET.ElementTree) -> int:
                 b = max(0, b - 16)
             new_bg = f"{r:02X}{g:02X}{b:02X}"
             elem.set("bgColor", new_bg)
-            fixes += 1
-    for elem in tree.iter("WidgetStyle"):
-        fg = elem.get("fgColor")
-        bg = elem.get("bgColor")
-        if fg and bg and fg == bg:
-            r, g, b = int(bg[0:2], 16), int(bg[2:4], 16), int(bg[4:6], 16)
-            if r + g + b < 384:
-                r = min(255, r + 16)
-                g = min(255, g + 16)
-                b = min(255, b + 16)
-            else:
-                r = max(0, r - 16)
-                g = max(0, g - 16)
-                b = max(0, b - 16)
-            new_bg = f"{r:02X}{g:02X}{b:02X}"
-            elem.set("bgColor", new_bg)
-            fixes += 1
-    return fixes
+            fg_eq_bg_fixes += 1
+
+    return hex_fixes, fg_eq_bg_fixes, palette_fixes
 
 
-def fix_style_name_drift(tree: ET.ElementTree, model: Dict) -> int:
+def fix_style_name_drift(root: ET.Element, model: Dict) -> int:
     """Fix style names that drift from model. Returns count of fixes."""
     fixes = 0
-    for lexer in tree.findall(".//LexerType"):
+    # Pre-build model name lookup
+    model_lookup = {}
+    for lexer_name, styles in model.items():
+        model_lookup[lexer_name] = {sid: sname for sid, sname in styles}
+
+    for lexer in root.findall(".//LexerType"):
         name = lexer.get("name")
-        if name not in model:
+        if name not in model_lookup:
             continue
-        model_names = {sid: sname for sid, sname in model[name]}
+        lexer_model = model_lookup[name]
         for style in lexer.findall("WordsStyle"):
             sid = style.get("styleID")
-            if sid in model_names:
-                expected = model_names[sid]
+            if sid in lexer_model:
+                expected = lexer_model[sid]
                 current = style.get("name") or ""
                 if current != expected:
                     style.set("name", expected)
@@ -205,81 +230,39 @@ def fix_style_name_drift(tree: ET.ElementTree, model: Dict) -> int:
     return fixes
 
 
-def fix_palette_drift(tree: ET.ElementTree) -> int:
-    """Map out-of-palette colors to closest allowed color. Returns count of fixes."""
-    fixes = 0
-    for elem in tree.iter():
-        for attr in ("fgColor", "bgColor"):
-            val = elem.get(attr)
-            if val:
-                mapped = map_to_palette(val)
-                if mapped != val:
-                    elem.set(attr, mapped)
-                    fixes += 1
-    return fixes
-
-
-def remove_stray_elements(tree: ET.ElementTree) -> int:
+def remove_stray_elements(root: ET.Element, parent_map: Dict[ET.Element, ET.Element]) -> int:
     """Remove WordsStyle outside LexerType and WidgetStyle outside GlobalStyles. Returns count."""
     fixes = 0
-    root = tree.getroot()
 
     # Find valid parent elements
-    valid_ws_parents = set()
-    for lexer in root.findall(".//LexerType"):
-        valid_ws_parents.add(id(lexer))
-
-    valid_widget_parents = set()
+    valid_ws_parents = {id(lexer) for lexer in root.findall(".//LexerType")}
     gs = root.find(".//GlobalStyles")
-    if gs is not None:
-        valid_widget_parents.add(id(gs))
+    valid_widget_parents = {id(gs)} if gs is not None else set()
 
-    # Remove stray WordsStyle
+    # Check WordsStyle elements
     for ws in list(root.iter("WordsStyle")):
-        parent = ws.getparent() if hasattr(ws, 'getparent') else None
-        # ElementTree doesn't have getparent, use iteration
-        found = False
-        for p in root.iter():
-            for child in p:
-                if child is ws:
-                    if id(p) in valid_ws_parents:
-                        found = True
-                    break
-            if found:
-                break
-        if not found:
+        parent = parent_map.get(ws)
+        if parent is None or id(parent) not in valid_ws_parents:
             # Remove from its actual parent
-            for p in root.iter():
-                if ws in list(p):
-                    p.remove(ws)
-                    fixes += 1
-                    break
+            if parent is not None:
+                parent.remove(ws)
+                fixes += 1
 
-    # Remove stray WidgetStyle
+    # Check WidgetStyle elements
     for w in list(root.iter("WidgetStyle")):
-        found = False
-        for p in root.iter():
-            for child in p:
-                if child is w:
-                    if id(p) in valid_widget_parents:
-                        found = True
-                    break
-            if found:
-                break
-        if not found:
-            for p in root.iter():
-                if w in list(p):
-                    p.remove(w)
-                    fixes += 1
-                    break
+        parent = parent_map.get(w)
+        if parent is None or id(parent) not in valid_widget_parents:
+            if parent is not None:
+                parent.remove(w)
+                fixes += 1
 
     return fixes
 
 
-def add_missing_styleids(tree: ET.ElementTree, model: Dict) -> int:
+def add_missing_styleids(root: ET.Element, model: Dict) -> int:
     """Add missing styleIDs from model as skeleton entries. Returns count."""
     fixes = 0
-    for lexer in tree.findall(".//LexerType"):
+    for lexer in root.findall(".//LexerType"):
         name = lexer.get("name")
         if name not in model:
             continue
@@ -296,22 +279,18 @@ def add_missing_styleids(tree: ET.ElementTree, model: Dict) -> int:
             ws.set("fontName", "")
             ws.set("fontStyle", "0")
             ws.set("fontSize", "")
-            if name in ("html", "xml", "css", "javascript", "typescript"):
-                # Some lexers have keywordClass
-                pass
             fixes += 1
     return fixes
 
 
-def clean_internal_text(tree: ET.ElementTree) -> int:
+def clean_internal_text(root: ET.Element) -> int:
     """Remove text content from WordsStyle and WidgetStyle elements. Returns count."""
     fixes = 0
-    for elem in tree.iter():
+    for elem in root.iter():
         if elem.tag in ("WordsStyle", "WidgetStyle"):
             if elem.text and elem.text.strip():
                 elem.text = None
                 fixes += 1
-            # Also clear tail
             if elem.tail and elem.tail.strip():
                 elem.tail = None
                 fixes += 1
@@ -320,30 +299,33 @@ def clean_internal_text(tree: ET.ElementTree) -> int:
 
 def repair_theme(dry_run: bool = False, backup: bool = False) -> Dict[str, int]:
     """Run all repairs. Returns dict of fix counts."""
-    # Load model
     model = load_model()
-
-    # Parse theme
     tree = ET.parse(THEME_PATH)
+    root = tree.getroot()
 
     if backup and not dry_run:
         backup_path = THEME_PATH.with_suffix(".xml.backup")
         shutil.copy2(THEME_PATH, backup_path)
         print(f"Backup created: {backup_path}")
 
+    # Build parent map once for stray element detection
+    parent_map = build_parent_map(root)
+
     results = {}
 
-    # Run fixes in order
-    results["hex_format"] = fix_hex_format(tree)
-    results["fg_eq_bg"] = fix_fg_eq_bg(tree)
-    results["palette_drift"] = fix_palette_drift(tree)
-    results["style_name_drift"] = fix_style_name_drift(tree, model)
-    results["stray_elements"] = remove_stray_elements(tree)
-    results["internal_text"] = clean_internal_text(tree)
-    results["missing_styleids"] = add_missing_styleids(tree, model)
+    # Single-pass color fixes (combines 3 separate passes)
+    hex_fixes, fg_eq_bg_fixes, palette_fixes = single_pass_color_fixes(root)
+    results["hex_format"] = hex_fixes
+    results["fg_eq_bg"] = fg_eq_bg_fixes
+    results["palette_drift"] = palette_fixes
+
+    # Remaining passes (need model or parent_map)
+    results["style_name_drift"] = fix_style_name_drift(root, model)
+    results["stray_elements"] = remove_stray_elements(root, parent_map)
+    results["internal_text"] = clean_internal_text(root)
+    results["missing_styleids"] = add_missing_styleids(root, model)
 
     if not dry_run:
-        # Write back with proper formatting
         ET.indent(tree, space="    ")
         tree.write(THEME_PATH, encoding="utf-8", xml_declaration=True)
         print(f"Theme written to {THEME_PATH}")
